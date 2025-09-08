@@ -14,6 +14,7 @@
   <h2 >Integrantes:</h2>
   <ul style="list-style: none; padding: 0;">
       <li><h3>Josue Gonzalo Paiva Quispe</h3></li>
+      <li><h3>Javier Sebastian Gonzales Alvarado</h3></li>
   </ul>
   <br>
   <h4>Setiembre del 2025</h4>
@@ -65,60 +66,60 @@
     - [3.3. Impact Mapping](#33-impact-mapping)
     - [3.4. Product Backlog](#34-product-backlog)
 
-  - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-      - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-          - [4.1.1. EventStorming](#411-eventstorming)
-              - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-              - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-              - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-          - [4.1.2. Context Mapping](#412-context-mapping)
-          - [4.1.3. Software Architecture](#413-software-architecture)
-              - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
-              - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
-              - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-      - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-          - [4.2.1. Bounded Context: Analítica y Reportes](#421-bounded-context-analítica-y-reportes)
-              - [4.2.1.1. Domain Layer](#4211-domain-layer)
-              - [4.2.1.2. Interface Layer](#4212-interface-layer)
-              - [4.2.1.3. Application Layer](#4213-application-layer)
-              - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-              - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-              - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-              - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-          - [4.2.2. Bounded Context: Notificaciones](#422-bounded-context-notificaciones)
-              - [4.2.2.1. Domain Layer](#4221-domain-layer)
-              - [4.2.2.2. Interface Layer](#4222-interface-layer)
-              - [4.2.2.3. Application Layer](#4223-application-layer)
-              - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
-              - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-              - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
-              - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-          - [4.2.3. Bounded Context: Gestión de grupos](#423-bounded-context-gestión-de-grupos)
-              - [4.2.3.1. Domain Layer](#4231-domain-layer)
-              - [4.2.3.2. Interface Layer](#4232-interface-layer)
-              - [4.2.3.3. Application Layer](#4233-application-layer)
-              - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
-              - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-              - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
-                  - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-                  - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-          - [4.2.4. Bounded Context: Solicitudes y Validaciones](#424-bounded-context-solicitudes-y-validaciones)
-              - [4.2.4.1. Domain Layer](#4241-domain-layer)
-              - [4.2.4.2. Interface Layer](#4242-interface-layer)
-              - [4.2.4.3. Application Layer](#4243-application-layer)
-              - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-              - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-              - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
-                  - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-                  - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-              - [4.2.5.1. Domain Layer](#4251-domain-layer)
-              - [4.2.5.2. Interface Layer](#4252-interface-layer)
-              - [4.2.5.3. Application Layer](#4253-application-layer)
-              - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-              - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-              - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
-                  - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-                  - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+    - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
+        - [4.1.1. EventStorming](#411-eventstorming)
+            - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
+            - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+            - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+        - [4.1.2. Context Mapping](#412-context-mapping)
+        - [4.1.3. Software Architecture](#413-software-architecture)
+            - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
+            - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
+            - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
+    - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+        - [4.2.1. Bounded Context: Analítica y Reportes](#421-bounded-context-analítica-y-reportes)
+            - [4.2.1.1. Domain Layer](#4211-domain-layer)
+            - [4.2.1.2. Interface Layer](#4212-interface-layer)
+            - [4.2.1.3. Application Layer](#4213-application-layer)
+            - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+            - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+            - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+        - [4.2.2. Bounded Context: Notificaciones](#422-bounded-context-notificaciones)
+             - [4.2.2.1. Domain Layer](#4221-domain-layer)
+             - [4.2.2.2. Interface Layer](#4222-interface-layer)
+             - [4.2.2.3. Application Layer](#4223-application-layer)
+             - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
+             - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+             - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
+             - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
+         - [4.2.3. Bounded Context: Gestión de grupos](#423-bounded-context-gestión-de-grupos)
+             - [4.2.3.1. Domain Layer](#4231-domain-layer)
+             - [4.2.3.2. Interface Layer](#4232-interface-layer)
+             - [4.2.3.3. Application Layer](#4233-application-layer)
+             - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+             - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+             - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+                 - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+                 - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+         - [4.2.4. Bounded Context: Solicitudes y Validaciones](#424-bounded-context-solicitudes-y-validaciones)
+             - [4.2.4.1. Domain Layer](#4241-domain-layer)
+             - [4.2.4.2. Interface Layer](#4242-interface-layer)
+             - [4.2.4.3. Application Layer](#4243-application-layer)
+             - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+             - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+             - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
+                 - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
+                 - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
+             - [4.2.5.1. Domain Layer](#4251-domain-layer)
+             - [4.2.5.2. Interface Layer](#4252-interface-layer)
+             - [4.2.5.3. Application Layer](#4253-application-layer)
+             - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+             - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+             - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+                 - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+                 - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
 
 
 ## Student Outcome
@@ -162,6 +163,36 @@ necesario, utilizando estrategias deaprendizaje apropiadas.*
 
 ## Objetivos SMART
 
+### 1.1 Startup Profile
+
+#### 1.1.1. Descripción de la Startup
+
+<br>
+
+  + **Descripción de la Startup**
+
+  Nuestra startup, UniMatch, nace con el propósito de impulsar la empleabilidad de estudiantes universitarios y recién egresados en Perú, generando un puente confiable entre la educación y el mercado laboral. Apostamos por el uso de la tecnología y la innovación para reducir la brecha entre la formación académica y las competencias requeridas por las empresas, fomentando la validación del talento joven a través de experiencias prácticas, proyectos y oportunidades de inserción laboral.
+
+<br>
+
+  + **Misión:**
+
+  Brindar a los estudiantes universitarios una plataforma que facilite su inserción al mercado laboral a través de proyectos, prácticas y experiencias profesionales significativas, conectándolos con empresas y organizaciones que buscan talento joven y creativo.
+
+<br>
+
+  + **Visión:**
+
+  Ser la plataforma líder en Latinoamérica que revolucione la forma en que estudiantes y empresas se conectan, convirtiéndose en el puente más confiable entre la educación y el empleo, impulsando así la innovación y el crecimiento profesional de las nuevas generaciones.
+
+<br>
+
+  + **Alcance del proyecto:**
+
+  UniMatch busca crear una aplicación móvil que conecta estudiantes universitarios de últimos ciclos con empresas mediante proyectos reales de corta duración, gestionando postulaciones, portafolios, evaluaciones y certificaciones para impulsar la empleabilidad joven y fortalecer la relación entre academia y sector productivo.
+
+<br>
+
 #### 1.1.2. Perfiles de integrantes del equipo
 <table>
   <tr>
@@ -175,8 +206,8 @@ necesario, utilizando estrategias deaprendizaje apropiadas.*
     <th colspan="2"> </th>
   </tr>
   <tr>
-    <td> </td>
-    <td> </td>
+    <td> Hola mi nombre es Javier Gonzales soy un estudiante de la carrera de Ingeniería de Software en el 6to ciclo con código u202312966. Tengo conocimientos en C++, Python, SQL, HTML, CSS, JavaScript y Vue, además de experiencia en el desarrollo de aplicaciones web aplicando arquitecturas modernas como DDD, uso de APIs y manejo de bases de datos tanto relacionales como no relacionales. También manejo metodologías ágiles, control de versiones con GitHub y despliegue en la nube con Azure, lo que me permite tener una visión integral del ciclo de desarrollo de software. Me considero una persona analítica, perseverante y de rápido aprendizaje, con la capacidad de adaptarme a nuevos entornos y tecnologías, fomentando siempre un buen ambiente en el equipo y aportando responsabilidad, iniciativa y liderazgo colaborativo en cada proyecto. </td>
+    <td>  </td>
   </tr>
   <tr>
     <th colspan="2"> </th>
