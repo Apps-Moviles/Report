@@ -231,3 +231,234 @@ necesario, utilizando estrategias deaprendizaje apropiadas.*
     <td> </td>
   </tr>
 </table>
+
+### 1.2 Solution Profile
+
+#### 1.2.1 Antecedentes y problemática
+
+<br>
+
+  + **What (Qué)**
+
+  *¿Cuál es el problema?*
+
+  El problema central es el alto desempleo juvenil y la falta de oportunidades formativas que afecten el acceso al mercado laboral para estudiantes y recién egresados en el Perú. Según el INEI, la tasa de desempleo juvenil (18 a 24 años) fue del 12.5 % en el primer trimestre de 2024. Además, otra fuente reporta un aumento de la tasa de desempleo juvenil del 13.8 % en 2023 al 14.3 % en 2024.
+
+<br>
+
+  + **When (Cuando)**
+
+  *¿Cuándo sucede el problema?*
+
+  Este problema se presenta principalmente en los últimos ciclos universitarios y al finalizar los estudios, al ingresar al mercado laboral. Es una situación persistente desde antes de la pandemia, pero se ha acentuado entre 2023 y 2024 con un aumento de la tasa de desempleo juvenil.
+
+<br>
+
+  + **Where (Donde)**
+
+  *¿Dónde surge el problema?*
+
+  El desempleo juvenil en Perú se concentra mayormente en las transiciones académicas hacia el ámbito laboral y en las zonas urbanas, particularmente en Lima Metropolitana, donde las oportunidades formales son limitadas. Según el IPE, el empleo juvenil decreció continuamente entre 2019 y 2024, resultando en aproximadamente 160 000 jóvenes menos trabajando. Además, el INEI reporta que la informalidad laboral afecta al 85.6 % de los trabajadores menores de 25 años, lo que complica aún más el acceso a empleos de calidad y estabilidad.
+
+<br>
+
+  + **Who (Quién)**
+
+  *¿Quiénes son los afectados?*
+
+  Estudiantes universitarios, recién egresados y jóvenes en general (rango de 18 a 24 años), especialmente en zonas urbanas del país. También se ve afectada la economía regional y nacional, al perderse capital humano joven valioso.
+
+<br>
+
+  + **Why (Por qué)**
+
+  *¿Cuál es la causa del problema?*
+
+  Existen varias causas, entre ellas falta de experiencia laboral, déficit de oportunidades de capacitación, escasa oferta alineada al mercado y alta informalidad laboral. Según Ayuda en Acción, hay una cifra récord de 130,000 jóvenes sin trabajo, con una tasa de desempleo del 14.4 % en Lima, y un promedio de espera de 3.2 semanas para encontrar empleo, el más alto en cinco años.
+
+<br>
+
+  + **How (Cómo)**
+
+  *¿Cómo se utilizará el producto?*
+
+  UniMatch será una aplicación móvil que conectará estudiantes universitarios y recién egresados con empresas mediante proyectos reales de corta duración. La plataforma gestionará postulaciones, portafolios, evaluaciones y calificaciones para fortalecer la empleabilidad joven.
+
+<br>
+
+  + **How Much (Cuánto)**
+
+  *¿Cuánto costará implementar la solución?*
+
+  En el Perú, la pérdida de empleos juveniles sigue siendo una preocupación, ya que en regiones como Ica se reportaron 11,220 empleos menos en 2024, lo que refleja el alto costo económico y social del desempleo juvenil (ComexPerú, 2024). Frente a esta problemática, implementar una plataforma como UniMatch representa una inversión estratégica y de impacto social, al ofrecer una solución digital que conecta estudiantes con empresas para impulsar la empleabilidad. A continuación, se presenta un presupuesto estimado:
+
+  + **Desarrollo de Software:**
+
+    - Diseño y desarrollo web: S/ 1,250 – S/ 2,250
+    - Backend y API RESTful: S/ 800 – S/ 1,000
+    - Dominio y hosting (anual): S/ 450 – S/ 750
+    
+  + **Marketing y Lanzamiento:**
+
+     - Campañas de marketing digital: S/ 500 – S/ 1,000
+
+  + **Mantenimiento y Soporte:**
+
+    - Soporte y actualizaciones (anual): S/ 1,000 – S/ 2,000
+    
+  + **Total Estimado: S/ 4,000 – S/ 7,000**
+
+<br>
+
+#### 1.2.2 Lean UX Process
+
+##### 1.2.2.1 Lean UX Problem Statements
+
+<br>
+
+El propósito de UniMatch es ofrecer a los estudiantes universitarios y recién egresados una solución digital que les permita conectar con empresas mediante proyectos reales de corta duración, prácticas preprofesionales y vacantes, gestionando portafolios, postulaciones, evaluaciones y calificaciones que impulsen su empleabilidad. Esta solución está dirigida a jóvenes en etapa de transición académica hacia el mercado laboral, quienes desean ganar experiencia práctica, pero muchas veces carecen de oportunidades o de los medios adecuados para demostrar sus capacidades.
+
+El problema se presenta en el momento en que los estudiantes intentan acceder a un empleo formal o práctica profesional, pero no cuentan con experiencia previa validada, ni con un portafolio que respalde sus competencias. Esta falta de visibilidad genera que las empresas opten por candidatos con mayor trayectoria, dejando en desventaja a los jóvenes talentos. Actualmente, gran parte de los estudiantes depende de redes informales, convocatorias limitadas en universidades o plataformas laborales no especializadas en perfiles sin experiencia, lo que dificulta aún más su inserción laboral.
+
+Hemos identificado que esta brecha de acceso genera frustración, desmotivación y prolonga los tiempos de espera para que los jóvenes consigan su primer empleo, afectando su desarrollo profesional y económico. Esta problemática se intensifica en contextos como el peruano, donde el desempleo juvenil, según Infobae, alcanzó el 14.3 % en 2024 y 7 de cada 10 jóvenes trabajan en empleos no relacionados con su carrera(2024).
+
+A todo esto nos surge la pregunta: ¿Cómo podríamos brindar a los estudiantes una solución confiable y accesible que les permita ganar experiencia práctica, construir un portafolio validado y conectar con empresas interesadas en talento joven?
+
+<br>
+
++ **Domain:** Empleabilidad juvenil y plataformas digitales de conexión entre estudiantes y empresas.
+
++ **Customer Segments:** Estudiantes universitarios, recién egresados, universidades y empresas en búsqueda de talento joven.
+
++ **Pain Points:** Falta de experiencia validada, baja visibilidad ante las empresas, exceso de informalidad laboral, y desmotivación frente a procesos tradicionales de inserción laboral.
+
++ **Gap:** No existen en Perú plataformas especializadas en conectar talento joven sin experiencia con empresas mediante proyectos cortos y prácticas que validen competencias.
+
++ **Vision/Strategy:** Crear una plataforma digital accesible y confiable que gestione proyectos, postulaciones, portafolios y evaluaciones, para impulsar la empleabilidad juvenil y reducir la brecha entre formación académica y mercado laboral.
+
++ **Initial Segment:** Estudiantes universitarios de últimos ciclos y recién egresados en Perú que buscan construir experiencia y visibilidad ante empresas locales.
+
+<br>
+
+##### 1.2.2.2 Lean UX Assumptions 
+
+<br>
+
+**Business Assumptions:**
+
+<br>
+
+1. **Creo nuestros usuarios tienen la necesidad** de acceder a oportunidades laborales y proyectos prácticos que les permitan ganar experiencia y construir un portafolio profesional.
+
+2. **Estas necesidades se pueden satisfacer** con una aplicación móvil que conecte a estudiantes y recién egresados con empresas mediante proyectos cortos, prácticas y vacantes validadas.
+
+3. **Nuestros clientes iniciales serán** estudiantes universitarios de últimos ciclos y recién egresados en Perú, junto con empresas pequeñas y medianas que buscan talento joven.
+
+4. **El valor más importante que un cliente quiere de nuestros servicios es** visibilidad y experiencia validada para mejorar sus oportunidades de empleabilidad.
+
+5. **El cliente también va a obtener** beneficios adicionales como la creación de portafolio digital, certificaciones de participación, retroalimentación de empresas y networking profesional.
+
+6. **Vamos a obtener la mayoría de los clientes mediante** alianzas con universidades, marketing digital en redes sociales y recomendaciones de boca a boca entre estudiantes.
+
+7. **Vamos a obtener ingresos mediante** suscripciones de empresas para publicar proyectos y vacantes, además de un porcentaje no mayor al 15% del pago a los estudiantes, todo bajo términos y condiciones.
+
+8. **Nuestra competencia en el mercado serán** portales de empleo generalistas como Bumeran, Workana y LinkedIn, aunque no están especializados en jóvenes sin experiencia.
+
+9. **Vamos a tener ventaja frente a nuestra competencia debido a** nuestro enfoque especializado en estudiantes y recién egresados, con una propuesta práctica basada en proyectos cortos y validación de habilidades.
+
+10. **El mayor riesgo del servicio es** la falta de confianza de las empresas en apostar por estudiantes sin experiencia o la baja adopción inicial por parte de los usuarios.
+
+11. **Lo resolveremos realizando** la construcción de casos de éxito, alianzas con universidades, programas piloto con empresas y validaciones tempranas de estudiantes destacados.
+
+12. **Otro riesgo que debemos considerar** y que, si resultan falsas, harían fracasar el proyecto son: que los estudiantes realmente desean una plataforma para mostrar su talento, que las empresas estarán dispuestas a invertir en jóvenes sin experiencia y que las universidades apoyarán la integración de la solución.
+
+<br>
+
+**User Assumptions:**
+
+<br>
+
+1. **¿Quién es el usuario?**
+
+Nuestro usuario principal son estudiantes universitarios de últimos ciclos y recién egresados en Perú que buscan oportunidades para ganar experiencia laboral, construir un portafolio y aumentar su visibilidad frente a empresas. También se incluyen empresas que necesitan validar talento joven de manera ágil y económica.
+
+2. **¿Dónde encaja nuestro producto en su vida?**
+
+Encaja en la etapa de transición entre la vida académica y el mercado laboral, donde los jóvenes necesitan adquirir experiencia práctica y demostrar sus competencias, mientras las empresas requieren talento fresco para proyectos de corta duración.
+
+3. **¿Qué problemas resuelve nuestro producto?**
+
+Resuelve la falta de oportunidades de prácticas y empleos relacionados con la carrera, la ausencia de experiencia validada, la dificultad para conectar con empresas interesadas en jóvenes sin experiencia y la falta de portafolios profesionales.
+
+4. **¿Cuándo y cómo se usa nuestro producto?**
+
+Se utiliza cuando los estudiantes buscan prácticas, proyectos académicos aplicados o su primer empleo formal. El uso será principalmente a través de una plataforma web (y en futuro, app móvil) donde los usuarios se registran, postulan a proyectos, reciben retroalimentación, gestionan entregables y construyen su portafolio.
+
+5. **¿Qué características son importantes?**
+
+  + Registro de perfiles completos (estudiantes y empresas).
+  + Gestión de proyectos, postulaciones y estados.
+  + Portafolio digital validado con entregables.
+  + Certificaciones automáticas al finalizar proyectos.
+  + Sistema de retroalimentación y calificación.
+  + Interfaz sencilla, confiable y accesible.
+
+6. **¿Cómo debería lucir y comportarse el producto?**
+
+El producto debe lucir moderno, simple y amigable, con un diseño centrado en el usuario y adaptado a dispositivos móviles. Debe comportarse de forma intuitiva, rápida y segura, priorizando la facilidad de navegación, la transparencia en los procesos de postulación y la confiabilidad de la información entre estudiantes y empresas.
+
+<br>
+
+**Feature Assumptions:**
+
+<br>
+
++ Creemos que los estudiantes necesitan crear un perfil profesional digital donde puedan mostrar sus datos, habilidades, especializaciones y logros.
+
++ Creemos que los usuarios valorarán un portafolio validado con proyectos reales, porque les permitirá demostrar experiencia aunque no tengan un empleo previo.
+
++ Creemos que las empresas estarán dispuestas a publicar proyectos y vacantes en la plataforma porque podrán acceder a talento joven de forma rápida y a bajo costo.
+
++ Creemos que un sistema de retroalimentación y calificación motivará a los estudiantes a mejorar sus entregables y ayudará a las empresas a identificar perfiles destacados.
+
++ Creemos que un proceso de postulación simple e intuitivo aumentará la adopción de la plataforma y reducirá la frustración de los usuarios.
+
++ Creemos que un diseño moderno, accesible y responsive (adaptado a móviles) es fundamental para que los estudiantes usen la plataforma con frecuencia.
+
+<br>
+
+##### 1.2.2.3 Lean UX Hypothesis Statements
+
+<br>
+
+1. Hypothesis Statement 01
+
+  **Creemos que** los estudiantes universitarios y recién egresados utilizarán la plataforma UniMatch como su principal medio para acceder a oportunidades prácticas y de desarrollo profesional temprano.
+
+  **Sabremos** que hemos tenido éxito.
+  
+  **Cuando** al menos un 65 % de los usuarios registrados participen en un proceso de postulación durante el primer mes de uso.
+
+<br>
+
+2. Hypothesis Statement 02
+
+  **Creemos que** UniMatch facilitará a las pequeñas y medianas empresas identificar talento joven de forma ágil y económica, reduciendo sus tiempos de búsqueda de candidatos.
+
+  **Sabremos** que hemos tenido éxito.
+  
+  **Cuando** al menos un 50 % de las empresas registradas logren contratar o colaborar con un estudiante en los primeros tres meses.
+
+<br>
+
+3. Hypothesis Statement 03
+
+  **Creemos que** los estudiantes valorarán la posibilidad de obtener certificaciones digitales y retroalimentación de las empresas, lo que incrementará su motivación para usar UniMatch de forma continua.
+
+  **Sabremos** que hemos tenido éxito.
+  
+  **Cuando** al menos un 50 % de los usuarios activos completen más de un proyecto en un periodo de tres meses y descarguen o compartan sus certificaciones.
+
+<br>
+
+##### 1.2.2.4 Lean UX Canvas
