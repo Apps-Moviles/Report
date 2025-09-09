@@ -462,3 +462,45 @@ El producto debe lucir moderno, simple y amigable, con un diseño centrado en el
 <br>
 
 ##### 1.2.2.4 Lean UX Canvas
+
+
+
+### 1.3 Segmentos objetivos
+
+**Estudiantes universitarios y recién egresados**
+---
+<br>
+
++ **Descripción:**
+<br>
+Jóvenes en etapa de transición entre la vida académica y el mercado laboral, que buscan oportunidades prácticas, validación de habilidades y construcción de un portafolio profesional que les permita mejorar su empleabilidad.
+<br><br>
+
++ **Características demográficas y comportamiento:**
+<br>
+Edad entre 18 y 25 años, estudiantes de últimos ciclos y recién egresados de universidades e institutos del Perú. Se caracterizan por un alto nivel de uso de plataformas digitales y redes sociales, además de interés en proyectos que les permitan ganar experiencia práctica. Suelen tener poca o nula experiencia laboral formal y enfrentan dificultades para insertarse en empleos relacionados con su carrera.
+<br><br>
+
++ **Sustento estadístico:**
+<br>
+Según Infobae (2024), 7 de cada 10 jóvenes peruanos trabajan en empleos no relacionados con su carrera, lo que evidencia una fuerte desconexión entre educación y empleo. Además, la tasa de desempleo juvenil en Perú alcanzó el 14.3 % en 2024, la más alta en los últimos tres años (IPE, 2024).
+<br><br>
+
+
+**Pequeñas y medianas empresas en búsqueda de talento joven**
+---
+
++ **Descripción:**
+<br>
+Empresas que requieren talento joven para proyectos de corta duración, innovación y soporte operativo, pero que enfrentan limitaciones en presupuesto y tiempo para procesos de reclutamiento.
+<br><br>
+
++ **Características demográficas y comportamiento:**
+<br>
+Incluye pymes y startups con equipos de entre 10 y 200 trabajadores, pertenecientes a sectores como servicios, comercio y manufactura ligera. Estas empresas buscan soluciones ágiles y económicas para identificar talento, valorando la flexibilidad y la validación de competencias en proyectos específicos.
+<br><br>
+
++ **Sustento estadístico:**
+<br>
+Las pymes representan más del 99.5 % de las empresas en el Perú y generan alrededor del 60 % del empleo formal (Produce, 2024). Sin embargo, en 2024 reportaron dificultades para cubrir vacantes técnicas y profesionales por la falta de experiencia práctica en los postulantes (Produce, 2024).
+<br><br>
