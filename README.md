@@ -504,3 +504,343 @@ Incluye pymes y startups con equipos de entre 10 y 200 trabajadores, pertenecien
 <br>
 Las pymes representan más del 99.5 % de las empresas en el Perú y generan alrededor del 60 % del empleo formal (Produce, 2024). Sin embargo, en 2024 reportaron dificultades para cubrir vacantes técnicas y profesionales por la falta de experiencia práctica en los postulantes (Produce, 2024).
 <br><br>
+
+## Capítulo II: Requirements Elicitation & Analysis
+
+### 2.1. Competidores
+
+#### 2.1.1. Análisis competitivo
+
+<table border ="1" >
+  <thead>
+    <tr>
+      <th colspan="6">Competitive Analysis Landscape</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">¿Por qué llevar acabo este análisis?</td>
+      <td colspan="5">Quienes son nuestros principales competidores?</td>
+    </tr>
+    <tr>
+      <td colspan="5">  Mediante el análisis de la competencia en el mercado, se puede comprender el entorno competitivo en el que se lanzará nuestro producto. Esto brinda una perspectiva clara sobre cómo otros competidores han incorporado funcionalidades y de qué manera atienden las necesidades de sus usuarios.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PERFIL</td>
+      <td rowspan="2">Overview</td>
+      <td> 
+        UniTalent Connect
+        <img src= >
+      </td>
+      <td>
+        Workana
+        <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFHGNFS-kYMHsp_63wnY6dkeXyhe4woi_hOg&s>
+      </td>
+      <td>
+        Freelancer.com
+        <img src="https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2017/08/freelancer-logo-alt.webp" alt="logo">
+      </td>
+      <td>
+        LinkedIn 
+        <img src= https://cdn-icons-png.flaticon.com/256/174/174857.png>
+      </td>
+    </tr>
+    <tr>
+      <td>Plataforma web que conecta a estudiantes universitarios de ciclos avanzados con personas o pequeñas empresas que necesitan servicios puntuales (como diseño redacción, programación, etc.). Promueve el trabajo freelance como una vía para adquirir experiencia real, flexible y útil para su desarrollo profesional.</td>
+      <td>Plataforma líder en Latinoamérica para contratar freelancers en áreas como programación, diseño, traducción y marketing.</td>
+      <td>Plataforma global que conecta freelancers con proyectos en diversas categorías: desarrollo, escritura, arte, etc. </td>
+      <td> Red social profesional que conecta empleadores con talento, usada también para promocionar servicios y encontrar oportunidades de empleo.</td>
+    </tr>
+    <tr>
+      <td>Ventaja competitiva
+      ¿Que valor ofrece a los clientes?</td>
+      <td>Se enfoca exclusivamente en estudiantes, lo que permite personalizar la experiencia: horarios flexibles, oportunidades acordes a su formación académica, sin requerir experiencia previa.</td>
+      <td>Amplia base de usuarios, reputación consolidada, y herramientas avanzadas para gestión de proyectos.</td>
+      <td>Cobertura internacional, variedad de categorías, concursos públicos para contratación.</td>
+      <td>Reputación global, red de contactos, integración con empresas.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PERFIL DEL MARKETING</td>
+      <td>Mercado Objetivo</td>
+      <td>Estudiantes universitarios, tambien personas naturales y pequeños emprendedores que buscan servicios digitales puntuales</td>
+      <td>Profesionales freelancers de habla hispana y empresas medianas que buscan reducir costos.</td>
+      <td>Freelancers de todos los niveles y empresas de todos los tamaños.</td>
+      <td>Profesionales yestudiantes en búsqueda de empleo, tambien empresas de todos los tamaños</td>
+    </tr>
+    <tr>
+      <td>Estrategias de Marketing</td>
+      <td>
+        + Alianzas con universidades.
+        + Programas de referidos para estudiantes
+        + Marketing de contenido en TikTok e Instagram (tips laborales, historias de éxito)
+      </td>
+      <td>Google Ads, blog con contenido educativo y certificaciones de habilidades</td>
+      <td>Alianzas corporativas y certifaciones.</td>
+      <td>Integracion con universidades y contenido compartido por usuarios, ademas de usar anuncios por internet exclusivos</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PERFIL DEL PRODUCTO</td>
+      <td>Productos & Servicios</td>
+      <td>
+        - Listado de perfiles de estudiantes por habilidad<br>
+        - Postulación a proyectos freelance.
+      </td>
+      <td> 
+        + Publicación y postulación de proyectos.<br>
+        - Contratos, seguimiento y pagos seguros.
+      </td>
+      <td>
+        + Publicación de proyectos, concursos, gestión y pago.
+      </td>
+      <td>
+        - Perfil profesional, buscador de empleo, recomendaciones, networking.
+      </td>
+    </tr>
+    <tr>
+      <td>Precios & Costos</td>
+      <td>Ofrecemos los planes Basico ($2.99/mes), Premium ($5.99/mes) y PRO ($9.99/mes) para los empresarios y estudiantes.</td>
+      <td>Comisión de 15–20% para freelancers y Clientes publican gratis.</td>
+      <td>Opciones premium para destacar perfiles y comisión del 10–20%.</td>
+      <td>Gratuito con funciones premium, ademas de suscripciones para empresas y usuarios.</td>
+    </tr>
+    <tr>
+      <td>Canales de distribución (web/móvil)</td>
+      <td>Móvil y Web</td>
+      <td>Móvil y Web</td>
+      <td>Móvil y Web</td>
+      <td>Móvil y Web</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ANÁLISIS SWOT</td>
+      <td>Fortalezas</td>
+      <td>
+        - Público segmentado y claro.<br>
+        - Precios bajos y acceso rápido a talento.<br>
+        - Beneficio educativo: experiencia laboral para el CV.
+      </td>
+      <td> 
+        - Gran comunidad.<br>
+        - Confianza por trayectoria.
+      </td>
+      <td>
+        - Alcance global.<br>
+        - Multilingüe y multisectorial.
+      </td>
+      <td>
+        - Amplia base de usuarios profesionales.<br>
+        - Confianza en el entorno profesional.
+      </td>
+    </tr>
+    <tr>
+      <td>Debilidades</td>
+      <td>
+        - Puede haber estudiantes poco responsables.<br>
+        - Difícil asegurar calidad de entregables al inicio.
+      </td>
+      <td>
+        + Alta competencia interna<br>
+        - Dificultad para principiantes.
+      </td>
+      <td>
+        + Menor enfoque en estudiantes.<br>
+        + Costos ocultos y alta comisión.
+      </td>
+      <td>
+        - No está centrado en freelancers.<br>
+        - No permite gestión de proyectos.
+      </td>
+    </tr>
+    <tr>
+      <td>Oportunidades</td>
+      <td>
+        + Aumento de freelancing post-pandemia.<br>
+        - Universidades apoyan prácticas no tradicionales.
+      </td>
+      <td>
+        + Expansión a nichos educativos o junior.<br>
+        - Expansión a plataformas web
+      </td>
+      <td>
+        + Subdividir en micromercados (como estudiantes).
+      </td>
+      <td>
+        + Crecimiento de features para estudiantes y freelancers.
+      </td>
+    </tr>
+    <tr>
+      <td>Amenazas</td>
+      <td>
+        - Plataformas grandes que podrían crear secciones para estudiantes<br>
+        - Dificultad para escalar sin inversión.
+      </td>
+      <td>
+        + Saturación del mercado freelance.<br>
+        - Nuevas plataformas especializadas.
+      </td>
+      <td>
+        + Usuarios migran a plataformas especializadas.
+      </td>
+      <td>
+        - Otras redes con mejor UX.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 2.1.2. Estrategias y tácticas frente a competidores
+
+De acuerdo al análisis competitivo realizado previamente, se identificaron las principales fortalezas, oportunidades, debilidades y amenazas de los principales competidores (Workana, Freelancer.com y LinkedIn). A continuación, se presentan estrategias y acciones que se implementarán para posicionar nuestra plataforma en el mercado y diferenciarla efectivamente.
+
+**Afrontando las fortalezas de nuestros competidores:**
+
+- Workana y Freelancer tienen una comunidad amplia y consolidada.
+
+- LinkedIn tiene una reputación fuerte y respaldo de empresas grandes.
+
+- Sistemas avanzados de evaluación, reputación y pago seguro.
+
+**Comprendemos que nuestras fortalezas son:**
+
+- Enfoque específico en estudiantes universitarios.
+
+- Flexibilidad horaria, ideal para quienes estudian y trabajan.
+
+- Sistema de verificación académica para validar habilidades.
+
+**Entonces, podemos aplicar las siguientes estrategias y tácticas:**
+
+**Estrategias:**
+
+- Especializarnos como plataforma nicho para universitarios con talentos emergentes.
+
+- Generar confianza en los contratistas validando las credenciales académicas.
+
+**Tácticas:**
+- Crear convenios con universidades para validar perfiles de estudiantes.
+
+- Implementar un sistema de recomendaciones entre pares o docentes.
+
+- Destacar la categoría "Proyectos Académicos o de Innovación" como ventaja frente a plataformas más generales
+
+**Afrontando las debilidades de nuestros competidores:**
+
+- Workana y Freelancer no se enfocan en perfiles sin experiencia.
+
+- LinkedIn está más orientado a empleo formal o networking profesional, no tanto a proyectos puntuales.
+
+- Muchas plataformas cobran altas comisiones a los freelancers.
+
+**Comprendemos que nuestras debilidades son:**
+
+- Menor número inicial de usuarios y proyectos disponibles.
+
+- Ausencia de marca reconocida en el mercado.
+
+- Requiere alcanzar masa crítica para lograr tracción.
+
+**Entonces, podemos aplicar las siguientes estrategias y tácticas:**
+
+**Estrategias:**
+- Facilitar el primer contacto entre estudiantes y contratistas con beneficios de entrada.
+
+- Incentivar la participación activa a través de una comunidad educativa.
+
+**Tácticas:**
+- Ofrecer los primeros tres proyectos sin comisión para estudiantes nuevos.
+
+- Crear un programa de embajadores en universidades para atraer talentos y proyectos.
+
+- Realizar campañas en redes sociales donde se muestren “casos de éxito” de estudiantes.
+
+**Afrontando las oportunidades de nuestros competidores:**
+- Aumento del trabajo remoto y freelance.
+
+- Más personas buscando talento accesible y flexible.
+
+- Interés creciente en el desarrollo profesional desde la etapa universitaria.
+
+**Comprendemos que nuestras oportunidades son:**
+
+- Convertirnos en el puente entre el conocimiento académico y la experiencia práctica.
+
+- Aprovechar la necesidad de empresas de reducir costos sin sacrificar calidad.
+
+- Crear una comunidad educativa y de networking para universitarios.
+
+**Entonces, podemos aplicar las siguientes estrategias y tácticas:**
+
+**Estrategias:**
+- Posicionarnos como una solución “ganar-ganar” entre jóvenes con talento y pequeños negocios.
+
+- Apostar por contenido educativo, guías y formación paralela a los proyectos.
+
+**Tácticas:**
+- Ofrecer webinars, cursos gratuitos y microcredenciales por participación en proyectos.
+
+- Implementar un “ranking de habilidades” que aumente el valor de perfil del estudiante.
+
+### 2.2. Entrevistas
+
+#### 2.2.1. Diseño de entrevistas  <br><br>
+
+*Preguntas dirigidas al segmento 1*
+---
+**Preguntas Directas:**
+
+1. ¿Podrías proporcionarnos tu nombre completo y tu edad?
+
+2. ¿Estás buscando actualmente trabajo o alguna forma de ganar dinero mientras estudias? ¿Por qué?
+
+3. ¿Has tenido algún tipo de experiencia laboral o por encargo relacionada con tu carrera? ¿Cómo fue?
+
+4. ¿Qué dificultades has tenido para conseguir experiencia profesional o prácticas en lo que estudias?
+
+5. ¿Qué requisitos suelen pedir en las ofertas laborales que has visto y que te han desanimado a postular?
+
+6. ¿Has sentido que no puedes acceder a oportunidades solo por no tener experiencia laboral previa?
+
+7. ¿Qué tipo de tareas o trabajos relacionados a tu carrera estarías dispuesto(a) a hacer si pudieras ganar algo de dinero y sumar experiencia?
+
+8. ¿Qué habilidades o conocimientos tuyos crees que podrías ofrecer hoy a una empresa o emprendedor?
+
+9. ¿Qué herramientas, plataformas o redes usas hoy para buscar oportunidades laborales o académicas?
+
+10. Si existiera una plataforma donde puedas ofrecer tus habilidades a personas o empresas que necesiten ayuda con tareas específicas, ¿la usarías? ¿Por qué sí o por qué no?<br><br>
+
+**Preguntas Complementarias:**
+
+11. ¿Qué te gustaría aprender o fortalecer participando en proyectos reales mientras estudias?
+
+12. ¿Qué tan importante es para ti tener validación o reconocimiento de tu trabajo por parte de quienes te contratan? <br><br>
+
+
+
+*Preguntas dirigidas al segmento 2*
+---
+**Preguntas Directas:**
+
+1. ¿Podrías proporcionarnos tu nombre completo y tu edad?
+
+2. Cuéntame un poco sobre tu negocio/ empresa. ¿Qué tipo de actividades realizan y qué servicios u operaciones manejan internamente?
+
+3. ¿Cómo manejas actualmente las tareas operativas como diseño, comunicación con clientes, redes sociales, desarrollo de contenido, o tareas técnicas?
+
+4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar un sitio web,¿Suele contratar apoyo externo para realizar estas tareas?
+
+5. ¿Con qué frecuencia te encuentras dejando de lado tareas como diseño, contenido o redes sociales por no contar con alguien disponible que pueda ayudarte en el momento que lo necesitas?
+
+6. ¿Has tenido dificultades para encontrar personas confiables o con las habilidades adecuadas para tareas específicas? ¿Puedes contarme un caso?
+
+7. ¿Qué factores dificultan más la contratación de apoyo externo en tu experiencia (tiempo, costo, confianza, calidad, disponibilidad, etc.)?
+
+8. ¿Qué características valora más al momento de elegir a alguien para colaborar en un proyecto?
+
+9. Desde tu experiencia, ¿por qué crees que muchas empresas en Perú valoran tanto la experiencia laboral cuando buscan contratar?
+
+10. Si existiera una plataforma local donde pudieras acceder a talento joven, con habilidades específicas, portafolio visible y tarifas flexibles… ¿crees que sería útil para ti o para tu negocio? ¿Por qué sí o por qué no?<br><br>
+
+**Preguntas Complementarias:**
+
+11. ¿Has trabajado antes con estudiantes o personas jóvenes en prácticas, pasantías o tareas específicas? ¿Cómo fue esa experiencia?
+
+12. ¿Estarías dispuesto a probar una nueva forma de contratar apoyo por proyecto si se te asegura facilidad, confianza y resultados concretos? <br><br>
