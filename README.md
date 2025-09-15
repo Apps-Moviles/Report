@@ -474,18 +474,11 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">¿Por qué llevar acabo este análisis?</td>
-      <td colspan="5">Quienes son nuestros principales competidores?</td>
-    </tr>
-    <tr>
-      <td colspan="5">  Mediante el análisis de la competencia en el mercado, se puede comprender el entorno competitivo en el que se lanzará nuestro producto. Esto brinda una perspectiva clara sobre cómo otros competidores han incorporado funcionalidades y de qué manera atienden las necesidades de sus usuarios.</td>
-    </tr>
-    <tr>
       <td rowspan="3">PERFIL</td>
       <td rowspan="2">Overview</td>
       <td> 
-        UniTalent Connect
-        <img src= >
+        UniMatch
+        <img src="assets/logo/logo.png" width=800px>
       </td>
       <td>
         Workana
@@ -501,7 +494,7 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
       </td>
     </tr>
     <tr>
-      <td>Plataforma web que conecta a estudiantes universitarios de ciclos avanzados con personas o pequeñas empresas que necesitan servicios puntuales (como diseño redacción, programación, etc.). Promueve el trabajo freelance como una vía para adquirir experiencia real, flexible y útil para su desarrollo profesional.</td>
+      <td>Plataforma móvil que conecta a estudiantes universitarios de ciclos avanzados con personas o pequeñas empresas que necesitan servicios puntuales (como diseño redacción, programación, etc.). Promueve el trabajo freelance como una vía para adquirir experiencia real, flexible y útil para su desarrollo profesional.</td>
       <td>Plataforma líder en Latinoamérica para contratar freelancers en áreas como programación, diseño, traducción y marketing.</td>
       <td>Plataforma global que conecta freelancers con proyectos en diversas categorías: desarrollo, escritura, arte, etc. </td>
       <td> Red social profesional que conecta empleadores con talento, usada también para promocionar servicios y encontrar oportunidades de empleo.</td>
@@ -517,10 +510,10 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
     <tr>
       <td rowspan="2">PERFIL DEL MARKETING</td>
       <td>Mercado Objetivo</td>
-      <td>Estudiantes universitarios, tambien personas naturales y pequeños emprendedores que buscan servicios digitales puntuales</td>
+      <td>Estudiantes universitarios, también personas naturales y pequeños emprendedores que buscan servicios digitales puntuales</td>
       <td>Profesionales freelancers de habla hispana y empresas medianas que buscan reducir costos.</td>
       <td>Freelancers de todos los niveles y empresas de todos los tamaños.</td>
-      <td>Profesionales yestudiantes en búsqueda de empleo, tambien empresas de todos los tamaños</td>
+      <td>Profesionales y estudiantes en búsqueda de empleo, también empresas de todos los tamaños</td>
     </tr>
     <tr>
       <td>Estrategias de Marketing</td>
@@ -530,8 +523,8 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
         + Marketing de contenido en TikTok e Instagram (tips laborales, historias de éxito)
       </td>
       <td>Google Ads, blog con contenido educativo y certificaciones de habilidades</td>
-      <td>Alianzas corporativas y certifaciones.</td>
-      <td>Integracion con universidades y contenido compartido por usuarios, ademas de usar anuncios por internet exclusivos</td>
+      <td>Alianzas corporativas y certificaciones.</td>
+      <td>Integración con universidades y contenido compartido por usuarios, ademas de usar anuncios por internet exclusivos</td>
     </tr>
     <tr>
       <td rowspan="3">PERFIL DEL PRODUCTO</td>
@@ -644,7 +637,7 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
 
 #### 2.1.2. Estrategias y tácticas frente a competidores
 
-De acuerdo al análisis competitivo realizado previamente, se identificaron las principales fortalezas, oportunidades, debilidades y amenazas de los principales competidores (Workana, Freelancer.com y LinkedIn). A continuación, se presentan estrategias y acciones que se implementarán para posicionar nuestra plataforma en el mercado y diferenciarla efectivamente.
+Para destacar sobre nuestros competidores, identificaremos las ventajas de nuestros competidores y como nuestra propuesta se diferencia y aporta valor único a nuestros usuarios.
 
 **Afrontando las fortalezas de nuestros competidores:**
 
@@ -780,7 +773,7 @@ De acuerdo al análisis competitivo realizado previamente, se identificaron las 
 
 3. ¿Cómo manejas actualmente las tareas operativas como diseño, comunicación con clientes, redes sociales, desarrollo de contenido, o tareas técnicas?
 
-4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar un sitio web,¿Suele contratar apoyo externo para realizar estas tareas?
+4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar un sitio web, ¿Suele contratar apoyo externo para realizar estas tareas?
 
 5. ¿Con qué frecuencia te encuentras dejando de lado tareas como diseño, contenido o redes sociales por no contar con alguien disponible que pueda ayudarte en el momento que lo necesitas?
 
@@ -815,3 +808,167 @@ Para el segmento de estudiante universitario y basados en las entrevistas realiz
 Para el segmento de empresario escogimos a un ingeniero de sistemas que busca talento joven que trabajen bajo contrato.
 
 <img src="assets/user-personas/UP2.png" width=800px>
+
+#### 2.3.2. User Task Matrix
+En este segmento se detallan las tareas que los usuarios (estudiantes y empresarios) deben realizar en la plataforma UniMatch, junto con la frecuencia y prioridad de cada tarea.
+
+<table border ="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Estudiante</th>
+      <th colspan="2">Gerente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TASK</td>
+      <td>FREQUENCY (Estudiante)</td>
+      <td>IMPORTANCE (Estudiante)</td>
+      <td>FREQUENCY (Gerente)</td>
+      <td>IMPORTANCE (Geremte)</td>
+    </tr>
+    <tr>
+      <td>Buscar proyectos disponibles</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Postular a ofertas</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Editar o actualizar su perfil profesional</td>
+      <td>Rarely</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Consultar el estado de sus postulaciones</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Asistir a entrevistas</td>
+      <td>Rarely</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Asistir al daily scrum</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>
+      Registrar requerimientos de proyecto</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Publicar convocatorias de proyecto</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Chatear con miembros del equipo</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Ver postulaciones recibidas</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Validar postulantes</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Rarely</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Aprobar entregables</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Often</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Planificación del sprint</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Often</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+
+Teniendo en cuenta el análisis de los User Personas, podemos resumir sus actividades y enfoques de la siguiente manera:
+
+**Puntos en común**:
+- Tanto los gerentes como los estudiantes, al formar parte de un equipo, participan en reuniones SCRUM, como el sprint planning y el daily scrum. Estas reuniones son de gran importancia para ambos roles.
+
+**Diferencias clave**:
+- Los estudiantes invierten una parte de su tiempo en actualizar sus perfiles y buscar oportunidades laborales.
+- Los gerentes, por otro lado, dedican su tiempo a otras responsabilidades, dado que ya tienen experiencia y un empleo estable.
+- Además, los gerentes se encargan de actividades de gestión y management, como la creación de proyectos o la aprobación de entregables. 
+- Estas responsabilidades de gestión no son parte del rol de los estudiantes.
+
+#### 2.3.3. User Journey Mapping  
+A continuación se presentan los journey maps para los dos segmentos de usuarios: estudiantes y gerentes.
+
+- #### User Journey Map Jair Quijada:
+Como podemos observar el proceso para Jair es frustrante, al no encontrar oportunidades y sentirse desmotivado al no poder crecer profesionalmente.
+
+<img src="assets/journey-maps/JP1.png" width=800px>
+
+- #### User Journey Map Alexander Dávila:
+
+En cuanto a Alexander encuentra frustración al no encontrar personal serio y comprometido con su empresa.
+
+<img src="assets/journey-maps/JP2.png" width=800px>
+
+#### 2.3.4. Empathy Mapping  
+
+El empathy map de Jair Quijada nos muestra que es un estudiante universitario que busca ganar experiencia laboral mientras estudia. Se siente frustrado por la falta de oportunidades y la dificultad para encontrar trabajos relacionados con su carrera.
+
+<img src="assets/empathy-maps/EM1.png" width=800px>
+
+El empathy map de Alexander Dávila nos muestra que es un gerente de una pequeña empresa que busca talento joven para proyectos específicos. Se siente frustrado por la falta de confianza en los candidatos y la dificultad para encontrar personas comprometidas.
+
+<img src="assets/empathy-maps/EM2.png" width=800px>
+
+#### 2.3.5. Ubiquitous Language
+A continuación se presenta el Ubiquitous Language, que define los términos clave y su significado dentro del contexto del proyecto.
+
+-**Estudiante:** Usuario que está cursando estudios universitarios y busca oportunidades para ganar experiencia laboral.
+
+-**Gerente:** Usuario que administra una empresa y busca talento joven para proyectos específicos.
+
+-**Proyecto:** Tarea o conjunto de tareas que un estudiante puede realizar para una empresa a cambio de una compensación.
+
+-**Postulación:** Acción de un estudiante para ofrecer sus servicios en un proyecto publicado por una empresa.
+
+-**Portafolio:** Conjunto de trabajos y proyectos realizados por un estudiante que demuestran sus habilidades y experiencia.
+
+-**Reclutamiento:** Proceso mediante el cual una empresa busca y selecciona candidatos para cubrir una vacante o proyecto.
