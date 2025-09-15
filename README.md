@@ -418,6 +418,13 @@ El producto debe lucir moderno, simple y amigable, con un diseño centrado en el
 
 ##### 1.2.2.4 Lean UX Canvas
 
+<br>
+
+<p align="center">
+  <img src="assets/CanvaUX/Lean Ux Canvas - UniMatch.png" alt="UPC logo" width="1000">
+</p>
+
+<br>
 
 
 ### 1.3 Segmentos objetivos
