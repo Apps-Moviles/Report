@@ -15,6 +15,8 @@
   <ul style="list-style: none; padding: 0;">
       <li><h3>Josue Gonzalo Paiva Quispe</h3></li>
       <li><h3>Javier Sebastian Gonzales Alvarado</h3></li>
+      <li><h3>Alessandra Nicole Becerra Tejeda</h3></li>
+
   </ul>
   <br>
   <h4>Setiembre del 2025</h4>
@@ -814,5 +816,3 @@ Para el segmento de estudiante universitario y basados en las entrevistas realiz
 Para el segmento de empresario escogimos a un ingeniero de sistemas que busca talento joven que trabajen bajo contrato.
 
 <img src="assets/user-personas/UP2.png" width=800px>
-
-
