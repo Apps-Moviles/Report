@@ -855,6 +855,45 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Xavier Hager</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Santiago de Surco</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>03:38</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202119095_upc_edu_pe/EQw_Zs8vk-BCvN2nxe25EW0B0QQLSEFE6qBB-vQSVs_HFw?e=xA5KEz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de manera remota, no es un trabajo afín a su carrera y si bien le gustaría empezar a practicar para obtener experiencia, le cuesta mantenerse informado sobre las oportunidades existentes para su carrera, por lo que considera que seria una excelente idea una aplicacion movil que le permita estar enterados de trabajos relacionados con su carrera y que le permita ganar experiencia.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="assets/entrevistas/entrevistaXavier.png" width=400px>
+<br>
+    </td>
+  </tr>
+</table>
 
 *Entrevistas a Segmento 2*
 ---
