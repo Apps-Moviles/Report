@@ -58,68 +58,22 @@
         - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
         - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-
-- [Capítulo III: Requirements Specification](#cap3)
-    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2. User Stories](#32-user-stories)
-    - [3.3. Impact Mapping](#33-impact-mapping)
-    - [3.4. Product Backlog](#34-product-backlog)
-
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-        - [4.1.1. EventStorming](#411-eventstorming)
-            - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-            - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-        - [4.1.2. Context Mapping](#412-context-mapping)
-        - [4.1.3. Software Architecture](#413-software-architecture)
-            - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
-            - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
-            - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-    - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        - [4.2.1. Bounded Context: Analítica y Reportes](#421-bounded-context-analítica-y-reportes)
-            - [4.2.1.1. Domain Layer](#4211-domain-layer)
-            - [4.2.1.2. Interface Layer](#4212-interface-layer)
-            - [4.2.1.3. Application Layer](#4213-application-layer)
-            - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-            - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-        - [4.2.2. Bounded Context: Notificaciones](#422-bounded-context-notificaciones)
-             - [4.2.2.1. Domain Layer](#4221-domain-layer)
-             - [4.2.2.2. Interface Layer](#4222-interface-layer)
-             - [4.2.2.3. Application Layer](#4223-application-layer)
-             - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
-             - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
-             - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-         - [4.2.3. Bounded Context: Gestión de grupos](#423-bounded-context-gestión-de-grupos)
-             - [4.2.3.1. Domain Layer](#4231-domain-layer)
-             - [4.2.3.2. Interface Layer](#4232-interface-layer)
-             - [4.2.3.3. Application Layer](#4233-application-layer)
-             - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
-             - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
-                 - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-                 - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-         - [4.2.4. Bounded Context: Solicitudes y Validaciones](#424-bounded-context-solicitudes-y-validaciones)
-             - [4.2.4.1. Domain Layer](#4241-domain-layer)
-             - [4.2.4.2. Interface Layer](#4242-interface-layer)
-             - [4.2.4.3. Application Layer](#4243-application-layer)
-             - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-             - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
-                 - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-                 - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-             - [4.2.5.1. Domain Layer](#4251-domain-layer)
-             - [4.2.5.2. Interface Layer](#4252-interface-layer)
-             - [4.2.5.3. Application Layer](#4253-application-layer)
-             - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-             - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
-                 - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-                 - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+        - [2.3.5 Ubiquitous Language](#24-ubiquitous-language)
+    - [2.4. Requirements Specification](#24-requirements-specification)
+        - [2.4.1. User Stories](#241-user-stories)
+        - [2.4.2. Impact Mapping](#242-impact-mapping)
+        - [2.4.3. Product Backlog](#243-product-backlog)
+    - [2.5 Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+        - [2.5.1. EventStorming](#251-eventstorming)
+            - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
+            - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
+            - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
+        - [2.5.2. Context Mapping](#252-context-mapping)
+        - [2.5.3. Software Architecture](#253-software-architecture)
+            - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+            - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+            - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
+        - [2.6 Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
 
 
 ## Student Outcome
@@ -844,3 +798,21 @@ De acuerdo al análisis competitivo realizado previamente, se identificaron las 
 11. ¿Has trabajado antes con estudiantes o personas jóvenes en prácticas, pasantías o tareas específicas? ¿Cómo fue esa experiencia?
 
 12. ¿Estarías dispuesto a probar una nueva forma de contratar apoyo por proyecto si se te asegura facilidad, confianza y resultados concretos? <br><br>
+
+
+#### 2.2.2. Registro de entrevistas
+
+#### 2.2.3. Análisis de entrevistas
+
+### 2.3 Needfinding
+
+#### 2.3.1. User Personas
+Para el segmento de estudiante universitario y basados en las entrevistas realizadas escogimos a un joven que estudia Informatica y que busca ganar experiencia laboral mientras estudia.
+
+<img src="assets/user-personas/UP1.png" width=800px>
+
+Para el segmento de empresario escogimos a un ingeniero de sistemas que busca talento joven que trabajen bajo contrato.
+
+<img src="assets/user-personas/UP2.png" width=800px>
+
+
