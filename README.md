@@ -15,6 +15,8 @@
   <ul style="list-style: none; padding: 0;">
       <li><h3>Josue Gonzalo Paiva Quispe</h3></li>
       <li><h3>Javier Sebastian Gonzales Alvarado</h3></li>
+      <li><h3>Alessandra Nicole Becerra Tejeda</h3></li>
+
   </ul>
   <br>
   <h4>Setiembre del 2025</h4>
