@@ -60,68 +60,22 @@
         - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
         - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-
-- [Capítulo III: Requirements Specification](#cap3)
-    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2. User Stories](#32-user-stories)
-    - [3.3. Impact Mapping](#33-impact-mapping)
-    - [3.4. Product Backlog](#34-product-backlog)
-
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-        - [4.1.1. EventStorming](#411-eventstorming)
-            - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-            - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-        - [4.1.2. Context Mapping](#412-context-mapping)
-        - [4.1.3. Software Architecture](#413-software-architecture)
-            - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
-            - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
-            - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-    - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        - [4.2.1. Bounded Context: Analítica y Reportes](#421-bounded-context-analítica-y-reportes)
-            - [4.2.1.1. Domain Layer](#4211-domain-layer)
-            - [4.2.1.2. Interface Layer](#4212-interface-layer)
-            - [4.2.1.3. Application Layer](#4213-application-layer)
-            - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-            - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-        - [4.2.2. Bounded Context: Notificaciones](#422-bounded-context-notificaciones)
-             - [4.2.2.1. Domain Layer](#4221-domain-layer)
-             - [4.2.2.2. Interface Layer](#4222-interface-layer)
-             - [4.2.2.3. Application Layer](#4223-application-layer)
-             - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
-             - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
-             - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-         - [4.2.3. Bounded Context: Gestión de grupos](#423-bounded-context-gestión-de-grupos)
-             - [4.2.3.1. Domain Layer](#4231-domain-layer)
-             - [4.2.3.2. Interface Layer](#4232-interface-layer)
-             - [4.2.3.3. Application Layer](#4233-application-layer)
-             - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
-             - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
-                 - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-                 - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-         - [4.2.4. Bounded Context: Solicitudes y Validaciones](#424-bounded-context-solicitudes-y-validaciones)
-             - [4.2.4.1. Domain Layer](#4241-domain-layer)
-             - [4.2.4.2. Interface Layer](#4242-interface-layer)
-             - [4.2.4.3. Application Layer](#4243-application-layer)
-             - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-             - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
-                 - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-                 - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-             - [4.2.5.1. Domain Layer](#4251-domain-layer)
-             - [4.2.5.2. Interface Layer](#4252-interface-layer)
-             - [4.2.5.3. Application Layer](#4253-application-layer)
-             - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-             - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-             - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
-                 - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-                 - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+        - [2.3.5 Ubiquitous Language](#24-ubiquitous-language)
+    - [2.4. Requirements Specification](#24-requirements-specification)
+        - [2.4.1. User Stories](#241-user-stories)
+        - [2.4.2. Impact Mapping](#242-impact-mapping)
+        - [2.4.3. Product Backlog](#243-product-backlog)
+    - [2.5 Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+        - [2.5.1. EventStorming](#251-eventstorming)
+            - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
+            - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
+            - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
+        - [2.5.2. Context Mapping](#252-context-mapping)
+        - [2.5.3. Software Architecture](#253-software-architecture)
+            - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+            - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+            - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
+        - [2.6 Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
 
 
 ## Student Outcome
@@ -506,3 +460,359 @@ Incluye pymes y startups con equipos de entre 10 y 200 trabajadores, pertenecien
 <br>
 Las pymes representan más del 99.5 % de las empresas en el Perú y generan alrededor del 60 % del empleo formal (Produce, 2024). Sin embargo, en 2024 reportaron dificultades para cubrir vacantes técnicas y profesionales por la falta de experiencia práctica en los postulantes (Produce, 2024).
 <br><br>
+
+## Capítulo II: Requirements Elicitation & Analysis
+
+### 2.1. Competidores
+
+#### 2.1.1. Análisis competitivo
+
+<table border ="1" >
+  <thead>
+    <tr>
+      <th colspan="6">Competitive Analysis Landscape</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">¿Por qué llevar acabo este análisis?</td>
+      <td colspan="5">Quienes son nuestros principales competidores?</td>
+    </tr>
+    <tr>
+      <td colspan="5">  Mediante el análisis de la competencia en el mercado, se puede comprender el entorno competitivo en el que se lanzará nuestro producto. Esto brinda una perspectiva clara sobre cómo otros competidores han incorporado funcionalidades y de qué manera atienden las necesidades de sus usuarios.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PERFIL</td>
+      <td rowspan="2">Overview</td>
+      <td> 
+        UniTalent Connect
+        <img src= >
+      </td>
+      <td>
+        Workana
+        <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFHGNFS-kYMHsp_63wnY6dkeXyhe4woi_hOg&s>
+      </td>
+      <td>
+        Freelancer.com
+        <img src="https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2017/08/freelancer-logo-alt.webp" alt="logo">
+      </td>
+      <td>
+        LinkedIn 
+        <img src= https://cdn-icons-png.flaticon.com/256/174/174857.png>
+      </td>
+    </tr>
+    <tr>
+      <td>Plataforma web que conecta a estudiantes universitarios de ciclos avanzados con personas o pequeñas empresas que necesitan servicios puntuales (como diseño redacción, programación, etc.). Promueve el trabajo freelance como una vía para adquirir experiencia real, flexible y útil para su desarrollo profesional.</td>
+      <td>Plataforma líder en Latinoamérica para contratar freelancers en áreas como programación, diseño, traducción y marketing.</td>
+      <td>Plataforma global que conecta freelancers con proyectos en diversas categorías: desarrollo, escritura, arte, etc. </td>
+      <td> Red social profesional que conecta empleadores con talento, usada también para promocionar servicios y encontrar oportunidades de empleo.</td>
+    </tr>
+    <tr>
+      <td>Ventaja competitiva
+      ¿Que valor ofrece a los clientes?</td>
+      <td>Se enfoca exclusivamente en estudiantes, lo que permite personalizar la experiencia: horarios flexibles, oportunidades acordes a su formación académica, sin requerir experiencia previa.</td>
+      <td>Amplia base de usuarios, reputación consolidada, y herramientas avanzadas para gestión de proyectos.</td>
+      <td>Cobertura internacional, variedad de categorías, concursos públicos para contratación.</td>
+      <td>Reputación global, red de contactos, integración con empresas.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PERFIL DEL MARKETING</td>
+      <td>Mercado Objetivo</td>
+      <td>Estudiantes universitarios, tambien personas naturales y pequeños emprendedores que buscan servicios digitales puntuales</td>
+      <td>Profesionales freelancers de habla hispana y empresas medianas que buscan reducir costos.</td>
+      <td>Freelancers de todos los niveles y empresas de todos los tamaños.</td>
+      <td>Profesionales yestudiantes en búsqueda de empleo, tambien empresas de todos los tamaños</td>
+    </tr>
+    <tr>
+      <td>Estrategias de Marketing</td>
+      <td>
+        + Alianzas con universidades.
+        + Programas de referidos para estudiantes
+        + Marketing de contenido en TikTok e Instagram (tips laborales, historias de éxito)
+      </td>
+      <td>Google Ads, blog con contenido educativo y certificaciones de habilidades</td>
+      <td>Alianzas corporativas y certifaciones.</td>
+      <td>Integracion con universidades y contenido compartido por usuarios, ademas de usar anuncios por internet exclusivos</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PERFIL DEL PRODUCTO</td>
+      <td>Productos & Servicios</td>
+      <td>
+        - Listado de perfiles de estudiantes por habilidad<br>
+        - Postulación a proyectos freelance.
+      </td>
+      <td> 
+        + Publicación y postulación de proyectos.<br>
+        - Contratos, seguimiento y pagos seguros.
+      </td>
+      <td>
+        + Publicación de proyectos, concursos, gestión y pago.
+      </td>
+      <td>
+        - Perfil profesional, buscador de empleo, recomendaciones, networking.
+      </td>
+    </tr>
+    <tr>
+      <td>Precios & Costos</td>
+      <td>Ofrecemos los planes Basico ($2.99/mes), Premium ($5.99/mes) y PRO ($9.99/mes) para los empresarios y estudiantes.</td>
+      <td>Comisión de 15–20% para freelancers y Clientes publican gratis.</td>
+      <td>Opciones premium para destacar perfiles y comisión del 10–20%.</td>
+      <td>Gratuito con funciones premium, ademas de suscripciones para empresas y usuarios.</td>
+    </tr>
+    <tr>
+      <td>Canales de distribución (web/móvil)</td>
+      <td>Móvil y Web</td>
+      <td>Móvil y Web</td>
+      <td>Móvil y Web</td>
+      <td>Móvil y Web</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ANÁLISIS SWOT</td>
+      <td>Fortalezas</td>
+      <td>
+        - Público segmentado y claro.<br>
+        - Precios bajos y acceso rápido a talento.<br>
+        - Beneficio educativo: experiencia laboral para el CV.
+      </td>
+      <td> 
+        - Gran comunidad.<br>
+        - Confianza por trayectoria.
+      </td>
+      <td>
+        - Alcance global.<br>
+        - Multilingüe y multisectorial.
+      </td>
+      <td>
+        - Amplia base de usuarios profesionales.<br>
+        - Confianza en el entorno profesional.
+      </td>
+    </tr>
+    <tr>
+      <td>Debilidades</td>
+      <td>
+        - Puede haber estudiantes poco responsables.<br>
+        - Difícil asegurar calidad de entregables al inicio.
+      </td>
+      <td>
+        + Alta competencia interna<br>
+        - Dificultad para principiantes.
+      </td>
+      <td>
+        + Menor enfoque en estudiantes.<br>
+        + Costos ocultos y alta comisión.
+      </td>
+      <td>
+        - No está centrado en freelancers.<br>
+        - No permite gestión de proyectos.
+      </td>
+    </tr>
+    <tr>
+      <td>Oportunidades</td>
+      <td>
+        + Aumento de freelancing post-pandemia.<br>
+        - Universidades apoyan prácticas no tradicionales.
+      </td>
+      <td>
+        + Expansión a nichos educativos o junior.<br>
+        - Expansión a plataformas web
+      </td>
+      <td>
+        + Subdividir en micromercados (como estudiantes).
+      </td>
+      <td>
+        + Crecimiento de features para estudiantes y freelancers.
+      </td>
+    </tr>
+    <tr>
+      <td>Amenazas</td>
+      <td>
+        - Plataformas grandes que podrían crear secciones para estudiantes<br>
+        - Dificultad para escalar sin inversión.
+      </td>
+      <td>
+        + Saturación del mercado freelance.<br>
+        - Nuevas plataformas especializadas.
+      </td>
+      <td>
+        + Usuarios migran a plataformas especializadas.
+      </td>
+      <td>
+        - Otras redes con mejor UX.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 2.1.2. Estrategias y tácticas frente a competidores
+
+De acuerdo al análisis competitivo realizado previamente, se identificaron las principales fortalezas, oportunidades, debilidades y amenazas de los principales competidores (Workana, Freelancer.com y LinkedIn). A continuación, se presentan estrategias y acciones que se implementarán para posicionar nuestra plataforma en el mercado y diferenciarla efectivamente.
+
+**Afrontando las fortalezas de nuestros competidores:**
+
+- Workana y Freelancer tienen una comunidad amplia y consolidada.
+
+- LinkedIn tiene una reputación fuerte y respaldo de empresas grandes.
+
+- Sistemas avanzados de evaluación, reputación y pago seguro.
+
+**Comprendemos que nuestras fortalezas son:**
+
+- Enfoque específico en estudiantes universitarios.
+
+- Flexibilidad horaria, ideal para quienes estudian y trabajan.
+
+- Sistema de verificación académica para validar habilidades.
+
+**Entonces, podemos aplicar las siguientes estrategias y tácticas:**
+
+**Estrategias:**
+
+- Especializarnos como plataforma nicho para universitarios con talentos emergentes.
+
+- Generar confianza en los contratistas validando las credenciales académicas.
+
+**Tácticas:**
+- Crear convenios con universidades para validar perfiles de estudiantes.
+
+- Implementar un sistema de recomendaciones entre pares o docentes.
+
+- Destacar la categoría "Proyectos Académicos o de Innovación" como ventaja frente a plataformas más generales
+
+**Afrontando las debilidades de nuestros competidores:**
+
+- Workana y Freelancer no se enfocan en perfiles sin experiencia.
+
+- LinkedIn está más orientado a empleo formal o networking profesional, no tanto a proyectos puntuales.
+
+- Muchas plataformas cobran altas comisiones a los freelancers.
+
+**Comprendemos que nuestras debilidades son:**
+
+- Menor número inicial de usuarios y proyectos disponibles.
+
+- Ausencia de marca reconocida en el mercado.
+
+- Requiere alcanzar masa crítica para lograr tracción.
+
+**Entonces, podemos aplicar las siguientes estrategias y tácticas:**
+
+**Estrategias:**
+- Facilitar el primer contacto entre estudiantes y contratistas con beneficios de entrada.
+
+- Incentivar la participación activa a través de una comunidad educativa.
+
+**Tácticas:**
+- Ofrecer los primeros tres proyectos sin comisión para estudiantes nuevos.
+
+- Crear un programa de embajadores en universidades para atraer talentos y proyectos.
+
+- Realizar campañas en redes sociales donde se muestren “casos de éxito” de estudiantes.
+
+**Afrontando las oportunidades de nuestros competidores:**
+- Aumento del trabajo remoto y freelance.
+
+- Más personas buscando talento accesible y flexible.
+
+- Interés creciente en el desarrollo profesional desde la etapa universitaria.
+
+**Comprendemos que nuestras oportunidades son:**
+
+- Convertirnos en el puente entre el conocimiento académico y la experiencia práctica.
+
+- Aprovechar la necesidad de empresas de reducir costos sin sacrificar calidad.
+
+- Crear una comunidad educativa y de networking para universitarios.
+
+**Entonces, podemos aplicar las siguientes estrategias y tácticas:**
+
+**Estrategias:**
+- Posicionarnos como una solución “ganar-ganar” entre jóvenes con talento y pequeños negocios.
+
+- Apostar por contenido educativo, guías y formación paralela a los proyectos.
+
+**Tácticas:**
+- Ofrecer webinars, cursos gratuitos y microcredenciales por participación en proyectos.
+
+- Implementar un “ranking de habilidades” que aumente el valor de perfil del estudiante.
+
+### 2.2. Entrevistas
+
+#### 2.2.1. Diseño de entrevistas  <br><br>
+
+*Preguntas dirigidas al segmento 1*
+---
+**Preguntas Directas:**
+
+1. ¿Podrías proporcionarnos tu nombre completo y tu edad?
+
+2. ¿Estás buscando actualmente trabajo o alguna forma de ganar dinero mientras estudias? ¿Por qué?
+
+3. ¿Has tenido algún tipo de experiencia laboral o por encargo relacionada con tu carrera? ¿Cómo fue?
+
+4. ¿Qué dificultades has tenido para conseguir experiencia profesional o prácticas en lo que estudias?
+
+5. ¿Qué requisitos suelen pedir en las ofertas laborales que has visto y que te han desanimado a postular?
+
+6. ¿Has sentido que no puedes acceder a oportunidades solo por no tener experiencia laboral previa?
+
+7. ¿Qué tipo de tareas o trabajos relacionados a tu carrera estarías dispuesto(a) a hacer si pudieras ganar algo de dinero y sumar experiencia?
+
+8. ¿Qué habilidades o conocimientos tuyos crees que podrías ofrecer hoy a una empresa o emprendedor?
+
+9. ¿Qué herramientas, plataformas o redes usas hoy para buscar oportunidades laborales o académicas?
+
+10. Si existiera una plataforma donde puedas ofrecer tus habilidades a personas o empresas que necesiten ayuda con tareas específicas, ¿la usarías? ¿Por qué sí o por qué no?<br><br>
+
+**Preguntas Complementarias:**
+
+11. ¿Qué te gustaría aprender o fortalecer participando en proyectos reales mientras estudias?
+
+12. ¿Qué tan importante es para ti tener validación o reconocimiento de tu trabajo por parte de quienes te contratan? <br><br>
+
+
+
+*Preguntas dirigidas al segmento 2*
+---
+**Preguntas Directas:**
+
+1. ¿Podrías proporcionarnos tu nombre completo y tu edad?
+
+2. Cuéntame un poco sobre tu negocio/ empresa. ¿Qué tipo de actividades realizan y qué servicios u operaciones manejan internamente?
+
+3. ¿Cómo manejas actualmente las tareas operativas como diseño, comunicación con clientes, redes sociales, desarrollo de contenido, o tareas técnicas?
+
+4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar un sitio web,¿Suele contratar apoyo externo para realizar estas tareas?
+
+5. ¿Con qué frecuencia te encuentras dejando de lado tareas como diseño, contenido o redes sociales por no contar con alguien disponible que pueda ayudarte en el momento que lo necesitas?
+
+6. ¿Has tenido dificultades para encontrar personas confiables o con las habilidades adecuadas para tareas específicas? ¿Puedes contarme un caso?
+
+7. ¿Qué factores dificultan más la contratación de apoyo externo en tu experiencia (tiempo, costo, confianza, calidad, disponibilidad, etc.)?
+
+8. ¿Qué características valora más al momento de elegir a alguien para colaborar en un proyecto?
+
+9. Desde tu experiencia, ¿por qué crees que muchas empresas en Perú valoran tanto la experiencia laboral cuando buscan contratar?
+
+10. Si existiera una plataforma local donde pudieras acceder a talento joven, con habilidades específicas, portafolio visible y tarifas flexibles… ¿crees que sería útil para ti o para tu negocio? ¿Por qué sí o por qué no?<br><br>
+
+**Preguntas Complementarias:**
+
+11. ¿Has trabajado antes con estudiantes o personas jóvenes en prácticas, pasantías o tareas específicas? ¿Cómo fue esa experiencia?
+
+12. ¿Estarías dispuesto a probar una nueva forma de contratar apoyo por proyecto si se te asegura facilidad, confianza y resultados concretos? <br><br>
+
+
+#### 2.2.2. Registro de entrevistas
+
+#### 2.2.3. Análisis de entrevistas
+
+### 2.3 Needfinding
+
+#### 2.3.1. User Personas
+Para el segmento de estudiante universitario y basados en las entrevistas realizadas escogimos a un joven que estudia Informatica y que busca ganar experiencia laboral mientras estudia.
+
+<img src="assets/user-personas/UP1.png" width=800px>
+
+Para el segmento de empresario escogimos a un ingeniero de sistemas que busca talento joven que trabajen bajo contrato.
+
+<img src="assets/user-personas/UP2.png" width=800px>
