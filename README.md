@@ -1,6 +1,10 @@
 <div align = "center">
   <h1>Universidad Peruana de Ciencias Aplicadas</h1>
-  <img style="height: 200px" src=https://seeklogo.com/images/U/universidad-peruana-de-ciencias-aplicadas-upc-logo-B98C3A365C-seeklogo.com.png>
+  <br>
+  <p align="center">
+  <img src="assets/logo/upclogo.png" alt="UPC logo" width="150">
+  </p>
+  <br>
   <h2 >Carrera: de Ingeniería de Software</h2>
   <h2 >Ciclo: 2025-02</h2>
   <br>
@@ -162,7 +166,11 @@ necesario, utilizando estrategias deaprendizaje apropiadas.*
   </tr>
   <tr>
     <td> Hola mi nombre es Javier Gonzales soy un estudiante de la carrera de Ingeniería de Software en el 6to ciclo con código u202312966. Tengo conocimientos en C++, Python, SQL, HTML, CSS, JavaScript y Vue, además de experiencia en el desarrollo de aplicaciones web aplicando arquitecturas modernas como DDD, uso de APIs y manejo de bases de datos tanto relacionales como no relacionales. También manejo metodologías ágiles, control de versiones con GitHub y despliegue en la nube con Azure, lo que me permite tener una visión integral del ciclo de desarrollo de software. Me considero una persona analítica, perseverante y de rápido aprendizaje, con la capacidad de adaptarme a nuevos entornos y tecnologías, fomentando siempre un buen ambiente en el equipo y aportando responsabilidad, iniciativa y liderazgo colaborativo en cada proyecto. </td>
-    <td>  </td>
+    <td> 
+      <p align="center">
+        <img src="assets/students/foto-gonzales.png" alt="UPC logo" width="600" height="150">
+      </p>
+    </td>
   </tr>
   <tr>
     <th colspan="2"> </th>
@@ -749,31 +757,31 @@ De acuerdo al análisis competitivo realizado previamente, se identificaron las 
 ---
 **Preguntas Directas:**
 
-1. ¿Podrías proporcionarnos tu nombre completo y tu edad?
+1. ¿Podrías compartirnos tu nombre completo y tu edad?
 
-2. ¿Estás buscando actualmente trabajo o alguna forma de ganar dinero mientras estudias? ¿Por qué?
+2. ¿Actualmente estás buscando trabajo o alguna forma de generar ingresos mientras estudias? ¿Cuál es tu motivación principal?
 
-3. ¿Has tenido algún tipo de experiencia laboral o por encargo relacionada con tu carrera? ¿Cómo fue?
+3. ¿Has tenido alguna experiencia laboral o encargos vinculados a tu carrera? Si es así, ¿cómo fue esa experiencia?
 
-4. ¿Qué dificultades has tenido para conseguir experiencia profesional o prácticas en lo que estudias?
+4. ¿Qué obstáculos has encontrado al intentar conseguir prácticas o experiencia relacionada con tu área de estudios?
 
-5. ¿Qué requisitos suelen pedir en las ofertas laborales que has visto y que te han desanimado a postular?
+5. ¿Qué requisitos en las ofertas laborales que revisaste te desanimaron a postular?
 
-6. ¿Has sentido que no puedes acceder a oportunidades solo por no tener experiencia laboral previa?
+6. ¿Has sentido que la falta de experiencia laboral previa te ha limitado para acceder a oportunidades?
 
-7. ¿Qué tipo de tareas o trabajos relacionados a tu carrera estarías dispuesto(a) a hacer si pudieras ganar algo de dinero y sumar experiencia?
+7. ¿Qué tipo de tareas o actividades relacionadas con tu carrera estarías dispuesto(a) a realizar para ganar dinero y sumar experiencia?
 
-8. ¿Qué habilidades o conocimientos tuyos crees que podrías ofrecer hoy a una empresa o emprendedor?
+8. ¿Qué conocimientos o habilidades crees que podrías aportar hoy a una empresa o emprendedor?
 
-9. ¿Qué herramientas, plataformas o redes usas hoy para buscar oportunidades laborales o académicas?
+9. ¿Qué plataformas, herramientas o redes utilizas actualmente para buscar oportunidades laborales o académicas?
 
-10. Si existiera una plataforma donde puedas ofrecer tus habilidades a personas o empresas que necesiten ayuda con tareas específicas, ¿la usarías? ¿Por qué sí o por qué no?<br><br>
+10. Si existiera una app móvil donde pudieras ofrecer tus habilidades a empresas o personas que requieran apoyo en proyectos específicos, ¿la usarías? ¿Por qué sí o por qué no?<br><br>
 
 **Preguntas Complementarias:**
 
-11. ¿Qué te gustaría aprender o fortalecer participando en proyectos reales mientras estudias?
+11. ¿Qué competencias te gustaría aprender o reforzar participando en proyectos reales mientras continúas estudiando?
 
-12. ¿Qué tan importante es para ti tener validación o reconocimiento de tu trabajo por parte de quienes te contratan? <br><br>
+12. ¿Qué tan relevante es para ti recibir validación o reconocimiento por el trabajo que realices en proyectos o encargos? <br><br>
 
 
 
@@ -781,34 +789,123 @@ De acuerdo al análisis competitivo realizado previamente, se identificaron las 
 ---
 **Preguntas Directas:**
 
-1. ¿Podrías proporcionarnos tu nombre completo y tu edad?
+1. ¿Podría indicarnos el nombre de su empresa, su cargo y cuántos colaboradores conforman su equipo?
 
-2. Cuéntame un poco sobre tu negocio/ empresa. ¿Qué tipo de actividades realizan y qué servicios u operaciones manejan internamente?
+2. ¿Actualmente su empresa se encuentra buscando talento joven o personal en prácticas? ¿Por qué motivo?
 
-3. ¿Cómo manejas actualmente las tareas operativas como diseño, comunicación con clientes, redes sociales, desarrollo de contenido, o tareas técnicas?
+3. ¿Han contratado anteriormente estudiantes universitarios o recién egresados? ¿Cómo ha sido esa experiencia?
 
 4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar un sitio web,¿Suele contratar apoyo externo para realizar estas tareas?
 
-5. ¿Con qué frecuencia te encuentras dejando de lado tareas como diseño, contenido o redes sociales por no contar con alguien disponible que pueda ayudarte en el momento que lo necesitas?
+5. ¿Qué requisitos suelen incluir en sus ofertas laborales que los postulantes muchas veces no cumplen?
 
-6. ¿Has tenido dificultades para encontrar personas confiables o con las habilidades adecuadas para tareas específicas? ¿Puedes contarme un caso?
+6. ¿Considera que la falta de experiencia de los jóvenes es un impedimento para contratarlos en ciertos puestos?
 
-7. ¿Qué factores dificultan más la contratación de apoyo externo en tu experiencia (tiempo, costo, confianza, calidad, disponibilidad, etc.)?
+7. ¿Qué tipo de tareas o proyectos sí estarían dispuestos a asignar a estudiantes o recién egresados?
 
-8. ¿Qué características valora más al momento de elegir a alguien para colaborar en un proyecto?
+8. ¿Qué habilidades o competencias valoran más en un joven que postula a su empresa?
 
-9. Desde tu experiencia, ¿por qué crees que muchas empresas en Perú valoran tanto la experiencia laboral cuando buscan contratar?
+9. ¿Qué medios, plataformas o canales utilizan actualmente para publicar ofertas y captar candidatos?
 
-10. Si existiera una plataforma local donde pudieras acceder a talento joven, con habilidades específicas, portafolio visible y tarifas flexibles… ¿crees que sería útil para ti o para tu negocio? ¿Por qué sí o por qué no?<br><br>
+10. Si existiera una app móvil que conecte directamente a empresas con estudiantes para colaborar en proyectos específicos, ¿la utilizarían? ¿Por qué sí o por qué no?<br><br>
 
 **Preguntas Complementarias:**
 
-11. ¿Has trabajado antes con estudiantes o personas jóvenes en prácticas, pasantías o tareas específicas? ¿Cómo fue esa experiencia?
+11. ¿Qué espera obtener su empresa al incorporar estudiantes en proyectos reales?
 
-12. ¿Estarías dispuesto a probar una nueva forma de contratar apoyo por proyecto si se te asegura facilidad, confianza y resultados concretos? <br><br>
+12. ¿Qué tan importante sería para usted contar con un sistema que valide y certifique el trabajo realizado por los estudiantes? <br><br>
 
 
 #### 2.2.2. Registro de entrevistas
+
+*Entrevistas a Segmento 1*
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Ian Curo</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `link`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Ian es estudiante de Ingeniería Mecatrónica y busca insertarse en el mercado laboral principalmente por motivos económicos y personales. Aunque ya cuenta con experiencia previa, esta no ha estado directamente relacionada con su carrera. Reconoce que ingresar a un empleo en su rubro es complejo, debido a la alta exigencia de conocimientos técnicos que demandan las empresas. Señala que las organizaciones suelen priorizar candidatos con experiencia, jóvenes con alta disponibilidad, habilidades blandas bien desarrolladas y competencias técnicas específicas. Ha enfrentado limitaciones para acceder a ciertos puestos justamente por no contar con experiencia previa, aunque considera que esto varía según el tipo de trabajo. Ian destaca sentirse cómodo en actividades vinculadas a la mecánica, el soporte técnico, servicios y el área automotriz. Además, resalta su proactividad y capacidad para desenvolverse con soltura en entornos laborales, señalando que ha fortalecido sus habilidades blandas gracias a trabajos anteriores. Actualmente utiliza plataformas como LinkedIn y redes sociales para buscar oportunidades. Finalmente, considera que UniMatch representa una propuesta atractiva y necesaria, ya que percibe valor en contar con una app móvil que conecte a empresas con jóvenes de alta disponibilidad para colaborar en proyectos y tareas específicas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="" alt="interview image" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+
+*Entrevistas a Segmento 2*
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Sandoval</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>59</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `link`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Javier Sandoval es director de una empresa tecnológica peruana que ofrece servicios en varias líneas estratégicas. Su organización cuenta con un equipo interno que cubre las áreas técnicas, de desarrollo y marketing, atendiendo la mayoría de las necesidades operativas. No obstante, en momentos de alta demanda sobre todo en el desarrollo de software recurren a contratar apoyo externo. Explica que, en promedio, llegan a perder entre una y dos oportunidades de negocio al mes debido a la falta de disponibilidad de profesionales externos confiables para asumir tareas específicas. Señala que una de las principales dificultades al contratar talento joven o externo es la falta de confianza, más allá de las competencias técnicas: preocupa que los colaboradores no cumplan con los plazos o con los estándares de calidad requeridos. Entre las cualidades más valoradas en los perfiles que contratan menciona la responsabilidad, la proactividad, la capacidad de trabajo en equipo, contar con un portafolio sólido y referencias verificables. Finalmente, al presentarle la propuesta de UniMatch como una app móvil que conecta empresas con estudiantes y recién egresados, consideró la iniciativa pertinente y con potencial para ayudar a su empresa a encontrar talento joven disponible y confiable, especialmente en proyectos específicos de corta duración.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="" alt="interview image" width="1000"><br>
+    </td>
+  </tr>
+</table>
 
 #### 2.2.3. Análisis de entrevistas
 
