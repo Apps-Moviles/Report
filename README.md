@@ -2320,7 +2320,7 @@ Relaciones e Interacciones
 <br>
 
 <p align="center">
-  <img src="assets/diagrams/c4/reputation-c4.png" alt="UPC logo" width="150">
+  <img src="assets/diagrams/c4/reputation-c4.png" alt="UPC logo" width="1200">
 </p>
 
 <br>
@@ -2350,7 +2350,7 @@ El diagrama incluye:
 <br>
 
 <p align="center">
-  <img src="assets/diagrams/clases/reputation-clases.png" alt="UPC logo" width="150">
+  <img src="assets/diagrams/clases/reputation-clases.png" alt="UPC logo" width="600">
 </p>
 
 <br>
@@ -2378,7 +2378,7 @@ El diagrama incluye:
 <br>
 
 <p align="center">
-  <img src="assets/diagrams/database/reputations-database.png" alt="UPC logo" width="150">
+  <img src="assets/diagrams/database/reputations-database.png" alt="UPC logo" width="600">
 </p>
 
 <br>
