@@ -78,7 +78,66 @@
             - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
             - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
             - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
-        - [2.6 Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+    - [2.6 Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+        - [2.6.1 Bounded Context: Users](#261-bounded-context-users)
+            - [2.6.1.1 Domain Layer](#2611-domain-layer)
+            - [2.6.1.2 Interface Layer](#2612-interface-layer)
+            - [2.6.1.3 Application Layer](#2613-application-layer)
+            - [2.6.1.4 Infrastructure Layer](#2614-infrastructure-layer)
+            - [2.6.1.5 Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.1.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+                - [2.6.1.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
+
+        - [2.6.2 Bounded Context: Students](#262-bounded-context-students)
+            - [2.6.2.1 Domain Layer](#2621-domain-layer)
+            - [2.6.2.2 Interface Layer](#2622-interface-layer)
+            - [2.6.2.3 Application Layer](#2623-application-layer)
+            - [2.6.2.4 Infrastructure Layer](#2624-infrastructure-layer)
+            - [2.6.2.5 Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.2.6 Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
+                - [2.6.2.6.2. Bounded Context Database Design Diagram](#26261-bounded-context-database-design-diagram)
+
+        - [2.6.3 Bounded Context: Companies](#263-bounded-context-companies)
+            - [2.6.3.1 Domain Layer](#2631-domain-layer)
+            - [2.6.3.2 Interface Layer](#2632-interface-layer)
+            - [2.6.3.3 Application Layer](#2633-application-layer)
+            - [2.6.3.4 Infrastructure Layer](#2634-infrastructure-layer)
+            - [2.6.3.5 Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.3.6 Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
+                - [2.6.3.6.2. Bounded Context Database Design Diagram](#26361-bounded-context-database-design-diagram)
+
+        - [2.6.4 Bounded Context: Projects](#261-bounded-context-projects)
+            - [2.6.4.1 Domain Layer](#2611-domain-layer)
+            - [2.6.4.2 Interface Layer](#2612-interface-layer)
+            - [2.6.4.3 Application Layer](#2613-application-layer)
+            - [2.6.4.4 Infrastructure Layer](#2614-infrastructure-layer)
+            - [2.6.4.5 Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.4.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+                - [2.6.4.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
+              
+        - [2.6.5 Bounded Context: StudentPostulations](#261-bounded-context-projects)
+            - [2.6.5.1 Domain Layer](#2611-domain-layer)
+            - [2.6.5.2 Interface Layer](#2612-interface-layer)
+            - [2.6.5.3 Application Layer](#2613-application-layer)
+            - [2.6.5.4 Infrastructure Layer](#2614-infrastructure-layer)
+            - [2.6.5.5 Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.5.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+                - [2.6.5.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
+
+        - [2.6.6 Bounded Context: Reputations](#261-bounded-context-projects)
+            - [2.6.6.1 Domain Layer](#2611-domain-layer)
+            - [2.6.6.2 Interface Layer](#2612-interface-layer)
+            - [2.6.6.3 Application Layer](#2613-application-layer)
+            - [2.6.6.4 Infrastructure Layer](#2614-infrastructure-layer)
+            - [2.6.6.5 Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.6.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+                - [2.6.6.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
 
 
 ## Student Outcome
@@ -919,3 +978,934 @@ Para el segmento de estudiante universitario y basados en las entrevistas realiz
 Para el segmento de empresario escogimos a un ingeniero de sistemas que busca talento joven que trabajen bajo contrato.
 
 <img src="assets/user-personas/UP2.png" width=800px>
+
+#### 2.3.1. User Personas
+
+#### 2.3.2. User Task Matrix
+
+#### 2.3.3. User Journey Mapping
+
+#### 2.3.4. Emphaty Mapping
+
+#### 2.3.5. Ubiquitous Language
+
+### 2.4 Requirements Specification
+
+#### 2.4.1. User Stories
+
+#### 2.4.2. Impact Mapping
+
+#### 2.4.3. Product Backlog
+
+### 2.5 Strategic-Level Domain-Driven Design
+
+#### 2.5.1. EventStorming
+
+##### 2.5.1.1. Candidate Context Discovery
+
+##### 2.5.1.2. Domain Message Flows Modeling
+
+##### 2.5.1.3. Bounded Context Canvases
+
+#### 2.5.2. Context Mapping
+
+#### 2.5.3. Software Architecture
+
+##### 2.5.3.1. Software Architecture Context Level Diagrams
+
+##### 2.5.3.2. Software Architecture Container Level Diagrams
+
+##### 2.5.3.3. Software Architecture Deployment Diagrams
+
+### 2.6 Tactical-Level Domain-Driven Design
+
+#### 2.6.1 Bounded Context: Users
+
+##### 2.6.1.1 Domain Layer
+
+##### 2.6.1.2 Interface Layer
+
+##### 2.6.1.3 Application Layer
+
+##### 2.6.1.4 Infrastructure Layer
+
+##### 2.6.1.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2 Bounded Context Database Design Diagram
+
+
+#### 2.6.2 Bounded Context: Students
+
+##### 2.6.2.1 Domain Layer
+
+##### 2.6.2.2 Interface Layer
+
+##### 2.6.2.3 Application Layer
+
+##### 2.6.2.4 Infrastructure Layer
+
+##### 2.6.2.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.2.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.2.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.2.6.2 Bounded Context Database Design Diagram
+
+
+
+#### 2.6.3 Bounded Context: Companies
+
+##### 2.6.3.1 Domain Layer
+
+##### 2.6.3.2 Interface Layer
+
+##### 2.6.3.3 Application Layer
+
+##### 2.6.3.4 Infrastructure Layer
+
+##### 2.6.3.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.3.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.3.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.3.6.2 Bounded Context Database Design Diagram
+
+
+
+#### 2.6.4 Bounded Context: Projects
+
+##### 2.6.4.1 Domain Layer
+
+<br>
+
+El contexto de Projects gestiona toda la lógica relacionada a la creación, publicación, edición, seguimiento y cierre de proyectos creados por empresas dentro de la plataforma. Cada proyecto representa una oportunidad en la que los estudiantes pueden postularse, y en la que una empresa puede seleccionar a uno de ellos para ejecutarlo. Este contexto mantiene el ciclo de vida del proyecto, desde su publicación hasta su finalización o cancelación.
+
+Este dominio tiene como responsabilidad principal asegurar que el estado del proyecto evolucione correctamente (por ejemplo: de abierto a en ejecución, luego a finalizado o cancelado) y garantizar que se respeten reglas clave como: solo pueden postularse estudiantes no repetidos, solo se puede asignar un estudiante que haya postulado previamente, y un proyecto finalizado no puede ser editado ni reabierto.
+
+<br>
+
++ **ENTITY: Project**
+
+La entidad Project representa un proyecto publicado por una empresa en la plataforma UniMatch. Contiene información esencial como título, descripción, campo, estado, habilidades requeridas, y relaciones con estudiantes postulantes y una empresa.
+
+<br>
+
+**Atributos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador único del proyecto.</td>
+    </tr>
+    <tr>
+      <td>CompanyId</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>ID de la empresa que creó el proyecto.</td>
+    </tr>
+    <tr>
+      <td>Title</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Título del proyecto.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Descripción general del proyecto.</td>
+    </tr>
+    <tr>
+      <td>Field</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Área temática del proyecto (Ej. Ingeniería, Marketing, etc.).</td>
+    </tr>
+    <tr>
+      <td>Skills</td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Lista de habilidades requeridas para participar en el proyecto.</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Estado del proyecto (<code>ACTIVE</code>, <code>IN_PROGRESS</code>, <code>COMPLETED</code>, etc.).</td>
+    </tr>
+    <tr>
+      <td>StudentSelected</td>
+      <td><code>int?</code></td>
+      <td><code>public</code></td>
+      <td>ID del estudiante seleccionado (si aplica).</td>
+    </tr>
+    <tr>
+      <td>Postulants</td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Lista de IDs de estudiantes postulantes.</td>
+    </tr>
+    <tr>
+      <td>CreatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de creación del proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Constructor</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Permite inicializar un objeto <code>Project</code> con sus atributos clave.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **AGGREGATE ROOT: Project**
+
+La entidad Project es también el Aggregate Root del bounded context. Esto significa que es la raíz de consistencia y encapsula completamente su ciclo de vida. Todas las operaciones deben pasar por ella, como agregar postulantes o seleccionar a un estudiante.
+
+<br>
+
++ **VALUE OBJECT: ProjectStatus**
+
+Actualmente el Status del proyecto es solo un string, pero podría mejorarse modelando un Value Object que encapsule sus posibles valores y reglas internas.
+
+<br>
+
+**Atributos**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Value</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Valor interno del estado (<code>ACTIVE</code>, etc.).</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Métodos**
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>IsValid()</code></td>
+      <td><code>bool</code></td>
+      <td><code>public</code></td>
+      <td>Verifica si el valor del estado es válido.</td>
+    </tr>
+    <tr>
+      <td><code>ToString()</code></td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Retorna el estado como texto legible.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **Repository: IProjectRepository**
+
+Interfaz de abstracción para persistencia y recuperación de proyectos. Permite desacoplar el acceso a datos del dominio.
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ListAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Project&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Retorna todos los proyectos.</td>
+    </tr>
+    <tr>
+      <td><code>FindByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Project&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un proyecto por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>AddAsync(Project)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Project)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza un proyecto existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(Project)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>ListByCompanyIdAsync(int)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Project&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Lista proyectos según el ID de la empresa creadora.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+##### 2.6.4.2 Interface Layer
+
+<br>
+
+En la Interface Layer del bounded context Projects, se implementa la comunicación entre el cliente (frontend o consumidores externos) y la lógica de negocio de la aplicación. Esta capa está conformada por:
+
+<br>
+
++ **CONTROLLER: ProjectsController**
+
+Clase controlador REST que maneja las operaciones CRUD de proyectos. Asegura que las acciones solo puedan ser ejecutadas por usuarios autenticados, y usa companyId del usuario autenticado como contexto para validar la pertenencia a la entidad que intenta modificar.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAll(ProjectQueryFilters)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve todos los proyectos según filtros.</td>
+    </tr>
+    <tr>
+      <td><code>GetById(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve un proyecto por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>Create(CreateProjectRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Crea un nuevo proyecto (rol company).</td>
+    </tr>
+    <tr>
+      <td><code>Update(int id, UpdateProjectRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Actualiza un proyecto existente.</td>
+    </tr>
+    <tr>
+      <td><code>AssignStudent(int id, int studentId)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Asigna un estudiante a un proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>ChangeStatus(int id, ProjectStatus)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Cambia el estado del proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Elimina un proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: CreateProjectRequest**
+
+Clase que representa el cuerpo de la petición para crear un nuevo proyecto. Incluye validaciones básicas con anotaciones de DataAnnotations.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Title</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Título del proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>Description</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción del proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>Field</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Campo o categoría del proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>Skills</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Lista de habilidades requeridas.</td>
+    </tr>
+    <tr>
+      <td><code>Budget</code></td>
+      <td><code>decimal?</code></td>
+      <td>Pública</td>
+      <td>Presupuesto estimado.</td>
+    </tr>
+    <tr>
+      <td><code>Status</code></td>
+      <td><code>ProjectStatus</code></td>
+      <td>Pública</td>
+      <td>Estado inicial del proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: UpdateProjectRequest**
+
+Similar al DTO de creación, pero orientado a actualizar un proyecto existente. Permite modificar atributos clave.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Title</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nuevo título.</td>
+    </tr>
+    <tr>
+      <td><code>Description</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nueva descripción.</td>
+    </tr>
+    <tr>
+      <td><code>Field</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nuevo campo o categoría.</td>
+    </tr>
+    <tr>
+      <td><code>Skills</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Nuevas habilidades.</td>
+    </tr>
+    <tr>
+      <td><code>Budget</code></td>
+      <td><code>decimal?</code></td>
+      <td>Pública</td>
+      <td>Nuevo presupuesto.</td>
+    </tr>
+    <tr>
+      <td><code>Status</code></td>
+      <td><code>ProjectStatus</code></td>
+      <td>Pública</td>
+      <td>Nuevo estado del proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **Assembler: ProjectMapper**
+
+Clase estática responsable de transformar entidades del dominio (Project) a DTOs (ProjectDto), y de aplicar cambios desde DTOs de entrada (UpdateProjectRequest) a entidades existentes.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ToResource(Project model)</code></td>
+      <td><code>ProjectDto</code></td>
+      <td>Pública</td>
+      <td>Convierte una entidad <code>Project</code> a un <code>DTO</code> de salida.</td>
+    </tr>
+    <tr>
+      <td><code>MapUpdate(Project project, UpdateProjectRequest req)</code></td>
+      <td><code>void</code></td>
+      <td>Pública</td>
+      <td>Aplica los cambios del request a la entidad <code>Project</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+##### 2.6.4.3 Application Layer
+
+<br>
+
+La Application Layer en el contexto de Projects gestiona los flujos de negocio que permiten coordinar acciones entre las distintas capas (como dominio e infraestructura), asegurando que las reglas del negocio se apliquen correctamente.
+
+<br>
+
++ **SERVICE: ProjectCommandService**
+
+Encargado de todos los comandos de modificación del estado del sistema. Por ejemplo Validar existencia y pertenencia del proyecto a la empresa, crear, actualizar, asignar estudiantes y cambiar estado y usar el repositorio del dominio para persistencia.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync</code></td>
+      <td><code>Task&lt;ProjectDto&gt;</code></td>
+      <td>Crea un nuevo proyecto con datos del request.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;ProjectDto&gt;</code></td>
+      <td>Actualiza un proyecto existente por ID.</td>
+    </tr>
+    <tr>
+      <td><code>AssignStudentAsync</code></td>
+      <td><code>Task&lt;ProjectDto&gt;</code></td>
+      <td>Asigna un estudiante a un proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>ChangeStatusAsync</code></td>
+      <td><code>Task&lt;ProjectDto&gt;</code></td>
+      <td>Cambia el estado del proyecto (ej. <code>InProgress</code>, <code>Closed</code>).</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task</code></td>
+      <td>Elimina un proyecto si pertenece a la compañía.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **SERVICE: ProjectQueryService**
+
+Encargado de las consultas y filtros sobre los proyectos. Por ejemplo obtener proyectos filtrados por campo, especialidades o estado y consultar por ID.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;ProjectDto&gt;&gt;</code></td>
+      <td>Devuelve la lista filtrada de proyectos.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;ProjectDto?&gt;</code></td>
+      <td>Devuelve un proyecto por ID.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **COMMAND HANDLERS:**
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability de Negocio</th>
+      <th>Implementado por</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crear proyectos</td>
+      <td><code>CreateAsync</code> (<code>CommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Editar proyectos</td>
+      <td><code>UpdateAsync</code></td>
+    </tr>
+    <tr>
+      <td>Asignar estudiantes a proyectos</td>
+      <td><code>AssignStudentAsync</code></td>
+    </tr>
+    <tr>
+      <td>Cambiar estado de proyectos</td>
+      <td><code>ChangeStatusAsync</code></td>
+    </tr>
+    <tr>
+      <td>Eliminar proyectos</td>
+      <td><code>DeleteAsync</code></td>
+    </tr>
+    <tr>
+      <td>Buscar proyectos (filtro/ID)</td>
+      <td><code>GetAllAsync</code>, <code>GetByIdAsync</code> (<code>QueryService</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+##### 2.6.4.4 Infrastructure Layer
+
+<br>
+
+La Infrastructure Layer contiene las implementaciones técnicas que permiten a la aplicación interactuar con servicios externos al dominio del negocio. Esta capa se encarga de resolver dependencias técnicas como el acceso a bases de datos, servicios de mensajería, almacenamiento, entre otros. En el bounded context Projects, la infraestructura está centrada en la persistencia de datos, específicamente en la implementación de repositorios que acceden a una base de datos mediante Entity Framework Core.
+
+<br>
+
++ **REPOSITORY: ProjectRepository:**
+
+Implementa la interfaz IProjectRepository definida en el Domain Layer. Gestiona las operaciones de acceso y manipulación de datos para la entidad Project en la base de datos.
+
+<br>
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>AddAsync(Project entity)</code></td>
+      <td><code>Task&lt;Project&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo proyecto a la base de datos de forma asíncrona.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(Project entity)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un proyecto existente de la base de datos.</td>
+    </tr>
+    <tr>
+      <td><code>FindAllAsync(ProjectQueryFilters filters)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Project&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los proyectos que cumplen con los filtros especificados.</td>
+    </tr>
+    <tr>
+      <td><code>FindByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Project?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un proyecto por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Project entity)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Marca un proyecto como modificado para su posterior persistencia.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+##### 2.6.4.5 Bounded Context Software Architecture Component Level Diagrams
+
+<br>
+
+El bounded context Projects representa la lógica y operaciones relacionadas a la gestión de proyectos publicados por empresas dentro de la aplicación UniMatch. Esto incluye la creación, edición, asignación de estudiantes, cambio de estado y eliminación de proyectos. Este contexto forma parte del backend de la aplicación, construido en ASP.NET Core siguiendo una arquitectura DDD con estilo limpio y separación por capas (Domain, Application, Infrastructure, Interface).
+
+<br>
+
+<h3>Componentes del Contenedor</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ProjectsController</code></td>
+      <td>Exposición de endpoints RESTful que manejan todas las operaciones sobre proyectos.</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>ProjectCommandService</code></td>
+      <td>Ejecuta comandos para crear, actualizar, asignar estudiantes, cambiar estado y eliminar.</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>ProjectQueryService</code></td>
+      <td>Ejecuta consultas para obtener uno o varios proyectos, aplicando filtros.</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>ProjectMapper</code></td>
+      <td>Transforma datos entre entidad de dominio (<code>Project</code>) y DTOs utilizados en la API.</td>
+      <td>C# Static Mapper Class</td>
+    </tr>
+    <tr>
+      <td><code>ProjectRepository</code></td>
+      <td>Implementación del acceso a base de datos para proyectos, mediante Entity Framework.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Representa el contexto de base de datos, maneja <code>DbSet&lt;Project&gt;</code>.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ Relaciones e Interacciones
+
+  - ProjectsController depende de ProjectCommandService y ProjectQueryService para manejar lógica de negocio.
+
+  - Ambos servicios interactúan con ProjectRepository para persistencia de datos.
+
+  - ProjectRepository utiliza AppDbContext como gateway hacia la base de datos.
+
+  - ProjectMapper se usa para transformar datos entre la entidad Project y los recursos REST (CreateProjectRequest, ProjectDto, etc).
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/c4/projects-c4.png" alt="UPC logo" width="1200">
+</p>
+
+<br>
+
+##### 2.6.4.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.4.6.1 Bounded Context Domain Layer Class Diagrams
+
+<br>
+
+En esta sección se presenta el Diagrama de Clases UML correspondiente al Domain Layer del Bounded Context Project. Este diagrama detalla la estructura lógica del dominio, representando las entidades, interfaces, enumeraciones y sus relaciones clave.
+
+El diagrama incluye:
+
+  + Clases principales como Project, las cuales encapsulan la lógica de negocio y atributos representativos del modelo del dominio.
+
+  + Interfaces como IProjectRepository, que definen contratos de acceso a datos respetando los principios de inversión de dependencias y separación de responsabilidades.
+
+  + Enumeraciones como ProjectStatus, que encapsulan estados del ciclo de vida del proyecto (e.g., Open, InProgress, Finished, Cancelled).
+
+  + Relaciones entre clases, incluyendo asociaciones, implementaciones, dependencias y agregaciones, indicando multiplicidad, dirección y, cuando corresponde, nombres de roles y responsabilidades.
+
+  + Visibilidad de los miembros (public, private, protected) tanto en atributos como en métodos, alineado con las buenas prácticas de encapsulamiento y diseño orientado a objetos.
+
+  + Atributos y métodos de cada clase con su tipo de dato, parámetros, retornos y responsabilidad, conforme a la implementación real del sistema.
+
+Este diagrama tiene como finalidad brindar una vista estructurada y detallada de la lógica del dominio, facilitando su comprensión y comunicación entre desarrolladores, arquitectos y evaluadores técnicos.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/clases/projects-clases.png" alt="UPC logo" width="600">
+</p>
+
+<br>
+
+###### 2.6.4.6.2 Bounded Context Database Design Diagram
+
+<br>
+
+En esta sección se presenta el Diagrama de Base de Datos Relacional (Entity-Relationship Diagram) correspondiente al Bounded Context Project. El objetivo de este diagrama es mostrar cómo los objetos del dominio son persistidos en la base de datos y cómo se estructuran las relaciones entre las distintas entidades persistentes.
+
+El diagrama incluye:
+
+  + Tablas principales, como Projects, que representan las entidades del dominio y contienen columnas equivalentes a sus atributos.
+
+  + Columnas de cada tabla, con su nombre, tipo de dato (e.g., INT, VARCHAR, DECIMAL, DATETIME), y especificaciones de restricción como NOT NULL, AUTO_INCREMENT, entre otros.
+
+  + Claves primarias (PK), que identifican de manera única cada registro en la tabla.
+
+  + Claves foráneas (FK), que permiten establecer relaciones entre tablas, como por ejemplo entre Projects y Companies, en caso de existir una relación directa.
+
+  + Relaciones entre tablas, con sus respectivas restricciones (ON DELETE, ON UPDATE), indicando la cardinalidad entre las entidades.
+
+  + Índices y restricciones adicionales (únicos, checks, etc.) si son aplicables.
+
+El diagrama representa fielmente cómo se implementa la persistencia en un sistema de gestión de bases de datos relacional (como MySQL), permitiendo identificar la alineación entre el modelo lógico del dominio y su representación física.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/database/projects-databases.png" alt="UPC logo" width="600">
+</p>
+
+<br>
+
+#### 2.6.5 Bounded Context: StudentPostulations
+
+##### 2.6.5.1 Domain Layer
+
+##### 2.6.5.2 Interface Layer
+
+##### 2.6.5.3 Application Layer
+
+##### 2.6.5.4 Infrastructure Layer
+
+##### 2.6.5.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.5.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.5.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.5.6.2 Bounded Context Database Design Diagram
+
+
+
+#### 2.6.6 Bounded Context: Reputations
+
+##### 2.6.6.1 Domain Layer
+
+##### 2.6.6.2 Interface Layer
+
+##### 2.6.6.3 Application Layer
+
+##### 2.6.6.4 Infrastructure Layer
+
+##### 2.6.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.6.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.6.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.6.6.2 Bounded Context Database Design Diagram
+
+
+
