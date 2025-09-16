@@ -1893,19 +1893,495 @@ El diagrama representa fielmente cómo se implementa la persistencia en un siste
 
 ##### 2.6.6.1 Domain Layer
 
+La capa de dominio (Domain Layer) del bounded context Reputations representa el núcleo de la lógica de negocio asociada a la evaluación de estudiantes tras la finalización de un proyecto. Aquí se encapsulan los conceptos principales del modelo de reputación, siguiendo principios de DDD (Domain-Driven Design).
+
+<br>
+
++ **ENTITY: Reputation:**
+
+La entidad Reputation hereda de BaseEntity e incluye los atributos y comportamientos que definen una reputación
+
+<br>
+
+<h3>Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Tipo</th>
+      <th>Acceso</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Id</code></td>
+      <td><code>int</code></td>
+      <td><code>private set</code></td>
+      <td>Identificador único de la reputación. Heredado de <code>BaseEntity</code>.</td>
+    </tr>
+    <tr>
+      <td><code>StudentId</code></td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador del estudiante que recibe la reputación.</td>
+    </tr>
+    <tr>
+      <td><code>ProjectId</code></td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador del proyecto en el que participó el estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Rating</code></td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Calificación numérica otorgada al estudiante (por ejemplo, de 1 a 5).</td>
+    </tr>
+    <tr>
+      <td><code>Comment</code></td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Comentario descriptivo o feedback textual.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h3>Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Reputation()</code></td>
+      <td>Constructor vacío requerido por ORM o frameworks.</td>
+    </tr>
+    <tr>
+      <td><code>Reputation(int studentId, int projectId, int rating, string comment)</code></td>
+      <td>Constructor que permite inicializar todos los atributos relevantes de la reputación.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **REPOSITORY: IReputationRepository:**
+
+Define las operaciones necesarias para acceder al almacenamiento de reputaciones. Hereda de IBaseRepository<Reputation> (lo cual proporciona operaciones CRUD genéricas), y además añade métodos personalizados para consultas específicas.
+
+<br>
+
+<h3>Tabla de Métodos - Repositorio de Reputations</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>FindByStudentIdAsync(int studentId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Reputation&gt;&gt;</code></td>
+      <td>Recupera todas las reputaciones de un estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>FindByProjectIdAsync(int projectId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Reputation&gt;&gt;</code></td>
+      <td>Recupera todas las reputaciones asociadas a un proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
 ##### 2.6.6.2 Interface Layer
+
+La Interface Layer (también llamada capa de presentación) del bounded context Reputations actúa como punto de entrada al sistema para usuarios externos y consumidores de la API. Esta capa contiene componentes del tipo Controller, encargados de exponer los endpoints HTTP que permiten a aplicaciones cliente (por ejemplo, el frontend en Vue o Angular) interactuar con los servicios de reputación.
+
+En esta capa se definen las rutas RESTful asociadas al módulo de reputaciones, siguiendo el patrón típico de arquitectura en aplicaciones web: el controller recibe una solicitud, delega la lógica a los servicios de aplicación, y retorna una respuesta HTTP.
+
+<br>
+
++ **CONTROLLER: ReputationsController:**
+
+Proporcionar endpoints REST para consultar y registrar reputaciones relacionadas a estudiantes y proyectos.
+
+<br>
+
+<h3>Endpoints</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método HTTP</th>
+      <th>Ruta</th>
+      <th>Acción</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GET</code></td>
+      <td><code>/api/v1/reputations/student/{studentId}</code></td>
+      <td><code>GetByStudentId</code></td>
+      <td>Obtiene todas las reputaciones asociadas a un estudiante específico.</td>
+    </tr>
+    <tr>
+      <td><code>GET</code></td>
+      <td><code>/api/v1/reputations/project/{projectId}</code></td>
+      <td><code>GetByProjectId</code></td>
+      <td>Obtiene todas las reputaciones asociadas a un proyecto específico.</td>
+    </tr>
+    <tr>
+      <td><code>POST</code></td>
+      <td><code>/api/v1/reputations</code></td>
+      <td><code>CreateAsync</code></td>
+      <td>Crea una nueva reputación para un estudiante en un proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
 
 ##### 2.6.6.3 Application Layer
 
+La Application Layer del bounded context Reputations es responsable de coordinar los flujos de procesos del negocio relacionados a la gestión de reputaciones entre estudiantes y proyectos. Esta capa actúa como un orquestador de acciones, encapsulando los casos de uso del dominio y sirviendo de puente entre la capa de presentación (controllers) y la capa de dominio (entities y repositorios).
+
+Se encarga de procesar los comandos recibidos, invocar validaciones, consultar o persistir entidades a través de los repositorios y devolver los resultados al usuario final.
+
+<br>
+
++ **SERVICES: ReputationCommandService**
+
+Servicio responsable de manejar los comandos que modifican el estado del sistema relacionados a las reputaciones. Realiza operaciones como crear una reputación, eliminarla, o actualizar su contenido. Utiliza el repositorio del dominio para la persistencia.
+
+<h3>Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync</code></td>
+      <td><code>Task&lt;ReputationDto&gt;</code></td>
+      <td>Crea una nueva reputación con base en los datos recibidos.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;ReputationDto&gt;</code></td>
+      <td>Actualiza los datos de una reputación existente por ID.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task</code></td>
+      <td>Elimina una reputación por ID.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **SERVICES: ReputationQueryService**
+
+Servicio encargado de consultar y filtrar reputaciones por criterios como el ID del estudiante o el proyecto. Se encarga de retornar información sin alterar el estado del sistema.
+
+<h3>Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetByStudentIdAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;ReputationDto&gt;&gt;</code></td>
+      <td>Devuelve la lista de reputaciones registradas por un estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>GetByProjectIdAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;ReputationDto&gt;&gt;</code></td>
+      <td>Devuelve la lista de reputaciones asociadas a un proyecto específico.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;ReputationDto&gt;</code></td>
+      <td>Devuelve una reputación por su ID único.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **COMMAND HANDLERS:**
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability de Negocio</th>
+      <th>Implementado por</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crear reputación</td>
+      <td><code>CreateAsync</code> (<code>CommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Editar reputación</td>
+      <td><code>UpdateAsync</code> (<code>CommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Eliminar reputación</td>
+      <td><code>DeleteAsync</code> (<code>CommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Buscar por estudiante</td>
+      <td><code>GetByStudentIdAsync</code> (<code>QueryService</code>)</td>
+    </tr>
+    <tr>
+      <td>Buscar por proyecto</td>
+      <td><code>GetByProjectIdAsync</code> (<code>QueryService</code>)</td>
+    </tr>
+    <tr>
+      <td>Buscar por ID de reputación</td>
+      <td><code>GetByIdAsync</code> (<code>QueryService</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 ##### 2.6.6.4 Infrastructure Layer
 
+La Infrastructure Layer contiene las implementaciones técnicas que permiten a la aplicación interactuar con servicios externos al dominio del negocio. Esta capa se encarga de resolver dependencias técnicas como el acceso a bases de datos, servicios de mensajería, almacenamiento, entre otros.
+
+En el bounded context Reputations, la infraestructura está enfocada principalmente en la persistencia de datos, a través de la implementación de un repositorio que accede a la base de datos utilizando Entity Framework Core.
+
+<br>
+
++ **REPOSITORY: ReputationRepository:**
+
+Implementa la interfaz IReputationRepository definida en el Domain Layer. Se encarga de ejecutar las operaciones de acceso y manipulación de datos sobre la entidad Reputation, permitiendo su almacenamiento, actualización y eliminación en la base de datos.
+
+<br>
+
+<h3>Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h3>Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>AddAsync(Reputation entity)</code></td>
+      <td><code>Task&lt;Reputation&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Agrega una nueva reputación a la base de datos de forma asíncrona.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(Reputation entity)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Elimina una reputación existente de la base de datos.</td>
+    </tr>
+    <tr>
+      <td><code>FindAllByStudentIdAsync(int studentId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Reputation&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las reputaciones creadas por un estudiante específico.</td>
+    </tr>
+    <tr>
+      <td><code>FindAllByProjectIdAsync(int projectId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Reputation&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las reputaciones asociadas a un proyecto específico.</td>
+    </tr>
+    <tr>
+      <td><code>FindByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Reputation&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera una reputación por su identificador único.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Reputation entity)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Marca una reputación como modificada para su posterior persistencia.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
 ##### 2.6.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+El bounded context Reputations representa la lógica relacionada a la calificación y reputación de estudiantes dentro de la aplicación UniMatch, a partir de las evaluaciones que reciben de parte de las empresas al finalizar un proyecto. Este contexto forma parte del backend, implementado en ASP.NET Core siguiendo una arquitectura DDD y una separación estricta por capas (Domain, Application, Infrastructure, Interface).
+
+<br>
+
+<h3>Componentes</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ReputationsController</code></td>
+      <td>Expone endpoints RESTful para gestionar la reputación de los estudiantes.</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>ReputationCommandService</code></td>
+      <td>Maneja comandos para crear o actualizar una reputación.</td>
+      <td>C# Application Service</td>
+    </tr>
+    <tr>
+      <td><code>ReputationQueryService</code></td>
+      <td>Maneja consultas para obtener reputaciones (por estudiante, por proyecto).</td>
+      <td>C# Application Service</td>
+    </tr>
+    <tr>
+      <td><code>ReputationMapper</code></td>
+      <td>Transforma entidades del dominio a DTOs y viceversa.</td>
+      <td>C# Static Mapper Class</td>
+    </tr>
+    <tr>
+      <td><code>ReputationRepository</code></td>
+      <td>Implementa acceso y persistencia de datos para la entidad Reputation.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Representa el contexto general de base de datos para todas las entidades.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
+Relaciones e Interacciones
+
++ ReputationsController depende de ReputationCommandService y ReputationQueryService para manejar lógica de negocio.
+
++ Ambos servicios interactúan con ReputationRepository para persistencia o consulta.
+
++ ReputationRepository utiliza AppDbContext como gateway hacia la base de datos.
+
++ ReputationMapper se usa para convertir datos entre Reputation y los DTOs REST (CreateReputationRequest, ReputationDto, etc).
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/c4/reputation-c4.png" alt="UPC logo" width="150">
+</p>
+
+<br>
 
 ##### 2.6.6.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.6.6.1 Bounded Context Domain Layer Class Diagrams
 
+<br>
+
+En esta sección se presenta el Diagrama de Clases UML correspondiente al Domain Layer del Bounded Context Reputations. Este diagrama detalla la estructura lógica del dominio, representando las entidades, interfaces, enumeraciones y sus relaciones clave.
+
+El diagrama incluye:
+
++ Clases principales como Reputation, que encapsulan la lógica de negocio y atributos representativos del modelo del dominio.
+
++ Interfaces como IReputationRepository, que definen contratos de acceso a datos respetando los principios de inversión de dependencias y separación de responsabilidades.
+
++ Enumeraciones como ReputationLevel, que representan niveles de reputación (por ejemplo: Bronze, Silver, Gold).
+
++ Relaciones entre clases, incluyendo asociaciones, implementaciones, dependencias y agregaciones, indicando multiplicidad, dirección y, cuando corresponde, nombres de roles y responsabilidades.
+
++ Visibilidad de los miembros (public, private, protected) tanto en atributos como en métodos, alineado con las buenas prácticas de encapsulamiento y diseño orientado a objetos.
+
++ Atributos y métodos de cada clase con su tipo de dato, parámetros, retornos y responsabilidad, conforme a la implementación real del sistema.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/clases/reputation-clases.png" alt="UPC logo" width="150">
+</p>
+
+<br>
+
 ###### 2.6.6.6.2 Bounded Context Database Design Diagram
+
+<br>
+
+En esta sección se presenta el Diagrama de Base de Datos Relacional (Entity-Relationship Diagram) correspondiente al Bounded Context Reputations. El objetivo de este diagrama es mostrar cómo los objetos del dominio son persistidos en la base de datos y cómo se estructuran las relaciones entre las distintas entidades persistentes.
+
+El diagrama incluye:
+
++ Tablas principales, como Reputations, que representan las entidades del dominio y contienen columnas equivalentes a sus atributos.
+
++ Columnas de cada tabla, con su nombre, tipo de dato (por ejemplo: INT, VARCHAR, DATETIME) y restricciones como NOT NULL, AUTO_INCREMENT, etc.
+
++ Claves primarias (PK), que identifican de manera única cada registro en la tabla.
+
++ Claves foráneas (FK), que permiten establecer relaciones entre tablas (por ejemplo, una FK a Students o Projects si se relaciona con otras entidades).
+
++ Relaciones entre tablas, con sus respectivas restricciones (ON DELETE, ON UPDATE), indicando la cardinalidad entre las entidades.
+
++ Índices y restricciones adicionales (UNIQUE, CHECK, etc.) si son aplicables.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/database/reputations-database.png" alt="UPC logo" width="150">
+</p>
+
+<br>
 
 
 
