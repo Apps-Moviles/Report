@@ -162,7 +162,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       <td>
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
-      <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context Projects y Reputation</ul>
+      <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context companies y students postulations</ul>
       </td>
       <td> TB1:
       </td>
