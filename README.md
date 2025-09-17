@@ -147,7 +147,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET – EAC - Student Outcome 7**
 
 Criterio: *La capacidad de adquirir y aplicar nuevos conocimientos según sea
-necesario, utilizando estrategias deaprendizaje apropiadas.*
+necesario, utilizando estrategias de aprendizaje apropiadas.*
 
 <table>
   <thead>
@@ -162,18 +162,18 @@ necesario, utilizando estrategias deaprendizaje apropiadas.*
       <td>
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
-      <td>
+      <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context Projects y Reputation</ul>
       </td>
-      <td>
+      <td> TB1:
       </td>
     </tr>
     <tr>
       <td>
         2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
       </td>
-      <td>
+      <td> Josue Paiva <ul>Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
       </td>
-      <td>
+      <td> TB1:
       </td>
     </tr>
   </tbody>
@@ -242,8 +242,8 @@ necesario, utilizando estrategias deaprendizaje apropiadas.*
     <th colspan="2"> </th>
   </tr>
   <tr>
-    <td> </td>
-    <td> </td>
+    <td>Soy Josue Paiva, tengo 22 años y soy de la carrera de Ingeniería de Software, tengo conocimiento de desarrollo web, base de datos en SQL y análisis de datos, me gusta mantener buena comunicación con mis compañeros de equipo, cumplir con mis tareas y apoyar al resto cuando se requiera. </td>
+    <td><img src="assets/students/foto-josue.jpg"width="500"></td>
   </tr>
   <tr>
     <th colspan="2"> </th>
