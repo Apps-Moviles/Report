@@ -1904,6 +1904,75 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 <br>
 
 #### 2.4.2. Impact Mapping
+<p align="center">
+  <img src="assets/impact-mapping/parte1.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 1 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte2.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 2 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte3.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 3 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte4.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 4 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte5.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 5 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte6.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 6 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte7.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 7 - Elaboración propia
+</p>
+
+<br>
 
 #### 2.4.3. Product Backlog <br><br>
 <br>
