@@ -989,7 +989,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="assets/entrevistas/milagros" alt="interview 3 image" width="1000"><br>
+      <img src="assets/entrevistas/milagros.png" alt="interview 3 image" width="1000"><br>
     </td>
   </tr>
 </table>
@@ -1033,6 +1033,46 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td colspan="2"><br>
       <img src="" alt="interview image" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Mery Ojeda</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>06:32</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/ETbg870V7lBChvEppx2gx4MBE-4ZfLOzCBXzvSLsShSsqA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hlQWlc
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+    
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="assets/entrevistas/mery.png" alt="interview image" width="1000"><br>
     </td>
   </tr>
 </table>
