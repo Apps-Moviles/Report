@@ -953,7 +953,46 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
     </td>
   </tr>
 </table>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Milagros Atalaya</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Martin de Porres</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>03:22</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/EQjp6d1Ol1pJuraIzyBEtfgBgNT3CeG6BxMuajasEBBn_Q?e=ywyuo3
 
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+
+    
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="assets/entrevistas/milagros" alt="interview 3 image" width="1000"><br>
+    </td>
+  </tr>
+</table>
 *Entrevistas a Segmento 2*
 ---
 
