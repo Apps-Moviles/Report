@@ -937,7 +937,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   <tr>
     <td><strong>URL</strong></td>
     <td>
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202119095_upc_edu_pe/EQw_Zs8vk-BCvN2nxe25EW0B0QQLSEFE6qBB-vQSVs_HFw?e=xA5KEz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202119095_upc_edu_pe/EQw_Zs8vk-BCvN2nxe25EW0B0QQLSEFE6qBB-vQSVs_HFw?e=xA5KEz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`
   </td>
   </tr>
   <tr>
@@ -976,7 +976,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td><strong>URL</strong></td>
     <td>
-      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/EQjp6d1Ol1pJuraIzyBEtfgBgNT3CeG6BxMuajasEBBn_Q?e=ywyuo3
+      `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/EQjp6d1Ol1pJuraIzyBEtfgBgNT3CeG6BxMuajasEBBn_Q?e=ywyuo3`
 
   </td>
   </tr>
@@ -989,7 +989,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="assets/entrevistas/milagros.png" alt="interview 3 image" width="1000"><br>
+      <img src="assets/entrevistas/milagros.png" alt="interview 3 image" width="400px"><br>
     </td>
   </tr>
 </table>
@@ -1060,7 +1060,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td><strong>URL</strong></td>
     <td>
- https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/ETbg870V7lBChvEppx2gx4MBE-4ZfLOzCBXzvSLsShSsqA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hlQWlc
+ `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/ETbg870V7lBChvEppx2gx4MBE-4ZfLOzCBXzvSLsShSsqA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hlQWlc`
 
   </td>
   </tr>
@@ -1072,7 +1072,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="assets/entrevistas/mery.png" alt="interview image" width="1000"><br>
+      <img src="assets/entrevistas/mery.png" alt="interview image" width="400px"><br>
     </td>
   </tr>
 </table>
@@ -1905,7 +1905,271 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 
 #### 2.4.2. Impact Mapping
 
-#### 2.4.3. Product Backlog
+#### 2.4.3. Product Backlog <br><br>
+<br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>User Story Id</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Story Points (1 / 2 / 3 / 5 / 8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>US01</td>
+      <td>Comprender el propósito de la plataforma</td>
+      <td>Como usuario nuevo, quiero entender rápidamente de qué trata UniMatch, para decidir si me interesa registrarme como estudiante o gerente.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>US26</td>
+      <td>Visualizar la propuesta de valor</td>
+      <td>Como usuario nuevo, quiero ver de inmediato una propuesta visual clara y atractiva, para captar rápidamente la esencia de UniMatch sin necesidad de leer demasiado.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>US04</td>
+      <td>Llamados a la acción claros</td>
+      <td>Como usuario, quiero encontrar botones de acción relevantes a lo largo de la landing, para tomar decisiones sin tener que regresar al inicio.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>US02</td>
+      <td>Registro inmediato desde la landing</td>
+      <td>Como usuario nuevo, quiero acceder rápidamente al formulario de registro, para comenzar a usar la plataforma sin perder tiempo.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>US03</td>
+      <td>Ver testimonios de usuarios reales</td>
+      <td>Como usuario interesado, quiero ver experiencias de otras personas en la plataforma, para sentir confianza antes de crear una cuenta.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>US24</td>
+      <td>Encabezado fijo para navegar</td>
+      <td>Como visitante de la landing page, quiero contar con un encabezado visible en todo momento, para moverme fácilmente entre las secciones sin hacer scroll manualmente.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>US25</td>
+      <td>Acceder a la sección de FAQs</td>
+      <td>Como visitante indeciso, quiero acceder fácilmente a una sección de preguntas frecuentes, para resolver mis dudas antes de registrarme en la plataforma.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>US27</td>
+      <td>Acceder a información de contacto o soporte</td>
+      <td>Como visitante que necesita ayuda, quiero poder acceder fácilmente a los datos de contacto o soporte, para resolver dudas antes de registrarme o publicar un proyecto.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>US05</td>
+      <td>Subir proyecto a mi portafolio</td>
+      <td>Como estudiante, quiero poder subir una URL que dirija a un proyecto de mi portafolio, para que los gerentes o empresas puedan visualizar mi trabajo y evaluar mejor mi experiencia.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>US06</td>
+      <td>Visualización del portafolio por gerentes</td>
+      <td>Como gerente, quiero poder revisar el portafolio de un estudiante antes de seleccionarlo, para evaluar su experiencia previa.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>US07</td>
+      <td>Ver estado de mis postulaciones</td>
+      <td>Como estudiante, quiero consultar el estado de mis postulaciones, para saber si fui considerado.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>US08</td>
+      <td>Ver reputación de un estudiante</td>
+      <td>Como gerente, quiero ver el historial de evaluación de un estudiante, para decidir si confiarle un nuevo proyecto.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>US09</td>
+      <td>Recuperar contraseña</td>
+      <td>Como usuario, quiero poder recuperar mi contraseña, para acceder a mi cuenta si la olvido.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>US10</td>
+      <td>Modificación de perfil de usuario</td>
+      <td>Como usuario, quiero modificar la información de mi perfil para mantener mis datos actualizados en la plataforma.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>US13</td>
+      <td>Calificación del contratador</td>
+      <td>Como estudiante, quiero calificar al empresario luego del proyecto para compartir mi experiencia con futuros postulantes.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>US12</td>
+      <td>Actualizar URL del portafolio</td>
+      <td>Como estudiante, quiero modificar la URL de mi portafolio, para mantener actualizado el enlace que visualizan los gerentes o empresas.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>US14</td>
+      <td>Búsqueda de postulante</td>
+      <td>Como empresario, quiero filtrar entre los postulantes a mis proyectos por carrera, habilidades y calificación previa, para encontrar más fácilmente al candidato ideal para colaborar.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>US15</td>
+      <td>Registrarse como usuario</td>
+      <td>Como usuario nuevo, quiero crear una cuenta, para utilizar la aplicación.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>US16</td>
+      <td>Iniciar sesión</td>
+      <td>Como usuario, quiero iniciar sesión en la aplicación, para acceder a sus funcionalidades.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>US17</td>
+      <td>Crear convocatoria</td>
+      <td>Como gerente, quiero crear convocatorias en la aplicación, para recibir solicitudes de postulantes.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>US18</td>
+      <td>Editar convocatoria</td>
+      <td>Como gerente, quiero editar convocatorias en la aplicación, para corregir o actualizar la información cuando lo necesite.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>US19</td>
+      <td>Eliminar convocatoria</td>
+      <td>Como gerente, quiero eliminar una convocatoria publicada, para evitar recibir nuevas postulaciones cuando el proyecto cierre.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>US20</td>
+      <td>Cerrar sesión</td>
+      <td>Como usuario, quiero poder cerrar sesión en cualquier momento, para asegurar la privacidad de mi cuenta.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>US21</td>
+      <td>Actualizar tecnologias en el perfil del estudiante</td>
+      <td>Como estudiante, quiero actualizar las tecnologías que domino, para que se muestren en mi perfil </td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>US22</td>
+      <td>Visualizar información de empresa</td>
+      <td>Como estudiante, quiero ver la información de la empresa a la que estoy postulando, para mantenerme más informado.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>US23</td>
+      <td>Actualizar tecnologías en el perfil de la empresa</td>
+      <td>Como gerente, quiero actualizar las tecnologías que se utilizan en mi empresa, para que se muestren en el perfil de la compañía. </td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>TS01</td>
+      <td>Endpoint para registro de usuarios</td>
+      <td>Como developer, quiero crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), para permitir su autenticación y posterior personalización de la plataforma.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>TS02</td>
+      <td>Endpoint para creación de proyectos</td>
+      <td>Como developer, quiero crear un endpoint para que los gerentes puedan publicar nuevos proyectos, para que los estudiantes puedan visualizar y postular.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>TS03</td>
+      <td>Endpoint para postulación a proyectos</td>
+      <td>Como developer, quiero desarrollar un endpoint para que los estudiantes puedan postular a proyectos, para registrar su interés formal en una oportunidad.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>TS04</td>
+      <td>Endpoint para calificación de desempeño</td>
+      <td>Como developer, quiero crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, para actualizar su reputación en la plataforma.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>US28</td>
+      <td>Visualizar oportunidades para estudiante</td>
+      <td>Como estudiante que inicio sesión, quiero poder acceder a un apartado de oportunidades, para para postularme a uno.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>US29</td>
+      <td>Visualizar de portafolio para estudiante</td>
+      <td>Como estudiante que inicio sesión, quiero poder acceder a un apartado de Portafolio, para para visualizar mis trabajos hechos.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>US30</td>
+      <td>Visualizar de postulaciones para gerentes</td>
+      <td>Como gerente que inicio sesión, quiero poder acceder a un apartado de Postulaciones, para para visualizar las diferentes postulaciones hechas a mi proyecto.</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br><br>
+
+
+<p align="center">
+  <img src="assets/product-backlog/productBacklog.png" alt="product backlog" width="80%">
+</p>
+
+<p align="center">
+  Product Backlog - Elaboración propia
+</p>
+
+<br>
+
+`https://trello.com/invite/b/68c75d5b2db29e2533cee3c9/ATTI7028490081012c55ce670107488b5dda32C8D323/product-backlog-unimatch`
+
+---
 
 ### 2.5 Strategic-Level Domain-Driven Design
 
