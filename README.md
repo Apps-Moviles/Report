@@ -937,7 +937,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   <tr>
     <td><strong>URL</strong></td>
     <td>
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202119095_upc_edu_pe/EQw_Zs8vk-BCvN2nxe25EW0B0QQLSEFE6qBB-vQSVs_HFw?e=xA5KEz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202119095_upc_edu_pe/EQw_Zs8vk-BCvN2nxe25EW0B0QQLSEFE6qBB-vQSVs_HFw?e=xA5KEz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`
   </td>
   </tr>
   <tr>
@@ -976,7 +976,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td><strong>URL</strong></td>
     <td>
-      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/EQjp6d1Ol1pJuraIzyBEtfgBgNT3CeG6BxMuajasEBBn_Q?e=ywyuo3
+      `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/EQjp6d1Ol1pJuraIzyBEtfgBgNT3CeG6BxMuajasEBBn_Q?e=ywyuo3`
 
   </td>
   </tr>
@@ -989,7 +989,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="assets/entrevistas/milagros.png" alt="interview 3 image" width="1000"><br>
+      <img src="assets/entrevistas/milagros.png" alt="interview 3 image" width="400px"><br>
     </td>
   </tr>
 </table>
@@ -1060,7 +1060,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td><strong>URL</strong></td>
     <td>
- https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/ETbg870V7lBChvEppx2gx4MBE-4ZfLOzCBXzvSLsShSsqA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hlQWlc
+ `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/ETbg870V7lBChvEppx2gx4MBE-4ZfLOzCBXzvSLsShSsqA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hlQWlc`
 
   </td>
   </tr>
@@ -1072,7 +1072,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="assets/entrevistas/mery.png" alt="interview image" width="1000"><br>
+      <img src="assets/entrevistas/mery.png" alt="interview image" width="400px"><br>
     </td>
   </tr>
 </table>
@@ -1261,9 +1261,984 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 
 #### 2.4.1. User Stories
 
-#### 2.4.2. Impact Mapping
+<table border ="1" >
+  <tbody>
+    <tr>
+      <td>Epic / Story ID</td>
+      <td>Título</td>
+      <td>Descripción</td>
+      <td>Criterios de Aceptación</td>
+      <td>Relación con Epic</td>
+    </tr>
+    <tr>
+      <td>EP01</td>
+      <td>Registro y Onboarding de Usuarios</td>
+      <td>
+        <strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> registrarme y completar un perfil profesional guiado, <strong>para</strong> poder acceder a oportunidades o gestionar talento según mi rol.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP02</td>
+      <td>Gestión de Oportunidades y Proyectos</td>
+      <td>
+        <strong>Como</strong> gerente de una empresa, <strong>quiero</strong> publicar proyectos con requisitos personalizados, <strong>para</strong> atraer a estudiantes con el perfil adecuado y resolver tareas específicas de mi organización.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP03</td>
+      <td>Exploración y Postulación a Proyectos</td>
+      <td>
+        <strong>Como</strong> estudiante universitario, <strong>quiero</strong> explorar y postularme a proyectos compatibles con mis habilidades e intereses, <strong>para</strong> ganar experiencia práctica y construir un portafolio sólido.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP04</td>
+      <td>Evaluación y Retroalimentación</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> evaluar el desempeño de los estudiantes durante y al finalizar el proyecto, <strong>para</strong> asegurar la calidad del trabajo y fomentar una cultura de mejora continua.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP05</td>
+      <td>Creación y Visualización de Portafolio</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> subir proyectos y evidencias de mis habilidades en un portafolio digital, <strong>para</strong> mostrar mi experiencia a futuras oportunidades laborales.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP06</td>
+      <td>Validación y Reputación del Talento</td>
+      <td>
+        <strong>Como</strong> usuario de la plataforma, <strong>quiero</strong> consultar la reputación de otros usuarios (estudiantes o gerentes), <strong>para</strong> tomar decisiones informadas al aceptar postulaciones o colaborar en proyectos.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP07</td>
+      <td>Búsqueda y Filtros Inteligentes</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> buscar proyectos o talentos aplicando filtros específicos como carrera, habilidades o disponibilidad, <strong>para</strong> encontrar rápidamente las opciones que mejor se adaptan a mis necesidades.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP08</td>
+      <td>Presentación Clara del Valor de la Plataforma</td>
+      <td>
+        <strong>Como</strong> visitante nuevo en la web, <strong>quiero</strong> entender fácilmente qué ofrece UniMatch, <strong>para</strong> saber si se adapta a mis necesidades como estudiante o empresa.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP09</td>
+      <td>Validación Social y Casos de Éxito</td>
+      <td>
+        <strong>Como</strong> potencial usuario, <strong>quiero</strong> ver testimonios y casos de éxito reales, <strong>para</strong> confiar en la plataforma antes de registrarme.</td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>US01</td>
+      <td>Comprender el propósito de la plataforma desde la página de inicio</td>
+      <td>
+        <strong>Como</strong> usuario nuevo, <strong>quiero</strong> entender rápidamente de qué trata UniMatch, <strong>para</strong> decidir si me interesa registrarme como estudiante o gerente.</td>
+      <td>
+        <strong>Escenario 1: Primer contacto con la Landing Page</strong><br>
+        <strong>Dado</strong> que soy un usuario que visita la landing por primera vez, <strong>cuando</strong> accedo al sitio principal, <strong>entonces</strong> visualizo en los primeros 15 segundos un mensaje claro que explica qué es UniMatch y cómo funciona.
+        <br><br>
+        <strong>Escenario 2: Perfilamiento por tipo de usuario</strong><br>
+        <strong>Dado</strong> que soy un visitante interesado en contratar talento, <strong>cuando</strong> hago scroll o clic en "¿Cómo funciona?", <strong>entonces</strong> puedo identificar fácilmente los beneficios dirigidos a empresas o gerentes sin confundirlos con los de estudiantes.
+      </td>
+      <td>Epic 08</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Registro inmediato desde la landing</td>
+      <td>
+        <strong>Como</strong> usuario nuevo, <strong>quiero</strong> acceder rápidamente al formulario de registro, <strong>para</strong> comenzar a usar la plataforma sin perder tiempo.</td>
+      <td>
+        <strong>Escenario 1: Acceso directo desde el encabezado</strong><br>
+        <strong>Dado</strong> que soy un usuario que visita la landing por primera vez, <strong>cuando</strong> hago clic en el botón "Empieza" ubicado en el encabezado, <strong>entonces</strong> soy redirigido al formulario de registro correspondiente (estudiante o gerente).
+      </td>
+      <td>Epic 01</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>Ver testimonios de usuarios reales</td>
+      <td>
+        <strong>Como</strong> usuario interesado, <strong>quiero</strong> ver experiencias de otras personas en la plataforma, <strong>para</strong> sentir confianza antes de crear una cuenta.</td>
+      <td>
+        <strong>Escenario 1: Visualización básica de testimonios</strong><br>
+        <strong>Dado</strong> que llego a la sección de testimonios, <strong>cuando</strong> leo los testimonios, <strong>entonces</strong> puedo ver el nombre, rol (estudiante o gerente) y un mensaje real validado por el sistema.
+      </td>
+      <td>Epic 09</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Llamados a la acción claros en cada sección</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> encontrar botones de acción relevantes a lo largo de la landing, <strong>para</strong> tomar decisiones sin tener que regresar al inicio.
+      </td>
+      <td>
+        <strong>Escenario 1: CTA visibles al finalizar cada bloque</strong><br>
+        <strong>Dado</strong> que estoy navegando por secciones como “¿Cómo funciona?” o “Casos de éxito”, <strong>cuando</strong> llego al final de una sección, <strong>entonces</strong> encuentro un botón como “Regístrate ahora” o “Publica tu primer proyecto” de forma clara y destacada.
+      </td>
+      <td>Epic 01</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Subir proyecto a mi portafolio</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> poder subir una URL que dirija a un proyecto de mi portafolio, <strong>para</strong> que los gerentes o empresas puedan visualizar mi trabajo y evaluar mejor mi experiencia.
+      </td>
+      <td>
+        <strong>Escenario 1: Registro exitoso del proyecto con URL</strong><br>
+        <strong>Dado</strong> que soy un estudiante autenticado y me encuentro en la sección "Configuración" <strong>cuando</strong> ingresa a "mi portafolio" e inserta una URL válida <strong>entonces</strong> la URL debe guardarse correctamente y debe aparecer como un enlace activo en la vista de portafolio.
+      </td>
+      <td>Epic 05</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>Visualización del portafolio por gerentes</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> poder revisar el portafolio de un estudiante antes de seleccionarlo, <strong>para</strong> evaluar su experiencia previa.
+      </td>
+      <td>
+        <strong>Escenario 1: Visualización del enlace por parte del gerente</strong><br>
+        <strong>Dado</strong> que soy un gerente autenticado y estoy revisando el perfil de un estudiante que esta postulando a uno de mis proyectos <strong>cuando</strong> clickeo en "ver portafolio" <strong>entonces</strong> debo ser redirigido a la página de su portafolio en una nueva pestaña.
+      </td>
+      <td>Epic 05</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>Ver estado de mis postulaciones</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> consultar el estado de mis postulaciones, <strong>para</strong> saber si fui considerado.
+      </td>
+      <td>
+        <strong>Escenario 1: Vista general del estado de cada postulación</strong><br>
+        <strong>Dado</strong> que he postulado a varios proyectos, <strong>cuando</strong> accedo a la sección "Mis Postulaciones", <strong>entonces</strong> puedo ver el nombre del proyecto, la empresa, y su estado: En revisión, Aceptado o Rechazado.
+        <br><br>
+        <strong>Escenario 2: Notificación de cambios en el estado</strong><br>
+        <strong>Dado</strong> que estoy esperando una respuesta, <strong>cuando</strong> el gerente cambia el estado de mi postulación, <strong>entonces</strong> recibo una notificación dentro de la plataforma y/o por correo electrónico.
+      </td>
+      <td>Epic 04</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>Ver reputación de un estudiante</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> ver el historial de evaluación de un estudiante, <strong>para</strong> decidir si confiarle un nuevo proyecto.
+      </td>
+      <td>
+        <strong>Escenario 1: Acceso a evaluación desde el perfil del estudiante</strong><br>
+        <strong>Dado</strong> que estoy considerando un postulante, <strong>cuando</strong> entro a su perfil, <strong>entonces</strong> puedo visualizar su reputación con puntuaciones previas, feedback recibido y métricas como cumplimiento de plazos.
+        <br><br>
+        <strong>Escenario 2: Información clara y filtrada</strong><br>
+        <strong>Dado</strong> que quiero una lectura rápida, <strong>cuando</strong> reviso la reputación, <strong>entonces</strong> puedo ver una visualización resumida con promedio de evaluación, número de proyectos completados y etiquetas destacadas.
+      </td>
+      <td>Epic 06</td>
+    </tr>
+    <tr>
+      <td>US09</td>
+      <td>Recuperar contraseña</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> poder recuperar mi contraseña, <strong>para</strong> acceder a mi cuenta si la olvido..
+      </td>
+      <td>
+        <strong>Escenario 1: Solicitud de recuperación</strong><br>
+        <strong>Dado</strong> que olvidé mi contraseña, <strong>cuando</strong> selecciono la opción "¿Olvidaste tu contraseña?" en la pantalla de login, <strong>entonces</strong> puedo ingresar mi correo electrónico asociado a la cuenta.
+        <br><br>
+        <strong>Escenario 2: Enlace de recuperación enviado</strong><br>
+        <strong>Dado</strong> que ingreso un correo válido, <strong>cuando</strong> envío la solicitud, <strong>entonces</strong> recibo un correo con un enlace temporal para establecer una nueva contraseña.
+        <br><br>
+        <strong>Escenario 3: Contraseña restablecida correctamente</strong><br>
+        <strong>Dado</strong> que hago clic en el enlace recibido, <strong>cuando</strong> ingreso una nueva contraseña válida y la confirmo, <strong>entonces</strong> mi acceso se restablece y puedo ingresar normalmente a la plataforma.
+      </td>
+      <td>Epic 01</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>Modificación de perfil de usuario</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> modificar la información de mi perfil <strong>para</strong> mantener mis datos actualizados en la plataforma.
+      </td>
+      <td>
+        <strong>Escenario 1:   Usuario modifica nombre y descripción</strong><br>
+        <strong>Dado</strong> que el usuario ha iniciado sesión <strong>Y</strong> se encuentra en la sección de perfil<strong>cuando</strong>  edita su nombre o descripción  <strong>entonces</strong>  los cambios deben guardarse correctamente y mostrarse en el perfil.
+        <br><br>
+        <strong>Escenario 2:  Usuario cambia su foto de perfil</strong><br>
+        <strong>Dado</strong>  que el usuario accede a su perfil <strong>cuando</strong> sube una nueva imagen <strong>entonces</strong> la nueva foto debe reemplazar la anterior y visualizarse correctamente.
+        <br><br>
+      </td>
+      <td>Epic 01</td>
+    </tr>
+        <tr>
+      <td>US11</td>
+      <td>Calificación de estudiante freelance</td>
+      <td>
+        <strong>Como</strong> empresario, <strong>quiero</strong>  calificar a un estudiante luego de un proyecto <strong>para</strong> reflejar su desempeño en la plataforma.
+      </td>
+      <td>
+        <strong>Escenario 1: Empresario deja una calificación</strong><br>
+        <strong>Dado</strong> que el proyecto ha finalizado <strong>cuando</strong> el empresario accede al perfil del estudiante <strong>Y</strong> completa una calificación con comentario <strong>entonces</strong> esta debe guardarse y reflejarse públicamente.
+        <br><br>
+      </td>
+      <td>Epic 04</td>
+    </tr>
+    <tr>
+      <td>US12</td>
+      <td>Actualización de URL del portafolio del estudiante</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> modificar la URL de mi portafolio, <strong>para</strong>  mantener actualizado el enlace que visualizan los gerentes o empresas.
+      </td>
+      <td>
+        <strong>Escenario 1: Actualización exitosa de URL del portafolio</strong><br>
+        <strong>Dado</strong> que el estudiante ha iniciado sesión y se encuentra en la sección de mi perfil <strong>cuando</strong> actualiza el campo de URL con un enlace válido y hace clic en “Guardar cambios” <strong>entonces</strong> el sistema debe almacenar la nueva URL y reflejarla correctamente en su perfil público.
+        <br><br>
+        <strong>Escenario 2: Error al ingresar URL inválida</strong><br>
+        <strong>Dado</strong> que el estudiante desea actualizar su portafolio <strong>cuando</strong> ingresa una URL mal formada o vacía <strong>entonces</strong> el sistema debe mostrar un mensaje de error indicando que el enlace no es válido y no debe actualizar la URL anterior.
+        <br><br>
+      </td>
+      <td>Epic 05</td>
+    </tr>
+        <tr>
+      <td>US13</td>
+      <td>Calificación del contratador</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> calificar al empresario luego del proyecto <strong>para</strong> compartir mi experiencia con futuros postulantes.
+      </td>
+      <td>
+        <strong>Escenario 1:  Estudiante deja una calificación al empresario</strong><br>
+        <strong>Dado</strong> que el proyecto ha concluido <strong>cuando</strong> el estudiante selecciona puntuación y comentario <strong>entonces</strong> el sistema debe guardar y mostrar la evaluación.
+        <br><br>
+      </td>
+      <td>Epic 04</td>
+    </tr>
+        <tr>
+      <td>US14</td>
+      <td>Búsqueda de postulante</td>
+      <td>
+        <strong>Como</strong> empresario, <strong>quiero</strong> filtrar entre los postulantes a mis proyectos por carrera, habilidades y calificación previa, <strong>para</strong> encontrar más fácilmente al candidato ideal para colaborar.
+      </td>
+      <td>
+        <strong>Escenario 1: Filtrado por carrera</strong><br>
+        <strong>Dado</strong> que el gerente visualiza las postulaciones a uno de sus proyectos <strong>cuando</strong> selecciona una carrera específica desde el panel de filtros <strong>entonces</strong> el sistema muestra solo a los postulantes que pertenecen a dicha carrera.
+        <br><br>
+        <strong>Escenario 2: Filtrado por habilidades</strong><br>
+        <strong>Dado</strong> que el gerente accede a la lista de postulantes <strong>cuando</strong> ingresa una o más habilidades en el filtro correspondiente <strong>entonces</strong> el sistema filtra y muestra solo a los postulantes que tengan esas habilidades en su perfil.
+        <br><br>
+        <strong>Escenario 3: Filtrado por calificación</strong><br>
+        <strong>Dado</strong> que el gerente desea evaluar postulantes previamente calificados <strong>cuando</strong> aplica el filtro de calificación mínima (por ejemplo, 4 estrellas o más) <strong>entonces</strong> el sistema solo muestra postulantes con calificaciones iguales o superiores.
+      </td>
+      <td>Epic 07</td>
+    </tr>
+    <tr>
+      <td>US15</td>
+      <td>Registrarse como usuario</td>
+      <td>
+        <strong>Como</strong> usuario nuevo, <strong>quiero</strong> crear una cuenta, <strong>para</strong> utilizar la aplicación.
+      </td>
+      <td>
+        <strong>Escenario 1: Estudiante crea una cuenta</strong><br>
+        <strong>Dado</strong> que el estudiante se encuentra en la pantalla de registro
+        <strong>Y</strong> selecciona la opción "Registrarse como estudiante". <strong>Cuando</strong> ingresa un nombre de usuario, un correo electronico y una contraseña válidos <strong>Y </strong> presiona el botón "Registrarse" <strong>
+        Entonces</strong> la cuenta debe crearse correctamente.
+        <br><br>
+        <strong>Escenario 2: Gerente crea una cuenta</strong><br>
+        <strong>Dado</strong> que el gerente se encuentra en la pantalla de registro
+        <strong>Y</strong> selecciona la opción "Registrarse como gerente". <strong>Cuando</strong> ingresa un nombre de usuario, un correo electronico y una contraseña válidos <strong>Y </strong> presiona el botón "Registrarse" <strong>
+        Entonces</strong> la cuenta debe crearse correctamente.
+        <br><br>
+      </td>
+      <td>Epic 01</td>
+    </tr>
+    <tr>
+      <td>US16</td>
+      <td>Iniciar sesión</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> iniciar sesión en la aplicación, <strong>para</strong> acceder a sus funcionalidades.
+      </td>
+      <td>
+        <strong>Escenario 1: Usuario inicia sesión</strong><br>
+        <strong>Dado</strong> que el usuario se encuentra en la pantalla de inicio de sesión
+        <strong>Cuando</strong> ingresa  un correo electronico y una contraseña válidos <strong>Y</strong> presiona el botón "Iniciar Sesión" <strong>
+        Entonces</strong> el usuario debe acceder correctamente a la aplicación.
+        <br><br>
+        <strong>Escenario 2: Fallo al iniciar sesión</strong><br>
+        <strong>Dado</strong> que el usuario se encuentra en la pantalla de inicio de sesión
+        <strong>Cuando</strong> ingresa  un correo electronico o una contraseña inválidos <strong>Y</strong> presiona el botón "Iniciar Sesión" <strong>
+        Entonces</strong> el sistema debe enviar un mensaje de error al usuario.
+        <br><br>
+      </td>
+      <td>Epic 01</td>
+    </tr>
+    <tr>
+      <td>US17</td>
+      <td>Crear Convocatoria</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> crear convocatorias en la aplicación, <strong>para</strong> recibir solicitudes de postulantes.
+      </td>
+      <td>
+        <strong>Escenario 1: Gerente crea convocatoria</strong><br>
+        <strong>Dado</strong> que el usuario se encuentra en el apartado de proyectos
+        <strong>Cuando</strong> hace click en "Nueva convocatoria" <strong>Y</strong> añade los datos requeridos (título, descripción, duración, sueldo, habilidades)
+        <strong>Y</strong> le da click al botón "Publicar convocatoria" 
+        <strong>Entonces</strong> la convocatoria será publicada en la aplicación.
+        <br><br>
+        <strong>Escenario 2: Gerente crea convocatoria con información incompleta</strong><br>
+        <strong>Dado</strong> que el usuario se encuentra en el apartado de proyectos
+        <strong>Cuando</strong> hace click en "Nueva convocatoria" <strong>Y</strong> solo añade algunos de los datos requeridos (título, descripción, duración, sueldo, habilidades) 
+        <strong>Y</strong> le da click al botón "Publicar convocatoria" 
+        <strong> Entonces</strong> el gerente recibirá un aviso de que su convocatoria no fue publicada.
+        <br><br>
+      </td>
+      <td>Epic 02</td>
+    </tr>
+    <tr>
+      <td>US18</td>
+      <td>Editar Convocatoria</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> editar convocatorias en la aplicación, <strong>para</strong>  corregir o actualizar la infromación cuando lo necesite.
+      </td>
+      <td>
+        <strong>Escenario 1: Gerente edita convocatoria</strong><br>
+        <strong>Dado</strong> que el gerente haya creado una convocatoria
+        <strong>Y</strong> se encuentre en el apartado de convocatorias  
+        <strong>Cuando</strong> hace click en el botón "Editar información" de una convocatoria <strong>Y</strong> modifica los datos requeridos (título, descripción, duración, sueldo, habilidades) <strong>
+        <strong>Y</strong> le da click al botón "Guardar cambios" 
+        Entonces</strong> los cambios deben de guardarse y mostrarse correctamente en la aplicación.
+        <br><br>
+      </td>
+      <td>Epic 02</td>
+    </tr>
+    <tr>
+      <td>US19</td>
+      <td>Eliminar Convocatoria</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> eliminar una convocatoria publicada en la aplicación, <strong>para</strong> evitar recibir nuesvas postulaciones cuando el proyecto cierre.
+      </td>
+      <td>
+        <strong>Escenario 1: Gerente borra convocatoria</strong><br>
+        <strong>Dado</strong> que el gerente haya creado una convocatoria
+        <strong>Y</strong> se encuentre en el apartado de convocatorias  
+        <strong>Cuando</strong> hace click en el botón "Eliminar" de una convocatoria
+        <strong>Y</strong> da click en el botón "Sí" en el cuadro de confirmación. 
+        <strong>Entonces</strong> la convocatoria será eliminada de la aplicación.
+        <br><br>
+        <strong>Escenario 2: Gerente cancela la eliminación de convocatoria</strong><br>
+        <strong>Dado</strong> que el gerente haya creado una convocatoria
+        <strong>Y</strong> se encuentre en el apartado de convocatorias  
+        <strong>Cuando</strong> hace click en el botón "Eliminar" de una convocatoria
+        <strong>Y</strong> da click en el botón "No" en el cuadro de confirmación. 
+        <strong>Entonces</strong> la convocatoria se mantendrá disponible en la aplicación.
+      </td>
+      <td>Epic 02</td>
+    </tr>
+    <tr>
+      <td>US20</td>
+      <td>Cerrar sesión</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> poder cerrar sesión en cualquier momento, <strong>para</strong> asegurar la privacidad de mi cuenta.
+      </td>
+      <td>
+        <strong>Escenario 1: Usuario cierra sesión</strong><br>
+        <strong>Dado</strong> que estoy en cualquier parte de la aplicación
+        <strong>Cuando</strong> presiono el botón de “Cerrar sesión”
+        <strong>Entonces</strong> la sesión finaliza y soy redirigido a la pantalla de inicio.
+      </td>
+      <td>Epic 01</td>
+    </tr>
+    <tr>
+      <td>US21</td>
+      <td>Actualizar tecnologias en el perfil del estudiante</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> actualizar las tecnologías que domino, <strong>para</strong> que se muestren en mi perfil 
+      </td>
+      <td>
+        <strong>Escenario 1: Estudiante añade una tecnología a su perfil
+</strong><br>
+        <strong>Dado que </strong> el estudiante accede a su perfil y hace click en “Cambiar” junto a Tecnologías y Especializaciones
+        <strong>Cuando</strong> escribe el nombre de la tecnología Y hace click en Agregar
+        <strong>Entonces</strong>  la tecnología se añade al  perfil.
+        <br><br>
+        <strong>Escenario 2: Estudiante elimina una tecnología de su perfil</strong><br>
+        <strong>Dado que</strong> el estudiante accede a la configuración y hace click en “Cambiar” junto a Tecnologías y Especializaciones 
+        <strong>Cuando</strong> elimina una de las tecnologías agregadas  
+        <strong>Entonces</strong>  la tecnología ya no se visualizará en su perfil.
+      </td>
+      <td>Epic 06</td>
+    </tr>
+    <tr>
+      <td>US22</td>
+      <td>Visualizar información de empresa</td>
+      <td>
+        <strong>Como</strong> estudiante, <strong>quiero</strong> ver la información de la empresa a la que estoy postulando, <strong>para</strong> mantenerme más informado.
+      </td>
+      <td>
+        <strong>Escenario 1: Estudiante visualiza la información de empresa    </strong><br>
+        <strong>Dado que </strong> estoy viendo la información de una convocatoria
+        <strong>Cuando</strong>  el usuario hace click en “Ver Empresa”
+        <strong>Entonces</strong> se mostrará un apartado con información de la empresa como correo electrónico, número de contacto y calificación
+      </td>
+      <td>Epic 03</td>
+    </tr>
+    <tr>
+      <td>US23</td>
+      <td>Actualizar tecnologías en el perfil de la empresa</td>
+      <td>
+        <strong>Como</strong> gerente, <strong>quiero</strong> actualizar las tecnologías que se utilizan en mi empresa, <strong>para</strong> que se muestren en el perfil de la compañía. 
+      </td>
+      <td>
+        <strong>Escenario 1: Gerente añade una tecnología a su perfil</strong><br>
+        <strong>Dado</strong> que el gerente accede a su perfil y hace click en “Cambiar” junto a Tecnologías y Especializaciones 
+        <strong>Cuando</strong> escribe el nombre de la tecnología Y hace click en Agregar
+        <strong>Entonces</strong> la tecnología se añade al  perfil de la compañía.
+            <br><br>
+        <strong>Escenario 2: Gerente elimina una tecnología de su perfil</strong><br>
+        <strong>Dado que</strong> el gerente accede a la configuración y hace click en “Cambiar” junto a Tecnologías y Especializaciones 
+        <strong>Cuando</strong> elimina una de las tecnologías agregadas  
+        <strong>Entonces</strong>  la tecnología ya no se visualizará en el perfil de la empresa
+      </td>
+      <td>Epic 06</td>
+    </tr>
+    <tr>
+      <td>US24</td>
+      <td>Tener un encabezado fijo para navegar por la página</td>
+      <td>
+        <strong>Como</strong> visitante de la landing page, <strong>quiero</strong> contar con un encabezado visible en todo momento, <strong>para</strong> moverme fácilmente entre las secciones sin hacer scroll manualmente.
+      </td>
+      <td>
+        <strong>Escenario 1: Encabezado permanece visible al hacer scroll</strong><br>
+        <strong>Dado</strong> que estoy navegando hacia abajo en la landing page,
+        <strong>Cuando</strong> hago scroll,
+        <strong>Entonces</strong> el encabezado permanece fijo en la parte superior con accesos visibles a las secciones principales.
+        <br><br>
+        <strong>Escenario 2: Enlaces del encabezado con anclaje interno</strong><br>
+        <strong>Dado</strong> que deseo moverme a otra sección desde cualquier parte,
+        <strong>Cuando</strong> hago clic en un ítem del encabezado (ej. “Planes”, “Casos de éxito”, “Registro”),
+        <strong>Entonces</strong> la página se desplaza automáticamente hasta la sección correspondiente sin recargar.
+      </td>
+      <td>Epic 08</td>
+    </tr>
+    <tr>
+      <td>US25</td>
+      <td>Acceder a la sección de preguntas frecuentes (FAQs)</td>
+      <td>
+        <strong>Como</strong> visitante indeciso, <strong>quiero</strong> acceder fácilmente a una sección de preguntas frecuentes, <strong>para</strong> resolver mis dudas antes de registrarme en la plataforma.
+      </td>
+      <td>
+        <strong>Escenario 1: Acceso directo desde el menú</strong><br>
+        <strong>Dado</strong> que estoy navegando en la landing page,
+        <strong>Cuando</strong> hago clic en “FAQs” en el encabezado,
+        <strong>Entonces</strong> soy llevado directamente a la sección de preguntas frecuentes sin salir de la página.
+        <br><br>
+        <strong>Escenario 2: Visualización organizada de preguntas y respuestas</strong><br>
+        <strong>Dado</strong> que ya estoy en la sección FAQs,
+        <strong>Cuando</strong> reviso las preguntas,
+        <strong>Entonces</strong> estas aparecen con un formato desplegable que permite leer las respuestas una por una.
+      </td>
+      <td>Epic 08</td>
+    </tr>
+    <tr>
+      <td>US26</td>
+      <td>Visualizar la propuesta de valor con un diseño atractivo desde el inicio</td>
+      <td>
+        <strong>Como</strong> usuario nuevo, <strong>quiero</strong> ver de inmediato una propuesta visual clara y atractiva, <strong>para</strong> captar rápidamente la esencia de UniMatch sin necesidad de leer demasiado.
+      </td>
+      <td>
+        <strong>Escenario 1: Mensaje central visible en el primer vistazo</strong><br>
+        <strong>Dado</strong> que ingreso a la landing page,
+        <strong>Cuando</strong> visualizo el primer bloque superior,
+        <strong>Entonces</strong> veo un mensaje corto, atractivo y centrado que transmite el valor principal de la plataforma.
+        <br><br>
+        <strong>Escenario 2: Imagen o ilustración complementaria al mensaje</strong><br>
+        <strong>Dado</strong> que leo el mensaje principal,
+        <strong>Cuando</strong> observo el diseño,
+        <strong>Entonces</strong> se acompaña de una imagen relevante, que refuerza visualmente la propuesta de valor.
+      </td>
+      <td>Epic 08</td>
+    </tr>
+    <tr>
+      <td>US27</td>
+      <td>Acceder a información de contacto o soporte desde la landing</td>
+      <td>
+        <strong>Como</strong> visitante que necesita ayuda, <strong>quiero</strong> poder acceder fácilmente a los datos de contacto o soporte, <strong>para</strong> resolver dudas antes de registrarme o publicar un proyecto.
+      </td>
+      <td>
+        <strong>Escenario 1: Acceso al contacto desde el pie de página</strong><br>
+        <strong>Dado</strong> que estoy en la landing page,
+        <strong>Cuando</strong> llego al final del sitio,
+        <strong>Entonces</strong> visualizo una sección con enlaces a “Contáctanos”, correo de soporte, y redes sociales.
+      </td>
+      <td>Epic 08</td>
+    </tr>
+    <tr>
+      <td>US28</td>
+      <td>Visualizar oportunidades para estudiante</td>
+      <td>
+        <strong>Como</strong> estudiante que inicio sesión, <strong>quiero</strong> poder acceder a un apartado de oportunidades, <strong>para</strong> para postularme a uno.
+      </td>
+      <td>
+        <strong>Escenario 1: Accedo a el apartado Oportunidades</strong><br>
+        <strong>Dado</strong> que estoy en el inicio de la aplicación,
+        <strong>Cuando</strong> presiono en Oportunidades,
+        <strong>Entonces</strong> visualizo diferentes proyectos para postularme.
+      </td>
+      <td>Epic 03</td>
+    </tr>
+    <tr>
+      <td>US29</td>
+      <td>Visualizar de portafolio para estudiante</td>
+      <td>
+        <strong>Como</strong> estudiante que inicio sesión, <strong>quiero</strong> poder acceder a un apartado de Portafolio, <strong>para</strong> para visualizar mis trabajos hechos.
+      </td>
+      <td>
+        <strong>Escenario 1: Accedo a el apartado Portafolios</strong><br>
+        <strong>Dado</strong> que estoy en el inicio de la aplicación,
+        <strong>Cuando</strong> presiono en Portafolios,
+        <strong>Entonces</strong> visualizo diferentes trabajos hechos.
+      </td>
+      <td>Epic 05</td>
+    </tr>
+    <tr>
+      <td>US30</td>
+      <td>Visualizar de postulaciones para gerentes</td>
+      <td>
+        <strong>Como</strong> gerente que inicio sesión, <strong>quiero</strong> poder acceder a un apartado de Postulaciones, <strong>para</strong> para visualizar las diferentes postulaciones hechas a mi proyecto.
+      </td>
+      <td>
+        <strong>Escenario 1: Accedo a el apartado Postulaciones</strong><br>
+        <strong>Dado</strong> que estoy en el inicio de la aplicación,
+        <strong>Cuando</strong> presiono en Postulaciones,
+        <strong>Entonces</strong> visualizo diferentes postulaciones hechas en mis proyectos.
+      </td>
+      <td>Epic 02</td>
+    </tr>
+    <tr>
+      <td>TS01</td>
+      <td>Endpoint para registro de usuarios</td>
+      <td>
+        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), <strong>para</strong> permitir su autenticación y posterior personalización de la plataforma.
+      </td>
+      <td>
+        <strong>Escenario 1: Registro exitoso</strong><br>
+        <strong>Dado</strong> que el usuario ingresa datos válidos (nombre, correo, contraseña, rol),
+        <strong>Cuando</strong> envía una solicitud POST al endpoint,
+        <strong>Entonces</strong> el sistema crea la cuenta y responde con código 201 Created.
+        <br><br>
+        <strong>Escenario 2: Error en validación de campos</strong><br>
+        <strong>Dado</strong> que el usuario omite campos requeridos o envía datos inválidos,
+        <strong>Cuando</strong> envía la solicitud,
+        <strong>Entonces</strong> el sistema responde con código 400 Bad Request y un mensaje de error claro.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TS02</td>
+      <td>Endpoint para creación de proyectos</td>
+      <td>
+        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint para que los gerentes puedan publicar nuevos proyectos, <strong>para</strong> que los estudiantes puedan visualizar y postular.
+      </td>
+      <td>
+        <strong>Escenario 1: Proyecto creado correctamente</strong><br>
+        <strong>Dado</strong> que el gerente envía todos los datos requeridos (nombre, descripción, habilidades, plazos),
+        <strong>Cuando</strong> realiza un POST a /api/projects,
+        <strong>Entonces</strong> el sistema guarda el proyecto y responde con código 201 Created.
+        <br><br>
+        <strong>Escenario 2: Falta de autorización</strong><br>
+        <strong>Dado</strong> que un usuario no autenticado intenta crear un proyecto,
+        <strong>Cuando</strong> envía la solicitud,
+        <strong>Entonces</strong> el sistema responde con código 401 Unauthorized.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TS03</td>
+      <td>Endpoint para postulación a proyectos</td>
+      <td>
+        <strong>Como</strong> developer, <strong>quiero</strong> desarrollar un endpoint para que los estudiantes puedan postular a proyectos, <strong>para</strong> registrar su interés formal en una oportunidad.
+      </td>
+      <td>
+        <strong>Escenario 1: Postulación registrada correctamente</strong><br>
+        <strong>Dado</strong> que el estudiante está autenticado y el proyecto existe,
+        <strong>Cuando</strong> envía un POST a /api/applications,
+        <strong>Entonces</strong> el sistema registra su postulación y responde con código 201 Created.
+        <br><br>
+        <strong>Escenario 2: Postulación duplicada</strong><br>
+        <strong>Dado</strong> que el estudiante ya postuló antes al mismo proyecto,
+        <strong>Cuando</strong> intenta enviar otra solicitud,
+        <strong>Entonces</strong> el sistema responde con código 409 Conflict.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TS04</td>
+      <td>Endpoint para calificación de desempeño</td>
+      <td>
+        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, <strong>para</strong> actualizar su reputación en la plataforma.
+      </td>
+      <td>
+        <strong>Escenario 1: Evaluación registrada correctamente</strong><br>
+        <strong>Dado</strong> que el gerente finalizó el proyecto y el estudiante participó,
+        <strong>Cuando</strong> envía un POST a /api/evaluations,
+        <strong>Entonces</strong> la evaluación se guarda y se actualiza el perfil del estudiante.
+        <br><br>
+        <strong>Escenario 2: Error por proyecto no finalizado</strong><br>
+        <strong>Dado</strong> que el proyecto aún no ha sido marcado como "finalizado",
+        <strong>Cuando</strong> el gerente intenta evaluar,
+        <strong>Entonces</strong> el sistema responde con código 403 Forbidden.
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-#### 2.4.3. Product Backlog
+<br>
+
+#### 2.4.2. Impact Mapping
+<p align="center">
+  <img src="assets/impact-mapping/parte1.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 1 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte2.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 2 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte3.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 3 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte4.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 4 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte5.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 5 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte6.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 6 - Elaboración propia
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/impact-mapping/parte7.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 7 - Elaboración propia
+</p>
+
+<br>
+
+#### 2.4.3. Product Backlog <br><br>
+<br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>User Story Id</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Story Points (1 / 2 / 3 / 5 / 8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>US01</td>
+      <td>Comprender el propósito de la plataforma</td>
+      <td>Como usuario nuevo, quiero entender rápidamente de qué trata UniMatch, para decidir si me interesa registrarme como estudiante o gerente.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>US26</td>
+      <td>Visualizar la propuesta de valor</td>
+      <td>Como usuario nuevo, quiero ver de inmediato una propuesta visual clara y atractiva, para captar rápidamente la esencia de UniMatch sin necesidad de leer demasiado.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>US04</td>
+      <td>Llamados a la acción claros</td>
+      <td>Como usuario, quiero encontrar botones de acción relevantes a lo largo de la landing, para tomar decisiones sin tener que regresar al inicio.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>US02</td>
+      <td>Registro inmediato desde la landing</td>
+      <td>Como usuario nuevo, quiero acceder rápidamente al formulario de registro, para comenzar a usar la plataforma sin perder tiempo.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>US03</td>
+      <td>Ver testimonios de usuarios reales</td>
+      <td>Como usuario interesado, quiero ver experiencias de otras personas en la plataforma, para sentir confianza antes de crear una cuenta.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>US24</td>
+      <td>Encabezado fijo para navegar</td>
+      <td>Como visitante de la landing page, quiero contar con un encabezado visible en todo momento, para moverme fácilmente entre las secciones sin hacer scroll manualmente.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>US25</td>
+      <td>Acceder a la sección de FAQs</td>
+      <td>Como visitante indeciso, quiero acceder fácilmente a una sección de preguntas frecuentes, para resolver mis dudas antes de registrarme en la plataforma.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>US27</td>
+      <td>Acceder a información de contacto o soporte</td>
+      <td>Como visitante que necesita ayuda, quiero poder acceder fácilmente a los datos de contacto o soporte, para resolver dudas antes de registrarme o publicar un proyecto.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>US05</td>
+      <td>Subir proyecto a mi portafolio</td>
+      <td>Como estudiante, quiero poder subir una URL que dirija a un proyecto de mi portafolio, para que los gerentes o empresas puedan visualizar mi trabajo y evaluar mejor mi experiencia.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>US06</td>
+      <td>Visualización del portafolio por gerentes</td>
+      <td>Como gerente, quiero poder revisar el portafolio de un estudiante antes de seleccionarlo, para evaluar su experiencia previa.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>US07</td>
+      <td>Ver estado de mis postulaciones</td>
+      <td>Como estudiante, quiero consultar el estado de mis postulaciones, para saber si fui considerado.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>US08</td>
+      <td>Ver reputación de un estudiante</td>
+      <td>Como gerente, quiero ver el historial de evaluación de un estudiante, para decidir si confiarle un nuevo proyecto.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>US09</td>
+      <td>Recuperar contraseña</td>
+      <td>Como usuario, quiero poder recuperar mi contraseña, para acceder a mi cuenta si la olvido.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>US10</td>
+      <td>Modificación de perfil de usuario</td>
+      <td>Como usuario, quiero modificar la información de mi perfil para mantener mis datos actualizados en la plataforma.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>US13</td>
+      <td>Calificación del contratador</td>
+      <td>Como estudiante, quiero calificar al empresario luego del proyecto para compartir mi experiencia con futuros postulantes.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>US12</td>
+      <td>Actualizar URL del portafolio</td>
+      <td>Como estudiante, quiero modificar la URL de mi portafolio, para mantener actualizado el enlace que visualizan los gerentes o empresas.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>US14</td>
+      <td>Búsqueda de postulante</td>
+      <td>Como empresario, quiero filtrar entre los postulantes a mis proyectos por carrera, habilidades y calificación previa, para encontrar más fácilmente al candidato ideal para colaborar.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>US15</td>
+      <td>Registrarse como usuario</td>
+      <td>Como usuario nuevo, quiero crear una cuenta, para utilizar la aplicación.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>US16</td>
+      <td>Iniciar sesión</td>
+      <td>Como usuario, quiero iniciar sesión en la aplicación, para acceder a sus funcionalidades.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>US17</td>
+      <td>Crear convocatoria</td>
+      <td>Como gerente, quiero crear convocatorias en la aplicación, para recibir solicitudes de postulantes.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>US18</td>
+      <td>Editar convocatoria</td>
+      <td>Como gerente, quiero editar convocatorias en la aplicación, para corregir o actualizar la información cuando lo necesite.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>US19</td>
+      <td>Eliminar convocatoria</td>
+      <td>Como gerente, quiero eliminar una convocatoria publicada, para evitar recibir nuevas postulaciones cuando el proyecto cierre.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>US20</td>
+      <td>Cerrar sesión</td>
+      <td>Como usuario, quiero poder cerrar sesión en cualquier momento, para asegurar la privacidad de mi cuenta.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>US21</td>
+      <td>Actualizar tecnologias en el perfil del estudiante</td>
+      <td>Como estudiante, quiero actualizar las tecnologías que domino, para que se muestren en mi perfil </td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>US22</td>
+      <td>Visualizar información de empresa</td>
+      <td>Como estudiante, quiero ver la información de la empresa a la que estoy postulando, para mantenerme más informado.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>US23</td>
+      <td>Actualizar tecnologías en el perfil de la empresa</td>
+      <td>Como gerente, quiero actualizar las tecnologías que se utilizan en mi empresa, para que se muestren en el perfil de la compañía. </td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>TS01</td>
+      <td>Endpoint para registro de usuarios</td>
+      <td>Como developer, quiero crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), para permitir su autenticación y posterior personalización de la plataforma.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>TS02</td>
+      <td>Endpoint para creación de proyectos</td>
+      <td>Como developer, quiero crear un endpoint para que los gerentes puedan publicar nuevos proyectos, para que los estudiantes puedan visualizar y postular.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>TS03</td>
+      <td>Endpoint para postulación a proyectos</td>
+      <td>Como developer, quiero desarrollar un endpoint para que los estudiantes puedan postular a proyectos, para registrar su interés formal en una oportunidad.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>TS04</td>
+      <td>Endpoint para calificación de desempeño</td>
+      <td>Como developer, quiero crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, para actualizar su reputación en la plataforma.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>US28</td>
+      <td>Visualizar oportunidades para estudiante</td>
+      <td>Como estudiante que inicio sesión, quiero poder acceder a un apartado de oportunidades, para para postularme a uno.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>US29</td>
+      <td>Visualizar de portafolio para estudiante</td>
+      <td>Como estudiante que inicio sesión, quiero poder acceder a un apartado de Portafolio, para para visualizar mis trabajos hechos.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>US30</td>
+      <td>Visualizar de postulaciones para gerentes</td>
+      <td>Como gerente que inicio sesión, quiero poder acceder a un apartado de Postulaciones, para para visualizar las diferentes postulaciones hechas a mi proyecto.</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br><br>
+
+
+<p align="center">
+  <img src="assets/product-backlog/productBacklog.png" alt="product backlog" width="80%">
+</p>
+
+<p align="center">
+  Product Backlog - Elaboración propia
+</p>
+
+<br>
+
+`https://trello.com/invite/b/68c75d5b2db29e2533cee3c9/ATTI7028490081012c55ce670107488b5dda32C8D323/product-backlog-unimatch`
+
+---
 
 ### 2.5 Strategic-Level Domain-Driven Design
 
