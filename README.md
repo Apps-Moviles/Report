@@ -2241,24 +2241,133 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 ---
 
 ### 2.5 Strategic-Level Domain-Driven Design
+El diseño estratégico en Domain-Driven Design se centra en comprender el dominio desde una perspectiva amplia, identificando las áreas clave del negocio y sus interacciones. El objetivo principal es dividir el sistema en **bounded contexts** bien definidos, cada uno con un propósito claro, de manera que las decisiones técnicas se alineen directamente con los objetivos organizacionales.
+
+Para lograrlo, se emplearon métodos como **EventStorming** para descubrir eventos y procesos relevantes, la elaboración de **Context Maps** para representar las relaciones entre contextos, y la definición de **Bounded Context Canvases** que documentan los objetivos, roles, reglas y lenguajes de cada área. Con esto se establecieron los cimientos estratégicos que guían el diseño táctico y la arquitectura del sistema.
 
 #### 2.5.1. EventStorming
+EventStorming es una técnica de modelado ágil que busca descubrir el dominio mediante la identificación de eventos clave que transforman el estado del sistema. Su valor radica en alinear a los participantes en torno a una visión compartida, facilitando la comprensión de procesos, reglas de negocio y decisiones estratégicas.
+
+En este proyecto se aplicó mediante la identificación de actores y roles principales, el registro de los eventos más relevantes, y la validación iterativa de su coherencia con los objetivos del negocio. Para este fin, se realizaron sesiones colaborativas en Discord de aproximadamente 3 horas, en las que se discutieron y priorizaron los eventos más importantes del contexto.
+
+![Event Storming](./assets/eventstorming/eventstorming.png)
 
 ##### 2.5.1.1. Candidate Context Discovery
 
+La fase de Candidate Context Discovery tiene como propósito transformar los eventos identificados en EventStorming en flujos de trabajo claros, que permitan visualizar cómo interactúan los actores con el sistema y qué pasos son necesarios para completar cada caso de uso.  
+
+En este proyecto, los flujos encontrados reflejan procesos clave como el registro y autenticación de usuarios, la publicación y gestión de proyectos por parte de las compañías, la postulación de estudiantes, así como la aceptación o rechazo de postulaciones y la generación de reputaciones. Estos flujos describen de manera secuencial cómo la información se valida, almacena y comunica entre los distintos bounded contexts, sentando la base para un diseño estratégico coherente y alineado con los objetivos del negocio.  
+![Bounded Flows](./assets/eventstorming/candidate_context_discovery_bounded_flows.png)
+
+Los **pivotal points** representan los momentos críticos del dominio, donde ocurren transiciones relevantes o decisiones clave que afectan al sistema y desencadenan interacciones entre bounded contexts. Según el análisis del código, los principales son:  
+
+- **Registro de usuarios**  
+  Punto inicial que habilita cualquier interacción dentro del sistema, ya sea como estudiante o como compañía.  
+
+- **Autenticación de usuarios**  
+  Permite validar identidad y controlar el acceso a funcionalidades específicas según el rol.  
+
+- **Publicación de proyectos**  
+  Acción central de las compañías, que abre la posibilidad de generar postulaciones de estudiantes.  
+
+- **Postulación a proyectos**  
+  Evento clave que conecta a los estudiantes con oportunidades ofrecidas por las compañías.  
+
+- **Aceptación o rechazo de postulaciones**  
+  Momento decisivo que define la participación de un estudiante en un proyecto y afecta su trayectoria en la plataforma.  
+
+- **Cierre de proyectos**  
+  Marca el final de un ciclo, habilitando la generación de reputaciones.  
+
+- **Generación de reputaciones**  
+  Paso fundamental que impacta directamente la confiabilidad y la proyección de estudiantes y compañías en futuros procesos.  
+
+Estos puntos ayudaron a encontrar los principales contextos:
+- Users  
+- Students  
+- Companies  
+- Projects  
+- StudentPostulations  
+- Reputations  
+
+De aqui partimos a enfocar todos los distintos flujos necesarios para la implementacion
+
 ##### 2.5.1.2. Domain Message Flows Modeling
+Luego de identificar los distintos contextos y eventos de nuestro ecosistema. Segmentamos los flujos que procederán en nuestra arquitectura y sus distintas interacciones internas. Podemos denotar también el uso de un sector de autenticacion que permitirá como intermediario para los permisos entre contextos.
+![Domain Message Flows Modeling](./assets/eventstorming/domain_message_flows_modeling.png)
 
 ##### 2.5.1.3. Bounded Context Canvases
 
+Para elaborarlos, seguimos un enfoque colaborativo: primero, realizamos un análisis de los dominios descubiertos en las sesiones de *Event Storming* y en la revisión de los flujos clave del sistema. Posteriormente, trabajamos en la identificación de los elementos esenciales de cada contexto, considerando sus inputs, outputs, stakeholders principales y los objetivos de negocio que satisfacen. Estas actividades se realizaron de forma grupal en sesiones virtuales, asegurando la validación conjunta de las ideas.  
+
+En términos generales, los *Bounded Context Canvases* de nuestra aplicación se centran en los siguientes aspectos:  
+- **Users**: administración y autenticación de usuarios generales.  
+- **Students**: gestión de información específica de los estudiantes y su perfil académico.  
+- **Companies**: registro y control de organizaciones que participan ofreciendo proyectos.  
+- **Projects**: administración del ciclo de vida de los proyectos propuestos.  
+- **StudentPostulations**: manejo de postulaciones de estudiantes a proyectos.  
+- **Reputations**: evaluación y métricas asociadas al rendimiento de estudiantes y compañías.  
+
+Con esta visión, conseguimos establecer un marco claro para cada contexto, facilitando las decisiones futuras sobre responsabilidades, integración y evolución de la arquitectura.  
+![User Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_User.png)
+![Students Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Students.png)
+![Companies Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Companies.png)
+![Projects Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Projects.png)
+![StudentPostulations Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_StudentPostulations.png)
+![Reputations Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Reputations.png)
+
 #### 2.5.2. Context Mapping
+La fase de **Context Mapping** nos permitió visualizar cómo interactúan los distintos bounded contexts del sistema y cuáles son las dependencias más relevantes entre ellos. Esta práctica se centra en identificar las relaciones upstream (origen) y downstream (destino), así como el tipo de colaboración que se establece entre los contextos, ya sea de tipo **Customer/Supplier**, **Partnership** u otros. Gracias a ello, obtuvimos una vista estratégica del ecosistema, entendiendo no solo las conexiones técnicas, sino también las implicancias de negocio y de coordinación entre equipos.
+
+Para lograrlo, realizamos un análisis colaborativo a partir de los flujos funcionales previamente definidos. Utilizamos como base los bounded contexts identificados en la aplicación y discutimos en sesiones de trabajo cómo cada uno de ellos provee o consume información de los demás. Esta práctica nos sirvió para **alinear el lenguaje ubicuo**, **detectar dependencias críticas**, y **definir responsabilidades claras** en la arquitectura, asegurando que cada contexto pueda evolucionar de manera autónoma sin generar acoplamientos innecesarios.
+| Destino (Downstream) | Origen (Upstream) | Tipo de Relación     | ¿OHS? | Comentario                                                                 |
+|-----------------------|-------------------|----------------------|:-----:|----------------------------------------------------------------------------|
+| Students              | Users             | Customer / Supplier  |  Sí   | Consume identidad y datos básicos de cuenta.                               |
+| Companies             | Users             | Customer / Supplier  |  Sí   | Vincula perfil empresarial a la identidad.                                 |
+| Projects              | Companies         | Customer / Supplier  |  Sí   | Companies crea/gestiona proyectos a través del servicio de Projects.       |
+| StudentPostulations   | Projects          | Customer / Supplier  |  Sí   | Valida existencia/estado del proyecto antes de aceptar postulaciones.      |
+| StudentPostulations   | Students          | Customer / Supplier  |  Sí   | Consulta datos del estudiante para crear/validar postulación.              |
+| Companies             | StudentPostulations | Customer / Supplier |  Sí   | Lee postulaciones para decidir aceptar/rechazar.                           |
+| Reputations           | Projects          | Customer / Supplier  |  Sí   | Trigger al cerrar proyectos para iniciar flujo de reputación.              |
+| Reputations           | StudentPostulations | Customer / Supplier |  Sí   | Genera o solicita reputaciones tras aceptación/cierre de postulaciones.    |
 
 #### 2.5.3. Software Architecture
+La arquitectura de software de *UniMatch* se diseñó bajo un enfoque estructurado utilizando el modelo **C4** (Context, Container, Component, Deployment). Este enfoque permite representar diferentes niveles de abstracción del sistema y facilita la comunicación entre los stakeholders.  
+La arquitectura define cómo los estudiantes y las compañías interactúan con la plataforma, cómo se estructuran los componentes internos y dónde se despliegan. Esto ayuda a asegurar escalabilidad, mantenibilidad y claridad en el desarrollo futuro.
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+En este nivel se representó el sistema *UniMatch* como una caja negra, mostrando únicamente sus interacciones con actores externos (estudiantes y compañías) y los puntos de acceso al sistema (landing page, aplicación móvil y backend).  
+El objetivo es comprender **qué actores interactúan con la plataforma y para qué**, sin entrar en detalles técnicos internos. Esto permite que tanto perfiles técnicos como no técnicos comprendan el alcance global del sistema y sus principales flujos de interacción.  
+![Context Level Diagrams](./assets/software-architecture/software_architecture_context_level_diagrams.png)
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+En este nivel se descompuso *UniMatch* en sus contenedores principales: **Landing**, **Mobile App** y **Backend**. Cada uno tiene responsabilidades específicas y se comunica de forma clara con los demás.  
+Este diagrama sirve para visualizar cómo se estructuran los bloques principales de la solución y cómo colaboran entre sí, lo que facilita el diseño modular y la planificación de responsabilidades técnicas entre equipos de desarrollo.  
+![Container Level Diagrams](./assets/software-architecture/software_architecture_container_level_diagrams.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
+Para representar la arquitectura de despliegue de UniMatch, se utilizó el lenguaje Structurizr DSL, que permite modelar sistemas de software de manera estructurada y visual. El objetivo fue detallar tanto los actores principales como los componentes de la aplicación, junto con su despliegue en el entorno de producción.
+
+En el modelo se identificaron los usuarios principales: el estudiante, que aplica y gestiona proyectos, y la empresa, que publica convocatorias y revisa postulaciones. Ambos interactúan con la aplicación móvil (APK para Android), la cual constituye el principal punto de acceso al sistema.
+
+El sistema UniMatch está conformado por tres contenedores:
+
+Aplicación Móvil (APK): desarrollada en Kotlin, distribuida a dispositivos Android.
+
+Backend: implementado en C# con ASP.NET Core, encargado de exponer las APIs y manejar la lógica de negocio.
+
+Base de Datos (Azure Database for MySQL): servicio gestionado en la nube para el almacenamiento persistente de información.
+
+Para el entorno de producción, se definió el despliegue de la siguiente forma:
+
+La aplicación móvil se instala en el dispositivo Android de los usuarios.
+
+El Backend se hospeda en Azure App Service, que proporciona escalabilidad y disponibilidad en la nube.
+
+La base de datos se encuentra en Azure Database for MySQL, un servicio administrado que asegura respaldo y rendimiento.
+
+Finalmente, se diseñó una vista de despliegue con estilos personalizados para diferenciar visualmente los elementos (usuarios, dispositivos, backend y base de datos). Esto facilita la comprensión del flujo de interacciones y la infraestructura que soporta el sistema.
+![Software Architecture Deployment Diagram](./assets/software-architecture/software_architecture_deployment_level_diagrams.png)
 
 ### 2.6 Tactical-Level Domain-Driven Design
 
