@@ -2270,40 +2270,1699 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 
 ##### 2.6.1.1 Domain Layer
 
+<br>
+
+El contexto de Users gestiona toda la lógica relacionada con la administración de usuarios dentro de UniMatch. Esto incluye su creación, autenticación, actualización de información y control de roles. Cada usuario puede representar a una empresa, un estudiante u otros actores del sistema, y constituye un elemento clave de seguridad y gestión de acceso.
+
+Este dominio asegura que los usuarios se gestionen de manera consistente, aplicando reglas como que cada email debe ser único, el password se guarda como PasswordHash (no en texto plano) y los roles definen permisos y restricciones en el sistema.
+
+
+<br>
+
++ **ENTITY: User**
+
+La entidad User representa a un usuario registrado en UniMatch. Contiene información básica como nombre, email, credenciales y rol asignado.
+
+<br>
+
+**Atributos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador único del usuario</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Nombre completo del usuario.</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Correo electrónico único para autenticación.</td>
+    </tr>
+    <tr>
+      <td>PasswordHash</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Hash de la contraseña para seguridad.</td>
+    </tr>
+    <tr>
+      <td>Role</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Rol del usuario dentro de la plataforma (Student, Company).</td>
+    </tr>
+    <tr>
+      <td>CreatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de creación de la cuenta.</td>
+    </tr>
+    <tr>
+      <td>UpdatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Última fecha de actualización del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User(string, string, string, string)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Inicializa un nuevo usuario con datos clave.</td>
+    </tr>
+      <tr>
+      <td>Update(string, string, string)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza nombre, email y rol.</td>
+    </tr>
+     <tr>
+      <td>UpdatePassword(string)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la contraseña encriptada.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
++ **AGGREGATE ROOT: User**
+
+La entidad User actúa como Aggregate Root del bounded context Users. Encapsula completamente su ciclo de vida (registro, actualización, cambio de rol, cambio de contraseña) y garantiza la consistencia del dominio.
+
+<br>
+
++ **Repository: IUserRepository**
+
+Interfaz que define el contrato de persistencia de usuarios, desacoplando la lógica de dominio de la infraestructura.
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;User&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los usuarios.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;User&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un usuario por su email.</td>
+    </tr>
+      <tr>
+      <td><code>GetByEmailAsync(string email)</code></td>
+      <td><code>Task&lt;User&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un usuario por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>AddAsync(User)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo usuario.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync(User)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(User)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un usuario</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 ##### 2.6.1.2 Interface Layer
+
+<br>
+
+En la Interface Layer del bounded context Users, se implementa la comunicación entre el cliente (frontend o consumidores externos) y la lógica de negocio relacionada con la gestión de usuarios.
+
+<br>
+
++ **CONTROLLER: UsersController**
+
+Clase controlador REST que maneja las operaciones CRUD de usuarios.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAll()</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve todos los usuarios.</td>
+    </tr>
+    <tr>
+      <td><code>GetById(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve un usuario por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>Register(RegisterRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Registra un nuevo usuario.</td>
+    </tr>
+     <tr>
+      <td><code>Login(LoginRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Autentica a un usuario y devuelve token/credenciales.</td>
+    </tr>
+    <tr>
+      <td><code>Update(int id, UpdateUserRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Actualiza la información de un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Elimina un usuario por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: RegisterRequest**
+
+Clase que representa el cuerpo de la petición para registrar un nuevo usuario. Incluye los datos básicos de creación.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr>
+      <td><code>Name</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nombre completo del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Correo electrónico único del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Password</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Contraseña en texto plano (antes de ser hasheada).</td>
+    </tr>
+    <tr>
+      <td><code>Role</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Rol asignado al usuario (ej. Admin, User).</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: LoginRequest**
+
+Representa las credenciales de acceso del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Correo electrónico de acceso.</td>
+    </tr>
+    <tr>
+      <td><code>Password</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Contraseña en texto plano proporcionada para autenticación.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: LoginResponse**
+
+Representa la respuesta tras la autenticación del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Token</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Token JWT generado para el usuario autenticado.</td>
+    </tr>
+    <tr>
+      <td><code>User</code></td>
+      <td><code>UserDto</code></td>
+      <td>Pública</td>
+      <td>Representación del usuario autenticado.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: UpdateUserRequest**
+
+Representa la respuesta tras la autenticación del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Name</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nuevo nombre del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nuevo correo electrónico del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: UserDto**
+
+Representa la respuesta tras la autenticación del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Id</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador único del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Name</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nombre del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Email del usuario.</td>
+    </tr>
+     <tr>
+      <td><code>Role</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Rol del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
++ **Assembler: UserMapper**
+
+Clase estática responsable de transformar entidades del dominio (User) a DTOs (UserDto).
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ToDto(User user)</code></td>
+      <td><code>UserDto</code></td>
+      <td>Pública</td>
+      <td>Convierte una entidad <code>User</code> a un <code>UserDto</code> de salida.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
 
 ##### 2.6.1.3 Application Layer
 
+<br>
+
+La Application Layer en el contexto de Users gestiona los flujos de negocio relacionados con el ciclo de vida de los usuarios (registro, login, actualización, eliminación y consultas), coordinando las reglas de dominio con la infraestructura de seguridad (hash de contraseñas con BCrypt y generación de tokens JWT).
+
+<br>
+
++ **SERVICE: UserCommandService**
+
+Encargado de todos los comandos de modificación del estado del sistema. Por ejemplo: registrar usuarios con contraseña encriptada, iniciar sesión con validación de credenciales, actualizar datos de usuario y eliminar cuentas.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>RegisterAsync</code></td>
+      <td><code>Task&lt;UserDto&gt;</code></td>
+      <td>Registra un nuevo usuario, encriptando la contraseña con BCrypt.</td>
+    </tr>
+     <tr>
+      <td><code>LoginAsync</code></td>
+      <td><code>Task&lt;LoginResponse&gt;</code></td>
+      <td>Autentica al usuario, validando credenciales y generando un token JWT.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;UserDto&gt;</code></td>
+      <td>Actualiza los datos de un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task</code></td>
+      <td>Elimina un usuario de forma lógica o física según las reglas de negocio.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **SERVICE: UserQueryService**
+
+Aactúa como un puente entre la capa de datos y la capa de presentación para todas las operaciones de lectura de usuarios, garantizando un acceso eficiente y seguro a la información.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;UserDto&gt;&gt;</code></td>
+      <td>Devuelve la lista completa de usuarios registrados en el sistema.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;UserDto?&gt;</code></td>
+      <td>Obtiene un usuario por su identificador único.</td>
+    </tr>
+   <tr>
+      <td><code>GetByEmailAsync</code></td>
+      <td><code>Task&lt;UserDto?&gt;</code></td>
+      <td>Busca un usuario a partir de su dirección de correo electrónico.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **COMMAND HANDLERS:**
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability de Negocio</th>
+      <th>Implementado por</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Registrar usuarios</td>
+      <td><code>Registersync</code> (<code>CommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Iniciar sesión</td>
+      <td><code>LoginAsync</code></td>
+    </tr>
+    <tr>
+      <td>Actualizar usuarios</td>
+      <td><code>UpdateAsync</code></td>
+    </tr>
+    <tr>
+      <td>Eliminar usuarios</td>
+      <td><code>DeleteAsync</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 ##### 2.6.1.4 Infrastructure Layer
+<br>
+
+En el bounded context Users, la infraestructura se centra en la persistencia de datos de usuarios, específicamente en la implementación del repositorio UserRepository, que accede a una base de datos mediante Entity Framework Core.
+
+<br>
+
++ **REPOSITORY: UserRepository:**
+
+Implementa la interfaz IUserRepository definida en el Domain Layer. Gestiona las operaciones de acceso y manipulación de datos para la entidad User en la base de datos.
+<br>
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD de usuarios.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>AddAsync(User user)</code></td>
+      <td><code>Task&lt;User&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo usuario y guarda los cambios.</td>
+    </tr>
+     <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;User&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los usuarios registrados.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;User?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un usuario por su correo electrónico.</td>
+    </tr>
+    <tr>
+      <td><code>GetByEmailAsync(string email)</code></td>
+      <td><code>Task&lt;User?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un usuario por su ID.</td>
+    </tr>
+     <tr>
+      <td><code>Update(User user)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la información de un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(User user)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un usuario de la base de datos.</td>
+    </tr>
+   
+  </tbody>
+</table>
+
+<br>
 
 ##### 2.6.1.5 Bounded Context Software Architecture Component Level Diagrams
+<br>
 
+El bounded context Users representa la lógica y operaciones relacionadas a la gestión de usuarios dentro de la aplicación UniMatch. Esto incluye el registro, autenticación, actualización de datos, eliminación de cuentas y consultas de usuarios.
+Este contexto forma parte del backend de la aplicación, construido en ASP.NET Core siguiendo una arquitectura DDD con estilo limpio y separación por capas (Domain, Application, Infrastructure, Interface).
+
+<br>
+
+<h3>Componentes del Contenedor</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>UsersController</code></td>
+      <td>Exposición de endpoints RESTful que manejan todas las operaciones sobre usuarios (registro, login, actualización, eliminación).</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>UserCommandService</code></td>
+      <td>Ejecuta comandos relacionados con el ciclo de vida del usuario: registrar, autenticar, actualizar y eliminar.</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>UserQueryService</code></td>
+      <td>Ejecuta consultas para obtener uno o varios usuarios, aplicando filtros (por email, rol, estado, etc).</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>UserMapper</code></td>
+      <td>Transforma datos entre la entidad de dominio (User) y los DTOs utilizados en la API.</td>
+      <td>C# Static Mapper Class</td>
+    </tr>
+    <tr>
+      <td><code>UserRepository</code></td>
+      <td>Implementación del acceso a base de datos para usuarios, mediante Entity Framework Core.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Representa el contexto de base de datos, maneja <code>DbSet&lt;User&gt;</code>.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ Relaciones e Interacciones
+
+  - UsersController depende de UserCommandService y UserQueryService para manejar la lógica de negocio.
+
+  - UserCommandService y UserQueryService interactúan con UserRepository para persistencia de datos.
+
+  - UserRepository utiliza AppDbContext como gateway hacia la base de datos.
+
+  - UserMapper se usa para transformar datos entre la entidad User y los recursos REST (p. ej. RegisterRequest, LoginRequest, UserDto).
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/c4/users-c4.png" alt="UPC logo" width="1200">
+</p>
+
+<br>
 ##### 2.6.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1 Bounded Context Domain Layer Class Diagrams
+<br>
+
+### Diagrama de Clases UML (Users)
+
+En esta sección se presenta el **Diagrama de Clases UML** correspondiente al **Domain Layer** del **Bounded Context User**. Este diagrama detalla la estructura lógica del dominio, representando las entidades, interfaces y sus relaciones clave.
+
+El diagrama incluye:
+
+  + **Clases principales** como `User`, la cual encapsula la lógica de negocio y atributos representativos del modelo del dominio. Esta clase gestiona operaciones como la actualización de correo, cambio de contraseña, activación y desactivación de usuarios.
+
+  + **Interfaces** como `IUserRepository`, que definen contratos de acceso a datos respetando los principios de inversión de dependencias y separación de responsabilidades. Estas operaciones incluyen obtención de usuarios por ID o correo, así como creación, actualización y eliminación.
+
+  + **Relaciones entre clases**, incluyendo:
+    - Agregación entre `User` e `IUserRepository`, que refleja la persistencia de los objetos `User` mediante operaciones definidas en el repositorio.
+
+  + **Visibilidad de los miembros** (públicos y privados) tanto en atributos como en métodos, alineados con las buenas prácticas de encapsulamiento y diseño orientado a objetos.  
+    - Ejemplo: los atributos como `passwordHash` son privados, mientras que los métodos como `updateEmail()` o `deactivate()` son públicos.
+
+  + **Atributos y métodos de cada clase**, con sus tipos de dato, parámetros, retornos y responsabilidades, conforme a la implementación real del sistema.  
+    - Ejemplo: `updateEmail(newEmail: String): void`, `GetByIdAsync(id: int): Task<User?>`.
+
+Este diagrama tiene como finalidad brindar una vista estructurada y detallada de la lógica del dominio del **Bounded Context User**, facilitando su comprensión y comunicación entre desarrolladores, arquitectos y evaluadores técnicos.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/clases/users-clases.png" alt="User UML Diagram" width="600">
+</p>
+
+<br>
 
 ###### 2.6.1.6.2 Bounded Context Database Design Diagram
+<br>
+
+En esta sección se presenta el **Diagrama de Base de Datos Relacional (Entity-Relationship Diagram)** correspondiente al **Bounded Context User**.  
+El objetivo de este diagrama es mostrar cómo los objetos del dominio son persistidos en la base de datos y cómo se estructuran las relaciones entre las distintas entidades persistentes.
+
+El diagrama incluye:
+
+  + **Tabla principal**: `Users`, que representa la entidad del dominio encargada de almacenar la información básica de los usuarios dentro del sistema.
+
+  + **Columnas de la tabla `Users`**:  
+    - `id` → `INT`, clave primaria que identifica de manera única a cada usuario.  
+    - `created_at` → `DATETIME(6)`, fecha de creación del registro.  
+    - `updated_at` → `DATETIME(6)`, última fecha de actualización del registro.  
+    - `name` → `INT` *(probablemente deba ser `VARCHAR` en la implementación final)*.  
+    - `email` → `INT` *(probablemente deba ser `VARCHAR` con restricción `UNIQUE`)*.  
+    - `password_hash` → `LONGTEXT`, almacenamiento del hash de la contraseña.  
+    - `role` → `LONGTEXT`, rol asignado al usuario dentro del sistema (e.g., `STUDENT`, `COMPANY`).  
+
+  + **Clave primaria (PK)**:  
+    - `id`, que asegura la unicidad de cada usuario en la tabla.
+
+  + **Claves foráneas (FK)**:  
+    - `Users.id` puede ser referenciado por otras tablas como `Students.user_id` o `Companies.user_id`, estableciendo así la relación entre la cuenta base de usuario y su perfil especializado.  
+
+  + **Relaciones con otras tablas**:  
+    - Un **User** puede estar asociado a un perfil de **Student**.  
+    - Un **User** puede estar asociado a un perfil de **Company**.  
+    - La relación es **cero a muchos** entre `users` y `reputations`).  
+
+  + **Restricciones adicionales**:  
+    - El campo `email` debería contar con una restricción de unicidad (`UNIQUE`).  
+    - `password_hash` debe ser `NOT NULL`.  
+    - Índices pueden definirse sobre `email` y `role` para mejorar la búsqueda y validación.  
+
+Este diagrama representa fielmente cómo se implementa la persistencia de usuarios en un sistema de gestión de bases de datos relacional (como MySQL o PostgreSQL), permitiendo identificar la alineación entre el modelo lógico del dominio y su representación física.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/database/users-databases.png" alt="Users ER Diagram" width="600">
+</p>
+
+<br>
 
 
 #### 2.6.2 Bounded Context: Students
 
 ##### 2.6.2.1 Domain Layer
 
+El contexto de Students gestiona toda la lógica relacionada con la administración de los estudiantes dentro de UniMatch. Esto incluye su creación, actualización de información personal, registro de especializaciones, historial de proyectos finalizados y la gestión de su perfil público. Cada estudiante está vinculado a un usuario del sistema y representa un actor central en la interacción con empresas y proyectos.
+
+Este dominio asegura que los estudiantes se gestionen de manera consistente, aplicando reglas como que cada estudiante está asociado a un UserId válido, los datos personales (ciudad, país, teléfono, portafolio, “about me”) deben mantenerse actualizados, la valoración (Rating) refleja el promedio de evaluaciones recibidas, la lista de especializaciones y proyectos finalizados se administra en forma controlada y persistente.
+
+<br>
+
++ **ENTITY: Student**
+
+La entidad Student representa a un estudiante registrado en UniMatch. Contiene información personal, profesional y académica como ciudad, país, campo de especialización, portafolio, proyectos finalizados y valoración.
+
+<br>
+
+**Atributos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador único del estudiante.</td>
+    </tr>
+    <tr>
+      <td>UserId</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Referencia al usuario asociado.</td>
+    </tr>
+    <tr>
+      <td>Birthdate</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de nacimiento del estudiante.</td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>País de residencia.</td>
+    </tr>
+    <tr>
+      <td>Field</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Campo de especialización o área profesional.</td>
+    </tr>
+    <tr>
+      <td>PhoneNumber</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Número de contacto del estudiante.</td>
+    </tr>
+    <tr>
+      <td>PortfolioLink</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Enlace al portafolio del estudiante.</td>
+    </tr>
+    <tr>
+      <td>AboutMe</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Descripción personal del estudiante.</td>
+    </tr>
+    <tr>
+      <td>Rating</td>
+      <td><code>double</code></td>
+      <td><code>public</code></td>
+      <td>Puntuación promedio basada en evaluaciones.</td>
+    </tr>
+    <tr>
+      <td>Logo</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Imagen o logo de perfil del estudiante.</td>
+    </tr>
+    <tr>
+      <td>Specializations</td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Lista de especializaciones del estudiante.</td>
+    </tr>
+    <tr>
+      <td>EndedProjects</td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Proyectos finalizados en los que participó.</td>
+    </tr>
+    <tr>
+      <td>CreatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de creación del registro del estudiante.</td>
+    </tr>
+    <tr>
+      <td>UpdatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Última fecha de actualización de los datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Student(int, DateTime, string, string, string, string, string, string, double, List&lt;string&gt;, string, List&lt;int&gt;)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Inicializa un nuevo estudiante con sus datos clave.</td>
+    </tr>
+    <tr>
+      <td>Update(string, string, string, string, string, string, List&lt;string&gt;)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza datos del estudiante (ciudad, país, contacto, portafolio, descripción, logo, especializaciones).</td>
+    </tr>
+    <tr>
+      <td>UpdateRating(int)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la valoración promedio del estudiante.</td>
+    </tr>
+    <tr>
+      <td>AddEndedProject(int)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo proyecto finalizado a la lista del estudiante.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **AGGREGATE ROOT: Student**
+
+La entidad Student actúa como Aggregate Root del bounded context Students. Encapsula completamente su ciclo de vida (registro, actualización de datos, gestión de especializaciones, valoración y proyectos finalizados) y garantiza la consistencia del dominio.
+
+<br>
+
++ **Repository: IStudentRepository**
+
+Interfaz que define el contrato de persistencia de estudiantes, desacoplando la lógica de dominio de la infraestructura.
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Student&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los estudiantes registrados.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un estudiante por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene un estudiante a partir del ID de usuario asociado.</td>
+    </tr>
+    <tr>
+      <td><code>AddAsync(Student)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(Student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un estudiante del sistema.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
 ##### 2.6.2.2 Interface Layer
 
+En la Interface Layer del bounded context Students, se implementa la comunicación entre el cliente (frontend o consumidores externos) y la lógica de negocio relacionada con la gestión de estudiantes.
+
+<br>
+
++ **CONTROLLER: StudentsController**
+
+Clase controlador REST que maneja las operaciones CRUD de estudiantes.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAll()</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve todos los estudiantes.</td>
+    </tr>
+    <tr>
+      <td><code>GetById(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve un estudiante por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>Create(CreateStudentRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Registra un nuevo estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Update(int id, UpdateStudentRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Actualiza la información de un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Elimina un estudiante por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: CreateStudentRequest**
+
+Clase que representa el cuerpo de la petición para registrar un nuevo estudiante.
+
+<h3>Tabla de Atributos</h3>
+<table>
+   <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>UserId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador del usuario asociado.</td>
+    </tr>
+    <tr>
+      <td><code>Birthdate</code></td>
+      <td><code>DateTime</code></td>
+      <td>Pública</td>
+      <td>Fecha de nacimiento del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>City</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Country</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>País de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Field</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Área de estudio o especialidad.</td>
+    </tr>
+    <tr>
+      <td><code>PhoneNumber</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Número de contacto del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>PortfolioLink</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Enlace al portafolio del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>AboutMe</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción personal del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Rating</code></td>
+      <td><code>double</code></td>
+      <td>Pública</td>
+      <td>Calificación promedio del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Lista de especializaciones del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Imagen o logo de perfil.</td>
+    </tr>
+    <tr>
+      <td><code>EndedProjects</code></td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td>Pública</td>
+      <td>Proyectos finalizados asociados.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: UpdateStudentRequest**
+
+Clase que representa los datos editables de un estudiante.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>City</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nueva ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Country</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nuevo país de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>PhoneNumber</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nuevo número de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>PortfolioLink</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nuevo enlace al portafolio.</td>
+    </tr>
+    <tr>
+      <td><code>AboutMe</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Descripción personal actualizada.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nueva imagen o logo.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;?</code></td>
+      <td>Pública</td>
+      <td>Lista actualizada de especializaciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **RESOURCE: StudentDto**
+
+Representación de salida de un estudiante.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Id</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador único del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>UserId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador del usuario asociado.</td>
+    </tr>
+    <tr>
+      <td><code>Birthdate</code></td>
+      <td><code>DateTime</code></td>
+      <td>Pública</td>
+      <td>Fecha de nacimiento.</td>
+    </tr>
+    <tr>
+      <td><code>City</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Country</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>País de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Field</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Área de estudio o especialidad.</td>
+    </tr>
+    <tr>
+      <td><code>PhoneNumber</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Teléfono de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>PortfolioLink</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Enlace al portafolio.</td>
+    </tr>
+    <tr>
+      <td><code>AboutMe</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción personal.</td>
+    </tr>
+    <tr>
+      <td><code>Rating</code></td>
+      <td><code>double</code></td>
+      <td>Pública</td>
+      <td>Calificación promedio.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Especializaciones del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Imagen o logo de perfil.</td>
+    </tr>
+    <tr>
+      <td><code>EndedProjects</code></td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td>Pública</td>
+      <td>Proyectos finalizados asociados.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **Assembler: StudentMapper**
+
+Clase estática responsable de transformar entidades del dominio (Student) a DTOs (StudentDto).
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ToDto(Student student)</code></td>
+      <td><code>StudentDto</code></td>
+      <td>Pública</td>
+      <td>Convierte una entidad <code>Student</code> a un <code>StudentDto</code> de salida.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
 ##### 2.6.2.3 Application Layer
+<br>
+
+La Application Layer en el contexto de students gestiona los flujos de negocio relacionados con el ciclo de vida de los estudiantes (registro, actualización, eliminación y consultas), coordinando las reglas de dominio con la infraestructura de persistencia.
+
+<br>
+
++ **SERVICE: StudentCommandService**
+
+ Encargado de todos los comandos de modificación del estado del sistema. Por ejemplo: registrar estudiantes, actualizar sus datos y eliminarlos.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Registra un nuevo estudiante en el sistema.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Actualiza los datos de un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task&lt;bool&gt;</code></td>
+      <td>Elimina un estudiante de acuerdo con las reglas de negocio.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
++ **SERVICE: StudentQueryService**
+
+Actúa como un puente entre la capa de datos y la capa de presentación para todas las operaciones de lectura de estudiantes, garantizando un acceso eficiente y seguro a la información.
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Student&gt;&gt;</code></td>
+      <td>Devuelve la lista completa de estudiantes registrados en el sistema.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Obtiene un estudiante por su identificador único.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Busca un estudiante a partir de su ID de usuario asociado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **COMMAND HANDLERS:**
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability de Negocio</th>
+      <th>Implementado por</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Registrar estudiantes</td>
+      <td><code>CreateAsync</code> (<code>StudentCommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Actualizar estudiantes</td>
+      <td><code>UpdateAsync</code> (<code>StudentCommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Eliminar estudiantes</td>
+      <td><code>DeleteAsync</code> (<code>StudentCommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Consultar todos los estudiantes</td>
+      <td><code>GetAllAsync</code> (<code>StudentQueryService</code>)</td>
+    </tr>
+    <tr>
+      <td>Consultar por ID</td>
+      <td><code>GetByIdAsync</code> (<code>StudentQueryService</code>)</td>
+    </tr>
+    <tr>
+      <td>Consultar por UserId</td>
+      <td><code>GetByUserIdAsync</code> (<code>StudentQueryService</code>)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
 
 ##### 2.6.2.4 Infrastructure Layer
+<br>
+
+ En el bounded context Students, la infraestructura se centra en la persistencia de datos de estudiantes, específicamente en la implementación del repositorio StudentRepository, que accede a una base de datos mediante Entity Framework Core.
+
+<br>
+
++ **REPOSITORY: StudentRepository:**
+
+Implementa la interfaz <code>IStudentRepository</code> definida en el Domain Layer. Gestiona las operaciones de acceso y manipulación de datos para la entidad Student en la base de datos.
+  
+<br>
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD de estudiantes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>AddAsync(Student student)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo estudiante y guarda los cambios.</td>
+    </tr>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Student&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los estudiantes registrados.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un estudiante por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un estudiante por su UserId asociado.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Student student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la información de un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(Student student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un estudiante de la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
 
 ##### 2.6.2.5 Bounded Context Software Architecture Component Level Diagrams
+<br>
+
+El bounded context Students representa la lógica y operaciones relacionadas a la gestión de estudiantes dentro de la aplicación UniMatch. Esto incluye el registro, edición de datos, consulta de perfiles, asignación a proyectos y eliminación.
+Este contexto forma parte del backend de la aplicación, construido en ASP.NET Core siguiendo una arquitectura DDD con estilo limpio y separación por capas (Domain, Application, Infrastructure, Interface).
+
+<br>
+
+<h3>Componentes del Contenedor</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>StudentsController</code></td>
+      <td>Exposición de endpoints RESTful que manejan todas las operaciones sobre estudiantes (registro, actualización, consulta, asignación a proyectos y eliminación).</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>StudentCommandService</code></td>
+      <td>Ejecuta comandos relacionados con el ciclo de vida del estudiante: registrar, actualizar, asignar a proyectos y eliminar.</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>StudentQueryService</code></td>
+      <td>Ejecuta consultas para obtener uno o varios estudiantes, aplicando filtros (por nombre, email, carrera, estado, etc).</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>StudentMapper</code></td>
+      <td>Transforma datos entre la entidad de dominio (<code>Student</code>) y los DTOs utilizados en la API.</td>
+      <td>C# Static Mapper Class</td>
+    </tr>
+    <tr>
+      <td><code>StudentRepository</code></td>
+      <td>Implementación del acceso a base de datos para estudiantes, mediante Entity Framework Core.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Representa el contexto de base de datos, maneja <code>DbSet&lt;Student&gt;</code>.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ Relaciones e Interacciones
+
+  - <code>StudentsController</code> depende de <code>StudentCommandService</code> y <code>StudentQueryService</code> para manejar la lógica de negocio.
+
+  - <code>StudentCommandService</code> y <code>StudentQueryService</code> interactúan con <code>StudentRepository</code> para persistencia de datos.
+
+  - <code>StudentRepository</code> utiliza <code>AppDbContext</code> como gateway hacia la base de datos.
+
+  - <code>StudentMapper</code> se usa para transformar datos entre la entidad <code>Student</code> y los recursos REST (p. ej. <code>CreateStudentRequest</code>, <code>StudentDto</code>).
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/c4/students-c4.png" alt="Students C4 Diagram" width="1200">
+</p>
+
+<br>
 
 ##### 2.6.2.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.2.6.1 Bounded Context Domain Layer Class Diagrams
+<br>
+
+En esta sección se presenta el **Diagrama de Clases UML** correspondiente al **Domain Layer** del **Bounded Context Student**. Este diagrama detalla la estructura lógica del dominio, representando las entidades, interfaces y sus relaciones clave.
+
+El diagrama incluye:
+
+  + **Clases principales** como `Student`, las cuales encapsulan la lógica de negocio y atributos representativos del modelo del dominio, incluyendo información personal, académica y profesional del estudiante.
+
+  + **Interfaces** como `IStudentRepository`, que definen contratos de acceso a datos respetando los principios de inversión de dependencias y separación de responsabilidades, permitiendo operaciones como obtención, creación, actualización y eliminación de estudiantes.
+
+  + **Relaciones entre clases**, incluyendo:
+    - Asociación entre `Student` y `User`, mediante el atributo `UserId`, que conecta el perfil académico con la identidad base del usuario en el sistema.  
+    - Dependencia entre `Student` e `IStudentRepository`, que representa la persistencia de los objetos `Student` mediante las operaciones definidas en el repositorio.
+
+  + **Visibilidad de los miembros** (públicos y privados) tanto en atributos como en métodos, alineado con las buenas prácticas de encapsulamiento y diseño orientado a objetos.
+
+  + **Atributos y métodos de cada clase** con su tipo de dato, parámetros, retornos y responsabilidad, conforme a la implementación real del sistema.  
+    - Ejemplo: `UpdateRating(newRating: double): void` para recalcular la calificación del estudiante y `AddEndedProject(): void` para incrementar el número de proyectos completados.
+
+Este diagrama tiene como finalidad brindar una vista estructurada y detallada de la lógica del dominio del **Bounded Context Student**, facilitando su comprensión y comunicación entre desarrolladores, arquitectos y evaluadores técnicos.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/clases/students-clases.png" alt="Student UML Diagram" width="600">
+</p>
+
+<br>
+
 
 ###### 2.6.2.6.2 Bounded Context Database Design Diagram
 
+## Diagrama de Base de Datos Relacional (Entity-Relationship Diagram) – Students
 
+En esta sección se presenta el **Diagrama de Base de Datos Relacional (Entity-Relationship Diagram)** correspondiente al **Bounded Context Students**.  
+El objetivo de este diagrama es mostrar cómo los objetos del dominio *Students* son persistidos en la base de datos y cómo se estructuran sus relaciones con las demás entidades persistentes.  
+
+El diagrama incluye:  
+
+- **Tablas principales**, como **Students**, que representan las entidades del dominio y contienen columnas equivalentes a sus atributos.  
+
+- **Columnas de la tabla**, con su nombre, tipo de dato (e.g., INT, VARCHAR, DECIMAL, DATETIME), y especificaciones de restricción como **NOT NULL**, **AUTO_INCREMENT**, entre otros.  
+
+- **Claves primarias (PK)**, que identifican de manera única cada registro en la tabla.  
+
+- **Claves foráneas (FK)**, que permiten establecer relaciones entre tablas. Por ejemplo:  
+  - `user_id` en **Students** hace referencia a la tabla **Users**, estableciendo la relación directa entre un usuario y su perfil de estudiante.  
+  - `student_id` en **Projects** establece la asociación entre un estudiante y los proyectos en los que participa o postula.  
+  - La tabla **Reputations** también referencia a estudiantes mediante la columna `student`.  
+
+- **Relaciones entre tablas**, con sus respectivas restricciones (**ON DELETE**, **ON UPDATE**), indicando la cardinalidad entre entidades:  
+  - Un **Student** puede postular a **muchos Projects** (relación 1:N entre *Students* y *Projects*).  
+  - Un **Student** puede tener **muchas Reputations** asociadas (relación 0:N entre *Students* y *Reputations*).  
+
+- **Índices y restricciones adicionales** (como únicos o checks), cuando corresponda, para optimizar consultas y garantizar consistencia.  
+
+El diagrama representa fielmente cómo se implementa la persistencia de estudiantes en un sistema de gestión de bases de datos relacional (como MySQL), permitiendo identificar la alineación entre el modelo lógico del dominio y su representación física.
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/database/projects-databases.png" alt="UPC logo" width="600">
+</p>
+
+<br>
 
 #### 2.6.3 Bounded Context: Companies
 
