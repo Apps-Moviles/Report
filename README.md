@@ -2250,14 +2250,14 @@ EventStorming es una técnica de modelado ágil que busca descubrir el dominio m
 
 En este proyecto se aplicó mediante la identificación de actores y roles principales, el registro de los eventos más relevantes, y la validación iterativa de su coherencia con los objetivos del negocio. Para este fin, se realizaron sesiones colaborativas en Discord de aproximadamente 3 horas, en las que se discutieron y priorizaron los eventos más importantes del contexto.
 
-![Event Storming](./assets/eventstorming/eventstorming.png)
+![Event Storming](./assets/eventstorming/eventstorming.jpg)
 
 ##### 2.5.1.1. Candidate Context Discovery
 
 La fase de Candidate Context Discovery tiene como propósito transformar los eventos identificados en EventStorming en flujos de trabajo claros, que permitan visualizar cómo interactúan los actores con el sistema y qué pasos son necesarios para completar cada caso de uso.  
 
 En este proyecto, los flujos encontrados reflejan procesos clave como el registro y autenticación de usuarios, la publicación y gestión de proyectos por parte de las compañías, la postulación de estudiantes, así como la aceptación o rechazo de postulaciones y la generación de reputaciones. Estos flujos describen de manera secuencial cómo la información se valida, almacena y comunica entre los distintos bounded contexts, sentando la base para un diseño estratégico coherente y alineado con los objetivos del negocio.  
-![Bounded Flows](./assets/eventstorming/candidate_context_discovery_bounded_flows.png)
+![Bounded Flows](./assets/eventstorming/candidate_context_discovery_bounded_flows.jpg)
 
 Los **pivotal points** representan los momentos críticos del dominio, donde ocurren transiciones relevantes o decisiones clave que afectan al sistema y desencadenan interacciones entre bounded contexts. Según el análisis del código, los principales son:  
 
@@ -2293,7 +2293,7 @@ Estos puntos ayudaron a encontrar los principales contextos:
 De aqui partimos a enfocar todos los distintos flujos necesarios para la implementacion
 
 ##### 2.5.1.2. Domain Message Flows Modeling
-Luego de identificar los distintos contextos y eventos de nuestro ecosistema. Segmentamos los flujos que procederán en nuestra arquitectura y sus distintas interacciones internas. Podemos denotar también el uso de un sector de autenticacion que permitirá como intermediario para los permisos entre contextos.
+Luego de identificar los distintos contextos y eventos de nuestro ecosistema. Segmentamos los flujos que procederán en nuestra arquitectura y sus distintas interacciones internas. Gracias a esto podemos dar separacion a los principales agregados, queries/commands y entidades de nuestro ecosistema.
 ![Domain Message Flows Modeling](./assets/eventstorming/domain_message_flows_modeling.png)
 
 ##### 2.5.1.3. Bounded Context Canvases
@@ -2309,12 +2309,12 @@ En términos generales, los *Bounded Context Canvases* de nuestra aplicación se
 - **Reputations**: evaluación y métricas asociadas al rendimiento de estudiantes y compañías.  
 
 Con esta visión, conseguimos establecer un marco claro para cada contexto, facilitando las decisiones futuras sobre responsabilidades, integración y evolución de la arquitectura.  
-![User Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_User.png)
-![Students Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Students.png)
-![Companies Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Companies.png)
-![Projects Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Projects.png)
-![StudentPostulations Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_StudentPostulations.png)
-![Reputations Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Reputations.png)
+![User Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_User.jpg)
+![Students Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Students.jpg)
+![Companies Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Companies.jpg)
+![Projects Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Projects.jpg)
+![StudentPostulations Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_StudentPostulations.jpg)
+![Reputations Bounded Context Canvas](./assets/eventstorming/bounded_context_canvas_Reputations.jpg)
 
 #### 2.5.2. Context Mapping
 La fase de **Context Mapping** nos permitió visualizar cómo interactúan los distintos bounded contexts del sistema y cuáles son las dependencias más relevantes entre ellos. Esta práctica se centra en identificar las relaciones upstream (origen) y downstream (destino), así como el tipo de colaboración que se establece entre los contextos, ya sea de tipo **Customer/Supplier**, **Partnership** u otros. Gracias a ello, obtuvimos una vista estratégica del ecosistema, entendiendo no solo las conexiones técnicas, sino también las implicancias de negocio y de coordinación entre equipos.

@@ -1,0 +1,109 @@
+@startuml
+
+top to bottom direction
+skinparam nodesep 70
+skinparam ranksep 120
+skinparam linetype ortho
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam linetype ortho
+skinparam dpi 100
+title UniTalents - Bounded Contexts & Aggregates (Commands / Queries / Repositories)
+
+package "StudentPostulations" as Postulations {
+  [PostulationsController] <<Controller>>
+  [StudentPostulationCommandService] <<CommandService>>
+  [StudentPostulationQueryService] <<QueryService>>
+  database "StudentPostulationRepository" as PostRepo
+  entity "StudentPostulation (Aggregate)" as PostAgg
+  PostulationsController --> StudentPostulationCommandService
+  PostulationsController --> StudentPostulationQueryService
+  StudentPostulationCommandService --> PostRepo
+  StudentPostulationQueryService --> PostRepo
+  PostRepo --> PostAgg
+}
+package "Projects" as Projects {
+  [ProjectsController] <<Controller>>
+  [ProjectCommandService] <<CommandService>>
+  [ProjectQueryService] <<QueryService>>
+  database "ProjectRepository" as ProjectRepo
+  entity "Project (Aggregate)" as ProjectAgg
+  ProjectsController --> ProjectCommandService
+  ProjectsController --> ProjectQueryService
+  ProjectCommandService --> ProjectRepo
+  ProjectQueryService --> ProjectRepo
+  ProjectRepo --> ProjectAgg
+}
+
+package "Students" as Students {
+  [StudentsController] <<Controller>>
+  [StudentCommandService] <<CommandService>>
+  [StudentQueryService] <<QueryService>>
+  database "StudentRepository" as StudentRepo
+  entity "Student (Aggregate)" as StudentAgg
+  StudentsController --> StudentCommandService
+  StudentsController --> StudentQueryService
+  StudentCommandService --> StudentRepo
+  StudentQueryService --> StudentRepo
+  StudentRepo --> StudentAgg
+}
+package "Users" as Users {
+  [UsersController] <<Controller>>
+  [UserCommandService] <<CommandService>>
+  [UserQueryService] <<QueryService>>
+  database "UserRepository" as UserRepo
+  entity "User (Aggregate)" as UserAgg
+  UsersController --> UserCommandService : "POST/PUT/Delete\n(commands)"
+  UsersController --> UserQueryService   : "GET\n(queries)"
+  UserCommandService --> UserRepo : "writes"
+  UserQueryService --> UserRepo : "reads"
+  UserRepo --> UserAgg : "persists"
+}
+together {
+package "Companies" as Companies {
+  [CompaniesController] <<Controller>>
+  [CompanyRatingsController] <<Controller>>
+  [CompanyCommandService] <<CommandService>>
+  [CompanyQueryService] <<QueryService>>
+  [CompanyRatingCommandService] <<CommandService>>
+  database "CompanyRepository" as CompanyRepo
+  database "CompanyRatingRepository" as CompanyRatingRepo
+  entity "Company (Aggregate)" as CompanyAgg
+  entity "CompanyRating (Aggregate)" as CompanyRatingAgg
+  CompaniesController --> CompanyCommandService
+  CompaniesController --> CompanyQueryService
+  CompanyRatingsController --> CompanyRatingCommandService
+  CompanyCommandService --> CompanyRepo
+  CompanyQueryService --> CompanyRepo
+  CompanyRatingCommandService --> CompanyRatingRepo
+  CompanyRepo --> CompanyAgg
+  CompanyRatingRepo --> CompanyRatingAgg
+}
+
+
+package "Reputations" as Reputations {
+  [ReputationsController] <<Controller>>
+  [ReputationCommandService] <<CommandService>>
+  [ReputationQueryService] <<QueryService>>
+  database "ReputationRepository" as ReputationRepo
+  entity "Reputation (Aggregate)" as ReputationAgg
+  ReputationsController --> ReputationCommandService
+  ReputationsController --> ReputationQueryService
+  ReputationCommandService --> ReputationRepo
+  ReputationQueryService --> ReputationRepo
+  ReputationRepo --> ReputationAgg
+}
+}
+
+
+' Cross-context interactions (inferred from code references)
+Users -up-> Students : "references / user-student link"
+Users -down-> Companies : "may link accounts"
+Companies -up-> Projects : "publishes"
+Companies -down-> Students : "reviews"
+Projects -up-> Companies : "belongs to"
+Postulations -down-> Projects : "applies to"
+Reputations -up-> Projects : "rates project"
+Reputations --> Students : "rates student"
+
+@enduml
