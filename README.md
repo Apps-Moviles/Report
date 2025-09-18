@@ -2254,8 +2254,8 @@ En este proyecto se aplicó mediante la identificación de actores y roles princ
 
 
 - Se trabajo en miro y puml:
-1. ![Miro]("https://miro.com/welcomeonboard/UUxyZnQxRjM4Tnh4Wkp1SmdiWWlXZ3lNYjhGUmVHZTBsVmpPanNpWmxJekRVQzg4NUdXZ3VyMzNXSFl1K3lJY1hkWFhvc2FLK3cyT3VOVkdwYXp2TXVJczZqVmh2TTRnN2ZjTmtla3QySmFvSS9rRjh2K2lqOEJrQnVXQVZvaGJ0R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=?share_link_id=641271968663")
-2. ![Puml]("./assets/eventstorming/bounded_flows/aggregates.puml")
+1. [Miro]("https://miro.com/welcomeonboard/UUxyZnQxRjM4Tnh4Wkp1SmdiWWlXZ3lNYjhGUmVHZTBsVmpPanNpWmxJekRVQzg4NUdXZ3VyMzNXSFl1K3lJY1hkWFhvc2FLK3cyT3VOVkdwYXp2TXVJczZqVmh2TTRnN2ZjTmtla3QySmFvSS9rRjh2K2lqOEJrQnVXQVZvaGJ0R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=?share_link_id=641271968663")
+2. [Puml]("./assets/eventstorming/bounded_flows/aggregates.puml")
 
 ##### 2.5.1.1. Candidate Context Discovery
 
@@ -2341,8 +2341,8 @@ La arquitectura de software de *UniMatch* se diseñó bajo un enfoque estructura
 La arquitectura define cómo los estudiantes y las compañías interactúan con la plataforma, cómo se estructuran los componentes internos y dónde se despliegan. Esto ayuda a asegurar escalabilidad, mantenibilidad y claridad en el desarrollo futuro.
 
 - Se trabajo con structurizr: 
-1. ![Codigo Contexto]("./assets/software-architecture/c4/context-level.dsl")
-1. ![Codigo Deployment]("./assets/software-architecture/c4/deployment.dsl")
+1. [Codigo Contexto]("./assets/software-architecture/c4/context-level.dsl")
+1. [Codigo Deployment]("./assets/software-architecture/c4/deployment.dsl")
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
 En este nivel se representó el sistema *UniMatch* como una caja negra, mostrando únicamente sus interacciones con actores externos (estudiantes y compañías) y los puntos de acceso al sistema (landing page, aplicación móvil y backend).  
