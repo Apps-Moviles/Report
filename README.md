@@ -2266,11 +2266,648 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 
 ##### 2.6.1.1 Domain Layer
 
+<br>
+
+El contexto de Users gestiona toda la lógica relacionada con la administración de usuarios dentro de UniMatch. Esto incluye su creación, autenticación, actualización de información y control de roles. Cada usuario puede representar a una empresa, un estudiante u otros actores del sistema, y constituye un elemento clave de seguridad y gestión de acceso.
+
+Este dominio asegura que los usuarios se gestionen de manera consistente, aplicando reglas como que cada email debe ser único, el password se guarda como PasswordHash (no en texto plano) y los roles definen permisos y restricciones en el sistema.
+
+
+<br>
+
++ **ENTITY: User**
+
+La entidad User representa a un usuario registrado en UniMatch. Contiene información básica como nombre, email, credenciales y rol asignado.
+
+<br>
+
+**Atributos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador único del usuario</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Nombre completo del usuario.</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Correo electrónico único para autenticación.</td>
+    </tr>
+    <tr>
+      <td>PasswordHash</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Hash de la contraseña para seguridad.</td>
+    </tr>
+    <tr>
+      <td>Role</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Rol del usuario dentro de la plataforma (Student, Company).</td>
+    </tr>
+    <tr>
+      <td>CreatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de creación de la cuenta.</td>
+    </tr>
+    <tr>
+      <td>UpdatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Última fecha de actualización del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User(string, string, string, string)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Inicializa un nuevo usuario con datos clave.</td>
+    </tr>
+      <tr>
+      <td>Update(string, string, string)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza nombre, email y rol.</td>
+    </tr>
+     <tr>
+      <td>UpdatePassword(string)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la contraseña encriptada.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
++ **AGGREGATE ROOT: User**
+
+La entidad User actúa como Aggregate Root del bounded context Users. Encapsula completamente su ciclo de vida (registro, actualización, cambio de rol, cambio de contraseña) y garantiza la consistencia del dominio.
+
+<br>
+
++ **Repository: IUserRepository**
+
+Interfaz que define el contrato de persistencia de usuarios, desacoplando la lógica de dominio de la infraestructura.
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;User&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los usuarios.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;User&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un usuario por su email.</td>
+    </tr>
+      <tr>
+      <td><code>GetByEmailAsync(string email)</code></td>
+      <td><code>Task&lt;User&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un usuario por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>AddAsync(User)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo usuario.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync(User)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(User)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un usuario</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 ##### 2.6.1.2 Interface Layer
+
+<br>
+
+En la Interface Layer del bounded context Users, se implementa la comunicación entre el cliente (frontend o consumidores externos) y la lógica de negocio relacionada con la gestión de usuarios.
+
+<br>
+
++ **CONTROLLER: UsersController**
+
+Clase controlador REST que maneja las operaciones CRUD de usuarios.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAll()</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve todos los usuarios.</td>
+    </tr>
+    <tr>
+      <td><code>GetById(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve un usuario por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>Register(RegisterRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Registra un nuevo usuario.</td>
+    </tr>
+     <tr>
+      <td><code>Login(LoginRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Autentica a un usuario y devuelve token/credenciales.</td>
+    </tr>
+    <tr>
+      <td><code>Update(int id, UpdateUserRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Actualiza la información de un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Elimina un usuario por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: RegisterRequest**
+
+Clase que representa el cuerpo de la petición para registrar un nuevo usuario. Incluye los datos básicos de creación.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr>
+      <td><code>Name</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nombre completo del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Correo electrónico único del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Password</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Contraseña en texto plano (antes de ser hasheada).</td>
+    </tr>
+    <tr>
+      <td><code>Role</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Rol asignado al usuario (ej. Admin, User).</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: LoginRequest**
+
+Representa las credenciales de acceso del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Correo electrónico de acceso.</td>
+    </tr>
+    <tr>
+      <td><code>Password</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Contraseña en texto plano proporcionada para autenticación.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: LoginResponse**
+
+Representa la respuesta tras la autenticación del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Token</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Token JWT generado para el usuario autenticado.</td>
+    </tr>
+    <tr>
+      <td><code>User</code></td>
+      <td><code>UserDto</code></td>
+      <td>Pública</td>
+      <td>Representación del usuario autenticado.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: UpdateUserRequest**
+
+Representa la respuesta tras la autenticación del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Name</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nuevo nombre del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nuevo correo electrónico del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: UserDto**
+
+Representa la respuesta tras la autenticación del usuario.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Id</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador único del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Name</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nombre del usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Email del usuario.</td>
+    </tr>
+     <tr>
+      <td><code>Role</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Rol del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
++ **Assembler: UserMapper**
+
+Clase estática responsable de transformar entidades del dominio (User) a DTOs (UserDto).
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ToDto(User user)</code></td>
+      <td><code>UserDto</code></td>
+      <td>Pública</td>
+      <td>Convierte una entidad <code>User</code> a un <code>UserDto</code> de salida.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
 
 ##### 2.6.1.3 Application Layer
 
+<br>
+
+La Application Layer en el contexto de Users gestiona los flujos de negocio relacionados con el ciclo de vida de los usuarios (registro, login, actualización, eliminación y consultas), coordinando las reglas de dominio con la infraestructura de seguridad (hash de contraseñas con BCrypt y generación de tokens JWT).
+
+<br>
+
++ **SERVICE: UserCommandService**
+
+Encargado de todos los comandos de modificación del estado del sistema. Por ejemplo: registrar usuarios con contraseña encriptada, iniciar sesión con validación de credenciales, actualizar datos de usuario y eliminar cuentas.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>RegisterAsync</code></td>
+      <td><code>Task&lt;UserDto&gt;</code></td>
+      <td>Registra un nuevo usuario, encriptando la contraseña con BCrypt.</td>
+    </tr>
+     <tr>
+      <td><code>LoginAsync</code></td>
+      <td><code>Task&lt;LoginResponse&gt;</code></td>
+      <td>Autentica al usuario, validando credenciales y generando un token JWT.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;UserDto&gt;</code></td>
+      <td>Actualiza los datos de un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task</code></td>
+      <td>Elimina un usuario de forma lógica o física según las reglas de negocio.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **SERVICE: UserQueryService**
+
+Aactúa como un puente entre la capa de datos y la capa de presentación para todas las operaciones de lectura de usuarios, garantizando un acceso eficiente y seguro a la información.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;UserDto&gt;&gt;</code></td>
+      <td>Devuelve la lista completa de usuarios registrados en el sistema.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;UserDto?&gt;</code></td>
+      <td>Obtiene un usuario por su identificador único.</td>
+    </tr>
+   <tr>
+      <td><code>GetByEmailAsync</code></td>
+      <td><code>Task&lt;UserDto?&gt;</code></td>
+      <td>Busca un usuario a partir de su dirección de correo electrónico.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **COMMAND HANDLERS:**
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability de Negocio</th>
+      <th>Implementado por</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Registrar usuarios</td>
+      <td><code>Registersync</code> (<code>CommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Iniciar sesión</td>
+      <td><code>LoginAsync</code></td>
+    </tr>
+    <tr>
+      <td>Actualizar usuarios</td>
+      <td><code>UpdateAsync</code></td>
+    </tr>
+    <tr>
+      <td>Eliminar usuarios</td>
+      <td><code>DeleteAsync</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 ##### 2.6.1.4 Infrastructure Layer
+<br>
+
+En el bounded context Users, la infraestructura se centra en la persistencia de datos de usuarios, específicamente en la implementación del repositorio UserRepository, que accede a una base de datos mediante Entity Framework Core.
+
+<br>
+
++ **REPOSITORY: UserRepository:**
+
+Implementa la interfaz IUserRepository definida en el Domain Layer. Gestiona las operaciones de acceso y manipulación de datos para la entidad User en la base de datos.
+<br>
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD de usuarios.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>AddAsync(User user)</code></td>
+      <td><code>Task&lt;User&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo usuario y guarda los cambios.</td>
+    </tr>
+     <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;User&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los usuarios registrados.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;User?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un usuario por su correo electrónico.</td>
+    </tr>
+    <tr>
+      <td><code>GetByEmailAsync(string email)</code></td>
+      <td><code>Task&lt;User?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un usuario por su ID.</td>
+    </tr>
+     <tr>
+      <td><code>Update(User user)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la información de un usuario existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(User user)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un usuario de la base de datos.</td>
+    </tr>
+   
+  </tbody>
+</table>
+
+<br>
 
 ##### 2.6.1.5 Bounded Context Software Architecture Component Level Diagrams
 
