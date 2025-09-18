@@ -2922,11 +2922,762 @@ Implementa la interfaz IUserRepository definida en el Domain Layer. Gestiona las
 
 ##### 2.6.2.1 Domain Layer
 
+El contexto de Students gestiona toda la lógica relacionada con la administración de los estudiantes dentro de UniMatch. Esto incluye su creación, actualización de información personal, registro de especializaciones, historial de proyectos finalizados y la gestión de su perfil público. Cada estudiante está vinculado a un usuario del sistema y representa un actor central en la interacción con empresas y proyectos.
+
+Este dominio asegura que los estudiantes se gestionen de manera consistente, aplicando reglas como que cada estudiante está asociado a un UserId válido, los datos personales (ciudad, país, teléfono, portafolio, “about me”) deben mantenerse actualizados, la valoración (Rating) refleja el promedio de evaluaciones recibidas, la lista de especializaciones y proyectos finalizados se administra en forma controlada y persistente.
+
+<br>
+
++ **ENTITY: Student**
+
+La entidad Student representa a un estudiante registrado en UniMatch. Contiene información personal, profesional y académica como ciudad, país, campo de especialización, portafolio, proyectos finalizados y valoración.
+
+<br>
+
+**Atributos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador único del estudiante.</td>
+    </tr>
+    <tr>
+      <td>UserId</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Referencia al usuario asociado.</td>
+    </tr>
+    <tr>
+      <td>Birthdate</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de nacimiento del estudiante.</td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>País de residencia.</td>
+    </tr>
+    <tr>
+      <td>Field</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Campo de especialización o área profesional.</td>
+    </tr>
+    <tr>
+      <td>PhoneNumber</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Número de contacto del estudiante.</td>
+    </tr>
+    <tr>
+      <td>PortfolioLink</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Enlace al portafolio del estudiante.</td>
+    </tr>
+    <tr>
+      <td>AboutMe</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Descripción personal del estudiante.</td>
+    </tr>
+    <tr>
+      <td>Rating</td>
+      <td><code>double</code></td>
+      <td><code>public</code></td>
+      <td>Puntuación promedio basada en evaluaciones.</td>
+    </tr>
+    <tr>
+      <td>Logo</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Imagen o logo de perfil del estudiante.</td>
+    </tr>
+    <tr>
+      <td>Specializations</td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Lista de especializaciones del estudiante.</td>
+    </tr>
+    <tr>
+      <td>EndedProjects</td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Proyectos finalizados en los que participó.</td>
+    </tr>
+    <tr>
+      <td>CreatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Fecha de creación del registro del estudiante.</td>
+    </tr>
+    <tr>
+      <td>UpdatedAt</td>
+      <td><code>DateTime</code></td>
+      <td><code>public</code></td>
+      <td>Última fecha de actualización de los datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Student(int, DateTime, string, string, string, string, string, string, double, List&lt;string&gt;, string, List&lt;int&gt;)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Inicializa un nuevo estudiante con sus datos clave.</td>
+    </tr>
+    <tr>
+      <td>Update(string, string, string, string, string, string, List&lt;string&gt;)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza datos del estudiante (ciudad, país, contacto, portafolio, descripción, logo, especializaciones).</td>
+    </tr>
+    <tr>
+      <td>UpdateRating(int)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la valoración promedio del estudiante.</td>
+    </tr>
+    <tr>
+      <td>AddEndedProject(int)</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo proyecto finalizado a la lista del estudiante.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **AGGREGATE ROOT: Student**
+
+La entidad Student actúa como Aggregate Root del bounded context Students. Encapsula completamente su ciclo de vida (registro, actualización de datos, gestión de especializaciones, valoración y proyectos finalizados) y garantiza la consistencia del dominio.
+
+<br>
+
++ **Repository: IStudentRepository**
+
+Interfaz que define el contrato de persistencia de estudiantes, desacoplando la lógica de dominio de la infraestructura.
+
+<br>
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Student&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los estudiantes registrados.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca un estudiante por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene un estudiante a partir del ID de usuario asociado.</td>
+    </tr>
+    <tr>
+      <td><code>AddAsync(Student)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(Student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un estudiante del sistema.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
 ##### 2.6.2.2 Interface Layer
 
+En la Interface Layer del bounded context Students, se implementa la comunicación entre el cliente (frontend o consumidores externos) y la lógica de negocio relacionada con la gestión de estudiantes.
+
+<br>
+
++ **CONTROLLER: StudentsController**
+
+Clase controlador REST que maneja las operaciones CRUD de estudiantes.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAll()</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve todos los estudiantes.</td>
+    </tr>
+    <tr>
+      <td><code>GetById(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Devuelve un estudiante por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>Create(CreateStudentRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Registra un nuevo estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Update(int id, UpdateStudentRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Actualiza la información de un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Elimina un estudiante por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: CreateStudentRequest**
+
+Clase que representa el cuerpo de la petición para registrar un nuevo estudiante.
+
+<h3>Tabla de Atributos</h3>
+<table>
+   <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>UserId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador del usuario asociado.</td>
+    </tr>
+    <tr>
+      <td><code>Birthdate</code></td>
+      <td><code>DateTime</code></td>
+      <td>Pública</td>
+      <td>Fecha de nacimiento del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>City</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Country</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>País de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Field</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Área de estudio o especialidad.</td>
+    </tr>
+    <tr>
+      <td><code>PhoneNumber</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Número de contacto del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>PortfolioLink</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Enlace al portafolio del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>AboutMe</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción personal del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Rating</code></td>
+      <td><code>double</code></td>
+      <td>Pública</td>
+      <td>Calificación promedio del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Lista de especializaciones del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Imagen o logo de perfil.</td>
+    </tr>
+    <tr>
+      <td><code>EndedProjects</code></td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td>Pública</td>
+      <td>Proyectos finalizados asociados.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **RESOURCE: UpdateStudentRequest**
+
+Clase que representa los datos editables de un estudiante.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>City</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nueva ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Country</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nuevo país de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>PhoneNumber</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nuevo número de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>PortfolioLink</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nuevo enlace al portafolio.</td>
+    </tr>
+    <tr>
+      <td><code>AboutMe</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Descripción personal actualizada.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string?</code></td>
+      <td>Pública</td>
+      <td>Nueva imagen o logo.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;?</code></td>
+      <td>Pública</td>
+      <td>Lista actualizada de especializaciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ **RESOURCE: StudentDto**
+
+Representación de salida de un estudiante.
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Id</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador único del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>UserId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador del usuario asociado.</td>
+    </tr>
+    <tr>
+      <td><code>Birthdate</code></td>
+      <td><code>DateTime</code></td>
+      <td>Pública</td>
+      <td>Fecha de nacimiento.</td>
+    </tr>
+    <tr>
+      <td><code>City</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Ciudad de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Country</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>País de residencia.</td>
+    </tr>
+    <tr>
+      <td><code>Field</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Área de estudio o especialidad.</td>
+    </tr>
+    <tr>
+      <td><code>PhoneNumber</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Teléfono de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>PortfolioLink</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Enlace al portafolio.</td>
+    </tr>
+    <tr>
+      <td><code>AboutMe</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción personal.</td>
+    </tr>
+    <tr>
+      <td><code>Rating</code></td>
+      <td><code>double</code></td>
+      <td>Pública</td>
+      <td>Calificación promedio.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Especializaciones del estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Imagen o logo de perfil.</td>
+    </tr>
+    <tr>
+      <td><code>EndedProjects</code></td>
+      <td><code>List&lt;int&gt;</code></td>
+      <td>Pública</td>
+      <td>Proyectos finalizados asociados.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **Assembler: StudentMapper**
+
+Clase estática responsable de transformar entidades del dominio (Student) a DTOs (StudentDto).
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ToDto(Student student)</code></td>
+      <td><code>StudentDto</code></td>
+      <td>Pública</td>
+      <td>Convierte una entidad <code>Student</code> a un <code>StudentDto</code> de salida.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
 ##### 2.6.2.3 Application Layer
+<br>
+
+La Application Layer en el contexto de students gestiona los flujos de negocio relacionados con el ciclo de vida de los estudiantes (registro, actualización, eliminación y consultas), coordinando las reglas de dominio con la infraestructura de persistencia.
+
+<br>
+
++ **SERVICE: StudentCommandService**
+
+ Encargado de todos los comandos de modificación del estado del sistema. Por ejemplo: registrar estudiantes, actualizar sus datos y eliminarlos.
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Registra un nuevo estudiante en el sistema.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Actualiza los datos de un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task&lt;bool&gt;</code></td>
+      <td>Elimina un estudiante de acuerdo con las reglas de negocio.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
++ **SERVICE: StudentQueryService**
+
+Actúa como un puente entre la capa de datos y la capa de presentación para todas las operaciones de lectura de estudiantes, garantizando un acceso eficiente y seguro a la información.
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Student&gt;&gt;</code></td>
+      <td>Devuelve la lista completa de estudiantes registrados en el sistema.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Obtiene un estudiante por su identificador único.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td>Busca un estudiante a partir de su ID de usuario asociado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ **COMMAND HANDLERS:**
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability de Negocio</th>
+      <th>Implementado por</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Registrar estudiantes</td>
+      <td><code>CreateAsync</code> (<code>StudentCommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Actualizar estudiantes</td>
+      <td><code>UpdateAsync</code> (<code>StudentCommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Eliminar estudiantes</td>
+      <td><code>DeleteAsync</code> (<code>StudentCommandService</code>)</td>
+    </tr>
+    <tr>
+      <td>Consultar todos los estudiantes</td>
+      <td><code>GetAllAsync</code> (<code>StudentQueryService</code>)</td>
+    </tr>
+    <tr>
+      <td>Consultar por ID</td>
+      <td><code>GetByIdAsync</code> (<code>StudentQueryService</code>)</td>
+    </tr>
+    <tr>
+      <td>Consultar por UserId</td>
+      <td><code>GetByUserIdAsync</code> (<code>StudentQueryService</code>)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
 
 ##### 2.6.2.4 Infrastructure Layer
+<br>
+
+ En el bounded context Students, la infraestructura se centra en la persistencia de datos de estudiantes, específicamente en la implementación del repositorio StudentRepository, que accede a una base de datos mediante Entity Framework Core.
+
+<br>
+
++ **REPOSITORY: StudentRepository:**
+
+Implementa la interfaz <code>IStudentRepository</code> definida en el Domain Layer. Gestiona las operaciones de acceso y manipulación de datos para la entidad Student en la base de datos.
+  
+<br>
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD de estudiantes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>AddAsync(Student student)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Agrega un nuevo estudiante y guarda los cambios.</td>
+    </tr>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;IEnumerable&lt;Student&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todos los estudiantes registrados.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un estudiante por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;Student?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera un estudiante por su UserId asociado.</td>
+    </tr>
+    <tr>
+      <td><code>Update(Student student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza la información de un estudiante existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(Student student)</code></td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Elimina un estudiante de la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
 
 ##### 2.6.2.5 Bounded Context Software Architecture Component Level Diagrams
 
