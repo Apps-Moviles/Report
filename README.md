@@ -879,7 +879,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   </tr>
   <tr>
     <td><strong>Entrevistado</strong></td>
-    <td>Ian Curo</td>
+    <td>Jesus Abraham Polo</td>
   </tr>
   <tr>
     <td><strong>Edad</strong></td>
@@ -887,7 +887,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   </tr>
   <tr>
     <td><strong>Distrito</strong></td>
-    <td>San Miguel</td>
+    <td>Los Olivos</td>
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
@@ -904,12 +904,14 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
-      Ian es estudiante de Ingeniería Mecatrónica y busca insertarse en el mercado laboral principalmente por motivos económicos y personales. Aunque ya cuenta con experiencia previa, esta no ha estado directamente relacionada con su carrera. Reconoce que ingresar a un empleo en su rubro es complejo, debido a la alta exigencia de conocimientos técnicos que demandan las empresas. Señala que las organizaciones suelen priorizar candidatos con experiencia, jóvenes con alta disponibilidad, habilidades blandas bien desarrolladas y competencias técnicas específicas. Ha enfrentado limitaciones para acceder a ciertos puestos justamente por no contar con experiencia previa, aunque considera que esto varía según el tipo de trabajo. Ian destaca sentirse cómodo en actividades vinculadas a la mecánica, el soporte técnico, servicios y el área automotriz. Además, resalta su proactividad y capacidad para desenvolverse con soltura en entornos laborales, señalando que ha fortalecido sus habilidades blandas gracias a trabajos anteriores. Actualmente utiliza plataformas como LinkedIn y redes sociales para buscar oportunidades. Finalmente, considera que UniMatch representa una propuesta atractiva y necesaria, ya que percibe valor en contar con una app móvil que conecte a empresas con jóvenes de alta disponibilidad para colaborar en proyectos y tareas específicas.
+      Jesus es estudiante de Ingeniería Mecatrónica y busca insertarse en el mercado laboral principalmente por motivos económicos y personales. Aunque ya cuenta con experiencia previa, esta no ha estado directamente relacionada con su carrera. Reconoce que ingresar a un empleo en su rubro es complejo, debido a la alta exigencia de conocimientos técnicos que demandan las empresas. Señala que las organizaciones suelen priorizar candidatos con experiencia, jóvenes con alta disponibilidad, habilidades blandas bien desarrolladas y competencias técnicas específicas. Ha enfrentado limitaciones para acceder a ciertos puestos justamente por no contar con experiencia previa, aunque considera que esto varía según el tipo de trabajo. Jesus destaca sentirse cómodo en actividades vinculadas a la mecánica, el soporte técnico, servicios y el área automotriz. Además, resalta su proactividad y capacidad para desenvolverse con soltura en entornos laborales, señalando que ha fortalecido sus habilidades blandas gracias a trabajos anteriores. Actualmente utiliza plataformas como LinkedIn y redes sociales para buscar oportunidades. Finalmente, considera que UniMatch representa una propuesta atractiva y necesaria, ya que percibe valor en contar con una app móvil que conecte a empresas con jóvenes de alta disponibilidad para colaborar en proyectos y tareas específicas.
     </td>
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="" alt="interview image" width="1000"><br>
+      <p align="center">
+        <img src="assets/entrevistas/captura-entrevista-estudiante.png" alt="interviewImage" width="700">
+      </p>
     </td>
   </tr>
 </table>
@@ -1032,7 +1034,9 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="" alt="interview image" width="1000"><br>
+      <p align="center">
+        <img src="assets/entrevistas/captura-entrevista-gerente.png" alt="interviewImage" width="700">
+      </p>
     </td>
   </tr>
 </table>
