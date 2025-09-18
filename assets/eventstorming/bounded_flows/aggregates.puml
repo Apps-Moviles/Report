@@ -96,7 +96,6 @@ package "Reputations" as Reputations {
 }
 
 
-' Cross-context interactions (inferred from code references)
 Users -up-> Students : "references / user-student link"
 Users -down-> Companies : "may link accounts"
 Companies -up-> Projects : "publishes"
