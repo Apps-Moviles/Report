@@ -2910,12 +2910,154 @@ Implementa la interfaz IUserRepository definida en el Domain Layer. Gestiona las
 <br>
 
 ##### 2.6.1.5 Bounded Context Software Architecture Component Level Diagrams
+<br>
 
+El bounded context Users representa la lógica y operaciones relacionadas a la gestión de usuarios dentro de la aplicación UniMatch. Esto incluye el registro, autenticación, actualización de datos, eliminación de cuentas y consultas de usuarios.
+Este contexto forma parte del backend de la aplicación, construido en ASP.NET Core siguiendo una arquitectura DDD con estilo limpio y separación por capas (Domain, Application, Infrastructure, Interface).
+
+<br>
+
+<h3>Componentes del Contenedor</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>UsersController</code></td>
+      <td>Exposición de endpoints RESTful que manejan todas las operaciones sobre usuarios (registro, login, actualización, eliminación).</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>UserCommandService</code></td>
+      <td>Ejecuta comandos relacionados con el ciclo de vida del usuario: registrar, autenticar, actualizar y eliminar.</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>UserQueryService</code></td>
+      <td>Ejecuta consultas para obtener uno o varios usuarios, aplicando filtros (por email, rol, estado, etc).</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>UserMapper</code></td>
+      <td>Transforma datos entre la entidad de dominio (User) y los DTOs utilizados en la API.</td>
+      <td>C# Static Mapper Class</td>
+    </tr>
+    <tr>
+      <td><code>UserRepository</code></td>
+      <td>Implementación del acceso a base de datos para usuarios, mediante Entity Framework Core.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Representa el contexto de base de datos, maneja <code>DbSet&lt;User&gt;</code>.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+
++ Relaciones e Interacciones
+
+  - UsersController depende de UserCommandService y UserQueryService para manejar la lógica de negocio.
+
+  - UserCommandService y UserQueryService interactúan con UserRepository para persistencia de datos.
+
+  - UserRepository utiliza AppDbContext como gateway hacia la base de datos.
+
+  - UserMapper se usa para transformar datos entre la entidad User y los recursos REST (p. ej. RegisterRequest, LoginRequest, UserDto).
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/c4/users-c4.png" alt="UPC logo" width="1200">
+</p>
+
+<br>
 ##### 2.6.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1 Bounded Context Domain Layer Class Diagrams
+<br>
+
+### Diagrama de Clases UML (Users)
+
+En esta sección se presenta el **Diagrama de Clases UML** correspondiente al **Domain Layer** del **Bounded Context User**. Este diagrama detalla la estructura lógica del dominio, representando las entidades, interfaces y sus relaciones clave.
+
+El diagrama incluye:
+
+  + **Clases principales** como `User`, la cual encapsula la lógica de negocio y atributos representativos del modelo del dominio. Esta clase gestiona operaciones como la actualización de correo, cambio de contraseña, activación y desactivación de usuarios.
+
+  + **Interfaces** como `IUserRepository`, que definen contratos de acceso a datos respetando los principios de inversión de dependencias y separación de responsabilidades. Estas operaciones incluyen obtención de usuarios por ID o correo, así como creación, actualización y eliminación.
+
+  + **Relaciones entre clases**, incluyendo:
+    - Agregación entre `User` e `IUserRepository`, que refleja la persistencia de los objetos `User` mediante operaciones definidas en el repositorio.
+
+  + **Visibilidad de los miembros** (públicos y privados) tanto en atributos como en métodos, alineados con las buenas prácticas de encapsulamiento y diseño orientado a objetos.  
+    - Ejemplo: los atributos como `passwordHash` son privados, mientras que los métodos como `updateEmail()` o `deactivate()` son públicos.
+
+  + **Atributos y métodos de cada clase**, con sus tipos de dato, parámetros, retornos y responsabilidades, conforme a la implementación real del sistema.  
+    - Ejemplo: `updateEmail(newEmail: String): void`, `GetByIdAsync(id: int): Task<User?>`.
+
+Este diagrama tiene como finalidad brindar una vista estructurada y detallada de la lógica del dominio del **Bounded Context User**, facilitando su comprensión y comunicación entre desarrolladores, arquitectos y evaluadores técnicos.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/clases/users-clases.png" alt="User UML Diagram" width="600">
+</p>
+
+<br>
 
 ###### 2.6.1.6.2 Bounded Context Database Design Diagram
+<br>
+
+En esta sección se presenta el **Diagrama de Base de Datos Relacional (Entity-Relationship Diagram)** correspondiente al **Bounded Context User**.  
+El objetivo de este diagrama es mostrar cómo los objetos del dominio son persistidos en la base de datos y cómo se estructuran las relaciones entre las distintas entidades persistentes.
+
+El diagrama incluye:
+
+  + **Tabla principal**: `Users`, que representa la entidad del dominio encargada de almacenar la información básica de los usuarios dentro del sistema.
+
+  + **Columnas de la tabla `Users`**:  
+    - `id` → `INT`, clave primaria que identifica de manera única a cada usuario.  
+    - `created_at` → `DATETIME(6)`, fecha de creación del registro.  
+    - `updated_at` → `DATETIME(6)`, última fecha de actualización del registro.  
+    - `name` → `INT` *(probablemente deba ser `VARCHAR` en la implementación final)*.  
+    - `email` → `INT` *(probablemente deba ser `VARCHAR` con restricción `UNIQUE`)*.  
+    - `password_hash` → `LONGTEXT`, almacenamiento del hash de la contraseña.  
+    - `role` → `LONGTEXT`, rol asignado al usuario dentro del sistema (e.g., `STUDENT`, `COMPANY`).  
+
+  + **Clave primaria (PK)**:  
+    - `id`, que asegura la unicidad de cada usuario en la tabla.
+
+  + **Claves foráneas (FK)**:  
+    - `Users.id` puede ser referenciado por otras tablas como `Students.user_id` o `Companies.user_id`, estableciendo así la relación entre la cuenta base de usuario y su perfil especializado.  
+
+  + **Relaciones con otras tablas**:  
+    - Un **User** puede estar asociado a un perfil de **Student**.  
+    - Un **User** puede estar asociado a un perfil de **Company**.  
+    - La relación es **cero a muchos** entre `users` y `reputations`).  
+
+  + **Restricciones adicionales**:  
+    - El campo `email` debería contar con una restricción de unicidad (`UNIQUE`).  
+    - `password_hash` debe ser `NOT NULL`.  
+    - Índices pueden definirse sobre `email` y `role` para mejorar la búsqueda y validación.  
+
+Este diagrama representa fielmente cómo se implementa la persistencia de usuarios en un sistema de gestión de bases de datos relacional (como MySQL o PostgreSQL), permitiendo identificar la alineación entre el modelo lógico del dominio y su representación física.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/database/users-databases.png" alt="Users ER Diagram" width="600">
+</p>
+
+<br>
 
 
 #### 2.6.2 Bounded Context: Students
@@ -3680,14 +3822,143 @@ Implementa la interfaz <code>IStudentRepository</code> definida en el Domain Lay
 <br>
 
 ##### 2.6.2.5 Bounded Context Software Architecture Component Level Diagrams
+<br>
+
+El bounded context Students representa la lógica y operaciones relacionadas a la gestión de estudiantes dentro de la aplicación UniMatch. Esto incluye el registro, edición de datos, consulta de perfiles, asignación a proyectos y eliminación.
+Este contexto forma parte del backend de la aplicación, construido en ASP.NET Core siguiendo una arquitectura DDD con estilo limpio y separación por capas (Domain, Application, Infrastructure, Interface).
+
+<br>
+
+<h3>Componentes del Contenedor</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>StudentsController</code></td>
+      <td>Exposición de endpoints RESTful que manejan todas las operaciones sobre estudiantes (registro, actualización, consulta, asignación a proyectos y eliminación).</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>StudentCommandService</code></td>
+      <td>Ejecuta comandos relacionados con el ciclo de vida del estudiante: registrar, actualizar, asignar a proyectos y eliminar.</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>StudentQueryService</code></td>
+      <td>Ejecuta consultas para obtener uno o varios estudiantes, aplicando filtros (por nombre, email, carrera, estado, etc).</td>
+      <td>C# Service Layer (Application)</td>
+    </tr>
+    <tr>
+      <td><code>StudentMapper</code></td>
+      <td>Transforma datos entre la entidad de dominio (<code>Student</code>) y los DTOs utilizados en la API.</td>
+      <td>C# Static Mapper Class</td>
+    </tr>
+    <tr>
+      <td><code>StudentRepository</code></td>
+      <td>Implementación del acceso a base de datos para estudiantes, mediante Entity Framework Core.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Representa el contexto de base de datos, maneja <code>DbSet&lt;Student&gt;</code>.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
++ Relaciones e Interacciones
+
+  - <code>StudentsController</code> depende de <code>StudentCommandService</code> y <code>StudentQueryService</code> para manejar la lógica de negocio.
+
+  - <code>StudentCommandService</code> y <code>StudentQueryService</code> interactúan con <code>StudentRepository</code> para persistencia de datos.
+
+  - <code>StudentRepository</code> utiliza <code>AppDbContext</code> como gateway hacia la base de datos.
+
+  - <code>StudentMapper</code> se usa para transformar datos entre la entidad <code>Student</code> y los recursos REST (p. ej. <code>CreateStudentRequest</code>, <code>StudentDto</code>).
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/c4/students-c4.png" alt="Students C4 Diagram" width="1200">
+</p>
+
+<br>
 
 ##### 2.6.2.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.2.6.1 Bounded Context Domain Layer Class Diagrams
+<br>
+
+En esta sección se presenta el **Diagrama de Clases UML** correspondiente al **Domain Layer** del **Bounded Context Student**. Este diagrama detalla la estructura lógica del dominio, representando las entidades, interfaces y sus relaciones clave.
+
+El diagrama incluye:
+
+  + **Clases principales** como `Student`, las cuales encapsulan la lógica de negocio y atributos representativos del modelo del dominio, incluyendo información personal, académica y profesional del estudiante.
+
+  + **Interfaces** como `IStudentRepository`, que definen contratos de acceso a datos respetando los principios de inversión de dependencias y separación de responsabilidades, permitiendo operaciones como obtención, creación, actualización y eliminación de estudiantes.
+
+  + **Relaciones entre clases**, incluyendo:
+    - Asociación entre `Student` y `User`, mediante el atributo `UserId`, que conecta el perfil académico con la identidad base del usuario en el sistema.  
+    - Dependencia entre `Student` e `IStudentRepository`, que representa la persistencia de los objetos `Student` mediante las operaciones definidas en el repositorio.
+
+  + **Visibilidad de los miembros** (públicos y privados) tanto en atributos como en métodos, alineado con las buenas prácticas de encapsulamiento y diseño orientado a objetos.
+
+  + **Atributos y métodos de cada clase** con su tipo de dato, parámetros, retornos y responsabilidad, conforme a la implementación real del sistema.  
+    - Ejemplo: `UpdateRating(newRating: double): void` para recalcular la calificación del estudiante y `AddEndedProject(): void` para incrementar el número de proyectos completados.
+
+Este diagrama tiene como finalidad brindar una vista estructurada y detallada de la lógica del dominio del **Bounded Context Student**, facilitando su comprensión y comunicación entre desarrolladores, arquitectos y evaluadores técnicos.
+
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/clases/students-clases.png" alt="Student UML Diagram" width="600">
+</p>
+
+<br>
+
 
 ###### 2.6.2.6.2 Bounded Context Database Design Diagram
 
+## Diagrama de Base de Datos Relacional (Entity-Relationship Diagram) – Students
 
+En esta sección se presenta el **Diagrama de Base de Datos Relacional (Entity-Relationship Diagram)** correspondiente al **Bounded Context Students**.  
+El objetivo de este diagrama es mostrar cómo los objetos del dominio *Students* son persistidos en la base de datos y cómo se estructuran sus relaciones con las demás entidades persistentes.  
+
+El diagrama incluye:  
+
+- **Tablas principales**, como **Students**, que representan las entidades del dominio y contienen columnas equivalentes a sus atributos.  
+
+- **Columnas de la tabla**, con su nombre, tipo de dato (e.g., INT, VARCHAR, DECIMAL, DATETIME), y especificaciones de restricción como **NOT NULL**, **AUTO_INCREMENT**, entre otros.  
+
+- **Claves primarias (PK)**, que identifican de manera única cada registro en la tabla.  
+
+- **Claves foráneas (FK)**, que permiten establecer relaciones entre tablas. Por ejemplo:  
+  - `user_id` en **Students** hace referencia a la tabla **Users**, estableciendo la relación directa entre un usuario y su perfil de estudiante.  
+  - `student_id` en **Projects** establece la asociación entre un estudiante y los proyectos en los que participa o postula.  
+  - La tabla **Reputations** también referencia a estudiantes mediante la columna `student`.  
+
+- **Relaciones entre tablas**, con sus respectivas restricciones (**ON DELETE**, **ON UPDATE**), indicando la cardinalidad entre entidades:  
+  - Un **Student** puede postular a **muchos Projects** (relación 1:N entre *Students* y *Projects*).  
+  - Un **Student** puede tener **muchas Reputations** asociadas (relación 0:N entre *Students* y *Reputations*).  
+
+- **Índices y restricciones adicionales** (como únicos o checks), cuando corresponda, para optimizar consultas y garantizar consistencia.  
+
+El diagrama representa fielmente cómo se implementa la persistencia de estudiantes en un sistema de gestión de bases de datos relacional (como MySQL), permitiendo identificar la alineación entre el modelo lógico del dominio y su representación física.
+<br>
+
+<p align="center">
+  <img src="assets/diagrams/database/projects-databases.png" alt="UPC logo" width="600">
+</p>
+
+<br>
 
 #### 2.6.3 Bounded Context: Companies
 
