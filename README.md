@@ -2252,6 +2252,11 @@ En este proyecto se aplicó mediante la identificación de actores y roles princ
 
 ![Event Storming](./assets/eventstorming/eventstorming.jpg)
 
+
+- Se trabajo en miro y puml:
+1. ![Miro]("https://miro.com/welcomeonboard/UUxyZnQxRjM4Tnh4Wkp1SmdiWWlXZ3lNYjhGUmVHZTBsVmpPanNpWmxJekRVQzg4NUdXZ3VyMzNXSFl1K3lJY1hkWFhvc2FLK3cyT3VOVkdwYXp2TXVJczZqVmh2TTRnN2ZjTmtla3QySmFvSS9rRjh2K2lqOEJrQnVXQVZvaGJ0R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=?share_link_id=641271968663")
+2. ![Puml]("./assets/eventstorming/bounded_flows/aggregates.puml")
+
 ##### 2.5.1.1. Candidate Context Discovery
 
 La fase de Candidate Context Discovery tiene como propósito transformar los eventos identificados en EventStorming en flujos de trabajo claros, que permitan visualizar cómo interactúan los actores con el sistema y qué pasos son necesarios para completar cada caso de uso.  
@@ -2334,6 +2339,10 @@ Para lograrlo, realizamos un análisis colaborativo a partir de los flujos funci
 #### 2.5.3. Software Architecture
 La arquitectura de software de *UniMatch* se diseñó bajo un enfoque estructurado utilizando el modelo **C4** (Context, Container, Component, Deployment). Este enfoque permite representar diferentes niveles de abstracción del sistema y facilita la comunicación entre los stakeholders.  
 La arquitectura define cómo los estudiantes y las compañías interactúan con la plataforma, cómo se estructuran los componentes internos y dónde se despliegan. Esto ayuda a asegurar escalabilidad, mantenibilidad y claridad en el desarrollo futuro.
+
+- Se trabajo con structurizr: 
+1. ![Codigo Contexto]("./assets/software-architecture/c4/context-level.dsl")
+1. ![Codigo Deployment]("./assets/software-architecture/c4/deployment.dsl")
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
 En este nivel se representó el sistema *UniMatch* como una caja negra, mostrando únicamente sus interacciones con actores externos (estudiantes y compañías) y los puntos de acceso al sistema (landing page, aplicación móvil y backend).  
