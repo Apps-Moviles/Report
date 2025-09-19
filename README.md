@@ -5690,7 +5690,7 @@ La entidad StudentPostulation representa la postulación de un estudiante a un p
 
 ##### 2.6.5.6 Bounded Context Software Architecture Code Level Diagrams
 
-  <img src="assets/diagrams/c4/projects-c4.png" alt="UPC logo" width="1200">
+  <img src="assets/diagrams/c4/studentsPostulations-c4.png" alt="UPC logo" width="1200">
 
 
 ###### 2.6.5.6.1 Bounded Context Domain Layer Class Diagrams
