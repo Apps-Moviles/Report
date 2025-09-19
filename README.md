@@ -252,6 +252,20 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
     <td> </td>
     <td> </td>
   </tr>
+  <tr>
+    <th colspan="2"> </th>
+  </tr>
+  <tr>
+    <td>Mi nombre es Alessandra Becerra, tengo 19 años y actualmente curso el 5to ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en lenguajes como C++, Python, HTML, CSS, JavaScript y SQL, además en desarrollo web. Me gusta trabajar en equipo y fomentar una buena relación con mis compañeros para alcanzar resultados de calidad. Me considero una persona comprometida, proactiva y con gran disposición para aprender nuevas tecnologías. Además, me motiva aportar creatividad y organización en cada proyecto en el que participo. </td>
+    <td>
+      <p align="center">
+        <img src="assets/students/foto-alessandra.jpg" alt="Foto Alessandra Becerra" width="500">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2"> </th>
+  </tr>
 </table>
 
 ### 1.2 Solution Profile
