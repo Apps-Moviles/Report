@@ -163,6 +163,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
       <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context companies y students postulations</ul>
+           Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
       </td>
       <td> TB1:
       </td>
@@ -172,6 +173,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
         2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
       </td>
       <td> Josue Paiva <ul>Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
+        Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
       </td>
       <td> TB1:
       </td>
