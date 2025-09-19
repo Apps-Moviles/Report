@@ -164,6 +164,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       </td>
       <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context companies y students postulations</ul>
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
+           Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
       <td> TB1:
       </td>
@@ -174,6 +175,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       </td>
       <td> Josue Paiva <ul>Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
+        Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
       <td> TB1:
       </td>
