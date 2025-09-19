@@ -1079,6 +1079,48 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Diego Ramos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Ate</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>04:36</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/ERcsrLx9sy5IodU1cvugZksBcFrXGly_pGdFjYFXUbJJnQ?e=kVRFE6`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Diego es gerente de la empresa Piamonte Consulting. La empresa brinda consultoria basada en la nube a distintas empresas. Diego normalmente recluta personal en base a diferidos. A pesar de esto tambien brinda oportunidad y esta abierto a abrir convocatorias para estudiantes y egresados pero que tengan un perfil de ganas de aprender y mejorar. Internamente la empresa brinda capacitaciones y certificaciones para crecer profesionalmente.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="./assets/entrevistas/diego.png" alt="interview image" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+
 #### 2.2.3. Análisis de entrevistas
 
 ### 2.3 Needfinding
