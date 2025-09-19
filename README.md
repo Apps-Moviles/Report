@@ -168,7 +168,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
            Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
-      <td> TB1:
+      <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
       </td>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
-      <td> TB1:
+      <td> TB1: La participacion de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se <presentaron></presentaron>
       </td>
     </tr>
   </tbody>
@@ -6359,3 +6359,12 @@ El diagrama incluye:
 
 <br>
 
+## Conclusiones
+
+-**TB1:**
+La primera entrega fue clave para establecer correctamente la propuesta y documentar los bounded contexts que trabajaremos en el resto del curso. Hubo comunicacion constante y reuniones grupales que contaron con la participación de todos los integrantes.
+
+## Anexos
+
+-**Link del repositorio GitHub:** https://github.com/Apps-Moviles
+-**Link del reporte en github:** https://github.com/Apps-Moviles/Report
