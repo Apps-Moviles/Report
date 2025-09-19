@@ -4782,7 +4782,7 @@ Se presenta el diagrama de componentes del contexto de Companies, junto con una 
   </tbody>
 </table>
 
-  <img src="assets/diagrams/c4/projects-c4.png" alt="UPC logo" width="1200">
+  <img src="assets/diagrams/c4/companies-c4.png" alt="UPC logo" width="1200">
 
 
 ##### 2.6.3.6 Bounded Context Software Architecture Code Level Diagrams
