@@ -3975,7 +3975,7 @@ El diagrama representa fielmente cómo se implementa la persistencia de estudian
 <br>
 
 <p align="center">
-  <img src="assets/diagrams/database/projects-databases.png" alt="UPC logo" width="600">
+  <img src="assets/diagrams/database/student-database.png" alt="UPC logo" width="600">
 </p>
 
 <br>
