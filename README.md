@@ -2305,20 +2305,658 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
 
 ##### 2.6.3.1 Domain Layer
 
+El contexto de Companies contiene las entidades Company, la cual se comprenden de información de cada empresa y CompanyRating, la cual contiene las reseñas que dejan los estudiantes luego de participar en un proyecto.
+
+Este dominio es el responsable de representar a las empresas que utilizan la plataforma UniMatch para publicar proyectos y contratar estudiantes. Gestiona la información esencial de cada empresa, incluyendo su nombre, descripción, campo de trabajo, tecnologías utilizadas y reputación basada en las evaluaciones de los estudiantes.
+
++ **ENTITY: Company**
+
+<br>
+
+**Atributos**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>Identificador único de la empresa.</td>
+    </tr>
+    <tr>
+      <td>UserId</td>
+      <td><code>int</code></td>
+      <td><code>public</code></td>
+      <td>ID del usuario asociado.</td>
+    </tr>
+    <tr>
+      <td>CompanyName</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Nombre de la empresa.</td>
+    </tr>
+    <tr>
+      <td>Sector</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Sector o industria a la que pertenece la empresa.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Ubicación geográfica de la empresa.</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Correo electrónico de contacto de la empresa.</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Teléfono de contacto de la empresa.</td>
+    </tr>
+    <tr>
+      <td>Rating</td>
+      <td><code>double</code></td>
+      <td><code>public</code></td>
+      <td>Calificación promedio de la empresa (por defecto <code>5</code>).</td>
+    </tr>
+    <tr>
+      <td>Specializations</td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Lista de especializaciones o áreas de experiencia de la empresa.</td>
+    </tr>
+    <tr>
+      <td>Logo</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>URL o ruta del logotipo de la empresa.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><code>string</code></td>
+      <td><code>public</code></td>
+      <td>Descripción general de la empresa.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Métodos**
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Constructor</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Permite inicializar un objeto <code>Company</code> con sus atributos clave.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
++ **ENTITY: CompanyRating**
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>StudentId</td>
+      <td><code>int</code></td>
+      <td><code>public</code> (setter <code>private</code>)</td>
+      <td>Identificador único del estudiante.</td>
+    </tr>
+    <tr>
+      <td>ProjectId</td>
+      <td><code>int</code></td>
+      <td><code>public</code> (setter <code>private</code>)</td>
+      <td>Identificador único del proyecto asociado.</td>
+    </tr>
+    <tr>
+      <td>Rating</td>
+      <td><code>int</code></td>
+      <td><code>public</code> (setter <code>private</code>)</td>
+      <td>Calificación asignada al proyecto por el estudiante (valor entre 1 y 5).</td>
+    </tr>
+  </tbody>
+</table>
+
++ **Repository: ICompanyRepository**
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;List&lt;Company&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las empresas.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Company?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca una empresa por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;List&lt;Company&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las empresas asociadas a un usuario específico.</td>
+    </tr>
+    <tr>
+      <td><code>CreateAsync(Company company)</code></td>
+      <td><code>Task&lt;Company&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Crea una nueva empresa.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync(Company company)</code></td>
+      <td><code>Task&lt;Company&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza los datos de una empresa existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(int id)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Elimina una empresa por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>FindByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;Company?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca una empresa específica asociada a un usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 2.6.3.2 Interface Layer
+
+Aquí se documentan los controladores y recursos asociados al contexto de Companies.
+
++ **CONTROLLER: CompaniesController**
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAll()</code></td>
+      <td><code>Task&lt;ActionResult&lt;IEnumerable&lt;CompanyDto&gt;&gt;&gt;</code></td>
+      <td>Pública</td>
+      <td>Obtiene todas las empresas.</td>
+    </tr>
+    <tr>
+      <td><code>GetById(int id)</code></td>
+      <td><code>Task&lt;ActionResult&lt;CompanyDto&gt;&gt;</code></td>
+      <td>Pública</td>
+      <td>Obtiene una empresa por su ID.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserId(int userId)</code></td>
+      <td><code>Task&lt;ActionResult&lt;IEnumerable&lt;CompanyDto&gt;&gt;&gt;</code></td>
+      <td>Pública</td>
+      <td>Obtiene las empresas asociadas a un usuario.</td>
+    </tr>
+    <tr>
+      <td><code>Create(CreateCompanyRequest)</code></td>
+      <td><code>Task&lt;ActionResult&lt;CompanyDto&gt;&gt;</code></td>
+      <td>Pública</td>
+      <td>Crea una nueva empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Update(int id, UpdateCompanyRequest)</code></td>
+      <td><code>Task&lt;ActionResult&lt;CompanyDto&gt;&gt;</code></td>
+      <td>Pública</td>
+      <td>Actualiza una empresa existente.</td>
+    </tr>
+    <tr>
+      <td><code>Delete(int id)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Elimina una empresa por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **CONTROLLER: CompanyRatingsController**
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Create(CreateCompanyRatingRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Crea una nueva calificación para una empresa/proyecto asociado a un estudiante.</td>
+    </tr>
+    <tr>
+      <td><code>HasRated(int projectId)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Verifica si el estudiante autenticado ya calificó un proyecto.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: CreateCompaniesRequest**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>UserId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>ID del usuario asociado a la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>CompanyName</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nombre de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Sector</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Sector o industria de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Location</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Ubicación geográfica de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Correo electrónico de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>Phone</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Teléfono de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Lista de especializaciones o áreas de experiencia.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>URL o ruta del logotipo de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Description</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción general de la empresa.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: CreateCompaniesRequest**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ProjectId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>ID del proyecto al que se asigna la calificación.</td>
+    </tr>
+    <tr>
+      <td><code>Rating</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Valor de la calificación (rango 1 a 5).</td>
+    </tr>
+  </tbody>
+</table>
+
+
++ **RESOURCE: UpdateCompaniesRequest**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CompanyName</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Nombre de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Sector</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Sector o industria de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Location</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Ubicación geográfica de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Email</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Correo electrónico de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>Phone</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Teléfono de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>Specializations</code></td>
+      <td><code>List&lt;string&gt;</code></td>
+      <td>Pública</td>
+      <td>Lista de especializaciones o áreas de experiencia.</td>
+    </tr>
+    <tr>
+      <td><code>Logo</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>URL o ruta del logotipo de la empresa.</td>
+    </tr>
+    <tr>
+      <td><code>Description</code></td>
+      <td><code>string</code></td>
+      <td>Pública</td>
+      <td>Descripción general de la empresa.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 2.6.3.3 Application Layer
 
+La application layer del contexto de Companies contiene los casos de uso que orquestan las operaciones relacionadas con las empresas y sus calificaciones.
+
++ **SERVICE: CompanyCommandService**
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync</code></td>
+      <td><code>Task&lt;Company&gt;</code></td>
+      <td>Crea una nueva compañía con los datos proporcionados.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync</code></td>
+      <td><code>Task&lt;Company&gt;</code></td>
+      <td>Actualiza una compañía existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync</code></td>
+      <td><code>Task</code></td>
+      <td>Elimina una compañía según su <code>id</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **SERVICE: CompanyRatingCommandService**
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync</code></td>
+      <td><code>Task&lt;CompanyRating&gt;</code></td>
+      <td>Crea una nueva calificación de compañía asociada a un proyecto y un estudiante.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **SERVICE: CompanyQueryService**
+  <h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync</code></td>
+      <td><code>Task&lt;List&lt;Company&gt;&gt;</code></td>
+      <td>Obtiene todas las compañías registradas.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync</code></td>
+      <td><code>Task&lt;Company?&gt;</code></td>
+      <td>Obtiene una compañía específica por su identificador.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync</code></td>
+      <td><code>Task&lt;List&lt;Company&gt;&gt;</code></td>
+      <td>Obtiene todas las compañías asociadas a un usuario específico.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 2.6.3.4 Infrastructure Layer
+
+<h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tabla de Métodos - CompanyRepository</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetAllAsync()</code></td>
+      <td><code>Task&lt;List&lt;Company&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las compañías registradas.</td>
+    </tr>
+    <tr>
+      <td><code>GetByIdAsync(int id)</code></td>
+      <td><code>Task&lt;Company?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Recupera una compañía por su identificador único.</td>
+    </tr>
+    <tr>
+      <td><code>GetByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;List&lt;Company&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las compañías asociadas a un usuario específico.</td>
+    </tr>
+    <tr>
+      <td><code>CreateAsync(Company company)</code></td>
+      <td><code>Task&lt;Company&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Agrega una nueva compañía a la base de datos.</td>
+    </tr>
+    <tr>
+      <td><code>UpdateAsync(Company company)</code></td>
+      <td><code>Task&lt;Company&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Actualiza los datos de una compañía existente.</td>
+    </tr>
+    <tr>
+      <td><code>DeleteAsync(int id)</code></td>
+      <td><code>Task</code></td>
+      <td><code>public</code></td>
+      <td>Elimina una compañía por su identificador.</td>
+    </tr>
+    <tr>
+      <td><code>FindByUserIdAsync(int userId)</code></td>
+      <td><code>Task&lt;Company?&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Busca la primera compañía asociada a un usuario específico.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 2.6.3.5 Bounded Context Software Architecture Component Level Diagrams
 
+Se presenta el diagrama de componentes del contexto de Companies, junto con una tabla que describe cada componente y su tecnología asociada.
+
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+      <th>Tecnología</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CompaniesController</code></td>
+      <td>Expone endpoints RESTful para gestionar compañías (crear, actualizar, listar, eliminar, etc.).</td>
+      <td>ASP.NET Core MVC Controller</td>
+    </tr>
+    <tr>
+      <td><code>CompaniesCommandService</code></td>
+      <td>Maneja comandos para crear o modificar compañías y cambios de estado.</td>
+      <td>C# Application Service</td>
+    </tr>
+    <tr>
+      <td><code>CompaniesQueryService</code></td>
+      <td>Maneja consultas para obtener una o varias compañías, aplicando filtros y proyecciones.</td>
+      <td>C# Application Service</td>
+    </tr>
+    <tr>
+      <td><code>CompaniesRepository</code></td>
+      <td>Implementación del acceso a datos para compañías mediante Entity Framework Core.</td>
+      <td>Entity Framework Core Repository</td>
+    </tr>
+    <tr>
+      <td><code>AppDbContext</code></td>
+      <td>Contexto de base de datos que contiene <code>DbSet&lt;Company&gt;</code> y gestiona la persistencia.</td>
+      <td>EF Core DbContext</td>
+    </tr>
+  </tbody>
+</table>
+
+  <img src="assets/diagrams/c4/projects-c4.png" alt="UPC logo" width="1200">
+
+
 ##### 2.6.3.6 Bounded Context Software Architecture Code Level Diagrams
+
 
 ###### 2.6.3.6.1 Bounded Context Domain Layer Class Diagrams
 
+Se presenta el diagrama del dominio del contexto de Companies
+
+  <img src="assets/diagrams/clases/companies-clases.png" alt="UPC logo" width="800">
+
 ###### 2.6.3.6.2 Bounded Context Database Design Diagram
 
+  <img src="assets/diagrams/database/company-databases.png" alt="UPC logo" width="800">
 
 
 #### 2.6.4 Bounded Context: Projects
@@ -3116,20 +3754,275 @@ El diagrama representa fielmente cómo se implementa la persistencia en un siste
 
 ##### 2.6.5.1 Domain Layer
 
++ **ENTITY: Student Postulation**
+
+La entidad StudentPostulation representa la postulación de un estudiante a un proyecto específico dentro de la plataforma UniMatch.
+
+**Atributos**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>StudentId</td>
+      <td><code>int</code></td>
+      <td><code>private set; public get;</code></td>
+      <td>Identificador único del estudiante que realiza la postulación.</td>
+    </tr>
+    <tr>
+      <td>ProjectId</td>
+      <td><code>int</code></td>
+      <td><code>private set; public get;</code></td>
+      <td>Identificador único del proyecto al que el estudiante se postula.</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td><code>PostulationStatus</code></td>
+      <td><code>private set; public get;</code></td>
+      <td>Estado actual de la postulación (<code>PENDING</code>, <code>APPROVED</code>, <code>REJECTED</code>, etc.).</td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td><code>DateTime</code></td>
+      <td><code>private set; public get;</code></td>
+      <td>Fecha en que el estudiante realizó la postulación.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**Métodos**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Constructor</td>
+      <td><code>void</code></td>
+      <td><code>public</code></td>
+      <td>Permite inicializar un objeto <code>Project</code> con sus atributos clave.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **Repository: IStudentPostulationRepository**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>FindByStudentIdAsync(int studentId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;StudentPostulation&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las postulaciones realizadas por un estudiante específico.</td>
+    </tr>
+    <tr>
+      <td><code>FindByProjectIdAsync(int projectId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;StudentPostulation&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las postulaciones asociadas a un proyecto específico.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 2.6.5.2 Interface Layer
+
++ **CONTROLLER: StudentPostulationsController**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción corta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Create(CreateStudentPostulationRequest)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Crea una nueva postulación de estudiante a un proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>Accept(int postulationId)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Acepta una postulación específica.</td>
+    </tr>
+    <tr>
+      <td><code>Get(int? studentId, int? projectId)</code></td>
+      <td><code>Task&lt;IActionResult&gt;</code></td>
+      <td>Pública</td>
+      <td>Obtiene postulaciones filtradas por <code>studentId</code> o <code>projectId</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **RESOURCE: CreateProjectRequest**
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr>
+      <td><code>StudentId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador del estudiante que realiza la postulación.</td>
+    </tr>
+    <tr>
+      <td><code>ProjectId</code></td>
+      <td><code>int</code></td>
+      <td>Pública</td>
+      <td>Identificador del proyecto al que se postula el estudiante.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 ##### 2.6.5.3 Application Layer
 
++ **SERVICE: StudentPostulationCommandService**
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CreateAsync(int studentId, int projectId)</code></td>
+      <td><code>Task&lt;StudentPostulation&gt;</code></td>
+      <td>Crea una nueva postulación de un estudiante a un proyecto.</td>
+    </tr>
+    <tr>
+      <td><code>AcceptAsync(int postulationId)</code></td>
+      <td><code>Task&lt;StudentPostulation&gt;</code></td>
+      <td>Acepta una postulación existente identificada por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+
++ **SERVICE: StudentPostulationQueryService**
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GetByStudentIdAsync(int studentId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;StudentPostulation&gt;&gt;</code></td>
+      <td>Obtiene todas las postulaciones realizadas por un estudiante específico.</td>
+    </tr>
+    <tr>
+      <td><code>GetByProjectIdAsync(int projectId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;StudentPostulation&gt;&gt;</code></td>
+      <td>Obtiene todas las postulaciones asociadas a un proyecto específico.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 2.6.5.4 Infrastructure Layer
+
++ **REPOSITORY: StudentPostulationRepository:**
+  <h3>Tabla de Atributos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_context</code></td>
+      <td><code>AppDbContext</code></td>
+      <td><code>private</code></td>
+      <td>Contexto de base de datos para ejecutar operaciones CRUD.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tabla de Métodos</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción breve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>FindByStudentIdAsync(int studentId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;StudentPostulation&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las postulaciones realizadas por un estudiante específico.</td>
+    </tr>
+    <tr>
+      <td><code>FindByProjectIdAsync(int projectId)</code></td>
+      <td><code>Task&lt;IEnumerable&lt;StudentPostulation&gt;&gt;</code></td>
+      <td><code>public</code></td>
+      <td>Obtiene todas las postulaciones asociadas a un proyecto específico.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 2.6.5.5 Bounded Context Software Architecture Component Level Diagrams
 
 ##### 2.6.5.6 Bounded Context Software Architecture Code Level Diagrams
 
+  <img src="assets/diagrams/c4/projects-c4.png" alt="UPC logo" width="1200">
+
+
 ###### 2.6.5.6.1 Bounded Context Domain Layer Class Diagrams
+
+  <img src="assets/diagrams/clases/studentsPostulations-clases.png" alt="UPC logo" width="1200">
+
+
 
 ###### 2.6.5.6.2 Bounded Context Database Design Diagram
 
+  <img src="assets/diagrams/database/studentPostulations-database.png" alt="UPC logo" width="1200">
 
 
 #### 2.6.6 Bounded Context: Reputations
