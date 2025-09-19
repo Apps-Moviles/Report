@@ -2999,6 +2999,7 @@ Este contexto forma parte del backend de la aplicación, construido en ASP.NET C
 </p>
 
 <br>
+
 ##### 2.6.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1 Bounded Context Domain Layer Class Diagrams
