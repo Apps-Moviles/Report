@@ -20,6 +20,7 @@
       <li><h3>Josue Gonzalo Paiva Quispe</h3></li>
       <li><h3>Javier Sebastian Gonzales Alvarado</h3></li>
       <li><h3>Alessandra Nicole Becerra Tejeda</h3></li>
+      <li><h3>Loli Ruiz Renzo Javier</h3></li>
 
   </ul>
   <br>
@@ -163,6 +164,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
       <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context companies y students postulations</ul>
+           Renzo Loli  <ul>Desarrollo y organizacion del event storming y el Software Architecture</ul>
       </td>
       <td> TB1:
       </td>
@@ -235,8 +237,8 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
     <th colspan="2"> </th>
   </tr>
   <tr>
-    <td> </td>
-    <td> </td>
+    <td> Soy Renzo Loli, tengo 26 años y soy de la carrera de Ingeniería de Software. Curso el 8vo ciclo. Tengo conocimientos en lenguages como javascript y python y base en arquitecturas cloud como aws. Me desemboco mejor en el ambito de identificar y resolver problemas.  </td>
+    <td><img src="assets/students/foto-renzo.png"width="500"></td>
   </tr>
   <tr>
     <th colspan="2"> </th>
