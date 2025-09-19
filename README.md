@@ -1102,9 +1102,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td><strong>URL</strong></td>
     <td>
-      
-  `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/ERcsrLx9sy5IodU1cvugZksBcFrXGly_pGdFjYFXUbJJnQ?e=kVRFE6`
-
+    https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/ERcsrLx9sy5IodU1cvugZksBcFrXGly_pGdFjYFXUbJJnQ?e=kVRFE6
   </td>
   </tr>
   <tr>
