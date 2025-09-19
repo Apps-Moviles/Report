@@ -6365,5 +6365,5 @@ La primera entrega fue clave para establecer correctamente la propuesta y docume
 
 ## Anexos
 
--**Link del repositorio GitHub**: https://github.com/Apps-Moviles
--**Link del reporte en github**: https://github.com/Apps-Moviles/Report
+-**Link del repositorio GitHub:** https://github.com/Apps-Moviles
+-**Link del reporte en github:** https://github.com/Apps-Moviles/Report
