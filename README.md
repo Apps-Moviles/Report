@@ -202,13 +202,13 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
 
   + **Misión:**
 
-  Brindar a los estudiantes universitarios una plataforma que facilite su inserción al mercado laboral a través de proyectos, prácticas y experiencias profesionales significativas, conectándolos con empresas y organizaciones que buscan talento joven y creativo.
+  Brindar a los estudiantes universitarios una aplicación móvil que facilite su inserción al mercado laboral a través de proyectos, prácticas y experiencias profesionales significativas, conectándolos con empresas y organizaciones que buscan talento joven y creativo.
 
 <br>
 
   + **Visión:**
 
-  Ser la plataforma líder en Latinoamérica que revolucione la forma en que estudiantes y empresas se conectan, convirtiéndose en el puente más confiable entre la educación y el empleo, impulsando así la innovación y el crecimiento profesional de las nuevas generaciones.
+  Ser la aplicación móvil líder en Latinoamérica que revolucione la forma en que estudiantes y empresas se conectan, convirtiéndose en el puente más confiable entre la educación y el empleo, impulsando así la innovación y el crecimiento profesional de las nuevas generaciones.
 
 <br>
 
@@ -325,7 +325,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
 
   *¿Cómo se utilizará el producto?*
 
-  UniMatch será una aplicación móvil que conectará estudiantes universitarios y recién egresados con empresas mediante proyectos reales de corta duración. La plataforma gestionará postulaciones, portafolios, evaluaciones y calificaciones para fortalecer la empleabilidad joven.
+  UniMatch será una aplicación móvil que conectará estudiantes universitarios y recién egresados con empresas mediante proyectos reales de corta duración. Esta gestionará postulaciones, portafolios, evaluaciones y calificaciones para fortalecer la empleabilidad joven.
 
 <br>
 
@@ -333,11 +333,11 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
 
   *¿Cuánto costará implementar la solución?*
 
-  En el Perú, la pérdida de empleos juveniles sigue siendo una preocupación, ya que en regiones como Ica se reportaron 11,220 empleos menos en 2024, lo que refleja el alto costo económico y social del desempleo juvenil (ComexPerú, 2024). Frente a esta problemática, implementar una plataforma como UniMatch representa una inversión estratégica y de impacto social, al ofrecer una solución digital que conecta estudiantes con empresas para impulsar la empleabilidad. A continuación, se presenta un presupuesto estimado:
+  En el Perú, la pérdida de empleos juveniles sigue siendo una preocupación, ya que en regiones como Ica se reportaron 11,220 empleos menos en 2024, lo que refleja el alto costo económico y social del desempleo juvenil (ComexPerú, 2024). Frente a esta problemática, implementar una aplicación móvil como UniMatch representa una inversión estratégica y de impacto social, al ofrecer una solución digital que conecta estudiantes con empresas para impulsar la empleabilidad. A continuación, se presenta un presupuesto estimado:
 
   + **Desarrollo de Software:**
 
-    - Diseño y desarrollo web: S/ 1,250 – S/ 2,250
+    - Diseño y desarrollo móvil: S/ 1,250 – S/ 2,250
     - Backend y API RESTful: S/ 800 – S/ 1,000
     - Dominio y hosting (anual): S/ 450 – S/ 750
     
@@ -361,7 +361,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
 
 El propósito de UniMatch es ofrecer a los estudiantes universitarios y recién egresados una solución digital que les permita conectar con empresas mediante proyectos reales de corta duración, prácticas preprofesionales y vacantes, gestionando portafolios, postulaciones, evaluaciones y calificaciones que impulsen su empleabilidad. Esta solución está dirigida a jóvenes en etapa de transición académica hacia el mercado laboral, quienes desean ganar experiencia práctica, pero muchas veces carecen de oportunidades o de los medios adecuados para demostrar sus capacidades.
 
-El problema se presenta en el momento en que los estudiantes intentan acceder a un empleo formal o práctica profesional, pero no cuentan con experiencia previa validada, ni con un portafolio que respalde sus competencias. Esta falta de visibilidad genera que las empresas opten por candidatos con mayor trayectoria, dejando en desventaja a los jóvenes talentos. Actualmente, gran parte de los estudiantes depende de redes informales, convocatorias limitadas en universidades o plataformas laborales no especializadas en perfiles sin experiencia, lo que dificulta aún más su inserción laboral.
+El problema se presenta en el momento en que los estudiantes intentan acceder a un empleo formal o práctica profesional, pero no cuentan con experiencia previa validada, ni con un portafolio que respalde sus competencias. Esta falta de visibilidad genera que las empresas opten por candidatos con mayor trayectoria, dejando en desventaja a los jóvenes talentos. Actualmente, gran parte de los estudiantes depende de redes informales, convocatorias limitadas en universidades o aplicaciones laborales no especializadas en perfiles sin experiencia, lo que dificulta aún más su inserción laboral.
 
 Hemos identificado que esta brecha de acceso genera frustración, desmotivación y prolonga los tiempos de espera para que los jóvenes consigan su primer empleo, afectando su desarrollo profesional y económico. Esta problemática se intensifica en contextos como el peruano, donde el desempleo juvenil, según Infobae, alcanzó el 14.3 % en 2024 y 7 de cada 10 jóvenes trabajan en empleos no relacionados con su carrera(2024).
 
@@ -369,15 +369,15 @@ A todo esto nos surge la pregunta: ¿Cómo podríamos brindar a los estudiantes 
 
 <br>
 
-+ **Domain:** Empleabilidad juvenil y plataformas digitales de conexión entre estudiantes y empresas.
++ **Domain:** Empleabilidad juvenil y aplicaciones digitales de conexión entre estudiantes y empresas.
 
 + **Customer Segments:** Estudiantes universitarios, recién egresados, universidades y empresas en búsqueda de talento joven.
 
 + **Pain Points:** Falta de experiencia validada, baja visibilidad ante las empresas, exceso de informalidad laboral, y desmotivación frente a procesos tradicionales de inserción laboral.
 
-+ **Gap:** No existen en Perú plataformas especializadas en conectar talento joven sin experiencia con empresas mediante proyectos cortos y prácticas que validen competencias.
++ **Gap:** No existen en Perú aplicaciones móviles especializadas en conectar talento joven sin experiencia con empresas mediante proyectos cortos y prácticas que validen competencias.
 
-+ **Vision/Strategy:** Crear una plataforma digital accesible y confiable que gestione proyectos, postulaciones, portafolios y evaluaciones, para impulsar la empleabilidad juvenil y reducir la brecha entre formación académica y mercado laboral.
++ **Vision/Strategy:** Crear una aplicación móvil digital accesible y confiable que gestione proyectos, postulaciones, portafolios y evaluaciones, para impulsar la empleabilidad juvenil y reducir la brecha entre formación académica y mercado laboral.
 
 + **Initial Segment:** Estudiantes universitarios de últimos ciclos y recién egresados en Perú que buscan construir experiencia y visibilidad ante empresas locales.
 
@@ -413,7 +413,7 @@ A todo esto nos surge la pregunta: ¿Cómo podríamos brindar a los estudiantes 
 
 11. **Lo resolveremos realizando** la construcción de casos de éxito, alianzas con universidades, programas piloto con empresas y validaciones tempranas de estudiantes destacados.
 
-12. **Otro riesgo que debemos considerar** y que, si resultan falsas, harían fracasar el proyecto son: que los estudiantes realmente desean una plataforma para mostrar su talento, que las empresas estarán dispuestas a invertir en jóvenes sin experiencia y que las universidades apoyarán la integración de la solución.
+12. **Otro riesgo que debemos considerar** y que, si resultan falsas, harían fracasar el proyecto son: que los estudiantes realmente desean una aplicación móvil para mostrar su talento, que las empresas estarán dispuestas a invertir en jóvenes sin experiencia y que las universidades apoyarán la integración de la solución.
 
 <br>
 
@@ -435,7 +435,7 @@ Resuelve la falta de oportunidades de prácticas y empleos relacionados con la c
 
 4. **¿Cuándo y cómo se usa nuestro producto?**
 
-Se utiliza cuando los estudiantes buscan prácticas, proyectos académicos aplicados o su primer empleo formal. El uso será principalmente a través de una plataforma web (y en futuro, app móvil) donde los usuarios se registran, postulan a proyectos, reciben retroalimentación, gestionan entregables y construyen su portafolio.
+Se utiliza cuando los estudiantes buscan prácticas, proyectos académicos aplicados o su primer empleo formal. El uso será principalmente a través de una aplicación móvil donde los usuarios se registran, postulan a proyectos, reciben retroalimentación, gestionan entregables y construyen su portafolio.
 
 5. **¿Qué características son importantes?**
 
@@ -460,13 +460,13 @@ El producto debe lucir moderno, simple y amigable, con un diseño centrado en el
 
 + Creemos que los usuarios valorarán un portafolio validado con proyectos reales, porque les permitirá demostrar experiencia aunque no tengan un empleo previo.
 
-+ Creemos que las empresas estarán dispuestas a publicar proyectos y vacantes en la plataforma porque podrán acceder a talento joven de forma rápida y a bajo costo.
++ Creemos que las empresas estarán dispuestas a publicar proyectos y vacantes en la aplicación móvil porque podrán acceder a talento joven de forma rápida y a bajo costo.
 
 + Creemos que un sistema de retroalimentación y calificación motivará a los estudiantes a mejorar sus entregables y ayudará a las empresas a identificar perfiles destacados.
 
-+ Creemos que un proceso de postulación simple e intuitivo aumentará la adopción de la plataforma y reducirá la frustración de los usuarios.
++ Creemos que un proceso de postulación simple e intuitivo aumentará la adopción de la aplicación móvil y reducirá la frustración de los usuarios.
 
-+ Creemos que un diseño moderno, accesible y responsive (adaptado a móviles) es fundamental para que los estudiantes usen la plataforma con frecuencia.
++ Creemos que un diseño moderno, accesible y responsive (adaptado a móviles) es fundamental para que los estudiantes usen la aplicación móvil con frecuencia.
 
 <br>
 
@@ -476,7 +476,7 @@ El producto debe lucir moderno, simple y amigable, con un diseño centrado en el
 
 1. Hypothesis Statement 01
 
-  **Creemos que** los estudiantes universitarios y recién egresados utilizarán la plataforma UniMatch como su principal medio para acceder a oportunidades prácticas y de desarrollo profesional temprano.
+  **Creemos que** los estudiantes universitarios y recién egresados utilizarán la aplicación móvil UniMatch como su principal medio para acceder a oportunidades prácticas y de desarrollo profesional temprano.
 
   **Sabremos** que hemos tenido éxito.
   
@@ -528,7 +528,7 @@ Jóvenes en etapa de transición entre la vida académica y el mercado laboral, 
 
 + **Características demográficas y comportamiento:**
 <br>
-Edad entre 18 y 25 años, estudiantes de últimos ciclos y recién egresados de universidades e institutos del Perú. Se caracterizan por un alto nivel de uso de plataformas digitales y redes sociales, además de interés en proyectos que les permitan ganar experiencia práctica. Suelen tener poca o nula experiencia laboral formal y enfrentan dificultades para insertarse en empleos relacionados con su carrera.
+Edad entre 18 y 25 años, estudiantes de últimos ciclos y recién egresados de universidades e institutos del Perú. Se caracterizan por un alto nivel de uso de aplicaciones digitales y redes sociales, además de interés en proyectos que les permitan ganar experiencia práctica. Suelen tener poca o nula experiencia laboral formal y enfrentan dificultades para insertarse en empleos relacionados con su carrera.
 <br><br>
 
 + **Sustento estadístico:**
@@ -589,7 +589,7 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
       </td>
     </tr>
     <tr>
-      <td>Plataforma móvil que conecta a estudiantes universitarios de ciclos avanzados con personas o pequeñas empresas que necesitan servicios puntuales (como diseño redacción, programación, etc.). Promueve el trabajo freelance como una vía para adquirir experiencia real, flexible y útil para su desarrollo profesional.</td>
+      <td>Aplicación móvil que conecta a estudiantes universitarios de ciclos avanzados con personas o pequeñas empresas que necesitan servicios puntuales (como diseño redacción, programación, etc.). Promueve el trabajo freelance como una vía para adquirir experiencia real, flexible y útil para su desarrollo profesional.</td>
       <td>Plataforma líder en Latinoamérica para contratar freelancers en áreas como programación, diseño, traducción y marketing.</td>
       <td>Plataforma global que conecta freelancers con proyectos en diversas categorías: desarrollo, escritura, arte, etc. </td>
       <td> Red social profesional que conecta empleadores con talento, usada también para promocionar servicios y encontrar oportunidades de empleo.</td>
@@ -648,7 +648,7 @@ Las pymes representan más del 99.5 % de las empresas en el Perú y generan alre
     </tr>
     <tr>
       <td>Canales de distribución (web/móvil)</td>
-      <td>Móvil y Web</td>
+      <td>Aplicación móvil</td>
       <td>Móvil y Web</td>
       <td>Móvil y Web</td>
       <td>Móvil y Web</td>
@@ -754,7 +754,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
 
 **Estrategias:**
 
-- Especializarnos como plataforma nicho para universitarios con talentos emergentes.
+- Especializarnos como aplicación móvil nicho para universitarios con talentos emergentes.
 
 - Generar confianza en los contratistas validando las credenciales académicas.
 
@@ -763,7 +763,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
 
 - Implementar un sistema de recomendaciones entre pares o docentes.
 
-- Destacar la categoría "Proyectos Académicos o de Innovación" como ventaja frente a plataformas más generales
+- Destacar la categoría "Proyectos Académicos o de Innovación" como ventaja frente a aplicaciones más generales
 
 **Afrontando las debilidades de nuestros competidores:**
 
@@ -771,7 +771,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
 
 - LinkedIn está más orientado a empleo formal o networking profesional, no tanto a proyectos puntuales.
 
-- Muchas plataformas cobran altas comisiones a los freelancers.
+- Muchas aplicaciones cobran altas comisiones a los freelancers.
 
 **Comprendemos que nuestras debilidades son:**
 
@@ -846,7 +846,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
 
 8. ¿Qué conocimientos o habilidades crees que podrías aportar hoy a una empresa o emprendedor?
 
-9. ¿Qué plataformas, herramientas o redes utilizas actualmente para buscar oportunidades laborales o académicas?
+9. ¿Qué aplicaciones, herramientas o redes utilizas actualmente para buscar oportunidades laborales o académicas?
 
 10. Si existiera una app móvil donde pudieras ofrecer tus habilidades a empresas o personas que requieran apoyo en proyectos específicos, ¿la usarías? ¿Por qué sí o por qué no?<br><br>
 
@@ -868,7 +868,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
 
 3. ¿Han contratado anteriormente estudiantes universitarios o recién egresados? ¿Cómo ha sido esa experiencia?
 
-4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar un sitio web, ¿Suele contratar apoyo externo para realizar estas tareas?
+4. Cuando surge una necesidad puntual, como crear una pieza gráfica o actualizar una aplicación móvil, ¿Suele contratar apoyo externo para realizar estas tareas?
 
 5. ¿Qué requisitos suelen incluir en sus ofertas laborales que los postulantes muchas veces no cumplen?
 
@@ -878,7 +878,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
 
 8. ¿Qué habilidades o competencias valoran más en un joven que postula a su empresa?
 
-9. ¿Qué medios, plataformas o canales utilizan actualmente para publicar ofertas y captar candidatos?
+9. ¿Qué medios, aplicaciones o canales utilizan actualmente para publicar ofertas y captar candidatos?
 
 10. Si existiera una app móvil que conecte directamente a empresas con estudiantes para colaborar en proyectos específicos, ¿la utilizarían? ¿Por qué sí o por qué no?<br><br>
 
@@ -924,7 +924,7 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
-      Jesus es estudiante de Ingeniería Mecatrónica y busca insertarse en el mercado laboral principalmente por motivos económicos y personales. Aunque ya cuenta con experiencia previa, esta no ha estado directamente relacionada con su carrera. Reconoce que ingresar a un empleo en su rubro es complejo, debido a la alta exigencia de conocimientos técnicos que demandan las empresas. Señala que las organizaciones suelen priorizar candidatos con experiencia, jóvenes con alta disponibilidad, habilidades blandas bien desarrolladas y competencias técnicas específicas. Ha enfrentado limitaciones para acceder a ciertos puestos justamente por no contar con experiencia previa, aunque considera que esto varía según el tipo de trabajo. Jesus destaca sentirse cómodo en actividades vinculadas a la mecánica, el soporte técnico, servicios y el área automotriz. Además, resalta su proactividad y capacidad para desenvolverse con soltura en entornos laborales, señalando que ha fortalecido sus habilidades blandas gracias a trabajos anteriores. Actualmente utiliza plataformas como LinkedIn y redes sociales para buscar oportunidades. Finalmente, considera que UniMatch representa una propuesta atractiva y necesaria, ya que percibe valor en contar con una app móvil que conecte a empresas con jóvenes de alta disponibilidad para colaborar en proyectos y tareas específicas.
+      Jesus es estudiante de Ingeniería Mecatrónica y busca insertarse en el mercado laboral principalmente por motivos económicos y personales. Aunque ya cuenta con experiencia previa, esta no ha estado directamente relacionada con su carrera. Reconoce que ingresar a un empleo en su rubro es complejo, debido a la alta exigencia de conocimientos técnicos que demandan las empresas. Señala que las organizaciones suelen priorizar candidatos con experiencia, jóvenes con alta disponibilidad, habilidades blandas bien desarrolladas y competencias técnicas específicas. Ha enfrentado limitaciones para acceder a ciertos puestos justamente por no contar con experiencia previa, aunque considera que esto varía según el tipo de trabajo. Jesus destaca sentirse cómodo en actividades vinculadas a la mecánica, el soporte técnico, servicios y el área automotriz. Además, resalta su proactividad y capacidad para desenvolverse con soltura en entornos laborales, señalando que ha fortalecido sus habilidades blandas gracias a trabajos anteriores. Actualmente, utiliza aplicaciones como LinkedIn y redes sociales para buscar oportunidades. Finalmente, considera que UniMatch representa una propuesta atractiva y necesaria, ya que percibe valor en contar con una app móvil que conecte a empresas con jóvenes de alta disponibilidad para colaborar en proyectos y tareas específicas.
     </td>
   </tr>
   <tr>
@@ -1154,7 +1154,7 @@ Para el segmento de empresario escogimos a un ingeniero de sistemas que busca ta
 <img src="assets/user-personas/UP2.png" width=800px>
 
 #### 2.3.2. User Task Matrix
-En este segmento se detallan las tareas que los usuarios (estudiantes y empresarios) deben realizar en la plataforma UniMatch, junto con la frecuencia y prioridad de cada tarea.
+En este segmento se detallan las tareas que los usuarios (estudiantes y empresarios) deben realizar en la aplicación móvil UniMatch, junto con la frecuencia y prioridad de cada tarea.
 
 <table border ="1">
   <thead>
@@ -1336,7 +1336,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>EP01</td>
       <td>Registro y Onboarding de Usuarios</td>
       <td>
-        <strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> registrarme y completar un perfil profesional guiado, <strong>para</strong> poder acceder a oportunidades o gestionar talento según mi rol.
+        <strong>Como</strong> nuevo usuario de la aplicación, <strong>quiero</strong> registrarme y completar un perfil profesional guiado, <strong>para</strong> poder acceder a oportunidades o gestionar talento según mi rol.
       </td>
       <td>No corresponde</td>
       <td>No corresponde</td>
@@ -1378,7 +1378,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>EP06</td>
       <td>Validación y Reputación del Talento</td>
       <td>
-        <strong>Como</strong> usuario de la plataforma, <strong>quiero</strong> consultar la reputación de otros usuarios (estudiantes o gerentes), <strong>para</strong> tomar decisiones informadas al aceptar postulaciones o colaborar en proyectos.</td>
+        <strong>Como</strong> usuario de la aplicación, <strong>quiero</strong> consultar la reputación de otros usuarios (estudiantes o gerentes), <strong>para</strong> tomar decisiones informadas al aceptar postulaciones o colaborar en proyectos.</td>
       <td>No corresponde</td>
       <td>No corresponde</td>
     </tr>
@@ -1392,9 +1392,9 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
     </tr>
     <tr>
       <td>EP08</td>
-      <td>Presentación Clara del Valor de la Plataforma</td>
+      <td>Presentación Clara del Valor de la aplicación móvil</td>
       <td>
-        <strong>Como</strong> visitante nuevo en la web, <strong>quiero</strong> entender fácilmente qué ofrece UniMatch, <strong>para</strong> saber si se adapta a mis necesidades como estudiante o empresa.</td>
+        <strong>Como</strong> visitante nuevo en la aplicación móvil, <strong>quiero</strong> entender fácilmente qué ofrece UniMatch, <strong>para</strong> saber si se adapta a mis necesidades como estudiante o empresa.</td>
       <td>No corresponde</td>
       <td>No corresponde</td>
     </tr>
@@ -1402,13 +1402,13 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>EP09</td>
       <td>Validación Social y Casos de Éxito</td>
       <td>
-        <strong>Como</strong> potencial usuario, <strong>quiero</strong> ver testimonios y casos de éxito reales, <strong>para</strong> confiar en la plataforma antes de registrarme.</td>
+        <strong>Como</strong> potencial usuario, <strong>quiero</strong> ver testimonios y casos de éxito reales, <strong>para</strong> confiar en la aplicación móvil antes de registrarme.</td>
       <td>No corresponde</td>
       <td>No corresponde</td>
     </tr>
     <tr>
       <td>US01</td>
-      <td>Comprender el propósito de la plataforma desde la página de inicio</td>
+      <td>Comprender el propósito de la aplicación móvil desde la página de inicio</td>
       <td>
         <strong>Como</strong> usuario nuevo, <strong>quiero</strong> entender rápidamente de qué trata UniMatch, <strong>para</strong> decidir si me interesa registrarme como estudiante o gerente.</td>
       <td>
@@ -1424,7 +1424,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>US02</td>
       <td>Registro inmediato desde la landing</td>
       <td>
-        <strong>Como</strong> usuario nuevo, <strong>quiero</strong> acceder rápidamente al formulario de registro, <strong>para</strong> comenzar a usar la plataforma sin perder tiempo.</td>
+        <strong>Como</strong> usuario nuevo, <strong>quiero</strong> acceder rápidamente al formulario de registro, <strong>para</strong> comenzar a usar la aplicación móvil sin perder tiempo.</td>
       <td>
         <strong>Escenario 1: Acceso directo desde el encabezado</strong><br>
         <strong>Dado</strong> que soy un usuario que visita la landing por primera vez, <strong>cuando</strong> hago clic en el botón "Empieza" ubicado en el encabezado, <strong>entonces</strong> soy redirigido al formulario de registro correspondiente (estudiante o gerente).
@@ -1435,7 +1435,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>US03</td>
       <td>Ver testimonios de usuarios reales</td>
       <td>
-        <strong>Como</strong> usuario interesado, <strong>quiero</strong> ver experiencias de otras personas en la plataforma, <strong>para</strong> sentir confianza antes de crear una cuenta.</td>
+        <strong>Como</strong> usuario interesado, <strong>quiero</strong> ver experiencias de otras personas en la página, <strong>para</strong> sentir confianza antes de crear una cuenta.</td>
       <td>
         <strong>Escenario 1: Visualización básica de testimonios</strong><br>
         <strong>Dado</strong> que llego a la sección de testimonios, <strong>cuando</strong> leo los testimonios, <strong>entonces</strong> puedo ver el nombre, rol (estudiante o gerente) y un mensaje real validado por el sistema.
@@ -1489,7 +1489,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
         <strong>Dado</strong> que he postulado a varios proyectos, <strong>cuando</strong> accedo a la sección "Mis Postulaciones", <strong>entonces</strong> puedo ver el nombre del proyecto, la empresa, y su estado: En revisión, Aceptado o Rechazado.
         <br><br>
         <strong>Escenario 2: Notificación de cambios en el estado</strong><br>
-        <strong>Dado</strong> que estoy esperando una respuesta, <strong>cuando</strong> el gerente cambia el estado de mi postulación, <strong>entonces</strong> recibo una notificación dentro de la plataforma y/o por correo electrónico.
+        <strong>Dado</strong> que estoy esperando una respuesta, <strong>cuando</strong> el gerente cambia el estado de mi postulación, <strong>entonces</strong> recibo una notificación dentro de la aplicación móvil y/o por correo electrónico.
       </td>
       <td>Epic 04</td>
     </tr>
@@ -1522,7 +1522,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
         <strong>Dado</strong> que ingreso un correo válido, <strong>cuando</strong> envío la solicitud, <strong>entonces</strong> recibo un correo con un enlace temporal para establecer una nueva contraseña.
         <br><br>
         <strong>Escenario 3: Contraseña restablecida correctamente</strong><br>
-        <strong>Dado</strong> que hago clic en el enlace recibido, <strong>cuando</strong> ingreso una nueva contraseña válida y la confirmo, <strong>entonces</strong> mi acceso se restablece y puedo ingresar normalmente a la plataforma.
+        <strong>Dado</strong> que hago clic en el enlace recibido, <strong>cuando</strong> ingreso una nueva contraseña válida y la confirmo, <strong>entonces</strong> mi acceso se restablece y puedo ingresar normalmente a la aplicación.
       </td>
       <td>Epic 01</td>
     </tr>
@@ -1530,10 +1530,10 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>US10</td>
       <td>Modificación de perfil de usuario</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> modificar la información de mi perfil <strong>para</strong> mantener mis datos actualizados en la plataforma.
+        <strong>Como</strong> usuario, <strong>quiero</strong> modificar la información de mi perfil <strong>para</strong> mantener mis datos actualizados en la aplicación.
       </td>
       <td>
-        <strong>Escenario 1:   Usuario modifica nombre y descripción</strong><br>
+        <strong>Escenario 1: Usuario modifica nombre y descripción</strong><br>
         <strong>Dado</strong> que el usuario ha iniciado sesión <strong>Y</strong> se encuentra en la sección de perfil<strong>cuando</strong>  edita su nombre o descripción  <strong>entonces</strong>  los cambios deben guardarse correctamente y mostrarse en el perfil.
         <br><br>
         <strong>Escenario 2:  Usuario cambia su foto de perfil</strong><br>
@@ -1546,7 +1546,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>US11</td>
       <td>Calificación de estudiante freelance</td>
       <td>
-        <strong>Como</strong> empresario, <strong>quiero</strong>  calificar a un estudiante luego de un proyecto <strong>para</strong> reflejar su desempeño en la plataforma.
+        <strong>Como</strong> empresario, <strong>quiero</strong> calificar a un estudiante luego de un proyecto <strong>para</strong> reflejar su desempeño en la aplicación móvil.
       </td>
       <td>
         <strong>Escenario 1: Empresario deja una calificación</strong><br>
@@ -1794,7 +1794,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>US25</td>
       <td>Acceder a la sección de preguntas frecuentes (FAQs)</td>
       <td>
-        <strong>Como</strong> visitante indeciso, <strong>quiero</strong> acceder fácilmente a una sección de preguntas frecuentes, <strong>para</strong> resolver mis dudas antes de registrarme en la plataforma.
+        <strong>Como</strong> visitante indeciso, <strong>quiero</strong> acceder fácilmente a una sección de preguntas frecuentes, <strong>para</strong> resolver mis dudas antes de registrarme en la aplicación.
       </td>
       <td>
         <strong>Escenario 1: Acceso directo desde el menú</strong><br>
@@ -1819,7 +1819,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
         <strong>Escenario 1: Mensaje central visible en el primer vistazo</strong><br>
         <strong>Dado</strong> que ingreso a la landing page,
         <strong>Cuando</strong> visualizo el primer bloque superior,
-        <strong>Entonces</strong> veo un mensaje corto, atractivo y centrado que transmite el valor principal de la plataforma.
+        <strong>Entonces</strong> veo un mensaje corto, atractivo y centrado que transmite el valor principal de la aplicación móvil.
         <br><br>
         <strong>Escenario 2: Imagen o ilustración complementaria al mensaje</strong><br>
         <strong>Dado</strong> que leo el mensaje principal,
@@ -1888,7 +1888,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>TS01</td>
       <td>Endpoint para registro de usuarios</td>
       <td>
-        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), <strong>para</strong> permitir su autenticación y posterior personalización de la plataforma.
+        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), <strong>para</strong> permitir su autenticación y posterior personalización de la aplicación.
       </td>
       <td>
         <strong>Escenario 1: Registro exitoso</strong><br>
@@ -1945,7 +1945,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>TS04</td>
       <td>Endpoint para calificación de desempeño</td>
       <td>
-        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, <strong>para</strong> actualizar su reputación en la plataforma.
+        <strong>Como</strong> developer, <strong>quiero</strong> crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, <strong>para</strong> actualizar su reputación en la aplicación móvil.
       </td>
       <td>
         <strong>Escenario 1: Evaluación registrada correctamente</strong><br>
@@ -2053,7 +2053,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
     <tr>
       <td>1</td>
       <td>US01</td>
-      <td>Comprender el propósito de la plataforma</td>
+      <td>Comprender el propósito de la aplicación móvil</td>
       <td>Como usuario nuevo, quiero entender rápidamente de qué trata UniMatch, para decidir si me interesa registrarme como estudiante o gerente.</td>
       <td>5</td>
     </tr>
@@ -2075,14 +2075,14 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>4</td>
       <td>US02</td>
       <td>Registro inmediato desde la landing</td>
-      <td>Como usuario nuevo, quiero acceder rápidamente al formulario de registro, para comenzar a usar la plataforma sin perder tiempo.</td>
+      <td>Como usuario nuevo, quiero acceder rápidamente al formulario de registro, para comenzar a usar la aplicación sin perder tiempo.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>5</td>
       <td>US03</td>
       <td>Ver testimonios de usuarios reales</td>
-      <td>Como usuario interesado, quiero ver experiencias de otras personas en la plataforma, para sentir confianza antes de crear una cuenta.</td>
+      <td>Como usuario interesado, quiero ver experiencias de otras personas en la aplicación, para sentir confianza antes de crear una cuenta.</td>
       <td>2</td>
     </tr>
     <tr>
@@ -2096,7 +2096,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>7</td>
       <td>US25</td>
       <td>Acceder a la sección de FAQs</td>
-      <td>Como visitante indeciso, quiero acceder fácilmente a una sección de preguntas frecuentes, para resolver mis dudas antes de registrarme en la plataforma.</td>
+      <td>Como visitante indeciso, quiero acceder fácilmente a una sección de preguntas frecuentes, para resolver mis dudas antes de registrarme en la aplicación.</td>
       <td>2</td>
     </tr>
     <tr>
@@ -2145,7 +2145,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>14</td>
       <td>US10</td>
       <td>Modificación de perfil de usuario</td>
-      <td>Como usuario, quiero modificar la información de mi perfil para mantener mis datos actualizados en la plataforma.</td>
+      <td>Como usuario, quiero modificar la información de mi perfil para mantener mis datos actualizados en la aplicación.</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2236,7 +2236,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>27</td>
       <td>TS01</td>
       <td>Endpoint para registro de usuarios</td>
-      <td>Como developer, quiero crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), para permitir su autenticación y posterior personalización de la plataforma.</td>
+      <td>Como developer, quiero crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente), para permitir su autenticación y posterior personalización de la aplicación móvil.</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2257,7 +2257,7 @@ A continuación se presenta el Ubiquitous Language, que define los términos cla
       <td>30</td>
       <td>TS04</td>
       <td>Endpoint para calificación de desempeño</td>
-      <td>Como developer, quiero crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, para actualizar su reputación en la plataforma.</td>
+      <td>Como developer, quiero crear un endpoint que permita a los gerentes calificar el desempeño de un estudiante tras finalizar un proyecto, para actualizar su reputación en la aplicación móvil.</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2341,7 +2341,7 @@ Los **pivotal points** representan los momentos críticos del dominio, donde ocu
   Evento clave que conecta a los estudiantes con oportunidades ofrecidas por las compañías.  
 
 - **Aceptación o rechazo de postulaciones**  
-  Momento decisivo que define la participación de un estudiante en un proyecto y afecta su trayectoria en la plataforma.  
+  Momento decisivo que define la participación de un estudiante en un proyecto y afecta su trayectoria en la aplicación móvil.  
 
 - **Cierre de proyectos**  
   Marca el final de un ciclo, habilitando la generación de reputaciones.  
@@ -2400,7 +2400,7 @@ Para lograrlo, realizamos un análisis colaborativo a partir de los flujos funci
 
 #### 2.5.3. Software Architecture
 La arquitectura de software de *UniMatch* se diseñó bajo un enfoque estructurado utilizando el modelo **C4** (Context, Container, Component, Deployment). Este enfoque permite representar diferentes niveles de abstracción del sistema y facilita la comunicación entre los stakeholders.  
-La arquitectura define cómo los estudiantes y las compañías interactúan con la plataforma, cómo se estructuran los componentes internos y dónde se despliegan. Esto ayuda a asegurar escalabilidad, mantenibilidad y claridad en el desarrollo futuro.
+La arquitectura define cómo los estudiantes y las compañías interactúan con la aplicación móvil, cómo se estructuran los componentes internos y dónde se despliegan. Esto ayuda a asegurar escalabilidad, mantenibilidad y claridad en el desarrollo futuro.
 
 - Se trabajo con structurizr: 
 1. [Codigo Contexto](./assets/software-architecture/c4/context-level.dsl)
@@ -2408,7 +2408,7 @@ La arquitectura define cómo los estudiantes y las compañías interactúan con 
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
 En este nivel se representó el sistema *UniMatch* como una caja negra, mostrando únicamente sus interacciones con actores externos (estudiantes y compañías) y los puntos de acceso al sistema (landing page, aplicación móvil y backend).  
-El objetivo es comprender **qué actores interactúan con la plataforma y para qué**, sin entrar en detalles técnicos internos. Esto permite que tanto perfiles técnicos como no técnicos comprendan el alcance global del sistema y sus principales flujos de interacción.  
+El objetivo es comprender **qué actores interactúan con la aplicación móvil y para qué**, sin entrar en detalles técnicos internos. Esto permite que tanto perfiles técnicos como no técnicos comprendan el alcance global del sistema y sus principales flujos de interacción.  
 ![Context Level Diagrams](./assets/software-architecture/software_architecture_context_level_diagrams.png)
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
@@ -2501,7 +2501,7 @@ La entidad User representa a un usuario registrado en UniMatch. Contiene informa
       <td>Role</td>
       <td><code>string</code></td>
       <td><code>public</code></td>
-      <td>Rol del usuario dentro de la plataforma (Student, Company).</td>
+      <td>Rol del usuario dentro de la aplicación móvil (Student, Company).</td>
     </tr>
     <tr>
       <td>CreatedAt</td>
@@ -4147,7 +4147,7 @@ El diagrama representa fielmente cómo se implementa la persistencia de estudian
 
 El contexto de Companies contiene las entidades Company, la cual se comprenden de información de cada empresa y CompanyRating, la cual contiene las reseñas que dejan los estudiantes luego de participar en un proyecto.
 
-Este dominio es el responsable de representar a las empresas que utilizan la plataforma UniMatch para publicar proyectos y contratar estudiantes. Gestiona la información esencial de cada empresa, incluyendo su nombre, descripción, campo de trabajo, tecnologías utilizadas y reputación basada en las evaluaciones de los estudiantes.
+Este dominio es el responsable de representar a las empresas que utilizan la aplicación móvil UniMatch para publicar proyectos y contratar estudiantes. Gestiona la información esencial de cada empresa, incluyendo su nombre, descripción, campo de trabajo, tecnologías utilizadas y reputación basada en las evaluaciones de los estudiantes.
 
 + **ENTITY: Company**
 
@@ -4805,7 +4805,7 @@ Se presenta el diagrama del dominio del contexto de Companies
 
 <br>
 
-El contexto de Projects gestiona toda la lógica relacionada a la creación, publicación, edición, seguimiento y cierre de proyectos creados por empresas dentro de la plataforma. Cada proyecto representa una oportunidad en la que los estudiantes pueden postularse, y en la que una empresa puede seleccionar a uno de ellos para ejecutarlo. Este contexto mantiene el ciclo de vida del proyecto, desde su publicación hasta su finalización o cancelación.
+El contexto de Projects gestiona toda la lógica relacionada a la creación, publicación, edición, seguimiento y cierre de proyectos creados por empresas dentro de la aplicación móvil. Cada proyecto representa una oportunidad en la que los estudiantes pueden postularse, y en la que una empresa puede seleccionar a uno de ellos para ejecutarlo. Este contexto mantiene el ciclo de vida del proyecto, desde su publicación hasta su finalización o cancelación.
 
 Este dominio tiene como responsabilidad principal asegurar que el estado del proyecto evolucione correctamente (por ejemplo: de abierto a en ejecución, luego a finalizado o cancelado) y garantizar que se respeten reglas clave como: solo pueden postularse estudiantes no repetidos, solo se puede asignar un estudiante que haya postulado previamente, y un proyecto finalizado no puede ser editado ni reabierto.
 
@@ -4813,7 +4813,7 @@ Este dominio tiene como responsabilidad principal asegurar que el estado del pro
 
 + **ENTITY: Project**
 
-La entidad Project representa un proyecto publicado por una empresa en la plataforma UniMatch. Contiene información esencial como título, descripción, campo, estado, habilidades requeridas, y relaciones con estudiantes postulantes y una empresa.
+La entidad Project representa un proyecto publicado por una empresa en la aplicación móvil UniMatch. Contiene información esencial como título, descripción, campo, estado, habilidades requeridas, y relaciones con estudiantes postulantes y una empresa.
 
 <br>
 
@@ -5596,7 +5596,7 @@ El diagrama representa fielmente cómo se implementa la persistencia en un siste
 
 + **ENTITY: Student Postulation**
 
-La entidad StudentPostulation representa la postulación de un estudiante a un proyecto específico dentro de la plataforma UniMatch.
+La entidad StudentPostulation representa la postulación de un estudiante a un proyecto específico dentro de la aplicación móvil UniMatch.
 
 **Atributos**
 <table>
