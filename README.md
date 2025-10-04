@@ -89,7 +89,6 @@
             - [2.6.1.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.1.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
-
         - [2.6.2 Bounded Context: Students](#262-bounded-context-students)
             - [2.6.2.1 Domain Layer](#2621-domain-layer)
             - [2.6.2.2 Interface Layer](#2622-interface-layer)
@@ -99,7 +98,6 @@
             - [2.6.2.6 Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
                 - [2.6.2.6.2. Bounded Context Database Design Diagram](#26261-bounded-context-database-design-diagram)
-
         - [2.6.3 Bounded Context: Companies](#263-bounded-context-companies)
             - [2.6.3.1 Domain Layer](#2631-domain-layer)
             - [2.6.3.2 Interface Layer](#2632-interface-layer)
@@ -109,7 +107,6 @@
             - [2.6.3.6 Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
                 - [2.6.3.6.2. Bounded Context Database Design Diagram](#26361-bounded-context-database-design-diagram)
-
         - [2.6.4 Bounded Context: Projects](#261-bounded-context-projects)
             - [2.6.4.1 Domain Layer](#2611-domain-layer)
             - [2.6.4.2 Interface Layer](#2612-interface-layer)
@@ -119,7 +116,6 @@
             - [2.6.4.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.4.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
-              
         - [2.6.5 Bounded Context: StudentPostulations](#261-bounded-context-projects)
             - [2.6.5.1 Domain Layer](#2611-domain-layer)
             - [2.6.5.2 Interface Layer](#2612-interface-layer)
@@ -129,7 +125,6 @@
             - [2.6.5.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.5.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
-
         - [2.6.6 Bounded Context: Reputations](#261-bounded-context-projects)
             - [2.6.6.1 Domain Layer](#2611-domain-layer)
             - [2.6.6.2 Interface Layer](#2612-interface-layer)
@@ -139,6 +134,27 @@
             - [2.6.6.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.6.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
+
+- [Capítulo III: Solution UI/UX Design](#cap3)
+    - [3.1. Product design](#31-product-design)
+        - [3.1.1. Style Guidelines](#311-style-guidelines)
+            - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
+        - [3.1.2. Information Architecture](#312-information-architecture)
+            - [3.1.2.1. Organization Systems](#3121-organization-systems)
+            - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
+            - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+            - [3.1.2.4. Searching Systems](#3124-searching-systems)
+            - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+        - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+            - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+            - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
+        - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-ux/ui-design)
+            - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-application-wireframes)
+            - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-application-wireflow-diagrams)
+            - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-application-mock-ups)
+            - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-application-user-flow-diagrams)
+            - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-application-prototyping)
+
 
 
 ## Student Outcome
@@ -6358,6 +6374,455 @@ El diagrama incluye:
 </p>
 
 <br>
+
+
+
+
+### 3.1. Product design
+
+#### 3.1.1. Style Guidelines
+
+##### 3.1.1.1. General Style Guidelines
+
+#### 3.1.2. Information Architecture
+
+##### 3.1.2.1. Organization Systems
+
+##### 3.1.2.2. Labelling Systems
+
+##### 3.1.2.3. SEO Tags and Meta Tags
+
+##### 3.1.2.4. Searching Systems
+
+##### 3.1.2.5. Navigation Systems
+
+#### 3.1.3. Landing Page UI Design
+
+##### 3.1.3.1. Landing Page Wireframe
+
+##### 3.1.3.2. Landing Page Mock-up
+
+#### 3.1.4. Mobile Applications UX/UI Design
+
+##### 3.1.4.1. Mobile Applications Wireframes
+
+Los wireframes de UniMatch han sido diseñados pensando en la experiencia móvil, priorizando una navegación fluida, botones accesibles y una jerarquía visual clara. Cada vista está estructurada para adaptarse de forma óptima a pantallas pequeñas, facilitando el acceso rápido a funciones clave como postular, contratar, editar perfil o calificar. Se ha mantenido una coherencia visual entre vistas de estudiantes y empresas, garantizando una experiencia intuitiva y centrada en el usuario.
+
+'https://www.figma.com/design/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=30-2&t=UplywaDwvUIDKkhe-1'
+
+<br>
+
++ Login / Register:
+
+Permite a nuevos usuarios registrarse como estudiante o empresa, y a usuarios existentes iniciar sesión para acceder a la app.
+
+<p align="center">
+  <img src="assets/wrframes/wf01.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf02.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf03.png" alt="wireframe" height="600">
+</p>
+
+
+<br>
+
++ Vista de Oportunidades:
+
+Pantalla principal para estudiantes donde pueden explorar proyectos disponibles publicados por distintas empresas y postularse.
+
+<p align="center">
+  <img src="assets/wrframes/wf04.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Portafolio:
+
+Muestra a los estudiantes los proyectos en los que han trabajado, permite calificar a las empresas y descargar certificados para su currículum.
+
+<p align="center">
+  <img src="assets/wrframes/wf05.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Postulaciones:
+
+Permite a los estudiantes consultar el estado de sus postulaciones y hacer seguimiento a cada proyecto al que aplicaron.
+
+<p align="center">
+  <img src="assets/wrframes/wf06.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Mi Perfil:
+
+Sección donde estudiantes y empresas pueden visualizar y editar su información personal o corporativa, incluyendo foto y datos de contacto.
+
+<p align="center">
+  <img src="assets/wrframes/wf07.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf08.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Proyectos:
+
+Pantalla exclusiva para empresas que muestra los proyectos creados y permite gestionar nuevas oportunidades para estudiantes.
+
+<p align="center">
+  <img src="assets/wrframes/wf09.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf10.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Convocatorias:
+
+Permite a las empresas revisar los estudiantes postulantes a sus proyectos y seleccionar al candidato ideal para trabajar.
+
+<p align="center">
+  <img src="assets/wrframes/wf11.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf12.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
+
+##### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+'https://overflow.io/s/PQZLUF3U'
+
+
+<br>
+
+1. **Wireflow 1: Login/Register**
+
+**User goal:** Ingresar a la app para acceder a sus funcionalidades.
+
+**User Persona:** Estudiante o representante de empresa que desea usar UniMatch.
+
+**Flujo:** Al abrir la app móvil, el usuario ve una pantalla de bienvenida con el logo de UniMatch y un slogan. Al tocar “Comenzar”, se le presenta una vista con dos opciones: iniciar sesión o registrarse. Si elige login, debe ingresar su correo y contraseña. Si elige registrarse, selecciona si es estudiante o empresa, y completa un formulario con datos personales o empresariales según corresponda. Al completar el proceso, accede directamente a la interfaz principal de la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow1.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+2. **Wireflow 2: Postular a un Proyecto**
+
+**User goal:** Participar en un proyecto freelance publicado por una empresa.
+
+**User Persona:** Estudiante registrado en la app.
+
+**Flujo:** Una vez logueado, el estudiante accede por defecto a la vista “Oportunidades”, donde navega por tarjetas de proyectos publicados. Al tocar una tarjeta, accede al detalle del proyecto con información como descripción, pago y requisitos. Puede explorar el perfil de la empresa publicadora y, si le interesa, tocar el botón “Postular”, quedando su postulación registrada y visible en su vista de “Postulaciones”.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow2.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+3. **Wireflow 3: Crear proyecto**
+
+**User goal:** Publicar una oportunidad freelance.
+
+**User Persona:** Representante de una empresa que busca talento joven.
+
+**Flujo:** Al iniciar sesión, la empresa accede a la vista “Mis Proyectos”, donde puede ver sus publicaciones anteriores. En la parte superior toca “Crear nuevo proyecto”, lo que lo lleva a una vista con un formulario para ingresar el título, descripción, pago y duración. Tras llenar los campos y tocar “Crear”, se muestra una confirmación de que el proyecto ha sido publicado en la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow3.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+4. **Wireflow 4: Contratar a un estudiante**
+
+**User goal:** Seleccionar un postulante ideal para un proyecto activo.
+
+**User Persona:** Representante de empresa con proyectos activos.
+
+**Flujo:** Desde la vista “Convocatorias”, la empresa selecciona un proyecto y accede a la lista de postulantes. Puede aplicar filtros por carrera o calificación, revisar el perfil de cada estudiante y, si lo desea, consultar reseñas previas. Una vez tomada la decisión, toca el botón “Aceptar” para contratar al estudiante, integrándolo oficialmente al proyecto desde la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow4.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+5. **Wireflow 5: Editar perfil**
+
+**User goal:** Actualizar su información personal o profesional.
+
+**User Persona:** Estudiante o empresa que ya tiene cuenta.
+
+**Flujo:** En la app móvil, desde la sección “Mi perfil”, el usuario ve su información actual y puede tocar “Editar perfil”. Allí accede a un formulario donde modifica sus datos (nombre, especialización, foto, etc.). Al finalizar, toca “Guardar cambios” y vuelve a la vista anterior con los datos ya actualizados.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow5.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+6. **Wireflow 6: Calificar empresa**
+
+**User goal:** Dejar una reseña tras finalizar un proyecto.
+
+**User Persona:** Estudiante que ha trabajado en un proyecto.
+
+**Flujo:** Desde la sección “Portafolio”, el estudiante toca un proyecto finalizado. En la vista del detalle, si aún no ha dejado reseña, se muestra un pequeño formulario con espacio para comentario y calificación. Tras completarlo, toca “Enviar” para guardar su evaluación, la cual quedará visible en el perfil de la empresa dentro de la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow6.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+7. **Wireflow 7: Descargar certificado**
+
+**User goal:** Obtener un certificado por participación en un proyecto.
+
+**User Persona:** Estudiante con proyecto completado.
+
+**Flujo:** El estudiante accede a “Portafolio” y selecciona un proyecto finalizado. En la parte superior de la vista se muestra un botón para “Descargar certificado”. Al tocarlo, el certificado se genera y se descarga directamente al dispositivo móvil del usuario, permitiéndole guardarlo como evidencia formal de su experiencia.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow7.png" alt="wireflow" width="500">
+</p>
+
+<br>
+
+
+##### 3.1.4.3. Mobile Applications Mock-ups
+
+Los siguientes mockups fueron elaborados a partir de los wireframes iniciales. Representan de manera visual y realista cómo los usuarios interactuarán con la interfaz de nuestra aplicación móvil UniMatch.
+
+'https://www.figma.com/design/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=0-1&t=UplywaDwvUIDKkhe-1'
+
+<br>
+
++ Login / Register:
+
+Permite a nuevos usuarios registrarse como estudiante o empresa, y a usuarios existentes iniciar sesión para acceder a la app.
+
+<p align="center">
+  <img src="assets/mockups/mockup1.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup2.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup3.png" alt="mockup" height="600">
+</p>
+
+
+<br>
+
++ Vista de Oportunidades:
+
+Pantalla principal para estudiantes donde pueden explorar proyectos disponibles publicados por distintas empresas y postularse.
+
+<p align="center">
+  <img src="assets/mockups/mockup4.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Portafolio:
+
+Muestra a los estudiantes los proyectos en los que han trabajado, permite calificar a las empresas y descargar certificados para su currículum.
+
+<p align="center">
+  <img src="assets/mockups/mockup5.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Postulaciones:
+
+Permite a los estudiantes consultar el estado de sus postulaciones y hacer seguimiento a cada proyecto al que aplicaron.
+
+<p align="center">
+  <img src="assets/mockups/mockup6.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Mi Perfil:
+
+Sección donde estudiantes y empresas pueden visualizar y editar su información personal o corporativa, incluyendo foto y datos de contacto.
+
+<p align="center">
+  <img src="assets/mockups/mockup7.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup8.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Proyectos:
+
+Pantalla exclusiva para empresas que muestra los proyectos creados y permite gestionar nuevas oportunidades para estudiantes.
+
+<p align="center">
+  <img src="assets/mockups/mockup9.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup91.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Convocatorias:
+
+Permite a las empresas revisar los estudiantes postulantes a sus proyectos y seleccionar al candidato ideal para trabajar.
+
+<p align="center">
+  <img src="assets/mockups/mockup92.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup93.png" alt="mockup" height="600">
+</p>
+
+<br>
+
+
+##### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+'https://overflow.io/s/MJFHE5LE'
+
+<br>
+
+1. **User Flow Diagram 1: Login/Register**
+
+**User goal:** Ingresar a la app para acceder a sus funcionalidades.
+
+**User Persona:** Estudiante o representante de empresa que desea usar UniMatch.
+
+**Flujo:** Al abrir la app móvil, el usuario ve una pantalla de bienvenida con el logo de UniMatch y un slogan. Al tocar “Comenzar”, se le presenta una vista con dos opciones: iniciar sesión o registrarse. Si elige login, debe ingresar su correo y contraseña. Si elige registrarse, selecciona si es estudiante o empresa, y completa un formulario con datos personales o empresariales según corresponda. Al completar el proceso, accede directamente a la interfaz principal de la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow1screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+2. **User Flow Diagram 2: Postular a un Proyecto**
+
+**User goal:** Participar en un proyecto freelance publicado por una empresa.
+
+**User Persona:** Estudiante registrado en la app.
+
+**Flujo:** Una vez logueado, el estudiante accede por defecto a la vista “Oportunidades”, donde navega por tarjetas de proyectos publicados. Al tocar una tarjeta, accede al detalle del proyecto con información como descripción, pago y requisitos. Puede explorar el perfil de la empresa publicadora y, si le interesa, tocar el botón “Postular”, quedando su postulación registrada y visible en su vista de “Postulaciones”.
+
+<p align="center">
+  <img src="assets/Flows/userflow2screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+3. **User Flow Diagram 3: Crear proyecto**
+
+**User goal:** Publicar una oportunidad freelance.
+
+**User Persona:** Representante de una empresa que busca talento joven.
+
+**Flujo:** Al iniciar sesión, la empresa accede a la vista “Mis Proyectos”, donde puede ver sus publicaciones anteriores. En la parte superior toca “Crear nuevo proyecto”, lo que lo lleva a una vista con un formulario para ingresar el título, descripción, pago y duración. Tras llenar los campos y tocar “Crear”, se muestra una confirmación de que el proyecto ha sido publicado en la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow3screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+4. **User Flow Diagram 4: Contratar a un estudiante**
+
+**User goal:** Seleccionar un postulante ideal para un proyecto activo.
+
+**User Persona:** Representante de empresa con proyectos activos.
+
+**Flujo:** Desde la vista “Convocatorias”, la empresa selecciona un proyecto y accede a la lista de postulantes. Puede aplicar filtros por carrera o calificación, revisar el perfil de cada estudiante y, si lo desea, consultar reseñas previas. Una vez tomada la decisión, toca el botón “Aceptar” para contratar al estudiante, integrándolo oficialmente al proyecto desde la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow4screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+5. **User Flow Diagram 5: Editar perfil**
+
+**User goal:** Actualizar su información personal o profesional.
+
+**User Persona:** Estudiante o empresa que ya tiene cuenta.
+
+**Flujo:** En la app móvil, desde la sección “Mi perfil”, el usuario ve su información actual y puede tocar “Editar perfil”. Allí accede a un formulario donde modifica sus datos (nombre, especialización, foto, etc.). Al finalizar, toca “Guardar cambios” y vuelve a la vista anterior con los datos ya actualizados.
+
+<p align="center">
+  <img src="assets/Flows/userflow5screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+6. **User Flow Diagram 6: Calificar empresa**
+
+**User goal:** Dejar una reseña tras finalizar un proyecto.
+
+**User Persona:** Estudiante que ha trabajado en un proyecto.
+
+**Flujo:** Desde la sección “Portafolio”, el estudiante toca un proyecto finalizado. En la vista del detalle, si aún no ha dejado reseña, se muestra un pequeño formulario con espacio para comentario y calificación. Tras completarlo, toca “Enviar” para guardar su evaluación, la cual quedará visible en el perfil de la empresa dentro de la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow6screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+7. **User Flow Diagram 7: Descargar certificado**
+
+**User goal:** Obtener un certificado por participación en un proyecto.
+
+**User Persona:** Estudiante con proyecto completado.
+
+**Flujo:** El estudiante accede a “Portafolio” y selecciona un proyecto finalizado. En la parte superior de la vista se muestra un botón para “Descargar certificado”. Al tocarlo, el certificado se genera y se descarga directamente al dispositivo móvil del usuario, permitiéndole guardarlo como evidencia formal de su experiencia.
+
+<p align="center">
+  <img src="assets/Flows/userflow7screen.png" alt="userflow" width="500">
+</p>
+
+<br>
+
+
+
+
+##### 3.1.4.5. Mobile Applications Prototyping
+
+
+
+
+
 
 ## Conclusiones
 
