@@ -5999,7 +5999,7 @@ Define las operaciones necesarias para acceder al almacenamiento de reputaciones
 
 La Interface Layer (también llamada capa de presentación) del bounded context Reputations actúa como punto de entrada al sistema para usuarios externos y consumidores de la API. Esta capa contiene componentes del tipo Controller, encargados de exponer los endpoints HTTP que permiten a aplicaciones cliente (por ejemplo, el frontend en Vue o Angular) interactuar con los servicios de reputación.
 
-En esta capa se definen las rutas RESTful asociadas al módulo de reputaciones, siguiendo el patrón típico de arquitectura en aplicaciones web: el controller recibe una solicitud, delega la lógica a los servicios de aplicación, y retorna una respuesta HTTP.
+En esta capa se definen las rutas RESTful asociadas al módulo de reputaciones, siguiendo el patrón típico de arquitectura en aplicaciones: el controller recibe una solicitud, delega la lógica a los servicios de aplicación, y retorna una respuesta HTTP.
 
 <br>
 
@@ -6814,15 +6814,11 @@ Permite a las empresas revisar los estudiantes postulantes a sus proyectos y sel
 
 <br>
 
-
-
-
 ##### 3.1.4.5. Mobile Applications Prototyping
 
+'https://www.figma.com/proto/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=28-847&p=f&t=Lgsf76XfJi1VwMAO-1&scaling=scale-down&content-scaling=fixed&page-id=28%3A826&starting-point-node-id=28%3A847'
 
-
-
-
+<br>
 
 ## Conclusiones
 
