@@ -6400,7 +6400,59 @@ El diagrama incluye:
 
 ##### 3.1.3.1. Landing Page Wireframe
 
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 5.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 6.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 7.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 8.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
 ##### 3.1.3.2. Landing Page Mock-up
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 1.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 2.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 3.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 4.png" alt="mockup" width="700">
+</p>
+
+<br>
 
 #### 3.1.4. Mobile Applications UX/UI Design
 
