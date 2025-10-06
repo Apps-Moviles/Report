@@ -6872,6 +6872,75 @@ Permite a las empresas revisar los estudiantes postulantes a sus proyectos y sel
 
 <br>
 
+## Capítulo IV: Product Implementation & Validation
+### 4. Product Implementation & Validation
+### 4.1 Software Configuration Management
+#### 4.1.1. Software Development Environment Configuration  
+
+**Gestión de Proyecto (Project Management)**
+
+Plataforma web utilizada para la gestión y publicación de las páginas del proyecto. Permite alojar documentación y contenidos de manera accesible, fomentando la colaboración y la visibilidad del avance del proyecto.
+
+Ruta de acceso: `https://pages.github.com`
+
+**Gestión de Requisitos (Requirements Management)**
+
+Trello: Herramienta de gestión de tareas y proyectos basada en tableros. Facilita la asignación de responsabilidades, el seguimiento del progreso y la coordinación de las historias de usuario dentro del equipo de trabajo.
+
+Ruta de acceso: `https://trello.com/es`
+
+**Diseño de UX/UI del Producto (Product UX/UI Design)**
+
+Figma: Herramienta online para la creación de prototipos y diseños de interfaz de usuario. Se empleará para desarrollar las versiones Desktop y Mobile de la aplicación, asegurando consistencia visual y usabilidad.
+
+
+Ruta de acceso: `https://www.figma.com/login`
+
+Overflow: Plataforma especializada en la representación de flujos de usuario (user flows) y wireflows, utilizada para diseñar la experiencia del usuario y visualizar los procesos de interacción.
+
+
+Ruta de acceso: `https://overflow.io`
+
+**Desarrollo de Software (Software Development)**
+
+Visual Studio Code: Entorno de desarrollo integrado (IDE) utilizado para la programación y compilación del código fuente. Destaca por su compatibilidad con múltiples lenguajes y extensiones que optimizan el flujo de trabajo.
+
+Ruta de acceso: `https://code.visualstudio.com`
+
+IntelliJ IDEA: IDE avanzado para el desarrollo en Java y Kotlin, empleado para construir los componentes principales del sistema y facilitar la integración con herramientas de desarrollo modernas.
+
+Ruta de acceso: `https://www.jetbrains.com/idea`
+
+HTML5: Lenguaje de marcado estándar para estructurar el contenido web de la aplicación, garantizando accesibilidad y compatibilidad con diferentes navegadores.
+
+
+Ruta de acceso: `https://developer.mozilla.org/en-US/docs/Web/HTML`
+
+CSS:Lenguaje de estilos empleado para definir la apariencia y presentación visual del sitio web, asegurando una interfaz atractiva y coherente.
+
+Ruta de acceso:  `https://developer.mozilla.org/en-US/docs/Web/CSS`
+
+JavaScript: Lenguaje de programación que dota de interactividad a la interfaz de usuario, permitiendo desarrollar funcionalidades dinámicas en el navegador.
+
+Ruta de acceso: `https://developer.mozilla.org/en-US/docs/Web/JavaScript`
+
+**Despliegue de Software (Software Deployment)**
+
+Git: Sistema de control de versiones que registra los cambios en el código fuente y facilita el trabajo colaborativo entre los miembros del equipo. Se usará para mantener el historial del proyecto y controlar las versiones del software.
+
+Ruta de acceso: `https://git-scm.com`
+
+**Documentación del Software (Software Documentation)**
+
+Markdown: Lenguaje de marcado ligero utilizado para redactar documentación técnica de forma simple y legible, especialmente útil en plataformas colaborativas como GitHub.
+
+Ruta de acceso: `https://www.markdownguide.org`
+
+GitHub Pages: Servicio web empleado para alojar y publicar la documentación del proyecto, con acceso público o restringido según las necesidades del equipo.
+
+Ruta de acceso: `https://pages.github.com`
+
+
 ## Conclusiones
 
 -**TB1:**
