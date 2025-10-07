@@ -6940,6 +6940,90 @@ GitHub Pages: Servicio web empleado para alojar y publicar la documentación del
 
 Ruta de acceso: `https://pages.github.com`
 
+#### 4.1.2. Source Code Management 
+
+GitHub se utilizará como la plataforma principal para el control de versiones del proyecto. En este espacio se alojarán los repositorios correspondientes permitiendo la colaboración y el seguimiento de cambios entre los desarrolladores.
+URL de Repositorios:
+
+Documentacion Informe: `https://github.com/Apps-Moviles/Report`
+
+Cada repositorio contendrá todos los archivos y recursos necesarios para el desarrollo y la gestión del proyecto.
+
+**Implementación de GitFlow como Workflow de Control de Versiones**
+
+Modelo de GitFlow:
+
+GitFlow se adoptará como el flujo de trabajo principal para la gestión de ramas y versiones del proyecto. Este modelo permite una integración ordenada entre los desarrolladores, separando las etapas de desarrollo, prueba y producción.
+
+Ramas principales:
+
+Main branch: main
+
+Contiene el código estable y listo para producción. Toda versión final del sistema será fusionada en esta rama.
+
+Development branch: develop
+
+Rama de desarrollo activo. Aquí se integran las funcionalidades antes de su paso a main. Todas las features parten de esta rama.
+
+Feature branches: feature
+
+Utilizadas para desarrollar nuevas funcionalidades. Se crean a partir de develop y siguen la convención:
+
+feature/ch1-actvidiad
+
+Ejemplo: feature/ch1-user-stories
+
+**Convenciones para Versiones**
+
+Se aplicará Semantic Versioning (Versionado Semántico) para todas las versiones lanzadas.
+
+**Mensajes de Commits con Conventional Commits**
+ 
+Para los mensajes de commit, se implementará Conventional Commits para asegurar claridad en los cambios realizados en el código. Esta convención incluirá los siguientes tipos:
+
+feat: Nueva característica o funcionalidad.
+
+fix: Corrección de errores.
+
+chore: Tareas de mantenimiento o configuración.
+
+#### 4.1.2. Source Code Style Guide & Conventions  
+
+**HTML:** Durante el desarrollo de la Landing Page estática se aplicaron las siguientes buenas prácticas de estructura y accesibilidad:
+
+1. Se implementó el uso de href="#id" para lograr una navegación interna fluida entre secciones del sitio.
+
+2. Se incluyeron los atributos alt en todas las etiquetas <img> con el fin de garantizar accesibilidad y reemplazo de las imágenes en caso de error de carga.
+
+3. Los íconos SVG se obtendrán desde FontAwesome, asegurando consistencia visual y ligereza en el diseño.
+
+4. Se aplicará la convención snake_case para nombrar los identificadores (id) y clases (class) en el código HTML, manteniendo uniformidad en la nomenclatura.
+
+**CSS:** En las hojas de estilo se implementarán las siguientes convenciones para optimizar la presentación visual y la mantenibilidad del código:
+
+1. Se empleará Flexbox para estructurar el diseño de manera responsive, facilitando la adaptación a diferentes tamaños de pantalla.
+
+2. Los colores se definirán utilizando el formato HEX, garantizando precisión y consistencia cromática en todo el sitio.
+
+3. Cada hoja de estilos incluirá comentarios descriptivos al inicio de cada sección, con el propósito de facilitar la lectura y el mantenimiento del código.
+
+
+**JavaScript:** Para el desarrollo de la funcionalidad interactiva de la Landing Page, se establecen las siguientes normas de codificación:
+
+1. Las funciones y variables seguirán la convención camelCase para su declaración, asegurando legibilidad y coherencia con las buenas prácticas de JavaScript.
+
+
+
+**Gherkin:** El lenguaje de dominio Gherkin se utilizó para la redacción de los escenarios de las historias de usuario, facilitando la comprensión del comportamiento esperado del sistema mediante el uso de las palabras clave:
+- Given (Dado) – Estado inicial o precondición.
+
+- When (Cuando) – Acción que ejecuta el usuario.
+
+- Then (Entonces) – Resultado esperado.
+
+- And (Y) – Condiciones adicionales o pasos complementarios.
+
+#### 4.1.4. Software Deployment Configuration  
 
 ## Conclusiones
 
