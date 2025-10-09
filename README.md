@@ -172,24 +172,28 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       <td>
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
-      <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context companies y students postulations</ul>
-           Renzo Loli  <ul>Desarrollo y organizacion del event storming y el Software Architecture</ul>
+      <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
+<ul>TP: Desarrollo de las vistas inicio de sesión y dashboard del frontend, documentación del sprint1</ul>
+           Renzo Loli  <ul>Desarrollo y organización del event storming y el Software Architecture</ul>
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
            Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
+TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
       </td>
     </tr>
     <tr>
       <td>
         2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
       </td>
-      <td> Josue Paiva <ul>Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
-           Renzo Loli  <ul>Planificacion del event storming y rediseño de la arquitectura base</ul>
+      <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
+<ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
+           Renzo Loli  <ul>Planificación del event storming y rediseño de la arquitectura base</ul>
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
-      <td> TB1: La participacion de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se <presentaron></presentaron>
+      <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
+TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos, sin embargo la participación de todos los integrantes fue constante y satisfactoria.
       </td>
     </tr>
   </tbody>
@@ -6705,15 +6709,28 @@ Para la documentación en Swagger del backend se utilizó Azure App Service:
 
 ##### 4.2.1.8 Team Collaboration Insights during Sprint
 
+A continuación se evidencian los insights, donde se evidencia el trabajo colaborativo del equipo
 
+<img src="assets/sprint1/reportCommits.png" alt="UPC logo" width="400">
+
+Ademas de la reunion de planificación del sprint:
+
+<img src="assets/sprint1/sprint1.png" alt="UPC logo" width="400">
 
 
 ## Conclusiones
 
 -**TB1:**
-La primera entrega fue clave para establecer correctamente la propuesta y documentar los bounded contexts que trabajaremos en el resto del curso. Hubo comunicacion constante y reuniones grupales que contaron con la participación de todos los integrantes.
+La primera entrega fue clave para establecer correctamente la propuesta y documentar los bounded contexts que trabajaremos en el resto del curso. Hubo comunicación constante y reuniones grupales que contaron con la participación de todos los integrantes.
+
+-**TP:**
+Con los servicios desplegados, podemos empezar a trabajar en la app móvil, que es el objetivo principal del proyecto. El backend ya tiene los servicios principales para el registro, autenticación, creación de proyectos y postulación, lo cual nos beneficia de cara al resto de entregables donde podremos concentrarnos en el frotnend.
 
 ## Anexos
 
 -**Link del repositorio GitHub:** https://github.com/Apps-Moviles
 -**Link del reporte en github:** https://github.com/Apps-Moviles/Report
+-**Link del backend en github:** https://github.com/Apps-Moviles/UniMatch-BackEnd
+-**Link del frontend en github:** https://github.com/Apps-Moviles/UniMatch-Frontend
+-**Link de la landing page en github:** https://github.com/Apps-Moviles/UniMatch-LandingPage
+
