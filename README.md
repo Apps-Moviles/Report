@@ -30,12 +30,21 @@
 | Versión | Fecha | Autor                      | Descripción de modificación       |
 |---------|-------|----------------------------|-----------------------------------|
 | 0.1     | 6/9   | Todos los integrantes      | Primera entrega del informe (TB1) |
+| 1.0     | 9/10  | Todos los integrantes      | Entrega de Trabajo Parcial        |
+
+
 
 ## Project Report Collaboration Insights
 
 | URL de la organización del proyecto |    URL del repositorio del reporte     |
 |:-----------------------------------:|:--------------------------------------:|
 |   https://github.com/Apps-Moviles   | https://github.com/Apps-Moviles/Report |
+
+Insights TP:
+
+<img src="assets/sprint1/insights.png" alt="UPC logo" width="400">
+
+
 
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#cap1)
@@ -6358,6 +6367,330 @@ El diagrama incluye:
 </p>
 
 <br>
+
+###### 4.2.1 Sprint 1
+
+El objetivo del primer sprint fue desplegar la landing page, tener los servicios backend al menos al 70% desplegados y las vistas core esenciales de la app móvil
+
+##### 4.2.1.1 Sprint Planning 1
+
+| Sprint #                               | Sprint 1                                                         |
+|----------------------------------------|------------------------------------------------------------------|
+| **Date**                               | 2025-10-06                                                       |
+| **Time**                               | 10:00 PM                                                         |
+| **Location**                           | Discord                                                          |
+| **Prepared By**                        | Josue Paiva                                                      |
+| **Attendees (to planning meeting)**    | Todos los integrantes                                            |
+| **Sprint n - 1 Review Summary**        | -                                                                |
+| **Sprint n - 1 Retrospective Summary** | -                                                                |
+| **Sprint 1 Goal**                      | Designar items de la documentacion y el despliegue de servicios. |
+| **Sprint 1 Velocity**                  | 21 story points                                                  |
+| **Sum of Story Points**                | 21 story points                                                  |
+
+
+##### 4.2.1.2 Sprint Backlog 1
+
+| **Sprint #**   | **Sprint 1**                                                             |                    |                                                           |                                                                                                                                                                                         |                     |                 |            |
+|----------------|--------------------------------------------------------------------------|--------------------|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-----------------|------------|
+| **User Story** |                                                                          | **Work-Item/task** |                                                           |                                                                                                                                                                                         | **Estimation(Hrs)** | **Assigned To** | **Status** |
+| **ID**         | **Title**                                                                | **Id**             | **Title**                                                 | **Description**                                                                                                                                                                         |                     |                 |            |
+| US-01          | Comprender el propósito de la plataforma desde la página de inicio       | T01                | Creación de la Landing Page informativa                   | La página debe permitir que el usuario entienda en los primeros segundos qué es UniMatch y cómo funciona, diferenciando beneficios según el tipo de usuario (estudiante o gerente).     | 2                   | Javier Gonzales | Done       |
+| US-02          | Registro inmediato desde la landing                                      | T02                | Implementar acceso rápido al formulario de registro       | Desde la landing page, el usuario debe poder acceder directamente al formulario de registro (estudiante o gerente) mediante botones claros como “Empieza” o “Regístrate”.               | 1.5                 | Javier Gonzales | Done       |
+| US-03          | Ver testimonios de usuarios reales                                       | T03                | Sección de testimonios validada                           | Implementar una sección donde se muestren testimonios de usuarios (nombre, rol y mensaje real) que inspiren confianza a nuevos visitantes.                                              | 1.5                 | Javier Gonzales | Done       |
+| US-04          | Llamados a la acción claros en cada sección                              | T04                | Incorporar CTAs visibles y relevantes                     | Cada sección (“¿Cómo funciona?”, “Casos de éxito”, etc.) debe terminar con botones de acción visibles como “Regístrate ahora” o “Publica tu primer proyecto”.                           | 1                   | Javier Gonzales | Done       |
+| US-15          | Registrarse como usuario                                                 | T05                | Implementar formulario de registro (estudiante y gerente) | La aplicación debe permitir crear cuentas de usuario (estudiante o gerente) ingresando nombre, correo electrónico y contraseña válidos, asegurando que la cuenta se cree correctamente. | 2                   | Josue Paiva     | Done       |
+| US-16          | Iniciar sesión                                                           | T06                | Crear sistema de autenticación                            | La aplicación debe permitir a los usuarios iniciar sesión con correo y contraseña válidos, mostrando mensajes de error apropiados si las credenciales son incorrectas.                  | 2                   | Josue Paiva     | Done       |
+| US-20          | Cerrar sesión                                                            | T07                | Implementar funcionalidad de cierre de sesión             | El usuario debe poder cerrar sesión desde cualquier parte de la aplicación; al hacerlo, la sesión se termina y se redirige a la pantalla de inicio.                                     | 1                   | Josue Paiva     | Done       |
+| US-24          | Tener un encabezado fijo para navegar por la página                      | T08                | Implementar encabezado fijo con navegación interna        | La landing page debe tener un encabezado que permanezca visible al hacer scroll, con enlaces anclados que permitan moverse entre secciones sin recargar la página.                      | 1.5                 | Javier Gonzales | Done       |
+| US-25          | Acceder a la sección de preguntas frecuentes (FAQs)                      | T09                | Crear sección de preguntas frecuentes                     | Implementar una sección de FAQs con acceso desde el menú principal, donde las preguntas se muestren en formato desplegable para facilitar la lectura.                                   | 1.5                 | Javier Gonzales | Done       |
+| US-26          | Visualizar la propuesta de valor con un diseño atractivo desde el inicio | T10                | Diseñar bloque principal de propuesta de valor            | La landing page debe mostrar en el primer bloque un mensaje corto y atractivo acompañado de una imagen o ilustración que refuerce visualmente la propuesta de valor de UniMatch.        | 1.5                 | Javier Gonzales | Done       |
+| TS-01          | Endpoint para registro de usuarios                                       | T11                | Crear endpoint para registro diferenciado por rol         | Desarrollar un endpoint que permita registrar nuevos usuarios con rol (estudiante o gerente), validando los campos y retornando códigos 201 o 400 según el resultado.                   | 2                   | Javier Gonzales | Done       |
+| TS-02          | Endpoint para creación de proyectos                                      | T12                | Crear endpoint para publicación de proyectos              | Desarrollar un endpoint `/api/projects` que permita a los gerentes crear proyectos, validando autorización y datos requeridos.                                                          | 2                   | Javier Gonzales | Done       |
+| TS-03          | Endpoint para postulación a proyectos                                    | T13                | Crear endpoint para postulaciones                         | Desarrollar un endpoint `/api/applications` para que los estudiantes postulen a proyectos, evitando duplicados (código 409 si ya postuló).                                              | 2                   | Javier Gonzales | Done       |
+| TS-04          | Endpoint para calificación de desempeño                                  | T14                | Crear endpoint para evaluación de desempeño               | Desarrollar un endpoint `/api/evaluations` que permita a los gerentes calificar a estudiantes tras finalizar un proyecto, validando estado y actualizando reputación.                   | 2                   | Javier Gonzales | Done       |
+
+##### 4.2.1.3 Development Evidence for Sprint Review
+
+A continuación se evidencian los commits realizados en cada repositorio:
+
+Repositorio Report:
+
+<img src="assets/sprint1/report1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/report2.png" alt="UPC logo" width="400">
+
+Repositorio Landing Page:
+
+<img src="assets/sprint1/repoLanding.png" alt="UPC logo" width="400">
+
+
+
+##### 4.2.1.4 Testing Suite Evidence for Sprint Review.
+
+##### 4.2.1.5 Execution Evidence for Sprint Review.
+
+Landing Page desplegado: https://apps-moviles.github.io/UniMatch-LandingPage/
+
+<img src="assets/sprint1/landing1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/landing2.png" alt="UPC logo" width="400">
+
+Avance del backend desplegado: 
+
+
+
+##### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+
+<table>
+    <tr>
+        <th>Tag</th>
+        <th>Operación</th>
+        <th>Endpoint</th>
+        <th>Summary</th>
+        <th>Description</th>
+        <th>OperationId</th>
+    </tr>
+    <tr>
+        <td>Companies</td>
+        <td>GET</td>
+        <td>/api/Companies</td>
+        <td>Get all companies</td>
+        <td>Retrieve the list of all registered companies</td>
+        <td>getAllCompanies</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>POST</td>
+        <td>/api/Companies</td>
+        <td>Create new company</td>
+        <td>Register a new company in the system</td>
+        <td>createCompany</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>GET</td>
+        <td>/api/Companies/{id}</td>
+        <td>Get company by ID</td>
+        <td>Retrieve detailed information of a company by its ID</td>
+        <td>getCompanyById</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>PUT</td>
+        <td>/api/Companies/{id}</td>
+        <td>Update company</td>
+        <td>Update the information of a specific company</td>
+        <td>updateCompany</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>DELETE</td>
+        <td>/api/Companies/{id}</td>
+        <td>Delete company</td>
+        <td>Remove a company from the system by its ID</td>
+        <td>deleteCompany</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>GET</td>
+        <td>/api/Companies/by-user/{userId}</td>
+        <td>Get company by user</td>
+        <td>Retrieve the company information associated with a specific user</td>
+        <td>getCompanyByUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">userId</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>CompanyRatings</td>
+        <td>POST</td>
+        <td>/api/CompanyRatings</td>
+        <td>Create company rating</td>
+        <td>Add a new rating for a company</td>
+        <td>createCompanyRating</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>CompanyRatings</td>
+        <td>GET</td>
+        <td>/api/CompanyRatings/exists</td>
+        <td>Check if rating exists</td>
+        <td>Verify if a company rating already exists for a specific user</td>
+        <td>checkCompanyRatingExists</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">query params</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>GET</td>
+        <td>/api/Projects</td>
+        <td>Get all projects</td>
+        <td>Retrieve the list of all available projects</td>
+        <td>getAllProjects</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>POST</td>
+        <td>/api/Projects</td>
+        <td>Create new project</td>
+        <td>Register a new project in the system</td>
+        <td>createProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>GET</td>
+        <td>/api/Projects/{id}</td>
+        <td>Get project by ID</td>
+        <td>Retrieve details of a specific project by ID</td>
+        <td>getProjectById</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>PUT</td>
+        <td>/api/Projects/{id}</td>
+        <td>Update project</td>
+        <td>Update an existing project’s information</td>
+        <td>updateProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>DELETE</td>
+        <td>/api/Projects/{id}</td>
+        <td>Delete project</td>
+        <td>Remove a project from the system by ID</td>
+        <td>deleteProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>PUT</td>
+        <td>/api/Projects/{id}/assign-student/{studentId}</td>
+        <td>Assign student to project</td>
+        <td>Assign a student to a specific project</td>
+        <td>assignStudentToProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id, studentId</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>PUT</td>
+        <td>/api/Projects/{id}/status/{status}</td>
+        <td>Update project status</td>
+        <td>Change the status of a specific project</td>
+        <td>updateProjectStatus</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id, status</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Reputations</td>
+        <td>POST</td>
+        <td>/api/Reputations</td>
+        <td>Create reputation record</td>
+        <td>Register a new reputation record for a user</td>
+        <td>createReputation</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Reputations</td>
+        <td>GET</td>
+        <td>/api/Reputations</td>
+        <td>Get all reputations</td>
+        <td>Retrieve all user reputation records</td>
+        <td>getAllReputations</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>StudentPostulations</td>
+        <td>POST</td>
+        <td>/api/StudentPostulations</td>
+        <td>Create student postulation</td>
+        <td>Register a new student postulation for a project</td>
+        <td>createStudentPostulation</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>StudentPostulations</td>
+        <td>GET</td>
+        <td>/api/StudentPostulations</td>
+        <td>Get all student postulations</td>
+        <td>Retrieve all student postulations from the system</td>
+        <td>getAllStudentPostulations</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>StudentPostulations</td>
+        <td>PUT</td>
+        <td>/api/StudentPostulations/{postulationId}/accept</td>
+        <td>Accept student postulation</td>
+        <td>Accept a student’s postulation for a specific project</td>
+        <td>acceptStudentPostulation</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">postulationId</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>POST</td>
+        <td>/api/Users/register</td>
+        <td>User registration</td>
+        <td>Register a new user in the system</td>
+        <td>registerUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>POST</td>
+        <td>/api/Users/login</td>
+        <td>User login</td>
+        <td>Authenticate a user and generate an access token</td>
+        <td>loginUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>GET</td>
+        <td>/api/Users</td>
+        <td>Get all users</td>
+        <td>Retrieve all registered users</td>
+        <td>getAllUsers</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>GET</td>
+        <td>/api/Users/{id}</td>
+        <td>Get user by ID</td>
+        <td>Retrieve detailed information about a specific user</td>
+        <td>getUserById</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>DELETE</td>
+        <td>/api/Users/{id}</td>
+        <td>Delete user</td>
+        <td>Remove a user from the system</td>
+        <td>deleteUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>PUT</td>
+        <td>/api/Users/{id}</td>
+        <td>Update user</td>
+        <td>Modify information of an existing user</td>
+        <td>updateUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
+</table>
+
+
+
+##### 4.2.1.7 Software Deployment Evidence for Sprint Review.
+
+##### 4.2.1.8 Team Collaboration Insights during Sprint
 
 ## Conclusiones
 
