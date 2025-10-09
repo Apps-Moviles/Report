@@ -6435,11 +6435,18 @@ Landing Page desplegado: https://apps-moviles.github.io/UniMatch-LandingPage/
 
 <img src="assets/sprint1/landing2.png" alt="UPC logo" width="400">
 
-Avance del backend desplegado: 
+Avance del backend desplegado: https://unimatch-back-c4hxepccczf5axba.centralus-01.azurewebsites.net/swagger/index.html
 
+<img src="assets/sprint1/backend1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/backend2.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/backend3.png" alt="UPC logo" width="400">
 
 
 ##### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+
+A continuación se documenta el avance de los endpoints con sus respectivas operaciones, siguiendo el estándar OpenAPI/Swagger:
 
 <table>
     <tr>
@@ -6686,11 +6693,20 @@ Avance del backend desplegado:
     <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
 </table>
 
-
-
 ##### 4.2.1.7 Software Deployment Evidence for Sprint Review.
 
+Para el despliegue de la landing page se utilizó GitHub Pages:
+
+<img src="assets/sprint1/deployLanding.png" alt="UPC logo" width="400">
+
+Para la documentación en Swagger del backend se utilizó Azure App Service:
+
+
+
 ##### 4.2.1.8 Team Collaboration Insights during Sprint
+
+
+
 
 ## Conclusiones
 
