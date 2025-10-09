@@ -30,12 +30,21 @@
 | Versión | Fecha | Autor                      | Descripción de modificación       |
 |---------|-------|----------------------------|-----------------------------------|
 | 0.1     | 6/9   | Todos los integrantes      | Primera entrega del informe (TB1) |
+| 1.0     | 9/10  | Todos los integrantes      | Entrega de Trabajo Parcial        |
+
+
 
 ## Project Report Collaboration Insights
 
 | URL de la organización del proyecto |    URL del repositorio del reporte     |
 |:-----------------------------------:|:--------------------------------------:|
 |   https://github.com/Apps-Moviles   | https://github.com/Apps-Moviles/Report |
+
+Insights TP:
+
+<img src="assets/sprint1/insights.png" alt="UPC logo" width="400">
+
+
 
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#cap1)
@@ -199,24 +208,28 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       <td>
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
-      <td> Josue Paiva <ul>Desarrollo de la documentación de los bounded context companies y students postulations</ul>
-           Renzo Loli  <ul>Desarrollo y organizacion del event storming y el Software Architecture</ul>
+      <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
+<ul>TP: Desarrollo de las vistas inicio de sesión y dashboard del frontend, documentación del sprint1</ul>
+           Renzo Loli  <ul>Desarrollo y organización del event storming y el Software Architecture</ul>
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
            Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
+TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
       </td>
     </tr>
     <tr>
       <td>
         2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
       </td>
-      <td> Josue Paiva <ul>Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
-           Renzo Loli  <ul>Planificacion del event storming y rediseño de la arquitectura base</ul>
+      <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
+<ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
+           Renzo Loli  <ul>Planificación del event storming y rediseño de la arquitectura base</ul>
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
-      <td> TB1: La participacion de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se <presentaron></presentaron>
+      <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
+TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos, sin embargo la participación de todos los integrantes fue constante y satisfactoria.
       </td>
     </tr>
   </tbody>
@@ -6394,1077 +6407,365 @@ El diagrama incluye:
 
 <br>
 
+###### 4.2.1 Sprint 1
 
+El objetivo del primer sprint fue desplegar la landing page, tener los servicios backend al menos al 70% desplegados y las vistas core esenciales de la app móvil
 
+##### 4.2.1.1 Sprint Planning 1
 
-### 3.1. Product design
-
-#### 3.1.1. Style Guidelines
-
-##### 3.1.1.1. General Style Guidelines
-
-#### 3.1.2. Information Architecture
-
-##### 3.1.2.1. Organization Systems
-
-##### 3.1.2.2. Labelling Systems
-
-##### 3.1.2.3. SEO Tags and Meta Tags
-
-##### 3.1.2.4. Searching Systems
-
-##### 3.1.2.5. Navigation Systems
-
-#### 3.1.3. Landing Page UI Design
-
-##### 3.1.3.1. Landing Page Wireframe
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 5.png" alt="wireframe" width="700">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 6.png" alt="wireframe" width="700">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 7.png" alt="wireframe" width="700">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 8.png" alt="wireframe" width="700">
-</p>
-
-<br>
-
-##### 3.1.3.2. Landing Page Mock-up
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 1.png" alt="mockup" width="700">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 2.png" alt="mockup" width="700">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 3.png" alt="mockup" width="700">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/landingPage/Landing Page - 4.png" alt="mockup" width="700">
-</p>
-
-<br>
-
-#### 3.1.4. Mobile Applications UX/UI Design
-
-##### 3.1.4.1. Mobile Applications Wireframes
-
-Los wireframes de UniMatch han sido diseñados pensando en la experiencia móvil, priorizando una navegación fluida, botones accesibles y una jerarquía visual clara. Cada vista está estructurada para adaptarse de forma óptima a pantallas pequeñas, facilitando el acceso rápido a funciones clave como postular, contratar, editar perfil o calificar. Se ha mantenido una coherencia visual entre vistas de estudiantes y empresas, garantizando una experiencia intuitiva y centrada en el usuario.
-
-'https://www.figma.com/design/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=30-2&t=UplywaDwvUIDKkhe-1'
-
-<br>
-
-+ Login / Register:
-
-Permite a nuevos usuarios registrarse como estudiante o empresa, y a usuarios existentes iniciar sesión para acceder a la app.
-
-<p align="center">
-  <img src="assets/wrframes/wf01.png" alt="wireframe" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/wrframes/wf02.png" alt="wireframe" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/wrframes/wf03.png" alt="wireframe" height="600">
-</p>
-
-
-<br>
-
-+ Vista de Oportunidades:
-
-Pantalla principal para estudiantes donde pueden explorar proyectos disponibles publicados por distintas empresas y postularse.
-
-<p align="center">
-  <img src="assets/wrframes/wf04.png" alt="wireframe" height="600">
-</p>
-
-<br>
-
-+ Vista de Portafolio:
-
-Muestra a los estudiantes los proyectos en los que han trabajado, permite calificar a las empresas y descargar certificados para su currículum.
-
-<p align="center">
-  <img src="assets/wrframes/wf05.png" alt="wireframe" height="600">
-</p>
-
-<br>
-
-+ Vista de Mis Postulaciones:
-
-Permite a los estudiantes consultar el estado de sus postulaciones y hacer seguimiento a cada proyecto al que aplicaron.
-
-<p align="center">
-  <img src="assets/wrframes/wf06.png" alt="wireframe" height="600">
-</p>
-
-<br>
-
-+ Vista de Mi Perfil:
-
-Sección donde estudiantes y empresas pueden visualizar y editar su información personal o corporativa, incluyendo foto y datos de contacto.
-
-<p align="center">
-  <img src="assets/wrframes/wf07.png" alt="wireframe" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/wrframes/wf08.png" alt="wireframe" height="600">
-</p>
-
-<br>
-
-+ Vista de Mis Proyectos:
-
-Pantalla exclusiva para empresas que muestra los proyectos creados y permite gestionar nuevas oportunidades para estudiantes.
-
-<p align="center">
-  <img src="assets/wrframes/wf09.png" alt="wireframe" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/wrframes/wf10.png" alt="wireframe" height="600">
-</p>
-
-<br>
-
-+ Vista de Convocatorias:
-
-Permite a las empresas revisar los estudiantes postulantes a sus proyectos y seleccionar al candidato ideal para trabajar.
-
-<p align="center">
-  <img src="assets/wrframes/wf11.png" alt="wireframe" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/wrframes/wf12.png" alt="wireframe" height="600">
-</p>
-
-<br>
-
-
-##### 3.1.4.2. Mobile Applications Wireflow Diagrams
-
-'https://overflow.io/s/PQZLUF3U'
-
-
-<br>
-
-1. **Wireflow 1: Login/Register**
-
-**User goal:** Ingresar a la app para acceder a sus funcionalidades.
-
-**User Persona:** Estudiante o representante de empresa que desea usar UniMatch.
-
-**Flujo:** Al abrir la app móvil, el usuario ve una pantalla de bienvenida con el logo de UniMatch y un slogan. Al tocar “Comenzar”, se le presenta una vista con dos opciones: iniciar sesión o registrarse. Si elige login, debe ingresar su correo y contraseña. Si elige registrarse, selecciona si es estudiante o empresa, y completa un formulario con datos personales o empresariales según corresponda. Al completar el proceso, accede directamente a la interfaz principal de la app.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow1.png" alt="wireflow" width="700">
-</p>
-
-<br>
-
-2. **Wireflow 2: Postular a un Proyecto**
-
-**User goal:** Participar en un proyecto freelance publicado por una empresa.
-
-**User Persona:** Estudiante registrado en la app.
-
-**Flujo:** Una vez logueado, el estudiante accede por defecto a la vista “Oportunidades”, donde navega por tarjetas de proyectos publicados. Al tocar una tarjeta, accede al detalle del proyecto con información como descripción, pago y requisitos. Puede explorar el perfil de la empresa publicadora y, si le interesa, tocar el botón “Postular”, quedando su postulación registrada y visible en su vista de “Postulaciones”.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow2.png" alt="wireflow" width="700">
-</p>
-
-<br>
-
-3. **Wireflow 3: Crear proyecto**
-
-**User goal:** Publicar una oportunidad freelance.
-
-**User Persona:** Representante de una empresa que busca talento joven.
-
-**Flujo:** Al iniciar sesión, la empresa accede a la vista “Mis Proyectos”, donde puede ver sus publicaciones anteriores. En la parte superior toca “Crear nuevo proyecto”, lo que lo lleva a una vista con un formulario para ingresar el título, descripción, pago y duración. Tras llenar los campos y tocar “Crear”, se muestra una confirmación de que el proyecto ha sido publicado en la app.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow3.png" alt="wireflow" width="700">
-</p>
-
-<br>
-
-4. **Wireflow 4: Contratar a un estudiante**
-
-**User goal:** Seleccionar un postulante ideal para un proyecto activo.
-
-**User Persona:** Representante de empresa con proyectos activos.
-
-**Flujo:** Desde la vista “Convocatorias”, la empresa selecciona un proyecto y accede a la lista de postulantes. Puede aplicar filtros por carrera o calificación, revisar el perfil de cada estudiante y, si lo desea, consultar reseñas previas. Una vez tomada la decisión, toca el botón “Aceptar” para contratar al estudiante, integrándolo oficialmente al proyecto desde la app.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow4.png" alt="wireflow" width="700">
-</p>
-
-<br>
-
-5. **Wireflow 5: Editar perfil**
-
-**User goal:** Actualizar su información personal o profesional.
-
-**User Persona:** Estudiante o empresa que ya tiene cuenta.
-
-**Flujo:** En la app móvil, desde la sección “Mi perfil”, el usuario ve su información actual y puede tocar “Editar perfil”. Allí accede a un formulario donde modifica sus datos (nombre, especialización, foto, etc.). Al finalizar, toca “Guardar cambios” y vuelve a la vista anterior con los datos ya actualizados.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow5.png" alt="wireflow" width="700">
-</p>
-
-<br>
-
-6. **Wireflow 6: Calificar empresa**
-
-**User goal:** Dejar una reseña tras finalizar un proyecto.
-
-**User Persona:** Estudiante que ha trabajado en un proyecto.
-
-**Flujo:** Desde la sección “Portafolio”, el estudiante toca un proyecto finalizado. En la vista del detalle, si aún no ha dejado reseña, se muestra un pequeño formulario con espacio para comentario y calificación. Tras completarlo, toca “Enviar” para guardar su evaluación, la cual quedará visible en el perfil de la empresa dentro de la app.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow6.png" alt="wireflow" width="700">
-</p>
-
-<br>
-
-7. **Wireflow 7: Descargar certificado**
-
-**User goal:** Obtener un certificado por participación en un proyecto.
-
-**User Persona:** Estudiante con proyecto completado.
-
-**Flujo:** El estudiante accede a “Portafolio” y selecciona un proyecto finalizado. En la parte superior de la vista se muestra un botón para “Descargar certificado”. Al tocarlo, el certificado se genera y se descarga directamente al dispositivo móvil del usuario, permitiéndole guardarlo como evidencia formal de su experiencia.
-
-<p align="center">
-  <img src="assets/Wireflows/wireflow7.png" alt="wireflow" width="500">
-</p>
-
-<br>
-
-
-##### 3.1.4.3. Mobile Applications Mock-ups
-
-Los siguientes mockups fueron elaborados a partir de los wireframes iniciales. Representan de manera visual y realista cómo los usuarios interactuarán con la interfaz de nuestra aplicación móvil UniMatch.
-
-'https://www.figma.com/design/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=0-1&t=UplywaDwvUIDKkhe-1'
-
-<br>
-
-+ Login / Register:
-
-Permite a nuevos usuarios registrarse como estudiante o empresa, y a usuarios existentes iniciar sesión para acceder a la app.
-
-<p align="center">
-  <img src="assets/mockups/mockup1.png" alt="mockup" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/mockups/mockup2.png" alt="mockup" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/mockups/mockup3.png" alt="mockup" height="600">
-</p>
-
-
-<br>
-
-+ Vista de Oportunidades:
-
-Pantalla principal para estudiantes donde pueden explorar proyectos disponibles publicados por distintas empresas y postularse.
-
-<p align="center">
-  <img src="assets/mockups/mockup4.png" alt="mockup" height="600">
-</p>
-
-<br>
-
-+ Vista de Portafolio:
-
-Muestra a los estudiantes los proyectos en los que han trabajado, permite calificar a las empresas y descargar certificados para su currículum.
-
-<p align="center">
-  <img src="assets/mockups/mockup5.png" alt="mockup" height="600">
-</p>
-
-<br>
-
-+ Vista de Mis Postulaciones:
-
-Permite a los estudiantes consultar el estado de sus postulaciones y hacer seguimiento a cada proyecto al que aplicaron.
-
-<p align="center">
-  <img src="assets/mockups/mockup6.png" alt="mockup" height="600">
-</p>
-
-<br>
-
-+ Vista de Mi Perfil:
-
-Sección donde estudiantes y empresas pueden visualizar y editar su información personal o corporativa, incluyendo foto y datos de contacto.
-
-<p align="center">
-  <img src="assets/mockups/mockup7.png" alt="mockup" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/mockups/mockup8.png" alt="mockup" height="600">
-</p>
-
-<br>
-
-+ Vista de Mis Proyectos:
-
-Pantalla exclusiva para empresas que muestra los proyectos creados y permite gestionar nuevas oportunidades para estudiantes.
-
-<p align="center">
-  <img src="assets/mockups/mockup9.png" alt="mockup" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/mockups/mockup91.png" alt="mockup" height="600">
-</p>
-
-<br>
-
-+ Vista de Convocatorias:
-
-Permite a las empresas revisar los estudiantes postulantes a sus proyectos y seleccionar al candidato ideal para trabajar.
-
-<p align="center">
-  <img src="assets/mockups/mockup92.png" alt="mockup" height="600">
-</p>
-
-<p align="center">
-  <img src="assets/mockups/mockup93.png" alt="mockup" height="600">
-</p>
-
-<br>
-
-
-##### 3.1.4.4. Mobile Applications User Flow Diagrams
-
-'https://overflow.io/s/MJFHE5LE'
-
-<br>
-
-1. **User Flow Diagram 1: Login/Register**
-
-**User goal:** Ingresar a la app para acceder a sus funcionalidades.
-
-**User Persona:** Estudiante o representante de empresa que desea usar UniMatch.
-
-**Flujo:** Al abrir la app móvil, el usuario ve una pantalla de bienvenida con el logo de UniMatch y un slogan. Al tocar “Comenzar”, se le presenta una vista con dos opciones: iniciar sesión o registrarse. Si elige login, debe ingresar su correo y contraseña. Si elige registrarse, selecciona si es estudiante o empresa, y completa un formulario con datos personales o empresariales según corresponda. Al completar el proceso, accede directamente a la interfaz principal de la app.
-
-<p align="center">
-  <img src="assets/Flows/userflow1screen.png" alt="userflow" width="700">
-</p>
-
-<br>
-
-2. **User Flow Diagram 2: Postular a un Proyecto**
-
-**User goal:** Participar en un proyecto freelance publicado por una empresa.
-
-**User Persona:** Estudiante registrado en la app.
-
-**Flujo:** Una vez logueado, el estudiante accede por defecto a la vista “Oportunidades”, donde navega por tarjetas de proyectos publicados. Al tocar una tarjeta, accede al detalle del proyecto con información como descripción, pago y requisitos. Puede explorar el perfil de la empresa publicadora y, si le interesa, tocar el botón “Postular”, quedando su postulación registrada y visible en su vista de “Postulaciones”.
-
-<p align="center">
-  <img src="assets/Flows/userflow2screen.png" alt="userflow" width="700">
-</p>
-
-<br>
-
-3. **User Flow Diagram 3: Crear proyecto**
-
-**User goal:** Publicar una oportunidad freelance.
-
-**User Persona:** Representante de una empresa que busca talento joven.
-
-**Flujo:** Al iniciar sesión, la empresa accede a la vista “Mis Proyectos”, donde puede ver sus publicaciones anteriores. En la parte superior toca “Crear nuevo proyecto”, lo que lo lleva a una vista con un formulario para ingresar el título, descripción, pago y duración. Tras llenar los campos y tocar “Crear”, se muestra una confirmación de que el proyecto ha sido publicado en la app.
-
-<p align="center">
-  <img src="assets/Flows/userflow3screen.png" alt="userflow" width="700">
-</p>
-
-<br>
-
-4. **User Flow Diagram 4: Contratar a un estudiante**
-
-**User goal:** Seleccionar un postulante ideal para un proyecto activo.
-
-**User Persona:** Representante de empresa con proyectos activos.
-
-**Flujo:** Desde la vista “Convocatorias”, la empresa selecciona un proyecto y accede a la lista de postulantes. Puede aplicar filtros por carrera o calificación, revisar el perfil de cada estudiante y, si lo desea, consultar reseñas previas. Una vez tomada la decisión, toca el botón “Aceptar” para contratar al estudiante, integrándolo oficialmente al proyecto desde la app.
-
-<p align="center">
-  <img src="assets/Flows/userflow4screen.png" alt="userflow" width="700">
-</p>
-
-<br>
-
-5. **User Flow Diagram 5: Editar perfil**
-
-**User goal:** Actualizar su información personal o profesional.
-
-**User Persona:** Estudiante o empresa que ya tiene cuenta.
-
-**Flujo:** En la app móvil, desde la sección “Mi perfil”, el usuario ve su información actual y puede tocar “Editar perfil”. Allí accede a un formulario donde modifica sus datos (nombre, especialización, foto, etc.). Al finalizar, toca “Guardar cambios” y vuelve a la vista anterior con los datos ya actualizados.
-
-<p align="center">
-  <img src="assets/Flows/userflow5screen.png" alt="userflow" width="700">
-</p>
-
-<br>
-
-6. **User Flow Diagram 6: Calificar empresa**
-
-**User goal:** Dejar una reseña tras finalizar un proyecto.
-
-**User Persona:** Estudiante que ha trabajado en un proyecto.
-
-**Flujo:** Desde la sección “Portafolio”, el estudiante toca un proyecto finalizado. En la vista del detalle, si aún no ha dejado reseña, se muestra un pequeño formulario con espacio para comentario y calificación. Tras completarlo, toca “Enviar” para guardar su evaluación, la cual quedará visible en el perfil de la empresa dentro de la app.
-
-<p align="center">
-  <img src="assets/Flows/userflow6screen.png" alt="userflow" width="700">
-</p>
-
-<br>
-
-7. **User Flow Diagram 7: Descargar certificado**
-
-**User goal:** Obtener un certificado por participación en un proyecto.
-
-**User Persona:** Estudiante con proyecto completado.
-
-**Flujo:** El estudiante accede a “Portafolio” y selecciona un proyecto finalizado. En la parte superior de la vista se muestra un botón para “Descargar certificado”. Al tocarlo, el certificado se genera y se descarga directamente al dispositivo móvil del usuario, permitiéndole guardarlo como evidencia formal de su experiencia.
-
-<p align="center">
-  <img src="assets/Flows/userflow7screen.png" alt="userflow" width="500">
-</p>
-
-<br>
-
-##### 3.1.4.5. Mobile Applications Prototyping
-
-'https://www.figma.com/proto/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=28-847&p=f&t=Lgsf76XfJi1VwMAO-1&scaling=scale-down&content-scaling=fixed&page-id=28%3A826&starting-point-node-id=28%3A847'
-
-<br>
-
-## Capítulo IV: Product Implementation & Validation
-### 4. Product Implementation & Validation
-### 4.1 Software Configuration Management
-
-En esta sección se establecerán las normas y procedimientos aplicados durante el desarrollo y la implementación de UniMatch. El propósito de estas medidas es preservar la calidad, estabilidad y uniformidad del sistema durante todas sus etapas, desde la fase inicial de construcción hasta el despliegue y el mantenimiento posterior.
-
-#### 4.1.1. Software Development Environment Configuration  
-
-**Gestión de Proyecto (Project Management)**
-
-Plataforma web utilizada para la gestión y publicación de las páginas del proyecto. Permite alojar documentación y contenidos de manera accesible, fomentando la colaboración y la visibilidad del avance del proyecto.
-
-Ruta de acceso: `https://pages.github.com`
-
-Discord: Plataforma digital diseñada para la comunicación en línea, que permite chatear por texto, voz y video. Empleada para reuniones de equipo
-
-
-Ruta de acceso: `https://discord.com/`
-**Gestión de Requisitos (Requirements Management)**
-
-Trello: Herramienta de gestión de tareas y proyectos basada en tableros. Facilita la asignación de responsabilidades, el seguimiento del progreso y la coordinación de las historias de usuario dentro del equipo de trabajo.
-
-Ruta de acceso: `https://trello.com/es`
-
-
-**Diseño de UX/UI del Producto (Product UX/UI Design)**
-
-Figma: Herramienta online para la creación de prototipos y diseños de interfaz de usuario. Se empleará para desarrollar las versiones Desktop y Mobile de la aplicación, asegurando consistencia visual y usabilidad.
-
-
-Ruta de acceso: `https://www.figma.com/login`
-
-
-
-**Desarrollo de Software (Software Development)**
-
-Empleamos Android y Jetpack Compose para la creación de la mobile application, y Spring Boot para la creación de la API REST. Para el desarrollo de la landing page utilizamos HTML5, CSS y JavaScript dentro del entorno de desarrollo IntelliJ IDEA.
-
-| Herramienta     | Descripción                                                                   | Enlace                                 |
-| --------------- | ------------------------------------------------------------------------------ | -------------------------------------- |
-| Android         | Plataforma empleada para el desarrollo de la aplicación móvil                 | https://developer.android.com/         |
-| Kotlin           | Lenguaje de programación moderno utilizado para el desarrollo de la aplicación móvil | https://kotlinlang.org/                |
-| Jetpack Compose | Toolkit moderno de interfaz utilizado en la creación de la aplicación móvil   | https://developer.android.com/compose  |
-| Spring Boot     | Framework backend utilizado para el desarrollo de la API REST                 | https://spring.io/projects/spring-boot |
-| HTML5           | Lenguaje de marcado utilizado para la estructura del contenido web            | https://developer.mozilla.org/docs/Web/HTML |
-| CSS             | Lenguaje de estilos utilizado para el diseño y presentación de la página web  | https://developer.mozilla.org/docs/Web/CSS |
-| JavaScript      | Lenguaje de programación empleado para la interacción y dinamismo de la web   | https://developer.mozilla.org/docs/Web/JavaScript |
-| IntelliJ IDEA   | Entorno de desarrollo integrado (IDE) utilizado para la construcción del proyecto | https://www.jetbrains.com/idea/ |
-
-
-**Despliegue de Software (Software Deployment)**
-
-| Herramienta     | Descripción                                                                                                       | Enlace                               |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| Azure            | Plataforma cloud de Microsoft utilizada para el despliegue y gestión de aplicaciones y servicios en la nube      | https://azure.microsoft.com/         |
-| Android Studio   | Entorno de desarrollo integrado (IDE) empleado para la creación de la aplicación móvil                           | https://developer.android.com/studio |
-                
-
-
-**Documentación del Software (Software Documentation)**
-
-| Herramienta | Descripción                                                                 | Enlace                          |
-| ------------ | --------------------------------------------------------------------------- | ------------------------------- |
-| Markdown     | Sintaxis de formato ligero utilizada para redactar y estructurar la documentación del proyecto | https://www.markdownguide.org/  |
-| GitHub       | Plataforma empleada para alojar, versionar y administrar la documentación del proyecto | https://github.com/NRG-4/report |
-
-
-#### 4.1.2. Source Code Management 
-
-GitHub se utilizará como la plataforma principal para el control de versiones del proyecto. En este espacio se alojarán los repositorios correspondientes permitiendo la colaboración y el seguimiento de cambios entre los desarrolladores.
-URL de Repositorios:
-
-| Producto           | Repositorio       | Enlace                                     |
-| ------------------ | ----------------- | ------------------------------------------ |
-| Mobile Application | synhub-mobile-app | https://github.com/Apps-Moviles/Report     |
-| Backend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-BackEnd     |
-| Frontend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-Frontend     |
-| Landing Page       | synhub-landing    | https://github.com/Apps-Moviles/UniMatch-LandingPage     |
-
-Documentacion Informe: `https://github.com/Apps-Moviles/Report`
-
-Cada repositorio contendrá todos los archivos y recursos necesarios para el desarrollo y la gestión del proyecto.
-
-**Implementación de GitFlow como Workflow de Control de Versiones**
-
-Modelo de GitFlow:
-
-GitFlow se adoptará como el flujo de trabajo principal para la gestión de ramas y versiones del proyecto. Este modelo permite una integración ordenada entre los desarrolladores, separando las etapas de desarrollo, prueba y producción.
-
-Ramas principales:
-
-Main branch: main
-
-Contiene el código estable y listo para producción. Toda versión final del sistema será fusionada en esta rama.
-
-Development branch: develop
-
-Rama de desarrollo activo. Aquí se integran las funcionalidades antes de su paso a main. Todas las features parten de esta rama.
-
-Feature branches: feature
-
-Utilizadas para desarrollar nuevas funcionalidades. Se crean a partir de develop y siguen la convención:
-
-feature/ch1-actvidiad
-
-Ejemplo: feature/ch1-user-stories
-
-**Convenciones para Versiones**
-
-Se aplicará Semantic Versioning (Versionado Semántico) para todas las versiones lanzadas.
-
-**Mensajes de Commits con Conventional Commits**
- 
-Para los mensajes de commit, se implementará Conventional Commits para asegurar claridad en los cambios realizados en el código. Esta convención incluirá los siguientes tipos:
-
-feat: Nueva característica o funcionalidad.
-
-fix: Corrección de errores.
-
-chore: Tareas de mantenimiento o configuración.
-
-#### 4.1.2. Source Code Style Guide & Conventions 
-
-Implementaremos buenas prácticas de programación para garantizar que el código sea claro, mantenible y consistente.  
-
-**Android (Kotlin/Java)**  
-
-- **Convenciones de nombres:**  
-  - Clases: estilo *PascalCase*.  
-  - Funciones y variables: estilo *camelCase*.  
-  - Constantes: estilo *UPPER_SNAKE_CASE*.  
-- **Estructura del código:**  
-  - Separar la lógica de negocio de la interfaz de usuario mediante *ViewModel* y *UseCase*.  
-
-**Jetpack Compose**  
-
-- **Componentes:**  
-  - Las funciones componibles se nombran con *PascalCase* (por ejemplo: `ButtonSubmit()`).  
-  - El manejo del estado (`remember`, `mutableStateOf`) se realiza dentro del *ViewModel*.  
-- **Optimización de recomposición:**  
-  - Evitar operaciones complejas dentro de funciones marcadas con `@Composable`.  
-  - Usar `Modifier` para definir estilos reutilizables.  
-
-**Spring Boot**  
-
-- **Organización del proyecto:**  
-  - Dividir las clases en capas (*controller*, *service*, *repository*, *model*).  
-  - Utilizar interfaces para los servicios (por ejemplo: `UserService` → `UserServiceImpl`).  
-- **Convenciones:**  
-  - Clases en *PascalCase*.  
-  - Métodos en *camelCase* (por ejemplo: `getUserById()`).  
-
-**HTML:** Durante el desarrollo de la Landing Page estática se aplicaron las siguientes buenas prácticas de estructura y accesibilidad:
-
-1. Se implementó el uso de href="#id" para lograr una navegación interna fluida entre secciones del sitio.
-
-2. Se incluyeron los atributos alt en todas las etiquetas <img> con el fin de garantizar accesibilidad y reemplazo de las imágenes en caso de error de carga.
-
-3. Los íconos SVG se obtendrán desde FontAwesome, asegurando consistencia visual y ligereza en el diseño.
-
-4. Se aplicará la convención snake_case para nombrar los identificadores (id) y clases (class) en el código HTML, manteniendo uniformidad en la nomenclatura.
-
-**CSS:** En las hojas de estilo se implementarán las siguientes convenciones para optimizar la presentación visual y la mantenibilidad del código:
-
-1. Se empleará Flexbox para estructurar el diseño de manera responsive, facilitando la adaptación a diferentes tamaños de pantalla.
-
-2. Los colores se definirán utilizando el formato HEX, garantizando precisión y consistencia cromática en todo el sitio.
-
-3. Cada hoja de estilos incluirá comentarios descriptivos al inicio de cada sección, con el propósito de facilitar la lectura y el mantenimiento del código.
-
-
-**JavaScript:** Para el desarrollo de la funcionalidad interactiva de la Landing Page, se establecen las siguientes normas de codificación:
-
-1. Las funciones y variables seguirán la convención camelCase para su declaración, asegurando legibilidad y coherencia con las buenas prácticas de JavaScript.
-
-
-
-**Gherkin:** El lenguaje de dominio Gherkin se utilizó para la redacción de los escenarios de las historias de usuario, facilitando la comprensión del comportamiento esperado del sistema mediante el uso de las palabras clave:
-- Given (Dado) – Estado inicial o precondición.
-
-- When (Cuando) – Acción que ejecuta el usuario.
-
-- Then (Entonces) – Resultado esperado.
-
-- And (Y) – Condiciones adicionales o pasos complementarios.
-
-#### 4.1.4. Software Deployment Configuration  
-En esta sección se describen las consideraciones, requerimientos y pasos seguidos para el despliegue de los distintos productos de **UniMatch**.  
-
-**Landing Page**
-
-**Consideraciones previas al despliegue**
-- Es recomendable ejecutar previamente el comando `npm run build` de manera local para asegurar que la aplicación compile correctamente y no existan errores derivados de dependencias externas o configuraciones incorrectas de componentes.
-
-**Requerimientos para el despliegue**
-- Contar con el repositorio del proyecto alojado en **GitHub**.  
-- El repositorio debe tener visibilidad pública.  
-- La rama principal debe contener la versión final del código listo para producción.  
-
-**Pasos para el despliegue**
-1. Verificar que el proyecto compile correctamente ejecutando `npm run build`.  
-2. Acceder a la configuración del repositorio en GitHub.  
-3. Ir a la sección **Pages** dentro del menú *Settings*.  
-4. Seleccionar la rama que contiene los archivos generados por el *build* (por ejemplo, `/docs` o `/dist`).  
-5. Guardar los cambios y esperar que GitHub Pages realice la publicación automática.  
-6. Una vez completado el proceso, acceder a la URL pública proporcionada por GitHub Pages para comprobar el correcto funcionamiento del sitio.  
-
----
-
-**Backend**
-
-**Consideraciones previas al despliegue**
-- Es necesario que la **base de datos** esté operativa y accesible de forma externa antes del despliegue del backend.  
-
-**Requerimientos para el despliegue**
-- Contar con el repositorio del backend en **GitHub**.  
-- Disponer de una cuenta activa en **Microsoft Azure** (servicio App Service).  
-- Configurar las variables de entorno correspondientes (credenciales, puertos, conexión a la base de datos).  
-
-**Pasos para el despliegue**
-1. Integrar la conexión a la base de datos dentro del código del API.  
-2. Crear un archivo **Dockerfile** si se opta por un despliegue en contenedores.  
-3. Iniciar sesión en el [portal de Azure](https://portal.azure.com/).  
-4. Crear un nuevo recurso **App Service** desde el panel principal.  
-5. Seleccionar **"Implementar desde GitHub"** como origen del código.  
-6. Autorizar a Azure a acceder a los repositorios y elegir el correspondiente al backend.  
-7. Configurar los parámetros del servicio (plan, región, versión de Java/Spring Boot, etc.).  
-8. Definir las variables de entorno necesarias (por ejemplo, `DB_URL`, `DB_USER`, `DB_PASSWORD`).  
-9. Iniciar el despliegue y esperar la confirmación de publicación.  
-10. Verificar el estado del servicio y probar los endpoints del API para garantizar su correcto funcionamiento.  
-
-
-
-### 4.2. Landing Page & Mobile Application Implementation
-
-#### 4.2.1. Sprint n
-
-##### 4.2.1.1. Sprint Planning n
-
-##### 4.2.1.2. Sprint Backlog n
-
-##### 4.2.1.3. Development Evidence for Sprint Review
-
-##### 4.2.1.4. Testing Suite Evidence for Sprint Review
-
-##### 4.2.1.5. Execution Evidence for Sprint Review
-
-##### 4.2.1.6. Services Documentation Evidence for Sprint Review
-
-##### 4.2.1.7. Software Deployment Evidence for Sprint Review
-
-##### 4.2.1.8. Team Collaboration Insights during Sprint
-
-### 4.3. Validation Interviews
-
-#### 4.3.1. Diseño de Entrevistas
-
-<br>
-
-**Preguntas para el segmento de estudiantes:**
----
-
-1. ¿La pantalla inicial te permitió identificar fácilmente cómo empezar a usar la app desde el celular?
-
-2. ¿Qué opinas de la navegación entre vistas como “Oportunidades”, “Portafolio” y “Postulaciones”? ¿Te resultó clara desde el móvil?
-
-3. ¿Te pareció sencillo postular a un proyecto desde tu celular? ¿El botón de postulación y la información fueron fáciles de encontrar?
-
-4. ¿La vista de “Mis Postulaciones” te ayudó a entender en qué estado está cada una?
-
-5. ¿La sección de “Portafolio” cumple con mostrar claramente tus proyectos completados y te resultó útil la opción de descargar un certificado?
-
-6. ¿Consideras que el diseño de la app móvil facilita su uso en cualquier momento y lugar, por ejemplo mientras vas en el bus o estás en un descanso?
-
-7. ¿Te sentiste cómodo navegando desde el celular sin perderte entre menús o botones?
-
-8. ¿Que cosas cambiarías o no te gustó de la primera versión del diseño de la app?
-
-<br>
-
-**Preguntas para el segmento de gerentes:**
----
-
-1. ¿Le resultó sencillo crear un proyecto desde su celular? ¿El formulario fue claro y fácil de llenar?
-
-2. ¿Pudo acceder y gestionar sus proyectos y convocatorias sin dificultad desde la app móvil?
-
-3. ¿La sección de “Convocatorias” le permitió revisar los postulantes de forma ágil?
-
-4. ¿Le pareció útil y fácil aplicar filtros para seleccionar al mejor postulante (por calificación o campo profesional)?
-
-5. ¿La experiencia móvil le permitió gestionar postulaciones sin necesidad de una computadora?
-
-6. ¿El diseño móvil de la app le pareció profesional y fácil de usar incluso para alguien que no suele usar apps laborales?
-
-7. ¿Cree que esta app podría agilizar sus procesos de contratación freelance desde cualquier lugar?
-
-8. ¿Que cosas cambiarías o no te gustó de la primera versión del diseño de la app?
-
-<br>
-
-
-#### 4.3.2. Registro de Entrevistas
-
-*Entrevistas a Segmento 1*
----
-
-<table align="center">
-  <tr>
-    <th colspan="2" style="text-align:center">Entrevista 1</th>
-  </tr>
-  <tr>
-    <td><strong>Entrevistado</strong></td>
-    <td>Jesus Abraham Polo</td>
-  </tr>
-  <tr>
-    <td><strong>Edad</strong></td>
-    <td>19</td>
-  </tr>
-  <tr>
-    <td><strong>Distrito</strong></td>
-    <td>Los Olivos</td>
-  </tr>
-  <tr>
-    <td><strong>Timing</strong></td>
-    <td>00:00</td>
-  </tr>
-  <tr>
-    <td><strong>URL</strong></td>
-    <td>
-  ``
-  </td>
-  </tr>
-  <tr>
-    <td colspan="2" style="text-align:justify">
-      Resumen: <br>
-      Jesús consideró que la aplicación móvil es clara, fácil de usar y adecuada para estudiantes. Resaltó la utilidad del apartado de postulaciones y la navegación fluida entre vistas. Le pareció cómoda para usar en cualquier momento. Como mejora, sugirió ampliar funciones futuras e integrar servicios como el correo electrónico.
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2"><br>
-      <p align="center">
-        <img src="assets/entrevistas/val-int1.png" alt="interviewImage" width="700">
-      </p>
-    </td>
-  </tr>
+| Sprint #                               | Sprint 1                                                         |
+|----------------------------------------|------------------------------------------------------------------|
+| **Date**                               | 2025-10-06                                                       |
+| **Time**                               | 10:00 PM                                                         |
+| **Location**                           | Discord                                                          |
+| **Prepared By**                        | Josue Paiva                                                      |
+| **Attendees (to planning meeting)**    | Todos los integrantes                                            |
+| **Sprint n - 1 Review Summary**        | -                                                                |
+| **Sprint n - 1 Retrospective Summary** | -                                                                |
+| **Sprint 1 Goal**                      | Designar items de la documentacion y el despliegue de servicios. |
+| **Sprint 1 Velocity**                  | 21 story points                                                  |
+| **Sum of Story Points**                | 21 story points                                                  |
+
+
+##### 4.2.1.2 Sprint Backlog 1
+
+| **Sprint #**   | **Sprint 1**                                                             |                    |                                                           |                                                                                                                                                                                         |                     |                 |            |
+|----------------|--------------------------------------------------------------------------|--------------------|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-----------------|------------|
+| **User Story** |                                                                          | **Work-Item/task** |                                                           |                                                                                                                                                                                         | **Estimation(Hrs)** | **Assigned To** | **Status** |
+| **ID**         | **Title**                                                                | **Id**             | **Title**                                                 | **Description**                                                                                                                                                                         |                     |                 |            |
+| US-01          | Comprender el propósito de la plataforma desde la página de inicio       | T01                | Creación de la Landing Page informativa                   | La página debe permitir que el usuario entienda en los primeros segundos qué es UniMatch y cómo funciona, diferenciando beneficios según el tipo de usuario (estudiante o gerente).     | 2                   | Javier Gonzales | Done       |
+| US-02          | Registro inmediato desde la landing                                      | T02                | Implementar acceso rápido al formulario de registro       | Desde la landing page, el usuario debe poder acceder directamente al formulario de registro (estudiante o gerente) mediante botones claros como “Empieza” o “Regístrate”.               | 1.5                 | Javier Gonzales | Done       |
+| US-03          | Ver testimonios de usuarios reales                                       | T03                | Sección de testimonios validada                           | Implementar una sección donde se muestren testimonios de usuarios (nombre, rol y mensaje real) que inspiren confianza a nuevos visitantes.                                              | 1.5                 | Javier Gonzales | Done       |
+| US-04          | Llamados a la acción claros en cada sección                              | T04                | Incorporar CTAs visibles y relevantes                     | Cada sección (“¿Cómo funciona?”, “Casos de éxito”, etc.) debe terminar con botones de acción visibles como “Regístrate ahora” o “Publica tu primer proyecto”.                           | 1                   | Javier Gonzales | Done       |
+| US-15          | Registrarse como usuario                                                 | T05                | Implementar formulario de registro (estudiante y gerente) | La aplicación debe permitir crear cuentas de usuario (estudiante o gerente) ingresando nombre, correo electrónico y contraseña válidos, asegurando que la cuenta se cree correctamente. | 2                   | Josue Paiva     | Done       |
+| US-16          | Iniciar sesión                                                           | T06                | Crear sistema de autenticación                            | La aplicación debe permitir a los usuarios iniciar sesión con correo y contraseña válidos, mostrando mensajes de error apropiados si las credenciales son incorrectas.                  | 2                   | Josue Paiva     | Done       |
+| US-20          | Cerrar sesión                                                            | T07                | Implementar funcionalidad de cierre de sesión             | El usuario debe poder cerrar sesión desde cualquier parte de la aplicación; al hacerlo, la sesión se termina y se redirige a la pantalla de inicio.                                     | 1                   | Josue Paiva     | Done       |
+| US-24          | Tener un encabezado fijo para navegar por la página                      | T08                | Implementar encabezado fijo con navegación interna        | La landing page debe tener un encabezado que permanezca visible al hacer scroll, con enlaces anclados que permitan moverse entre secciones sin recargar la página.                      | 1.5                 | Javier Gonzales | Done       |
+| US-25          | Acceder a la sección de preguntas frecuentes (FAQs)                      | T09                | Crear sección de preguntas frecuentes                     | Implementar una sección de FAQs con acceso desde el menú principal, donde las preguntas se muestren en formato desplegable para facilitar la lectura.                                   | 1.5                 | Javier Gonzales | Done       |
+| US-26          | Visualizar la propuesta de valor con un diseño atractivo desde el inicio | T10                | Diseñar bloque principal de propuesta de valor            | La landing page debe mostrar en el primer bloque un mensaje corto y atractivo acompañado de una imagen o ilustración que refuerce visualmente la propuesta de valor de UniMatch.        | 1.5                 | Javier Gonzales | Done       |
+| TS-01          | Endpoint para registro de usuarios                                       | T11                | Crear endpoint para registro diferenciado por rol         | Desarrollar un endpoint que permita registrar nuevos usuarios con rol (estudiante o gerente), validando los campos y retornando códigos 201 o 400 según el resultado.                   | 2                   | Javier Gonzales | Done       |
+| TS-02          | Endpoint para creación de proyectos                                      | T12                | Crear endpoint para publicación de proyectos              | Desarrollar un endpoint `/api/projects` que permita a los gerentes crear proyectos, validando autorización y datos requeridos.                                                          | 2                   | Javier Gonzales | Done       |
+| TS-03          | Endpoint para postulación a proyectos                                    | T13                | Crear endpoint para postulaciones                         | Desarrollar un endpoint `/api/applications` para que los estudiantes postulen a proyectos, evitando duplicados (código 409 si ya postuló).                                              | 2                   | Javier Gonzales | Done       |
+| TS-04          | Endpoint para calificación de desempeño                                  | T14                | Crear endpoint para evaluación de desempeño               | Desarrollar un endpoint `/api/evaluations` que permita a los gerentes calificar a estudiantes tras finalizar un proyecto, validando estado y actualizando reputación.                   | 2                   | Javier Gonzales | Done       |
+
+##### 4.2.1.3 Development Evidence for Sprint Review
+
+A continuación se evidencian los commits realizados en cada repositorio:
+
+Repositorio Report:
+
+<img src="assets/sprint1/report1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/report2.png" alt="UPC logo" width="400">
+
+Repositorio Landing Page:
+
+<img src="assets/sprint1/repoLanding.png" alt="UPC logo" width="400">
+
+
+
+##### 4.2.1.4 Testing Suite Evidence for Sprint Review.
+
+##### 4.2.1.5 Execution Evidence for Sprint Review.
+
+Landing Page desplegado: https://apps-moviles.github.io/UniMatch-LandingPage/
+
+<img src="assets/sprint1/landing1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/landing2.png" alt="UPC logo" width="400">
+
+Avance del backend desplegado: https://unimatch-back-c4hxepccczf5axba.centralus-01.azurewebsites.net/swagger/index.html
+
+<img src="assets/sprint1/backend1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/backend2.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint1/backend3.png" alt="UPC logo" width="400">
+
+
+##### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+
+A continuación se documenta el avance de los endpoints con sus respectivas operaciones, siguiendo el estándar OpenAPI/Swagger:
+
+<table>
+    <tr>
+        <th>Tag</th>
+        <th>Operación</th>
+        <th>Endpoint</th>
+        <th>Summary</th>
+        <th>Description</th>
+        <th>OperationId</th>
+    </tr>
+    <tr>
+        <td>Companies</td>
+        <td>GET</td>
+        <td>/api/Companies</td>
+        <td>Get all companies</td>
+        <td>Retrieve the list of all registered companies</td>
+        <td>getAllCompanies</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>POST</td>
+        <td>/api/Companies</td>
+        <td>Create new company</td>
+        <td>Register a new company in the system</td>
+        <td>createCompany</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>GET</td>
+        <td>/api/Companies/{id}</td>
+        <td>Get company by ID</td>
+        <td>Retrieve detailed information of a company by its ID</td>
+        <td>getCompanyById</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>PUT</td>
+        <td>/api/Companies/{id}</td>
+        <td>Update company</td>
+        <td>Update the information of a specific company</td>
+        <td>updateCompany</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>DELETE</td>
+        <td>/api/Companies/{id}</td>
+        <td>Delete company</td>
+        <td>Remove a company from the system by its ID</td>
+        <td>deleteCompany</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Companies</td>
+        <td>GET</td>
+        <td>/api/Companies/by-user/{userId}</td>
+        <td>Get company by user</td>
+        <td>Retrieve the company information associated with a specific user</td>
+        <td>getCompanyByUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">userId</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>CompanyRatings</td>
+        <td>POST</td>
+        <td>/api/CompanyRatings</td>
+        <td>Create company rating</td>
+        <td>Add a new rating for a company</td>
+        <td>createCompanyRating</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>CompanyRatings</td>
+        <td>GET</td>
+        <td>/api/CompanyRatings/exists</td>
+        <td>Check if rating exists</td>
+        <td>Verify if a company rating already exists for a specific user</td>
+        <td>checkCompanyRatingExists</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">query params</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>GET</td>
+        <td>/api/Projects</td>
+        <td>Get all projects</td>
+        <td>Retrieve the list of all available projects</td>
+        <td>getAllProjects</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>POST</td>
+        <td>/api/Projects</td>
+        <td>Create new project</td>
+        <td>Register a new project in the system</td>
+        <td>createProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>GET</td>
+        <td>/api/Projects/{id}</td>
+        <td>Get project by ID</td>
+        <td>Retrieve details of a specific project by ID</td>
+        <td>getProjectById</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>PUT</td>
+        <td>/api/Projects/{id}</td>
+        <td>Update project</td>
+        <td>Update an existing project’s information</td>
+        <td>updateProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>DELETE</td>
+        <td>/api/Projects/{id}</td>
+        <td>Delete project</td>
+        <td>Remove a project from the system by ID</td>
+        <td>deleteProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>PUT</td>
+        <td>/api/Projects/{id}/assign-student/{studentId}</td>
+        <td>Assign student to project</td>
+        <td>Assign a student to a specific project</td>
+        <td>assignStudentToProject</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id, studentId</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Projects</td>
+        <td>PUT</td>
+        <td>/api/Projects/{id}/status/{status}</td>
+        <td>Update project status</td>
+        <td>Change the status of a specific project</td>
+        <td>updateProjectStatus</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id, status</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Reputations</td>
+        <td>POST</td>
+        <td>/api/Reputations</td>
+        <td>Create reputation record</td>
+        <td>Register a new reputation record for a user</td>
+        <td>createReputation</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Reputations</td>
+        <td>GET</td>
+        <td>/api/Reputations</td>
+        <td>Get all reputations</td>
+        <td>Retrieve all user reputation records</td>
+        <td>getAllReputations</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>StudentPostulations</td>
+        <td>POST</td>
+        <td>/api/StudentPostulations</td>
+        <td>Create student postulation</td>
+        <td>Register a new student postulation for a project</td>
+        <td>createStudentPostulation</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>StudentPostulations</td>
+        <td>GET</td>
+        <td>/api/StudentPostulations</td>
+        <td>Get all student postulations</td>
+        <td>Retrieve all student postulations from the system</td>
+        <td>getAllStudentPostulations</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>StudentPostulations</td>
+        <td>PUT</td>
+        <td>/api/StudentPostulations/{postulationId}/accept</td>
+        <td>Accept student postulation</td>
+        <td>Accept a student’s postulation for a specific project</td>
+        <td>acceptStudentPostulation</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">postulationId</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>POST</td>
+        <td>/api/Users/register</td>
+        <td>User registration</td>
+        <td>Register a new user in the system</td>
+        <td>registerUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>POST</td>
+        <td>/api/Users/login</td>
+        <td>User login</td>
+        <td>Authenticate a user and generate an access token</td>
+        <td>loginUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">yes</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>GET</td>
+        <td>/api/Users</td>
+        <td>Get all users</td>
+        <td>Retrieve all registered users</td>
+        <td>getAllUsers</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">none</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>GET</td>
+        <td>/api/Users/{id}</td>
+        <td>Get user by ID</td>
+        <td>Retrieve detailed information about a specific user</td>
+        <td>getUserById</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>DELETE</td>
+        <td>/api/Users/{id}</td>
+        <td>Delete user</td>
+        <td>Remove a user from the system</td>
+        <td>deleteUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">no</td></tr>
+    <tr>
+        <td>Users</td>
+        <td>PUT</td>
+        <td>/api/Users/{id}</td>
+        <td>Update user</td>
+        <td>Modify information of an existing user</td>
+        <td>updateUser</td>
+    </tr>
+    <tr><td>Parameters</td><td colspan="2">id</td><td>Request body</td><td colspan="2">yes</td></tr>
 </table>
 
+##### 4.2.1.7 Software Deployment Evidence for Sprint Review.
 
-<br>
+Para el despliegue de la landing page se utilizó GitHub Pages:
 
+<img src="assets/sprint1/deployLanding.png" alt="UPC logo" width="400">
 
-*Entrevistas a Segmento 2*
----
-
-<table align="center">
-  <tr>
-    <th colspan="2" style="text-align:center">Entrevista 1</th>
-  </tr>
-  <tr>
-    <td><strong>Entrevistado</strong></td>
-    <td>Javier Sandoval</td>
-  </tr>
-  <tr>
-    <td><strong>Edad</strong></td>
-    <td>59</td>
-  </tr>
-  <tr>
-    <td><strong>Distrito</strong></td>
-    <td>San Miguel</td>
-  </tr>
-  <tr>
-    <td><strong>Timing</strong></td>
-    <td>00:00</td>
-  </tr>
-  <tr>
-    <td><strong>URL</strong></td>
-    <td>      
-  `...`
-  </td>
-  </tr>
-  <tr>
-    <td colspan="2" style="text-align:justify">
-      Resumen: <br>
-      Javier aprobó el diseño visual y la navegación general de la app móvil, destacando su claridad y estructura. Valoró positivamente los botones, los apartados y sus funcionalidades. Sin embargo, mencionó que la información disponible para crear un proyecto o evaluar a los postulantes es insuficiente para tomar decisiones. Sugirió ampliar los datos mostrados sobre los estudiantes.
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2"><br>
-      <p align="center">
-        <img src="assets/entrevistas/val-int2.png" alt="interviewImage" width="700">
-      </p>
-    </td>
-  </tr>
-</table>
+Para la documentación en Swagger del backend se utilizó Azure App Service:
 
 
 
+##### 4.2.1.8 Team Collaboration Insights during Sprint
 
-<br>
+A continuación se evidencian los insights, donde se evidencia el trabajo colaborativo del equipo
 
-#### 4.3.3. Evaluaciones según heurísticas
+<img src="assets/sprint1/reportCommits.png" alt="UPC logo" width="400">
 
-**SITE o APP A EVALUAR:**
+Ademas de la reunion de planificación del sprint:
 
-UniTalent Connect
-
-Meta: El propósito general de la evaluación es encontrar problemas existentes en la aplicación web UniTalentConnect.
-
-<br>
-
-**TAREAS A EVALUAR**
-
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
-
-1. Registrarse como estudiante o empresa
-
-2. Iniciar sesión en la aplicación
-
-3. Navegar por la vista de oportunidades (estudiante)
-
-4. Postular a un proyecto
-
-5. Visualizar el estado de postulaciones
-
-6. Ver convocatorias activas y revisar postulantes (empresa)
-
-7. Calificar a una empresa después de finalizar un proyecto
-
-8. Aceptar postulantes a un proyecto
-
-9. Editar perfil (empresa o estudiante)
-
-10. Crear un nuevo proyecto (empresa)
-
-11. Visualizar proyectos propios (empresa)
-
-<br>
-
-**No están incluidas en esta versión de la evaluación las siguientes tareas:**
-
-1. El sistema de notificaciones automáticas para postulaciones o contrataciones.
-
-2. La conexión con servicios externos como correo electrónico o LinkedIn.
-
-3. El historial de calificaciones y reportes avanzados para empresas.
-
-**ESCALA DE SEVERIDAD**
-
-Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
-
-<table border="1">
-  <tbody>
-    <tr>
-      <td><b>Nivel</b></td>
-      <td><b>Descripción</b></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase</td>
-    </tr>
-    <tr>
-      <td>3 </td>
-      <td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td>
-    </tr>   
-  </tbody>
-</table>
-
-<br>
-
-**TABLA RESUMEN**
-
-<table border="1">
-  <tbody>
-    <tr>
-      <td><b>#</b></td>
-      <td><b>Problema</b></td>
-      <td><b>Escala de severidad</b></td>
-      <td><b>Heurística/Principio violada(o)</b></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Información insuficiente para contratar al estudiante</td>
-      <td>3</td>
-      <td>Visibilidad del estado del sistema y Match entre el sistema y el mundo real.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Inquietud sobre integración futura con servicios externos</td>
-      <td>2</td>
-      <td>Ayuda y documentación y Consistencia y estándares.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr>  
-    <tr>
-      <td>6</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr> 
-  </tbody>
-</table>
-
-<br>
-
-**DESCRIPCIÓN DE PROBLEMAS:**
-
-Problema #1: Información insuficiente para contratar al estudiante
-
-Severidad: 3
-
-Principio violado: Visibilidad del estado del sistema y Match entre el sistema y el mundo real.
-
-Problema: La vista de los postulantes no brinda suficiente información útil o relevante (como experiencia, habilidades específicas o proyectos previos) para tomar una decisión informada al contratar.
-
-<p align="center">
-  <img src="assets/heuristicas/h1.png" alt="screenshot heuristica" height="700">
-</p>
-
-<br>
-
-Recomendación: Ampliar la tarjeta o vista de estudiante con información clave como portafolio, experiencia previa, estudios, calificación promedio y reseñas destacadas, accesible con un diseño responsive y de lectura rápida.
-
-<br>
-
-Problema #2: Inquietud sobre integración futura con servicios externos
-
-Severidad: 2
-
-Principio violado: Ayuda y documentación y Consistencia y estándares.
-
-Problema: El usuario manifestó dudas sobre la expansión futura de la app, especialmente en cuanto a su integración con correo electrónico u otros servicios, lo que genera incertidumbre sobre la continuidad del flujo de comunicación.
-
-<p align="center">
-  <img src="assets/heuristicas/h2.png" alt="screenshot heuristica" height="700">
-</p>
-
-<br>
-
-Recomendación: Incluir desde esta versión un espacio informativo o sección de "próximas funciones", o usar íconos grises con tooltips de funciones planificadas, respetando las expectativas móviles de transparencia e interoperabilidad.
-
-<br>
+<img src="assets/sprint1/sprint1.png" alt="UPC logo" width="400">
 
 
 ## Conclusiones
 
 -**TB1:**
-La primera entrega fue clave para establecer correctamente la propuesta y documentar los bounded contexts que trabajaremos en el resto del curso. Hubo comunicacion constante y reuniones grupales que contaron con la participación de todos los integrantes.
+La primera entrega fue clave para establecer correctamente la propuesta y documentar los bounded contexts que trabajaremos en el resto del curso. Hubo comunicación constante y reuniones grupales que contaron con la participación de todos los integrantes.
+
+-**TP:**
+Con los servicios desplegados, podemos empezar a trabajar en la app móvil, que es el objetivo principal del proyecto. El backend ya tiene los servicios principales para el registro, autenticación, creación de proyectos y postulación, lo cual nos beneficia de cara al resto de entregables donde podremos concentrarnos en el frotnend.
 
 ## Anexos
 
 -**Link del repositorio GitHub:** https://github.com/Apps-Moviles
 -**Link del reporte en github:** https://github.com/Apps-Moviles/Report
+-**Link del backend en github:** https://github.com/Apps-Moviles/UniMatch-BackEnd
+-**Link del frontend en github:** https://github.com/Apps-Moviles/UniMatch-Frontend
+-**Link de la landing page en github:** https://github.com/Apps-Moviles/UniMatch-LandingPage
+
