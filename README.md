@@ -7061,6 +7061,47 @@ Implementaremos buenas prácticas de programación para garantizar que el códig
 #### 4.1.4. Software Deployment Configuration  
 En esta sección se describen las consideraciones, requerimientos y pasos seguidos para el despliegue de los distintos productos de **UniMatch**.  
 
+**Landing Page**
+
+**Consideraciones previas al despliegue**
+- Es recomendable ejecutar previamente el comando `npm run build` de manera local para asegurar que la aplicación compile correctamente y no existan errores derivados de dependencias externas o configuraciones incorrectas de componentes.
+
+**Requerimientos para el despliegue**
+- Contar con el repositorio del proyecto alojado en **GitHub**.  
+- El repositorio debe tener visibilidad pública.  
+- La rama principal debe contener la versión final del código listo para producción.  
+
+**Pasos para el despliegue**
+1. Verificar que el proyecto compile correctamente ejecutando `npm run build`.  
+2. Acceder a la configuración del repositorio en GitHub.  
+3. Ir a la sección **Pages** dentro del menú *Settings*.  
+4. Seleccionar la rama que contiene los archivos generados por el *build* (por ejemplo, `/docs` o `/dist`).  
+5. Guardar los cambios y esperar que GitHub Pages realice la publicación automática.  
+6. Una vez completado el proceso, acceder a la URL pública proporcionada por GitHub Pages para comprobar el correcto funcionamiento del sitio.  
+
+---
+
+**Backend**
+
+**Consideraciones previas al despliegue**
+- Es necesario que la **base de datos** esté operativa y accesible de forma externa antes del despliegue del backend.  
+
+**Requerimientos para el despliegue**
+- Contar con el repositorio del backend en **GitHub**.  
+- Disponer de una cuenta activa en **Microsoft Azure** (servicio App Service).  
+- Configurar las variables de entorno correspondientes (credenciales, puertos, conexión a la base de datos).  
+
+**Pasos para el despliegue**
+1. Integrar la conexión a la base de datos dentro del código del API.  
+2. Crear un archivo **Dockerfile** si se opta por un despliegue en contenedores.  
+3. Iniciar sesión en el [portal de Azure](https://portal.azure.com/).  
+4. Crear un nuevo recurso **App Service** desde el panel principal.  
+5. Seleccionar **"Implementar desde GitHub"** como origen del código.  
+6. Autorizar a Azure a acceder a los repositorios y elegir el correspondiente al backend.  
+7. Configurar los parámetros del servicio (plan, región, versión de Java/Spring Boot, etc.).  
+8. Definir las variables de entorno necesarias (por ejemplo, `DB_URL`, `DB_USER`, `DB_PASSWORD`).  
+9. Iniciar el despliegue y esperar la confirmación de publicación.  
+10. Verificar el estado del servicio y probar los endpoints del API para garantizar su correcto funcionamiento.  
 
 
 ## Conclusiones
