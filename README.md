@@ -6875,6 +6875,9 @@ Permite a las empresas revisar los estudiantes postulantes a sus proyectos y sel
 ## Capítulo IV: Product Implementation & Validation
 ### 4. Product Implementation & Validation
 ### 4.1 Software Configuration Management
+
+En esta sección se establecerán las normas y procedimientos aplicados durante el desarrollo y la implementación de UniMatch. El propósito de estas medidas es preservar la calidad, estabilidad y uniformidad del sistema durante todas sus etapas, desde la fase inicial de construcción hasta el despliegue y el mantenimiento posterior.
+
 #### 4.1.1. Software Development Environment Configuration  
 
 **Gestión de Proyecto (Project Management)**
@@ -6883,11 +6886,16 @@ Plataforma web utilizada para la gestión y publicación de las páginas del pro
 
 Ruta de acceso: `https://pages.github.com`
 
+Discord: Plataforma digital diseñada para la comunicación en línea, que permite chatear por texto, voz y video. Empleada para reuniones de equipo
+
+
+Ruta de acceso: `https://discord.com/`
 **Gestión de Requisitos (Requirements Management)**
 
 Trello: Herramienta de gestión de tareas y proyectos basada en tableros. Facilita la asignación de responsabilidades, el seguimiento del progreso y la coordinación de las historias de usuario dentro del equipo de trabajo.
 
 Ruta de acceso: `https://trello.com/es`
+
 
 **Diseño de UX/UI del Producto (Product UX/UI Design)**
 
@@ -6896,54 +6904,52 @@ Figma: Herramienta online para la creación de prototipos y diseños de interfaz
 
 Ruta de acceso: `https://www.figma.com/login`
 
-Overflow: Plataforma especializada en la representación de flujos de usuario (user flows) y wireflows, utilizada para diseñar la experiencia del usuario y visualizar los procesos de interacción.
 
-
-Ruta de acceso: `https://overflow.io`
 
 **Desarrollo de Software (Software Development)**
 
-Visual Studio Code: Entorno de desarrollo integrado (IDE) utilizado para la programación y compilación del código fuente. Destaca por su compatibilidad con múltiples lenguajes y extensiones que optimizan el flujo de trabajo.
+Empleamos Android y Jetpack Compose para la creación de la mobile application, y Spring Boot para la creación de la API REST. Para el desarrollo de la landing page utilizamos HTML5, CSS y JavaScript dentro del entorno de desarrollo IntelliJ IDEA.
 
-Ruta de acceso: `https://code.visualstudio.com`
+| Herramienta     | Descripción                                                                   | Enlace                                 |
+| --------------- | ------------------------------------------------------------------------------ | -------------------------------------- |
+| Android         | Plataforma empleada para el desarrollo de la aplicación móvil                 | https://developer.android.com/         |
+| Kotlin           | Lenguaje de programación moderno utilizado para el desarrollo de la aplicación móvil | https://kotlinlang.org/                |
+| Jetpack Compose | Toolkit moderno de interfaz utilizado en la creación de la aplicación móvil   | https://developer.android.com/compose  |
+| Spring Boot     | Framework backend utilizado para el desarrollo de la API REST                 | https://spring.io/projects/spring-boot |
+| HTML5           | Lenguaje de marcado utilizado para la estructura del contenido web            | https://developer.mozilla.org/docs/Web/HTML |
+| CSS             | Lenguaje de estilos utilizado para el diseño y presentación de la página web  | https://developer.mozilla.org/docs/Web/CSS |
+| JavaScript      | Lenguaje de programación empleado para la interacción y dinamismo de la web   | https://developer.mozilla.org/docs/Web/JavaScript |
+| IntelliJ IDEA   | Entorno de desarrollo integrado (IDE) utilizado para la construcción del proyecto | https://www.jetbrains.com/idea/ |
 
-IntelliJ IDEA: IDE avanzado para el desarrollo en Java y Kotlin, empleado para construir los componentes principales del sistema y facilitar la integración con herramientas de desarrollo modernas.
-
-Ruta de acceso: `https://www.jetbrains.com/idea`
-
-HTML5: Lenguaje de marcado estándar para estructurar el contenido web de la aplicación, garantizando accesibilidad y compatibilidad con diferentes navegadores.
-
-
-Ruta de acceso: `https://developer.mozilla.org/en-US/docs/Web/HTML`
-
-CSS:Lenguaje de estilos empleado para definir la apariencia y presentación visual del sitio web, asegurando una interfaz atractiva y coherente.
-
-Ruta de acceso:  `https://developer.mozilla.org/en-US/docs/Web/CSS`
-
-JavaScript: Lenguaje de programación que dota de interactividad a la interfaz de usuario, permitiendo desarrollar funcionalidades dinámicas en el navegador.
-
-Ruta de acceso: `https://developer.mozilla.org/en-US/docs/Web/JavaScript`
 
 **Despliegue de Software (Software Deployment)**
 
-Git: Sistema de control de versiones que registra los cambios en el código fuente y facilita el trabajo colaborativo entre los miembros del equipo. Se usará para mantener el historial del proyecto y controlar las versiones del software.
+| Herramienta     | Descripción                                                                                                       | Enlace                               |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Azure            | Plataforma cloud de Microsoft utilizada para el despliegue y gestión de aplicaciones y servicios en la nube      | https://azure.microsoft.com/         |
+| Android Studio   | Entorno de desarrollo integrado (IDE) empleado para la creación de la aplicación móvil                           | https://developer.android.com/studio |
+                
 
-Ruta de acceso: `https://git-scm.com`
 
 **Documentación del Software (Software Documentation)**
 
-Markdown: Lenguaje de marcado ligero utilizado para redactar documentación técnica de forma simple y legible, especialmente útil en plataformas colaborativas como GitHub.
+| Herramienta | Descripción                                                                 | Enlace                          |
+| ------------ | --------------------------------------------------------------------------- | ------------------------------- |
+| Markdown     | Sintaxis de formato ligero utilizada para redactar y estructurar la documentación del proyecto | https://www.markdownguide.org/  |
+| GitHub       | Plataforma empleada para alojar, versionar y administrar la documentación del proyecto | https://github.com/NRG-4/report |
 
-Ruta de acceso: `https://www.markdownguide.org`
-
-GitHub Pages: Servicio web empleado para alojar y publicar la documentación del proyecto, con acceso público o restringido según las necesidades del equipo.
-
-Ruta de acceso: `https://pages.github.com`
 
 #### 4.1.2. Source Code Management 
 
 GitHub se utilizará como la plataforma principal para el control de versiones del proyecto. En este espacio se alojarán los repositorios correspondientes permitiendo la colaboración y el seguimiento de cambios entre los desarrolladores.
 URL de Repositorios:
+
+| Producto           | Repositorio       | Enlace                                     |
+| ------------------ | ----------------- | ------------------------------------------ |
+| Mobile Application | synhub-mobile-app | https://github.com/Apps-Moviles/Report     |
+| Backend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-BackEnd     |
+| Frontend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-Frontend     |
+| Landing Page       | synhub-landing    | https://github.com/Apps-Moviles/UniMatch-LandingPage     |
 
 Documentacion Informe: `https://github.com/Apps-Moviles/Report`
 
@@ -6987,7 +6993,36 @@ fix: Corrección de errores.
 
 chore: Tareas de mantenimiento o configuración.
 
-#### 4.1.2. Source Code Style Guide & Conventions  
+#### 4.1.2. Source Code Style Guide & Conventions 
+
+Implementaremos buenas prácticas de programación para garantizar que el código sea claro, mantenible y consistente.  
+
+**Android (Kotlin/Java)**  
+
+- **Convenciones de nombres:**  
+  - Clases: estilo *PascalCase*.  
+  - Funciones y variables: estilo *camelCase*.  
+  - Constantes: estilo *UPPER_SNAKE_CASE*.  
+- **Estructura del código:**  
+  - Separar la lógica de negocio de la interfaz de usuario mediante *ViewModel* y *UseCase*.  
+
+**Jetpack Compose**  
+
+- **Componentes:**  
+  - Las funciones componibles se nombran con *PascalCase* (por ejemplo: `ButtonSubmit()`).  
+  - El manejo del estado (`remember`, `mutableStateOf`) se realiza dentro del *ViewModel*.  
+- **Optimización de recomposición:**  
+  - Evitar operaciones complejas dentro de funciones marcadas con `@Composable`.  
+  - Usar `Modifier` para definir estilos reutilizables.  
+
+**Spring Boot**  
+
+- **Organización del proyecto:**  
+  - Dividir las clases en capas (*controller*, *service*, *repository*, *model*).  
+  - Utilizar interfaces para los servicios (por ejemplo: `UserService` → `UserServiceImpl`).  
+- **Convenciones:**  
+  - Clases en *PascalCase*.  
+  - Métodos en *camelCase* (por ejemplo: `getUserById()`).  
 
 **HTML:** Durante el desarrollo de la Landing Page estática se aplicaron las siguientes buenas prácticas de estructura y accesibilidad:
 
@@ -7024,6 +7059,9 @@ chore: Tareas de mantenimiento o configuración.
 - And (Y) – Condiciones adicionales o pasos complementarios.
 
 #### 4.1.4. Software Deployment Configuration  
+En esta sección se describen las consideraciones, requerimientos y pasos seguidos para el despliegue de los distintos productos de **UniMatch**.  
+
+
 
 ## Conclusiones
 
