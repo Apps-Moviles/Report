@@ -156,6 +156,26 @@
             - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-application-prototyping)
 
 
+- [Capítulo IV: Product Implementation & Validation](#cap4)
+    - [4.1. Software Configuration Management](#41-software-configuration-management)
+        - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
+        - [4.1.2. Source Code Management](#412-source-code-management)
+        - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide-&-conventions)
+        - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
+    - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page-&-mobile-application-implementation)
+        - [4.2.1. Sprint n](#421-sprint-n)
+            - [4.2.1.1. Sprint Planning n](#4211-sprint-planning-n)  
+            - [4.2.1.2. Sprint Backlog n](#4212-sprint-backlog-n)
+            - [4.2.1.3. Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
+            - [4.2.1.4. Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
+            - [4.2.1.5. Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
+            - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
+            - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
+            - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+    - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+        - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 ## Student Outcome
 
@@ -934,7 +954,6 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
     <td><strong>URL</strong></td>
     <td>
   `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/EaLWEriiCW5KpQ7FnRzwSywBVmqHWbKJ6lyDq10uR2sY0w?e=GWjtkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`
-
   </td>
   </tr>
   <tr>
@@ -7024,6 +7043,342 @@ chore: Tareas de mantenimiento o configuración.
 - And (Y) – Condiciones adicionales o pasos complementarios.
 
 #### 4.1.4. Software Deployment Configuration  
+
+
+### 4.2. Landing Page & Mobile Application Implementation
+
+#### 4.2.1. Sprint n
+
+##### 4.2.1.1. Sprint Planning n
+
+##### 4.2.1.2. Sprint Backlog n
+
+##### 4.2.1.3. Development Evidence for Sprint Review
+
+##### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
+##### 4.2.1.5. Execution Evidence for Sprint Review
+
+##### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+##### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+##### 4.2.1.8. Team Collaboration Insights during Sprint
+
+### 4.3. Validation Interviews
+
+#### 4.3.1. Diseño de Entrevistas
+
+<br>
+
+**Preguntas para el segmento de estudiantes:**
+---
+
+1. ¿La pantalla inicial te permitió identificar fácilmente cómo empezar a usar la app desde el celular?
+
+2. ¿Qué opinas de la navegación entre vistas como “Oportunidades”, “Portafolio” y “Postulaciones”? ¿Te resultó clara desde el móvil?
+
+3. ¿Te pareció sencillo postular a un proyecto desde tu celular? ¿El botón de postulación y la información fueron fáciles de encontrar?
+
+4. ¿La vista de “Mis Postulaciones” te ayudó a entender en qué estado está cada una?
+
+5. ¿La sección de “Portafolio” cumple con mostrar claramente tus proyectos completados y te resultó útil la opción de descargar un certificado?
+
+6. ¿Consideras que el diseño de la app móvil facilita su uso en cualquier momento y lugar, por ejemplo mientras vas en el bus o estás en un descanso?
+
+7. ¿Te sentiste cómodo navegando desde el celular sin perderte entre menús o botones?
+
+8. ¿Que cosas cambiarías o no te gustó de la primera versión del diseño de la app?
+
+<br>
+
+**Preguntas para el segmento de gerentes:**
+---
+
+1. ¿Le resultó sencillo crear un proyecto desde su celular? ¿El formulario fue claro y fácil de llenar?
+
+2. ¿Pudo acceder y gestionar sus proyectos y convocatorias sin dificultad desde la app móvil?
+
+3. ¿La sección de “Convocatorias” le permitió revisar los postulantes de forma ágil?
+
+4. ¿Le pareció útil y fácil aplicar filtros para seleccionar al mejor postulante (por calificación o campo profesional)?
+
+5. ¿La experiencia móvil le permitió gestionar postulaciones sin necesidad de una computadora?
+
+6. ¿El diseño móvil de la app le pareció profesional y fácil de usar incluso para alguien que no suele usar apps laborales?
+
+7. ¿Cree que esta app podría agilizar sus procesos de contratación freelance desde cualquier lugar?
+
+8. ¿Que cosas cambiarías o no te gustó de la primera versión del diseño de la app?
+
+<br>
+
+
+#### 4.3.2. Registro de Entrevistas
+
+*Entrevistas a Segmento 1*
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Jesus Abraham Polo</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+  ``
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Jesús consideró que la aplicación móvil es clara, fácil de usar y adecuada para estudiantes. Resaltó la utilidad del apartado de postulaciones y la navegación fluida entre vistas. Le pareció cómoda para usar en cualquier momento. Como mejora, sugirió ampliar funciones futuras e integrar servicios como el correo electrónico.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int1.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+<br>
+
+
+*Entrevistas a Segmento 2*
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Sandoval</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>59</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>      
+  `...`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Javier aprobó el diseño visual y la navegación general de la app móvil, destacando su claridad y estructura. Valoró positivamente los botones, los apartados y sus funcionalidades. Sin embargo, mencionó que la información disponible para crear un proyecto o evaluar a los postulantes es insuficiente para tomar decisiones. Sugirió ampliar los datos mostrados sobre los estudiantes.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int2.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+
+
+<br>
+
+#### 4.3.3. Evaluaciones según heurísticas
+
+**SITE o APP A EVALUAR:**
+
+UniTalent Connect
+
+Meta: El propósito general de la evaluación es encontrar problemas existentes en la aplicación web UniTalentConnect.
+
+<br>
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registrarse como estudiante o empresa
+
+2. Iniciar sesión en la aplicación
+
+3. Navegar por la vista de oportunidades (estudiante)
+
+4. Postular a un proyecto
+
+5. Visualizar el estado de postulaciones
+
+6. Ver convocatorias activas y revisar postulantes (empresa)
+
+7. Calificar a una empresa después de finalizar un proyecto
+
+8. Aceptar postulantes a un proyecto
+
+9. Editar perfil (empresa o estudiante)
+
+10. Crear un nuevo proyecto (empresa)
+
+11. Visualizar proyectos propios (empresa)
+
+<br>
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+1. El sistema de notificaciones automáticas para postulaciones o contrataciones.
+
+2. La conexión con servicios externos como correo electrónico o LinkedIn.
+
+3. El historial de calificaciones y reportes avanzados para empresas.
+
+**ESCALA DE SEVERIDAD**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Nivel</b></td>
+      <td><b>Descripción</b></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase</td>
+    </tr>
+    <tr>
+      <td>3 </td>
+      <td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td>
+    </tr>   
+  </tbody>
+</table>
+
+<br>
+
+**TABLA RESUMEN**
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>#</b></td>
+      <td><b>Problema</b></td>
+      <td><b>Escala de severidad</b></td>
+      <td><b>Heurística/Principio violada(o)</b></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Información insuficiente para contratar al estudiante</td>
+      <td>3</td>
+      <td>Visibilidad del estado del sistema y Match entre el sistema y el mundo real.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Inquietud sobre integración futura con servicios externos</td>
+      <td>2</td>
+      <td>Ayuda y documentación y Consistencia y estándares.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr>  
+    <tr>
+      <td>6</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr> 
+  </tbody>
+</table>
+
+<br>
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+Problema #1: Información insuficiente para contratar al estudiante
+
+Severidad: 3
+
+Principio violado: Visibilidad del estado del sistema y Match entre el sistema y el mundo real.
+
+Problema: La vista de los postulantes no brinda suficiente información útil o relevante (como experiencia, habilidades específicas o proyectos previos) para tomar una decisión informada al contratar.
+
+<p align="center">
+  <img src="assets/heuristicas/h1.png" alt="screenshot heuristica" height="700">
+</p>
+
+<br>
+
+Recomendación: Ampliar la tarjeta o vista de estudiante con información clave como portafolio, experiencia previa, estudios, calificación promedio y reseñas destacadas, accesible con un diseño responsive y de lectura rápida.
+
+<br>
+
+Problema #2: Inquietud sobre integración futura con servicios externos
+
+Severidad: 2
+
+Principio violado: Ayuda y documentación y Consistencia y estándares.
+
+Problema: El usuario manifestó dudas sobre la expansión futura de la app, especialmente en cuanto a su integración con correo electrónico u otros servicios, lo que genera incertidumbre sobre la continuidad del flujo de comunicación.
+
+<p align="center">
+  <img src="assets/heuristicas/h2.png" alt="screenshot heuristica" height="700">
+</p>
+
+<br>
+
+Recomendación: Incluir desde esta versión un espacio informativo o sección de "próximas funciones", o usar íconos grises con tooltips de funciones planificadas, respetando las expectativas móviles de transparencia e interoperabilidad.
+
+<br>
+
 
 ## Conclusiones
 
