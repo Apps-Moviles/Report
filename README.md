@@ -6404,6 +6404,503 @@ El diagrama incluye:
 
 <br>
 
+
+
+### 3.1. Product design
+
+#### 3.1.1. Style Guidelines
+
+##### 3.1.1.1. General Style Guidelines
+
+#### 3.1.2. Information Architecture
+
+##### 3.1.2.1. Organization Systems
+
+##### 3.1.2.2. Labelling Systems
+
+##### 3.1.2.3. SEO Tags and Meta Tags
+
+##### 3.1.2.4. Searching Systems
+
+##### 3.1.2.5. Navigation Systems
+
+#### 3.1.3. Landing Page UI Design
+
+##### 3.1.3.1. Landing Page Wireframe
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 5.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 6.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 7.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 8.png" alt="wireframe" width="700">
+</p>
+
+<br>
+
+##### 3.1.3.2. Landing Page Mock-up
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 1.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 2.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 3.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/landingPage/Landing Page - 4.png" alt="mockup" width="700">
+</p>
+
+<br>
+
+#### 3.1.4. Mobile Applications UX/UI Design
+
+##### 3.1.4.1. Mobile Applications Wireframes
+
+Los wireframes de UniMatch han sido diseñados pensando en la experiencia móvil, priorizando una navegación fluida, botones accesibles y una jerarquía visual clara. Cada vista está estructurada para adaptarse de forma óptima a pantallas pequeñas, facilitando el acceso rápido a funciones clave como postular, contratar, editar perfil o calificar. Se ha mantenido una coherencia visual entre vistas de estudiantes y empresas, garantizando una experiencia intuitiva y centrada en el usuario.
+
+'https://www.figma.com/design/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=30-2&t=UplywaDwvUIDKkhe-1'
+
+<br>
+
++ Login / Register:
+
+Permite a nuevos usuarios registrarse como estudiante o empresa, y a usuarios existentes iniciar sesión para acceder a la app.
+
+<p align="center">
+  <img src="assets/wrframes/wf01.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf02.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf03.png" alt="wireframe" height="600">
+</p>
+
+
+<br>
+
++ Vista de Oportunidades:
+
+Pantalla principal para estudiantes donde pueden explorar proyectos disponibles publicados por distintas empresas y postularse.
+
+<p align="center">
+  <img src="assets/wrframes/wf04.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Portafolio:
+
+Muestra a los estudiantes los proyectos en los que han trabajado, permite calificar a las empresas y descargar certificados para su currículum.
+
+<p align="center">
+  <img src="assets/wrframes/wf05.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Postulaciones:
+
+Permite a los estudiantes consultar el estado de sus postulaciones y hacer seguimiento a cada proyecto al que aplicaron.
+
+<p align="center">
+  <img src="assets/wrframes/wf06.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Mi Perfil:
+
+Sección donde estudiantes y empresas pueden visualizar y editar su información personal o corporativa, incluyendo foto y datos de contacto.
+
+<p align="center">
+  <img src="assets/wrframes/wf07.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf08.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Proyectos:
+
+Pantalla exclusiva para empresas que muestra los proyectos creados y permite gestionar nuevas oportunidades para estudiantes.
+
+<p align="center">
+  <img src="assets/wrframes/wf09.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf10.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
++ Vista de Convocatorias:
+
+Permite a las empresas revisar los estudiantes postulantes a sus proyectos y seleccionar al candidato ideal para trabajar.
+
+<p align="center">
+  <img src="assets/wrframes/wf11.png" alt="wireframe" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/wrframes/wf12.png" alt="wireframe" height="600">
+</p>
+
+<br>
+
+
+##### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+'https://overflow.io/s/PQZLUF3U'
+
+
+<br>
+
+1. **Wireflow 1: Login/Register**
+
+**User goal:** Ingresar a la app para acceder a sus funcionalidades.
+
+**User Persona:** Estudiante o representante de empresa que desea usar UniMatch.
+
+**Flujo:** Al abrir la app móvil, el usuario ve una pantalla de bienvenida con el logo de UniMatch y un slogan. Al tocar “Comenzar”, se le presenta una vista con dos opciones: iniciar sesión o registrarse. Si elige login, debe ingresar su correo y contraseña. Si elige registrarse, selecciona si es estudiante o empresa, y completa un formulario con datos personales o empresariales según corresponda. Al completar el proceso, accede directamente a la interfaz principal de la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow1.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+2. **Wireflow 2: Postular a un Proyecto**
+
+**User goal:** Participar en un proyecto freelance publicado por una empresa.
+
+**User Persona:** Estudiante registrado en la app.
+
+**Flujo:** Una vez logueado, el estudiante accede por defecto a la vista “Oportunidades”, donde navega por tarjetas de proyectos publicados. Al tocar una tarjeta, accede al detalle del proyecto con información como descripción, pago y requisitos. Puede explorar el perfil de la empresa publicadora y, si le interesa, tocar el botón “Postular”, quedando su postulación registrada y visible en su vista de “Postulaciones”.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow2.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+3. **Wireflow 3: Crear proyecto**
+
+**User goal:** Publicar una oportunidad freelance.
+
+**User Persona:** Representante de una empresa que busca talento joven.
+
+**Flujo:** Al iniciar sesión, la empresa accede a la vista “Mis Proyectos”, donde puede ver sus publicaciones anteriores. En la parte superior toca “Crear nuevo proyecto”, lo que lo lleva a una vista con un formulario para ingresar el título, descripción, pago y duración. Tras llenar los campos y tocar “Crear”, se muestra una confirmación de que el proyecto ha sido publicado en la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow3.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+4. **Wireflow 4: Contratar a un estudiante**
+
+**User goal:** Seleccionar un postulante ideal para un proyecto activo.
+
+**User Persona:** Representante de empresa con proyectos activos.
+
+**Flujo:** Desde la vista “Convocatorias”, la empresa selecciona un proyecto y accede a la lista de postulantes. Puede aplicar filtros por carrera o calificación, revisar el perfil de cada estudiante y, si lo desea, consultar reseñas previas. Una vez tomada la decisión, toca el botón “Aceptar” para contratar al estudiante, integrándolo oficialmente al proyecto desde la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow4.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+5. **Wireflow 5: Editar perfil**
+
+**User goal:** Actualizar su información personal o profesional.
+
+**User Persona:** Estudiante o empresa que ya tiene cuenta.
+
+**Flujo:** En la app móvil, desde la sección “Mi perfil”, el usuario ve su información actual y puede tocar “Editar perfil”. Allí accede a un formulario donde modifica sus datos (nombre, especialización, foto, etc.). Al finalizar, toca “Guardar cambios” y vuelve a la vista anterior con los datos ya actualizados.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow5.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+6. **Wireflow 6: Calificar empresa**
+
+**User goal:** Dejar una reseña tras finalizar un proyecto.
+
+**User Persona:** Estudiante que ha trabajado en un proyecto.
+
+**Flujo:** Desde la sección “Portafolio”, el estudiante toca un proyecto finalizado. En la vista del detalle, si aún no ha dejado reseña, se muestra un pequeño formulario con espacio para comentario y calificación. Tras completarlo, toca “Enviar” para guardar su evaluación, la cual quedará visible en el perfil de la empresa dentro de la app.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow6.png" alt="wireflow" width="700">
+</p>
+
+<br>
+
+7. **Wireflow 7: Descargar certificado**
+
+**User goal:** Obtener un certificado por participación en un proyecto.
+
+**User Persona:** Estudiante con proyecto completado.
+
+**Flujo:** El estudiante accede a “Portafolio” y selecciona un proyecto finalizado. En la parte superior de la vista se muestra un botón para “Descargar certificado”. Al tocarlo, el certificado se genera y se descarga directamente al dispositivo móvil del usuario, permitiéndole guardarlo como evidencia formal de su experiencia.
+
+<p align="center">
+  <img src="assets/Wireflows/wireflow7.png" alt="wireflow" width="500">
+</p>
+
+<br>
+
+
+##### 3.1.4.3. Mobile Applications Mock-ups
+
+Los siguientes mockups fueron elaborados a partir de los wireframes iniciales. Representan de manera visual y realista cómo los usuarios interactuarán con la interfaz de nuestra aplicación móvil UniMatch.
+
+'https://www.figma.com/design/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=0-1&t=UplywaDwvUIDKkhe-1'
+
+<br>
+
++ Login / Register:
+
+Permite a nuevos usuarios registrarse como estudiante o empresa, y a usuarios existentes iniciar sesión para acceder a la app.
+
+<p align="center">
+  <img src="assets/mockups/mockup1.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup2.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup3.png" alt="mockup" height="600">
+</p>
+
+
+<br>
+
++ Vista de Oportunidades:
+
+Pantalla principal para estudiantes donde pueden explorar proyectos disponibles publicados por distintas empresas y postularse.
+
+<p align="center">
+  <img src="assets/mockups/mockup4.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Portafolio:
+
+Muestra a los estudiantes los proyectos en los que han trabajado, permite calificar a las empresas y descargar certificados para su currículum.
+
+<p align="center">
+  <img src="assets/mockups/mockup5.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Postulaciones:
+
+Permite a los estudiantes consultar el estado de sus postulaciones y hacer seguimiento a cada proyecto al que aplicaron.
+
+<p align="center">
+  <img src="assets/mockups/mockup6.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Mi Perfil:
+
+Sección donde estudiantes y empresas pueden visualizar y editar su información personal o corporativa, incluyendo foto y datos de contacto.
+
+<p align="center">
+  <img src="assets/mockups/mockup7.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup8.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Mis Proyectos:
+
+Pantalla exclusiva para empresas que muestra los proyectos creados y permite gestionar nuevas oportunidades para estudiantes.
+
+<p align="center">
+  <img src="assets/mockups/mockup9.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup91.png" alt="mockup" height="600">
+</p>
+
+<br>
+
++ Vista de Convocatorias:
+
+Permite a las empresas revisar los estudiantes postulantes a sus proyectos y seleccionar al candidato ideal para trabajar.
+
+<p align="center">
+  <img src="assets/mockups/mockup92.png" alt="mockup" height="600">
+</p>
+
+<p align="center">
+  <img src="assets/mockups/mockup93.png" alt="mockup" height="600">
+</p>
+
+<br>
+
+
+##### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+'https://overflow.io/s/MJFHE5LE'
+
+<br>
+
+1. **User Flow Diagram 1: Login/Register**
+
+**User goal:** Ingresar a la app para acceder a sus funcionalidades.
+
+**User Persona:** Estudiante o representante de empresa que desea usar UniMatch.
+
+**Flujo:** Al abrir la app móvil, el usuario ve una pantalla de bienvenida con el logo de UniMatch y un slogan. Al tocar “Comenzar”, se le presenta una vista con dos opciones: iniciar sesión o registrarse. Si elige login, debe ingresar su correo y contraseña. Si elige registrarse, selecciona si es estudiante o empresa, y completa un formulario con datos personales o empresariales según corresponda. Al completar el proceso, accede directamente a la interfaz principal de la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow1screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+2. **User Flow Diagram 2: Postular a un Proyecto**
+
+**User goal:** Participar en un proyecto freelance publicado por una empresa.
+
+**User Persona:** Estudiante registrado en la app.
+
+**Flujo:** Una vez logueado, el estudiante accede por defecto a la vista “Oportunidades”, donde navega por tarjetas de proyectos publicados. Al tocar una tarjeta, accede al detalle del proyecto con información como descripción, pago y requisitos. Puede explorar el perfil de la empresa publicadora y, si le interesa, tocar el botón “Postular”, quedando su postulación registrada y visible en su vista de “Postulaciones”.
+
+<p align="center">
+  <img src="assets/Flows/userflow2screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+3. **User Flow Diagram 3: Crear proyecto**
+
+**User goal:** Publicar una oportunidad freelance.
+
+**User Persona:** Representante de una empresa que busca talento joven.
+
+**Flujo:** Al iniciar sesión, la empresa accede a la vista “Mis Proyectos”, donde puede ver sus publicaciones anteriores. En la parte superior toca “Crear nuevo proyecto”, lo que lo lleva a una vista con un formulario para ingresar el título, descripción, pago y duración. Tras llenar los campos y tocar “Crear”, se muestra una confirmación de que el proyecto ha sido publicado en la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow3screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+4. **User Flow Diagram 4: Contratar a un estudiante**
+
+**User goal:** Seleccionar un postulante ideal para un proyecto activo.
+
+**User Persona:** Representante de empresa con proyectos activos.
+
+**Flujo:** Desde la vista “Convocatorias”, la empresa selecciona un proyecto y accede a la lista de postulantes. Puede aplicar filtros por carrera o calificación, revisar el perfil de cada estudiante y, si lo desea, consultar reseñas previas. Una vez tomada la decisión, toca el botón “Aceptar” para contratar al estudiante, integrándolo oficialmente al proyecto desde la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow4screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+5. **User Flow Diagram 5: Editar perfil**
+
+**User goal:** Actualizar su información personal o profesional.
+
+**User Persona:** Estudiante o empresa que ya tiene cuenta.
+
+**Flujo:** En la app móvil, desde la sección “Mi perfil”, el usuario ve su información actual y puede tocar “Editar perfil”. Allí accede a un formulario donde modifica sus datos (nombre, especialización, foto, etc.). Al finalizar, toca “Guardar cambios” y vuelve a la vista anterior con los datos ya actualizados.
+
+<p align="center">
+  <img src="assets/Flows/userflow5screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+6. **User Flow Diagram 6: Calificar empresa**
+
+**User goal:** Dejar una reseña tras finalizar un proyecto.
+
+**User Persona:** Estudiante que ha trabajado en un proyecto.
+
+**Flujo:** Desde la sección “Portafolio”, el estudiante toca un proyecto finalizado. En la vista del detalle, si aún no ha dejado reseña, se muestra un pequeño formulario con espacio para comentario y calificación. Tras completarlo, toca “Enviar” para guardar su evaluación, la cual quedará visible en el perfil de la empresa dentro de la app.
+
+<p align="center">
+  <img src="assets/Flows/userflow6screen.png" alt="userflow" width="700">
+</p>
+
+<br>
+
+7. **User Flow Diagram 7: Descargar certificado**
+
+**User goal:** Obtener un certificado por participación en un proyecto.
+
+**User Persona:** Estudiante con proyecto completado.
+
+**Flujo:** El estudiante accede a “Portafolio” y selecciona un proyecto finalizado. En la parte superior de la vista se muestra un botón para “Descargar certificado”. Al tocarlo, el certificado se genera y se descarga directamente al dispositivo móvil del usuario, permitiéndole guardarlo como evidencia formal de su experiencia.
+
+<p align="center">
+  <img src="assets/Flows/userflow7screen.png" alt="userflow" width="500">
+</p>
+
+<br>
+
+##### 3.1.4.5. Mobile Applications Prototyping
+
+'https://www.figma.com/proto/oCLoS6SWRRNlsVRXj7yXYt/UniMatch?node-id=28-847&p=f&t=Lgsf76XfJi1VwMAO-1&scaling=scale-down&content-scaling=fixed&page-id=28%3A826&starting-point-node-id=28%3A847'
+
+
+<br>
+
 ## Capítulo IV: Product Implementation & Validation
 ### 4. Product Implementation & Validation
 ### 4.1 Software Configuration Management
@@ -6636,7 +7133,10 @@ En esta sección se describen las consideraciones, requerimientos y pasos seguid
 10. Verificar el estado del servicio y probar los endpoints del API para garantizar su correcto funcionamiento.  
 
 
-###### 4.2.1 Sprint 1
+### 4.2. Landing Page & Mobile Application Implementation
+
+
+#### 4.2.1 Sprint 1
 
 El objetivo del primer sprint fue desplegar la landing page, tener los servicios backend al menos al 70% desplegados y las vistas core esenciales de la app móvil
 
@@ -6981,6 +7481,329 @@ A continuación se evidencian los insights, donde se evidencia el trabajo colabo
 Ademas de la reunion de planificación del sprint:
 
 <img src="assets/sprint1/sprint1.png" alt="UPC logo" width="400">
+
+
+<br>
+
+
+### 4.3. Validation Interviews
+
+#### 4.3.1. Diseño de Entrevistas
+
+<br>
+
+**Preguntas para el segmento de estudiantes:**
+---
+
+1. ¿La pantalla inicial te permitió identificar fácilmente cómo empezar a usar la app desde el celular?
+
+2. ¿Qué opinas de la navegación entre vistas como “Oportunidades”, “Portafolio” y “Postulaciones”? ¿Te resultó clara desde el móvil?
+
+3. ¿Te pareció sencillo postular a un proyecto desde tu celular? ¿El botón de postulación y la información fueron fáciles de encontrar?
+
+4. ¿La vista de “Mis Postulaciones” te ayudó a entender en qué estado está cada una?
+
+5. ¿La sección de “Portafolio” cumple con mostrar claramente tus proyectos completados y te resultó útil la opción de descargar un certificado?
+
+6. ¿Consideras que el diseño de la app móvil facilita su uso en cualquier momento y lugar, por ejemplo mientras vas en el bus o estás en un descanso?
+
+7. ¿Te sentiste cómodo navegando desde el celular sin perderte entre menús o botones?
+
+8. ¿Que cosas cambiarías o no te gustó de la primera versión del diseño de la app?
+
+<br>
+
+**Preguntas para el segmento de gerentes:**
+---
+
+1. ¿Le resultó sencillo crear un proyecto desde su celular? ¿El formulario fue claro y fácil de llenar?
+
+2. ¿Pudo acceder y gestionar sus proyectos y convocatorias sin dificultad desde la app móvil?
+
+3. ¿La sección de “Convocatorias” le permitió revisar los postulantes de forma ágil?
+
+4. ¿Le pareció útil y fácil aplicar filtros para seleccionar al mejor postulante (por calificación o campo profesional)?
+
+5. ¿La experiencia móvil le permitió gestionar postulaciones sin necesidad de una computadora?
+
+6. ¿El diseño móvil de la app le pareció profesional y fácil de usar incluso para alguien que no suele usar apps laborales?
+
+7. ¿Cree que esta app podría agilizar sus procesos de contratación freelance desde cualquier lugar?
+
+8. ¿Que cosas cambiarías o no te gustó de la primera versión del diseño de la app?
+
+<br>
+
+
+#### 4.3.2. Registro de Entrevistas
+
+*Entrevistas a Segmento 1*
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Jesus Abraham Polo</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+  ``
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Jesús consideró que la aplicación móvil es clara, fácil de usar y adecuada para estudiantes. Resaltó la utilidad del apartado de postulaciones y la navegación fluida entre vistas. Le pareció cómoda para usar en cualquier momento. Como mejora, sugirió ampliar funciones futuras e integrar servicios como el correo electrónico.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int1.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+<br>
+
+
+*Entrevistas a Segmento 2*
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Sandoval</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>59</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>      
+  `...`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Javier aprobó el diseño visual y la navegación general de la app móvil, destacando su claridad y estructura. Valoró positivamente los botones, los apartados y sus funcionalidades. Sin embargo, mencionó que la información disponible para crear un proyecto o evaluar a los postulantes es insuficiente para tomar decisiones. Sugirió ampliar los datos mostrados sobre los estudiantes.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int2.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+
+
+<br>
+
+#### 4.3.3. Evaluaciones según heurísticas
+
+**SITE o APP A EVALUAR:**
+
+UniTalent Connect
+
+Meta: El propósito general de la evaluación es encontrar problemas existentes en la aplicación web UniTalentConnect.
+
+<br>
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registrarse como estudiante o empresa
+
+2. Iniciar sesión en la aplicación
+
+3. Navegar por la vista de oportunidades (estudiante)
+
+4. Postular a un proyecto
+
+5. Visualizar el estado de postulaciones
+
+6. Ver convocatorias activas y revisar postulantes (empresa)
+
+7. Calificar a una empresa después de finalizar un proyecto
+
+8. Aceptar postulantes a un proyecto
+
+9. Editar perfil (empresa o estudiante)
+
+10. Crear un nuevo proyecto (empresa)
+
+11. Visualizar proyectos propios (empresa)
+
+<br>
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+1. El sistema de notificaciones automáticas para postulaciones o contrataciones.
+
+2. La conexión con servicios externos como correo electrónico o LinkedIn.
+
+3. El historial de calificaciones y reportes avanzados para empresas.
+
+**ESCALA DE SEVERIDAD**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Nivel</b></td>
+      <td><b>Descripción</b></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase</td>
+    </tr>
+    <tr>
+      <td>3 </td>
+      <td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td>
+    </tr>   
+  </tbody>
+</table>
+
+<br>
+
+**TABLA RESUMEN**
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>#</b></td>
+      <td><b>Problema</b></td>
+      <td><b>Escala de severidad</b></td>
+      <td><b>Heurística/Principio violada(o)</b></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Información insuficiente para contratar al estudiante</td>
+      <td>3</td>
+      <td>Visibilidad del estado del sistema y Match entre el sistema y el mundo real.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Inquietud sobre integración futura con servicios externos</td>
+      <td>2</td>
+      <td>Ayuda y documentación y Consistencia y estándares.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr>  
+    <tr>
+      <td>6</td>
+      <td>...</td>
+      <td>.</td>
+      <td>.....</td>
+    </tr> 
+  </tbody>
+</table>
+
+<br>
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+Problema #1: Información insuficiente para contratar al estudiante
+
+Severidad: 3
+
+Principio violado: Visibilidad del estado del sistema y Match entre el sistema y el mundo real.
+
+Problema: La vista de los postulantes no brinda suficiente información útil o relevante (como experiencia, habilidades específicas o proyectos previos) para tomar una decisión informada al contratar.
+
+<p align="center">
+  <img src="assets/heuristicas/h1.png" alt="screenshot heuristica" height="700">
+</p>
+
+<br>
+
+Recomendación: Ampliar la tarjeta o vista de estudiante con información clave como portafolio, experiencia previa, estudios, calificación promedio y reseñas destacadas, accesible con un diseño responsive y de lectura rápida.
+
+<br>
+
+Problema #2: Inquietud sobre integración futura con servicios externos
+
+Severidad: 2
+
+Principio violado: Ayuda y documentación y Consistencia y estándares.
+
+Problema: El usuario manifestó dudas sobre la expansión futura de la app, especialmente en cuanto a su integración con correo electrónico u otros servicios, lo que genera incertidumbre sobre la continuidad del flujo de comunicación.
+
+<p align="center">
+  <img src="assets/heuristicas/h2.png" alt="screenshot heuristica" height="700">
+</p>
+
+<br>
+
+Recomendación: Incluir desde esta versión un espacio informativo o sección de "próximas funciones", o usar íconos grises con tooltips de funciones planificadas, respetando las expectativas móviles de transparencia e interoperabilidad.
+
+<br>
+
+
+
+
+<br>
 
 
 ## Conclusiones
