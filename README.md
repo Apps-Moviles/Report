@@ -213,7 +213,8 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganizacion del c4 y desarrollo de los style guidelines</ul>
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
-           Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
+           Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
+           <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
 TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
@@ -228,7 +229,8 @@ TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servi
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
                   <ul>TP: Planificacion de pestañas y guidelines</ul>
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
-        Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
+        Javier Gonzales <ul>TB1: Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
+        <ul>TP1: Realizó entrevistas de validación a usuarios reales e integró su retroalimentación en el prototipo, reconociendo oportunidades de mejora continua.</ul>
       </td>
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
 TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos, sin embargo la participación de todos los integrantes fue constante y satisfactoria.
@@ -7660,7 +7662,7 @@ Ademas de la reunion de planificación del sprint:
   <tr>
     <td><strong>URL</strong></td>
     <td>
-  ``
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/pcsierey_upc_edu_pe/Ecfs6lIdaYxEpgt28RYOkEgBV2he_CpLyjxDZhpjzHVhoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jEzd13`
   </td>
   </tr>
   <tr>
@@ -7697,12 +7699,12 @@ Ademas de la reunion de planificación del sprint:
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00</td>
+    <td>05:05</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
     <td>
-  ``
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/pcsierey_upc_edu_pe/Ecfs6lIdaYxEpgt28RYOkEgBV2he_CpLyjxDZhpjzHVhoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jEzd13`
   </td>
   </tr>
   <tr>
@@ -7744,12 +7746,12 @@ Ademas de la reunion de planificación del sprint:
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00</td>
+    <td>16:43</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
     <td>      
-  `...`
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/pcsierey_upc_edu_pe/Ecfs6lIdaYxEpgt28RYOkEgBV2he_CpLyjxDZhpjzHVhoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jEzd13`
   </td>
   </tr>
   <tr>
@@ -7786,12 +7788,12 @@ Ademas de la reunion de planificación del sprint:
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00</td>
+    <td>21:04</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
     <td>      
-  `...`
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/pcsierey_upc_edu_pe/Ecfs6lIdaYxEpgt28RYOkEgBV2he_CpLyjxDZhpjzHVhoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jEzd13`
   </td>
   </tr>
   <tr>
