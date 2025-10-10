@@ -6975,7 +6975,7 @@ URL de Repositorios:
 
 | Producto           | Repositorio       | Enlace                                     |
 | ------------------ | ----------------- | ------------------------------------------ |
-| Mobile Application | synhub-mobile-app | https://github.com/Apps-Moviles/Report     |
+| Mobile Application | synhub-mobile-app | https://github.com/Apps-Moviles/UniMatch-Frontend     |
 | Backend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-BackEnd     |
 | Frontend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-Frontend     |
 | Landing Page       | synhub-landing    | https://github.com/Apps-Moviles/UniMatch-LandingPage     |
