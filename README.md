@@ -1041,21 +1041,19 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>09:24</td>
+    <td>03:23</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
     <td>
-      `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/EaLWEriiCW5KpQ7FnRzwSywBVmqHWbKJ6lyDq10uR2sY0w?e=GWjtkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`
+      `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318947_upc_edu_pe/EQjp6d1Ol1pJuraIzyBEtfgBgNT3CeG6BxMuajasEBBn_Q?e=ywyuo3`
 
   </td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
-
-    
-    </td>
+      La entrevistada, Milagros Alcántara, está buscando activamente trabajo para costear sus gastos mientras estudia, ya que su experiencia actual se limita a prácticas no remuneradas de su internado. Se enfrenta a una barrera significativa en el sector laboral, donde las ofertas a menudo exigen un mínimo de cinco años de experiencia y muchas oportunidades se le cierran por ser considerada "principiante", lo que la lleva a sentir que no la toman en serio a pesar de trabajar con personas. Está dispuesta a utilizar plataformas para ofrecer sus habilidades de trabajo en equipo y adaptabilidad con el objetivo de ganar más experiencia y destreza profesional.
   </tr>
   <tr>
     <td colspan="2"><br>
@@ -1130,15 +1128,14 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
   <tr>
     <td><strong>URL</strong></td>
     <td>
- `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/EaLWEriiCW5KpQ7FnRzwSywBVmqHWbKJ6lyDq10uR2sY0w?e=GWjtkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`
+ `https://upcedupe-my.sharepoint.com/personal/u202318947_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202318947%5Fupc%5Fedu%5Fpe%2FDocuments%2FentrevistaS2Mery%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef9fd6518%2D4be5%2D4b1e%2Db795%2D0877d3d20468`
 
   </td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
-    
-    </td>
+      La entrevistada, Mary, co-directora de la empresa de impresiones 3D Thinking 3D, está buscando activamente talento joven con conocimientos en Office, computación y el sector de impresiones. Su experiencia previa con estudiantes fue positiva, ya que valora la actitud positiva, el compromiso y la disposición a aprender por encima de la falta de experiencia. Los roles que asignaría a jóvenes con perfiles de diseño o marketing incluirían actualizar la página web, mover las redes sociales (Instagram, TikTok, Facebook) y generar proyectos innovadores. Actualmente contratan a través de redes sociales y recomendaciones, pero la entrevistada afirma que sí usaría una app móvil que conecte a su empresa con estudiantes, especialmente si esta plataforma permitiera a los candidatos subir un video corto para evaluar mejor su actitud, que es el requisito más importante para la empresa.
   </tr>
   <tr>
     <td colspan="2"><br>
