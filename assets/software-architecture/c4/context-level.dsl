@@ -9,7 +9,7 @@ workspace "UniMatch" {
       tags "Company"
     }
 
-    unimatch = softwareSystem "UniMatch" "Platform connecting students with companies" {
+    unimatch = softwareSystem "UniMatch" "App mobile connecting students with companies" {
       tags "UniMatch"
 
       landing = container "Landing" "Public marketing site that redirects to Mobile App" "React, Tailwind" {
@@ -21,7 +21,7 @@ workspace "UniMatch" {
       }
       
       db = container "DB" "Mysql Database" "Mysql" {
-          tags "Database"
+        tags "Database"
       }
 
       mobile = container "Mobile App" "Main user interface for both students and companies" "Flutter" {
@@ -29,14 +29,19 @@ workspace "UniMatch" {
       }
     }
 
-    # Relaciones principales
+    stripe = softwareSystem "Stripe" "Payment processing and subscription management" {
+      tags "ExternalSystem"
+    }
+
     student -> mobile "Uses to apply and manage projects"
     company -> mobile "Uses to publish and review projects"
 
     landing -> mobile "Redirects users to app stores"
     mobile -> backend "Sends and receives data via API"
-    
     backend -> db "Manage repositories from"
+    
+    mobile -> stripe "Initiates payment transactions"
+    stripe -> backend "Sends payment webhooks and status updates"
   }
 
   views {
@@ -93,6 +98,12 @@ workspace "UniMatch" {
         background "#ffffff"
         color "#000000"
         shape Hexagon
+      }
+
+      element "ExternalSystem" {
+        background "#FF5722"
+        color "#ffffff"
+        shape RoundedBox
       }
     }
   }
