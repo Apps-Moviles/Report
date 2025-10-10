@@ -6407,6 +6407,238 @@ El diagrama incluye:
 
 <br>
 
+## Capítulo IV: Product Implementation & Validation
+### 4. Product Implementation & Validation
+### 4.1 Software Configuration Management
+
+En esta sección se establecerán las normas y procedimientos aplicados durante el desarrollo y la implementación de UniMatch. El propósito de estas medidas es preservar la calidad, estabilidad y uniformidad del sistema durante todas sus etapas, desde la fase inicial de construcción hasta el despliegue y el mantenimiento posterior.
+
+#### 4.1.1. Software Development Environment Configuration  
+
+**Gestión de Proyecto (Project Management)**
+
+Plataforma web utilizada para la gestión y publicación de las páginas del proyecto. Permite alojar documentación y contenidos de manera accesible, fomentando la colaboración y la visibilidad del avance del proyecto.
+
+Ruta de acceso: `https://pages.github.com`
+
+Discord: Plataforma digital diseñada para la comunicación en línea, que permite chatear por texto, voz y video. Empleada para reuniones de equipo
+
+
+Ruta de acceso: `https://discord.com/`
+**Gestión de Requisitos (Requirements Management)**
+
+Trello: Herramienta de gestión de tareas y proyectos basada en tableros. Facilita la asignación de responsabilidades, el seguimiento del progreso y la coordinación de las historias de usuario dentro del equipo de trabajo.
+
+Ruta de acceso: `https://trello.com/es`
+
+
+**Diseño de UX/UI del Producto (Product UX/UI Design)**
+
+Figma: Herramienta online para la creación de prototipos y diseños de interfaz de usuario. Se empleará para desarrollar las versiones Desktop y Mobile de la aplicación, asegurando consistencia visual y usabilidad.
+
+
+Ruta de acceso: `https://www.figma.com/login`
+
+
+
+**Desarrollo de Software (Software Development)**
+
+Empleamos Android y Jetpack Compose para la creación de la mobile application, y Spring Boot para la creación de la API REST. Para el desarrollo de la landing page utilizamos HTML5, CSS y JavaScript dentro del entorno de desarrollo IntelliJ IDEA.
+
+| Herramienta     | Descripción                                                                   | Enlace                                 |
+| --------------- | ------------------------------------------------------------------------------ | -------------------------------------- |
+| Android         | Plataforma empleada para el desarrollo de la aplicación móvil                 | https://developer.android.com/         |
+| Kotlin           | Lenguaje de programación moderno utilizado para el desarrollo de la aplicación móvil | https://kotlinlang.org/                |
+| Jetpack Compose | Toolkit moderno de interfaz utilizado en la creación de la aplicación móvil   | https://developer.android.com/compose  |
+| Spring Boot     | Framework backend utilizado para el desarrollo de la API REST                 | https://spring.io/projects/spring-boot |
+| HTML5           | Lenguaje de marcado utilizado para la estructura del contenido web            | https://developer.mozilla.org/docs/Web/HTML |
+| CSS             | Lenguaje de estilos utilizado para el diseño y presentación de la página web  | https://developer.mozilla.org/docs/Web/CSS |
+| JavaScript      | Lenguaje de programación empleado para la interacción y dinamismo de la web   | https://developer.mozilla.org/docs/Web/JavaScript |
+| IntelliJ IDEA   | Entorno de desarrollo integrado (IDE) utilizado para la construcción del proyecto | https://www.jetbrains.com/idea/ |
+
+
+**Despliegue de Software (Software Deployment)**
+
+| Herramienta     | Descripción                                                                                                       | Enlace                               |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Azure            | Plataforma cloud de Microsoft utilizada para el despliegue y gestión de aplicaciones y servicios en la nube      | https://azure.microsoft.com/         |
+| Android Studio   | Entorno de desarrollo integrado (IDE) empleado para la creación de la aplicación móvil                           | https://developer.android.com/studio |
+                
+
+
+**Documentación del Software (Software Documentation)**
+
+| Herramienta | Descripción                                                                 | Enlace                          |
+| ------------ | --------------------------------------------------------------------------- | ------------------------------- |
+| Markdown     | Sintaxis de formato ligero utilizada para redactar y estructurar la documentación del proyecto | https://www.markdownguide.org/  |
+| GitHub       | Plataforma empleada para alojar, versionar y administrar la documentación del proyecto | https://github.com/NRG-4/report |
+
+
+#### 4.1.2. Source Code Management 
+
+GitHub se utilizará como la plataforma principal para el control de versiones del proyecto. En este espacio se alojarán los repositorios correspondientes permitiendo la colaboración y el seguimiento de cambios entre los desarrolladores.
+URL de Repositorios:
+
+| Producto           | Repositorio       | Enlace                                     |
+| ------------------ | ----------------- | ------------------------------------------ |
+| Mobile Application | synhub-mobile-app | https://github.com/Apps-Moviles/Report     |
+| Backend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-BackEnd     |
+| Frontend            | synhub-backend    | https://github.com/Apps-Moviles/UniMatch-Frontend     |
+| Landing Page       | synhub-landing    | https://github.com/Apps-Moviles/UniMatch-LandingPage     |
+
+Documentacion Informe: `https://github.com/Apps-Moviles/Report`
+
+Cada repositorio contendrá todos los archivos y recursos necesarios para el desarrollo y la gestión del proyecto.
+
+**Implementación de GitFlow como Workflow de Control de Versiones**
+
+Modelo de GitFlow:
+
+GitFlow se adoptará como el flujo de trabajo principal para la gestión de ramas y versiones del proyecto. Este modelo permite una integración ordenada entre los desarrolladores, separando las etapas de desarrollo, prueba y producción.
+
+Ramas principales:
+
+- Main branch: main
+
+Contiene el código estable y listo para producción. Toda versión final del sistema será fusionada en esta rama.
+
+- Development branch: develop
+
+Rama de desarrollo activo. Aquí se integran las funcionalidades antes de su paso a main. Todas las features parten de esta rama.
+
+- Feature branches: feature
+
+Utilizadas para desarrollar nuevas funcionalidades. Se crean a partir de develop y siguen la convención:
+
+feature/ch1-actvidiad
+
+Ejemplo: feature/ch1-user-stories
+
+**Convenciones para Versiones**
+
+Se aplicará Semantic Versioning (Versionado Semántico) para todas las versiones lanzadas.
+
+**Mensajes de Commits con Conventional Commits**
+ 
+Para los mensajes de commit, se implementará Conventional Commits para asegurar claridad en los cambios realizados en el código. Esta convención incluirá los siguientes tipos:
+
+feat: Nueva característica o funcionalidad.
+
+fix: Corrección de errores.
+
+chore: Tareas de mantenimiento o configuración.
+
+#### 4.1.2. Source Code Style Guide & Conventions 
+
+Implementaremos buenas prácticas de programación para garantizar que el código sea claro, mantenible y consistente.  
+
+**Android (Kotlin/Java)**  
+
+- **Convenciones de nombres:**  
+  - Clases: estilo *PascalCase*.  
+  - Funciones y variables: estilo *camelCase*.  
+  - Constantes: estilo *UPPER_SNAKE_CASE*.  
+- **Estructura del código:**  
+  - Separar la lógica de negocio de la interfaz de usuario mediante *ViewModel* y *UseCase*.  
+
+**Jetpack Compose**  
+
+- **Componentes:**  
+  - Las funciones componibles se nombran con *PascalCase* (por ejemplo: `ButtonSubmit()`).  
+  - El manejo del estado (`remember`, `mutableStateOf`) se realiza dentro del *ViewModel*.  
+- **Optimización de recomposición:**  
+  - Evitar operaciones complejas dentro de funciones marcadas con `@Composable`.  
+  - Usar `Modifier` para definir estilos reutilizables.  
+
+**Spring Boot**  
+
+- **Organización del proyecto:**  
+  - Dividir las clases en capas (*controller*, *service*, *repository*, *model*).  
+  - Utilizar interfaces para los servicios (por ejemplo: `UserService` → `UserServiceImpl`).  
+- **Convenciones:**  
+  - Clases en *PascalCase*.  
+  - Métodos en *camelCase* (por ejemplo: `getUserById()`).  
+
+**HTML:** Durante el desarrollo de la Landing Page estática se aplicaron las siguientes buenas prácticas de estructura y accesibilidad:
+
+1. Se implementó el uso de href="#id" para lograr una navegación interna fluida entre secciones del sitio.
+
+2. Se incluyeron los atributos alt en todas las etiquetas <img> con el fin de garantizar accesibilidad y reemplazo de las imágenes en caso de error de carga.
+
+3. Los íconos SVG se obtendrán desde FontAwesome, asegurando consistencia visual y ligereza en el diseño.
+
+4. Se aplicará la convención snake_case para nombrar los identificadores (id) y clases (class) en el código HTML, manteniendo uniformidad en la nomenclatura.
+
+**CSS:** En las hojas de estilo se implementarán las siguientes convenciones para optimizar la presentación visual y la mantenibilidad del código:
+
+1. Se empleará Flexbox para estructurar el diseño de manera responsive, facilitando la adaptación a diferentes tamaños de pantalla.
+
+2. Los colores se definirán utilizando el formato HEX, garantizando precisión y consistencia cromática en todo el sitio.
+
+3. Cada hoja de estilos incluirá comentarios descriptivos al inicio de cada sección, con el propósito de facilitar la lectura y el mantenimiento del código.
+
+
+**JavaScript:** Para el desarrollo de la funcionalidad interactiva de la Landing Page, se establecen las siguientes normas de codificación:
+
+1. Las funciones y variables seguirán la convención camelCase para su declaración, asegurando legibilidad y coherencia con las buenas prácticas de JavaScript.
+
+
+
+**Gherkin:** El lenguaje de dominio Gherkin se utilizó para la redacción de los escenarios de las historias de usuario, facilitando la comprensión del comportamiento esperado del sistema mediante el uso de las palabras clave:
+- Given (Dado) – Estado inicial o precondición.
+
+- When (Cuando) – Acción que ejecuta el usuario.
+
+- Then (Entonces) – Resultado esperado.
+
+- And (Y) – Condiciones adicionales o pasos complementarios.
+
+#### 4.1.4. Software Deployment Configuration  
+En esta sección se describen las consideraciones, requerimientos y pasos seguidos para el despliegue de los distintos productos de **UniMatch**.  
+
+**Landing Page**
+
+**Consideraciones previas al despliegue**
+- Es recomendable ejecutar previamente el comando `npm run build` de manera local para asegurar que la aplicación compile correctamente y no existan errores derivados de dependencias externas o configuraciones incorrectas de componentes.
+
+**Requerimientos para el despliegue**
+- Contar con el repositorio del proyecto alojado en **GitHub**.  
+- El repositorio debe tener visibilidad pública.  
+- La rama principal debe contener la versión final del código listo para producción.  
+
+**Pasos para el despliegue**
+1. Verificar que el proyecto compile correctamente ejecutando `npm run build`.  
+2. Acceder a la configuración del repositorio en GitHub.  
+3. Ir a la sección **Pages** dentro del menú *Settings*.  
+4. Seleccionar la rama que contiene los archivos generados por el *build* (por ejemplo, `/docs` o `/dist`).  
+5. Guardar los cambios y esperar que GitHub Pages realice la publicación automática.  
+6. Una vez completado el proceso, acceder a la URL pública proporcionada por GitHub Pages para comprobar el correcto funcionamiento del sitio.  
+
+---
+
+**Backend**
+
+**Consideraciones previas al despliegue**
+- Es necesario que la **base de datos** esté operativa y accesible de forma externa antes del despliegue del backend.  
+
+**Requerimientos para el despliegue**
+- Contar con el repositorio del backend en **GitHub**.  
+- Disponer de una cuenta activa en **Microsoft Azure** (servicio App Service).  
+- Configurar las variables de entorno correspondientes (credenciales, puertos, conexión a la base de datos).  
+
+**Pasos para el despliegue**
+1. Integrar la conexión a la base de datos dentro del código del API.  
+2. Crear un archivo **Dockerfile** si se opta por un despliegue en contenedores.  
+3. Iniciar sesión en el [portal de Azure](https://portal.azure.com/).  
+4. Crear un nuevo recurso **App Service** desde el panel principal.  
+5. Seleccionar **"Implementar desde GitHub"** como origen del código.  
+6. Autorizar a Azure a acceder a los repositorios y elegir el correspondiente al backend.  
+7. Configurar los parámetros del servicio (plan, región, versión de Java/Spring Boot, etc.).  
+8. Definir las variables de entorno necesarias (por ejemplo, `DB_URL`, `DB_USER`, `DB_PASSWORD`).  
+9. Iniciar el despliegue y esperar la confirmación de publicación.  
+10. Verificar el estado del servicio y probar los endpoints del API para garantizar su correcto funcionamiento.  
+
+
 ###### 4.2.1 Sprint 1
 
 El objetivo del primer sprint fue desplegar la landing page, tener los servicios backend al menos al 70% desplegados y las vistas core esenciales de la app móvil
