@@ -212,7 +212,8 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard del frontend, documentación del sprint1</ul>
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganizacion del c4 y desarrollo de los style guidelines</ul>
-           Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
+           Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
+                  <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
            Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
@@ -227,7 +228,8 @@ TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servi
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
                   <ul>TP: Planificacion de pestañas y guidelines</ul>
-        Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
+        Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
+        <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
         Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
