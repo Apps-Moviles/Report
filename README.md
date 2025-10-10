@@ -7819,173 +7819,110 @@ Ademas de la reunion de planificación del sprint:
 
 **SITE o APP A EVALUAR:**
 
-UniTalent Connect
+UniMatch
 
-Meta: El propósito general de la evaluación es encontrar problemas existentes en la aplicación web UniTalentConnect.
+**Meta:**  
+El objetivo de la evaluación heurística es identificar problemas de usabilidad en la aplicación móvil **UniMatch**, con el fin de mejorar la experiencia de usuario tanto de los estudiantes como de las empresas antes de su lanzamiento oficial.  
 
-<br>
+**Alcance:**  
+La evaluación se centró en las principales funcionalidades disponibles en el prototipo:  
 
-**TAREAS A EVALUAR**
+- Registro e inicio de sesión de estudiantes y empresas.  
+- Creación y visualización de proyectos.  
+- Postulación a proyectos por parte de estudiantes.  
+- Aceptación de postulantes por parte de empresas.  
+- Gestión de portafolios y calificaciones.  
+- Navegación general dentro de la aplicación móvil.
 
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+**Metodología:**  
+Se aplicaron las **10 heurísticas de usabilidad de Jakob Nielsen**, analizando cada flujo crítico en base a su cumplimiento.  
+Se asignó una escala de severidad del 1 al 4, donde 1 representa un problema leve y 4 un problema crítico.
 
-1. Registrarse como estudiante o empresa
+---
 
-2. Iniciar sesión en la aplicación
+### Escala de Severidad
 
-3. Navegar por la vista de oportunidades (estudiante)
+| Nivel | Descripción |
+|-------|--------------|
+| **1** | Problema leve o cosmético: no afecta la funcionalidad principal. |
+| **2** | Problema menor: afecta ligeramente la experiencia pero no bloquea tareas. |
+| **3** | Problema mayor: genera confusión o errores frecuentes en los usuarios. |
+| **4** | Problema crítico: impide completar tareas esenciales. |
 
-4. Postular a un proyecto
+---
 
-5. Visualizar el estado de postulaciones
+### Resultados de la Evaluación
 
-6. Ver convocatorias activas y revisar postulantes (empresa)
+| # | Problema identificado | Severidad | Heurística violada |
+|---|------------------------|------------|---------------------|
+| **1** | Dificultad para encontrar proyectos activos | 3 | Control y libertad del usuario / Reconocimiento antes que recuerdo |
+| **2** | Falta de confirmación al eliminar un proyecto o postulación | 4 | Prevención de errores |
+| **3** | Información limitada en las tarjetas de postulantes | 3 | Flexibilidad y eficiencia de uso |
+| **4** | Falta de contraste en textos sobre fondos claros | 1 | Estética y diseño minimalista |
 
-7. Calificar a una empresa después de finalizar un proyecto
+---
 
-8. Aceptar postulantes a un proyecto
+### Descripción de Problemas
 
-9. Editar perfil (empresa o estudiante)
+**Problema #1 – Dificultad para encontrar proyectos activos**  
+**Severidad:** 3  
+**Heurística:** Control y libertad del usuario / Reconocimiento antes que recuerdo  
+**Descripción:** Los proyectos nuevos o en tendencia no se destacan visualmente, lo que dificulta que los usuarios encuentren oportunidades relevantes.  
+**Recomendación:** Incorporar filtros dinámicos por categoría, etiquetas como “Nuevo” o “Más solicitado”, y un buscador predictivo que priorice resultados recientes.
 
-10. Crear un nuevo proyecto (empresa)
+<p align="center">
+  <img src="assets/heuristicas/h3.png" alt="screenshot heuristica" height="700">
+</p>
 
-11. Visualizar proyectos propios (empresa)
+---
 
-<br>
+**Problema #2 – Falta de confirmación al eliminar un proyecto o postulación**  
+**Severidad:** 4  
+**Heurística:** Prevención de errores  
+**Descripción:** Al eliminar un proyecto o enviar una postulación, la acción se ejecuta de inmediato sin solicitar confirmación, lo que puede causar pérdida de datos accidental o solicitudes no deseadas.  
+**Recomendación:** Incorporar un diálogo de confirmación con las opciones “Cancelar” y “Eliminar”, además de un mensaje informativo sobre la acción irreversible.
 
-**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+<p align="center">
+  <img src="assets/heuristicas/h.png" alt="screenshot heuristica" height="700">
+</p>
 
-1. El sistema de notificaciones automáticas para postulaciones o contrataciones.
+---
 
-2. La conexión con servicios externos como correo electrónico o LinkedIn.
-
-3. El historial de calificaciones y reportes avanzados para empresas.
-
-**ESCALA DE SEVERIDAD**
-
-Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
-
-<table border="1">
-  <tbody>
-    <tr>
-      <td><b>Nivel</b></td>
-      <td><b>Descripción</b></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase</td>
-    </tr>
-    <tr>
-      <td>3 </td>
-      <td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td>
-    </tr>   
-  </tbody>
-</table>
-
-<br>
-
-**TABLA RESUMEN**
-
-<table border="1">
-  <tbody>
-    <tr>
-      <td><b>#</b></td>
-      <td><b>Problema</b></td>
-      <td><b>Escala de severidad</b></td>
-      <td><b>Heurística/Principio violada(o)</b></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Información insuficiente para contratar al estudiante</td>
-      <td>3</td>
-      <td>Visibilidad del estado del sistema y Match entre el sistema y el mundo real.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Inquietud sobre integración futura con servicios externos</td>
-      <td>2</td>
-      <td>Ayuda y documentación y Consistencia y estándares.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr>  
-    <tr>
-      <td>6</td>
-      <td>...</td>
-      <td>.</td>
-      <td>.....</td>
-    </tr> 
-  </tbody>
-</table>
-
-<br>
-
-**DESCRIPCIÓN DE PROBLEMAS:**
-
-Problema #1: Información insuficiente para contratar al estudiante
-
-Severidad: 3
-
-Principio violado: Visibilidad del estado del sistema y Match entre el sistema y el mundo real.
-
-Problema: La vista de los postulantes no brinda suficiente información útil o relevante (como experiencia, habilidades específicas o proyectos previos) para tomar una decisión informada al contratar.
+**Problema #3 – Información limitada en las tarjetas de postulantes**  
+**Severidad:** 3  
+**Heurística:** Flexibilidad y eficiencia de uso  
+**Descripción:** En la vista de postulaciones, las tarjetas muestran únicamente el nombre y carrera del estudiante, lo que obliga a ingresar a cada perfil para evaluar su idoneidad.  
+**Recomendación:** Ampliar las tarjetas con datos clave como experiencia, competencias principales, calificación promedio y un enlace rápido al portafolio.
 
 <p align="center">
   <img src="assets/heuristicas/h1.png" alt="screenshot heuristica" height="700">
 </p>
 
-<br>
+---
 
-Recomendación: Ampliar la tarjeta o vista de estudiante con información clave como portafolio, experiencia previa, estudios, calificación promedio y reseñas destacadas, accesible con un diseño responsive y de lectura rápida.
-
-<br>
-
-Problema #2: Inquietud sobre integración futura con servicios externos
-
-Severidad: 2
-
-Principio violado: Ayuda y documentación y Consistencia y estándares.
-
-Problema: El usuario manifestó dudas sobre la expansión futura de la app, especialmente en cuanto a su integración con correo electrónico u otros servicios, lo que genera incertidumbre sobre la continuidad del flujo de comunicación.
+**Problema #4 – Falta de contraste en textos sobre fondos claros**  
+**Severidad:** 1  
+**Heurística:** Estética y diseño minimalista  
+**Descripción:** Algunos textos (botones secundarios y enlaces) presentan bajo contraste sobre fondos claros, dificultando su lectura en dispositivos móviles.  
+**Recomendación:** Ajustar los colores siguiendo las pautas WCAG 2.1 (nivel AA) para asegurar una buena legibilidad y accesibilidad visual.
 
 <p align="center">
-  <img src="assets/heuristicas/h2.png" alt="screenshot heuristica" height="700">
+  <img src="assets/heuristicas/h4.png" alt="screenshot heuristica" height="700">
 </p>
 
+---
+
+### Conclusiones Generales
+
+La evaluación evidenció que UniMatch posee una interfaz funcional y clara en su flujo principal, pero presenta oportunidades de mejora en retroalimentación, consistencia visual y visibilidad del sistema.  
+Los problemas más críticos (severidad 3 y 4) están relacionados con la **prevención de errores** y la **falta de confirmaciones** en acciones importantes (como postulaciones o eliminaciones).  
+
+**Acciones prioritarias:**
+1. Implementar retroalimentación visual inmediata para acciones clave.  
+3. Añadir ayudas contextuales y confirmaciones para prevenir errores.  
+4. Ajustar el contraste de color y textos para mejorar la accesibilidad.
+
 <br>
-
-Recomendación: Incluir desde esta versión un espacio informativo o sección de "próximas funciones", o usar íconos grises con tooltips de funciones planificadas, respetando las expectativas móviles de transparencia e interoperabilidad.
-
-<br>
-
-
-
-
-<br>
-
 
 ## Conclusiones
 
