@@ -7589,6 +7589,47 @@ Ademas de la reunion de planificación del sprint:
 </table>
 
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Leandro Contreras Lopez</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>La Perla</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+  ``
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Leandro evaluó el prototipo de la aplicación móvil con una percepción positiva, destacando el diseño minimalista y la navegación intuitiva. Consideró que el proceso de postulación es eficiente y que la aplicación facilita el seguimiento de las solicitudes. Sugirió incorporar más elementos visuales para aportar dinamismo y mejorar la experiencia estética sin alterar la funcionalidad. En conjunto, describió la aplicación como práctica, clara y de fácil uso.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int3.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
 <br>
 
 
@@ -7637,7 +7678,46 @@ Ademas de la reunion de planificación del sprint:
 </table>
 
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Mery Objeda</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>      
+  `...`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+       Mery evaluó positivamente el prototipo de la aplicación móvil para gestión de proyectos y talentos. Destacó la claridad del proceso de creación de proyectos y la utilidad de revisar a los postulantes mediante resúmenes y calificaciones. Valoró la experiencia móvil por su profesionalismo y facilidad de uso, señalando que podría agilizar los procesos de contratación desde cualquier lugar. Su única sugerencia fue aumentar el tamaño del texto para mejorar la legibilidad general de la interfaz.
 
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int4.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
 
 <br>
 
