@@ -6412,17 +6412,110 @@ El diagrama incluye:
 
 ##### 3.1.1.1. General Style Guidelines
 
+Los Style Guidelines establecen los principios fundamentales que rigen la aplicación visual y funcional del sistema de diseño. Estos lineamientos aseguran consistencia, coherencia y calidad en toda la experiencia del usuario, permitiendo que cada componente y pantalla mantenga una identidad visual unificada que transmite profesionalismo y confianza.
+
+- Paleta de Colores
+El sistema de colores ha sido cuidadosamente organizado según su función semántica dentro del sistema de diseño. Cada color posee un propósito específico y debe utilizarse consistentemente en toda la interfaz para mantener claridad y reconocimiento.
+
+- Colores Principales del Sistema
+
+<p align="center">
+  <img src="assets/guidelines/colors.png" alt="colors" width="700">
+</p>
+
+- Colores de Fondo y Apoyo
+
+<p align="center">
+  <img src="assets/guidelines/extracolors.png" alt="extracolors" width="700">
+</p>
+
+- Tipografia
+
+El sistema tipográfico está construido sobre la fuente Nunito, una sans-serif moderna de alta legibilidad ideal para interfaces digitales. La jerarquía tipográfica organiza el contenido de manera clara, guiando al usuario a través de la información de forma intuitiva.
+
+<p align="center">
+  <img src="assets/guidelines/typography.png" alt="typography" width="700">
+</p>
+
+- Espaciado
+
+El sistema de spacing define márgenes y paddings consistentes basados en una escala modular de múltiplos de 4px. Este enfoque mantiene alineación visual, ritmo armónico y legibilidad en toda la interfaz, permitiendo que los elementos respiren adecuadamente.
+
+<p align="center">
+  <img src="assets/guidelines/spacing.png" alt="spacing" width="700">
+</p>
+
 #### 3.1.2. Information Architecture
+
+La Arquitectura de la Información establece la estructura lógica y organizativa del producto digital. Define cómo se categoriza, se etiqueta, se busca y se navega el contenido, permitiendo que los usuarios encuentren información de manera intuitiva y eficiente.
 
 ##### 3.1.2.1. Organization Systems
 
+Los Sistemas de Organización definen cómo se estructuran y agrupan los contenidos dentro del producto. Una arquitectura clara y lógica reduce la carga cognitiva del usuario y facilita la navegación intuitiva.
+
+- Principios Fundamentales
+
+La organización de contenidos debe seguir un modelo jerárquico coherente que refleje tanto la lógica del negocio como la mental del usuario. Segun la naturaleza de nuestro producto estos son los niveles:
+
+**Organización Jerárquica**: Estructura de árbol donde los elementos se organizan de lo general a lo específico. Este modelo es ideal para productos con múltiples categorías y subcategorías. Permite una navegación clara y predecible. Ejemplo: Menú principal > Categorías > Subcategorías > Elementos específicos.
+
+**Organización por Tópicos**: Agrupa contenidos por temas independientemente de su nivel jerárquico. Útil cuando usuarios buscan por áreas de interés específicas. Funciona bien para portales informativos o plataformas de conocimiento.
+
+**Organización Basada en Tareas**: Estructura el contenido alrededor de acciones u objetivos del usuario. Ideal para productos enfocados en facilitar la realización de tareas específicas. Mejora la experiencia de usuarios orientados a resultados.
+
+**Organización Cronológica**: Ordena el contenido por fecha o secuencia temporal. Apropiada para productos noticiosos, redes sociales, o cualquier contenido con relevancia temporal. Permite a usuarios entender la evolución de información.
+
 ##### 3.1.2.2. Labelling Systems
+
+El Sistema de Etiquetado define cómo se nombran y denominan los elementos, opciones, secciones y categorías dentro del producto. Las etiquetas son la base de la comunicación entre el sistema y el usuario, por lo que deben ser claras, consistentes y significativas.
+
+- Principios de Etiquetado Efectivo
+
+**Claridad y Precisión**: Las etiquetas deben ser específicas y evitar ambigüedad. Usar lenguaje directo que el usuario entienda inmediatamente. Evitar jerga técnica o términos que requieran explicación adicional. Ejemplo: "Guardar Documento" es más claro que "Persistir Cambios".
+
+**Consistencia Terminológica**: Usar el mismo término para el mismo concepto en toda la interfaz. Cambios de nomenclatura confunden al usuario y generan desconfianza. Mantener un glosario de términos estándar en el sistema.
+
+**Brevedad**: Las etiquetas deben ser concisas sin sacrificar claridad. Limitar a 2-3 palabras cuando sea posible. Etiquetas largas se truncan en dispositivos pequeños y generan desorden visual.
+
+**Perspectiva del Usuario**: Usar vocabulario familiar para el público objetivo. Las etiquetas deben resonar con la forma en que el usuario piensa y habla sobre estos temas. Realizar investigación con usuarios para validar terminología.
+
+**Formateo Consistente**: Aplicar reglas uniformes para capitalización y puntuación. Recomendación: usar Title Case para títulos, Sentence case para descripciones, y evitar puntuación al final de etiquetas cortas.
 
 ##### 3.1.2.3. SEO Tags and Meta Tags
 
+Los tags SEO y meta tags son elementos HTML fundamentales que comunican información sobre el contenido a los motores de búsqueda y a los navegadores web. Estos elementos mejoran la visibilidad del producto en resultados de búsqueda y optimizan cómo se comparte en redes sociales.
+
+**Title Tag**: Define el título de la página que aparece en pestañas del navegador y resultados de búsqueda. Longitud : 50-60 caracteres. Incluira la palabra clave principal y sera descriptivo. Ejemplo: "Plataforma de Gestión de Proyectos".
+
+**Meta Description**: Resumen breve del contenido de la página. Longitud: 150-160 caracteres. Aparece bajo el título en resultados de búsqueda. Sera convincente y contendra la palabra clave principal sin spam.
+
+**Meta Keyword**s: Aunque su impacto ha disminuido, aún es útil incluir 5-7 palabras clave relevantes separadas por comas. Palabras que los usuarios utilizarían para encontrar la página.
+
+**Viewport Meta Tag**: Código: <meta name="viewport" content="width=device-width, initial-scale=1.0">. Asegura que la página se muestre correctamente en dispositivos móviles.
+
+**Charset Meta Tag**: Define la codificación de caracteres de la página. Código: <meta charset="UTF-8">.
+
 ##### 3.1.2.4. Searching Systems
 
+Los Sistemas de Búsqueda permiten a los usuarios localizar información específica de manera rápida y eficiente. Un sistema de búsqueda bien diseñado reduce la carga cognitiva y mejora significativamente la experiencia del usuario, especialmente en productos con gran volumen de contenido.
+
+**Campo de Búsqueda**: Visible y accesible. Mínimo 250px de ancho en desktop. Placeholder descriptivo que indique qué se puede buscar. Ejemplo: "Buscar documentos, usuarios o proyectos...". 
+
+**Indicador de Búsqueda**: Ícono de lupa o indicador visual que señale el campo de búsqueda. Posicionado al inicio o al final del campo. Mejora la legibilidad y usabilidad del componente.
+
+**Búsqueda en Tiempo Real**: Mostrar resultados mientras el usuario digita (debounce: 300-500ms). Ofrecer sugerencias autocomplete basadas en términos comunes o historial del usuario.
+
+**Sin Resultados**: Mensaje claro y amigable cuando no hay coincidencias.
+
 ##### 3.1.2.5. Navigation Systems
+
+Los Sistemas de Navegación son la estructura que permite a los usuarios moverse por el producto y encontrar lo que buscan. Una navegación clara, consistente e intuitiva es fundamental para reducir fricción y mejorar la experiencia general.
+
+**Back Arrows**: Se podra retornar a vistas anteriores mediante iconos presionables ligados al navigation controller.
+
+**Navegación Contextual**: Links relacionados o sugerencias basadas en el contenido actual. Ayuda a descubrir contenido adicional relevante. Ejemplo: "También te podría interesar..." o "Relacionado".
+
+**Estados Focus**: Importante para accesibilidad. Outline o cambio visual claro cuando un elemento recibe focus por teclado. Mínimo contraste 3:1.
 
 #### 3.1.3. Landing Page UI Design
 
