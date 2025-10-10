@@ -210,7 +210,8 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       </td>
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard del frontend, documentación del sprint1</ul>
-           Renzo Loli  <ul>Desarrollo y organización del event storming y el Software Architecture</ul>
+           Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
+                  <ul>TP: Reorganizacion del c4 y desarrollo de los style guidelines</ul>
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
            Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
@@ -224,7 +225,8 @@ TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servi
       </td>
       <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
-           Renzo Loli  <ul>Planificación del event storming y rediseño de la arquitectura base</ul>
+           Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
+                  <ul>TP: Planificacion de pestañas y guidelines</ul>
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
@@ -6412,17 +6414,105 @@ El diagrama incluye:
 
 ##### 3.1.1.1. General Style Guidelines
 
+Los Style Guidelines establecen los principios fundamentales que rigen la aplicación visual y funcional del sistema de diseño. Estos lineamientos aseguran consistencia, coherencia y calidad en toda la experiencia del usuario, permitiendo que cada componente y pantalla mantenga una identidad visual unificada que transmite profesionalismo y confianza.
+
+- Paleta de Colores
+El sistema de colores ha sido cuidadosamente organizado según su función semántica dentro del sistema de diseño. Cada color posee un propósito específico y debe utilizarse consistentemente en toda la interfaz para mantener claridad y reconocimiento.
+
+- Colores Principales del Sistema
+
+<p align="center">
+  <img src="assets/guidelines/colors.png" alt="colors" width="700">
+</p>
+
+- Colores de Fondo y Apoyo
+
+<p align="center">
+  <img src="assets/guidelines/extracolors.png" alt="extracolors" width="700">
+</p>
+
+- Tipografia
+
+El sistema tipográfico está construido sobre la fuente Nunito, una sans-serif moderna de alta legibilidad ideal para interfaces digitales. La jerarquía tipográfica organiza el contenido de manera clara, guiando al usuario a través de la información de forma intuitiva.
+
+<p align="center">
+  <img src="assets/guidelines/typography.png" alt="typography" width="700">
+</p>
+
+- Espaciado
+
+El sistema de spacing define márgenes y paddings consistentes basados en una escala modular de múltiplos de 4px. Este enfoque mantiene alineación visual, ritmo armónico y legibilidad en toda la interfaz, permitiendo que los elementos respiren adecuadamente.
+
+<p align="center">
+  <img src="assets/guidelines/spacing.png" alt="spacing" width="700">
+</p>
+
 #### 3.1.2. Information Architecture
+
+La Arquitectura de la Información establece la estructura lógica y organizativa del producto digital. Define cómo se categoriza, se etiqueta, se busca y se navega el contenido, permitiendo que los usuarios encuentren información de manera intuitiva y eficiente.
 
 ##### 3.1.2.1. Organization Systems
 
+Los Sistemas de Organización definen cómo se estructuran y agrupan los contenidos dentro del producto. Una arquitectura clara y lógica reduce la carga cognitiva del usuario y facilita la navegación intuitiva.
+
+Nivel	Elemento	Descripción
+Nivel 1	Bottom Tab Bar	Categorías principales: Dashboard, Projects, Profile, Menu, Portfolios
+Nivel 2	Subcategorías	Secciones dentro de cada tab: Filtered lists, detail views, forms
+Nivel 3	Contenido Específico	Detalles de elementos: Project detail, Company Detail, Reviews
+
 ##### 3.1.2.2. Labelling Systems
+
+El Sistema de Etiquetado define cómo se nombran y denominan los elementos, opciones, secciones y categorías dentro del producto. Las etiquetas son la base de la comunicación entre el sistema y el usuario, por lo que deben ser claras, consistentes y significativas.
+
+**Claridad y Precisión**: Las etiquetas deben ser específicas y evitar ambigüedad. Usar lenguaje directo que el usuario entienda inmediatamente. Evitar jerga técnica o términos que requieran explicación adicional. Ejemplo: "Guardar Documento" es más claro que "Persistir Cambios".
+
+**Consistencia Terminológica**: Usar el mismo término para el mismo concepto en toda la interfaz. Cambios de nomenclatura confunden al usuario y generan desconfianza. Mantener un glosario de términos estándar en el sistema.
+
+**Brevedad**: Las etiquetas deben ser concisas sin sacrificar claridad. Limitar a 2-3 palabras cuando sea posible. Etiquetas largas se truncan en dispositivos pequeños y generan desorden visual.
+
+**Perspectiva del Usuario**: Usar vocabulario familiar para el público objetivo. Las etiquetas deben resonar con la forma en que el usuario piensa y habla sobre estos temas.
+
+**Formateo Consistente**: Aplicar reglas uniformes para capitalización y puntuación.  Title Case para títulos, Sentence case para descripciones, y evitar puntuación al final de etiquetas cortas.
 
 ##### 3.1.2.3. SEO Tags and Meta Tags
 
+UniMatch es una aplicación mobile nativa (Flutter), por lo que los SEO tags aplican principalmente para la landing page web de marketing. Los meta tags en la app aplican para compartir contenido en redes sociales.
+
+- Meta Tags Landing Page
+
+| Meta Tag    | Valor Estándar                                                                                     | Longitud         |
+|-------------|-----------------------------------------------------------------------------------------------------|------------------|
+| `<title>`   | UniMatch - Connect Students with Project Opportunities                                              | 58 caracteres    |
+| description | Find the best project opportunities for students or discover talented students for your company on UniMatch. | 142 caracteres   |
+| keywords    | student projects, company recruitment, internships, portfolio projects                             | -                |
+| charset     | UTF-8                                                                                               | -                |
+| viewport    | width=device-width, initial-scale=1.0                                                               | -                |
+
+
 ##### 3.1.2.4. Searching Systems
 
+Los Sistemas de Búsqueda permiten a los usuarios localizar información específica de manera rápida y eficiente. Un sistema de búsqueda bien diseñado reduce la carga cognitiva y mejora significativamente la experiencia del usuario, especialmente en productos con gran volumen de contenido.
+
+| Componente           | Especificación                                                                                       |
+|----------------------|-------------------------------------------------------------------------------------------------------|
+| Campo de Búsqueda    | Ancho completo. Alto: 44px. Placeholder: "Search projects...". Icono: Lupa a la izquierda             |
+| Debounce             | 300ms antes de ejecutar búsqueda                                                                      |
+| Resultados Previstos | Máximo 10 en previsualización. Mostrar mientras se digita                                             |
+| Historial            | Últimas 5 búsquedas recientes (solo usuarios autenticados)                                            |
+| Tolerancia de Errores| Fuzzy search habilitado. Sugerir correcciones si no hay resultados                                    |
+| Items por Pantalla   | Máximo 20 resultados. Usar paginación o lazy loading                                                  |
+| Filtros              | Disponibles: Category, Salary Range, Skills Required, Location, Status                                |
+| Sin Resultados       | Mensaje: "No projects found. Try adjusting your filters or search terms"                              |
+
 ##### 3.1.2.5. Navigation Systems
+
+Los Sistemas de Navegación son la estructura que permite a los usuarios moverse por el producto y encontrar lo que buscan. Una navegación clara, consistente e intuitiva es fundamental para reducir fricción y mejorar la experiencia general.
+
+**Back Arrows**: Se podra retornar a vistas anteriores mediante iconos presionables ligados al navigation controller.
+
+**Navegación Contextual**: Links relacionados o sugerencias basadas en el contenido actual. Ayuda a descubrir contenido adicional relevante. Ejemplo: "También te podría interesar..." o "Relacionado".
+
+**Estados Focus**: Importante para accesibilidad. Outline o cambio visual claro cuando un elemento recibe focus por teclado. Mínimo contraste 3:1.
 
 #### 3.1.3. Landing Page UI Design
 
