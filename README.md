@@ -98,7 +98,6 @@ Insights TP:
             - [2.6.1.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.1.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
-
         - [2.6.2 Bounded Context: Students](#262-bounded-context-students)
             - [2.6.2.1 Domain Layer](#2621-domain-layer)
             - [2.6.2.2 Interface Layer](#2622-interface-layer)
@@ -108,7 +107,6 @@ Insights TP:
             - [2.6.2.6 Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
                 - [2.6.2.6.2. Bounded Context Database Design Diagram](#26261-bounded-context-database-design-diagram)
-
         - [2.6.3 Bounded Context: Companies](#263-bounded-context-companies)
             - [2.6.3.1 Domain Layer](#2631-domain-layer)
             - [2.6.3.2 Interface Layer](#2632-interface-layer)
@@ -118,7 +116,6 @@ Insights TP:
             - [2.6.3.6 Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
                 - [2.6.3.6.2. Bounded Context Database Design Diagram](#26361-bounded-context-database-design-diagram)
-
         - [2.6.4 Bounded Context: Projects](#261-bounded-context-projects)
             - [2.6.4.1 Domain Layer](#2611-domain-layer)
             - [2.6.4.2 Interface Layer](#2612-interface-layer)
@@ -128,7 +125,6 @@ Insights TP:
             - [2.6.4.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.4.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
-              
         - [2.6.5 Bounded Context: StudentPostulations](#261-bounded-context-projects)
             - [2.6.5.1 Domain Layer](#2611-domain-layer)
             - [2.6.5.2 Interface Layer](#2612-interface-layer)
@@ -138,7 +134,6 @@ Insights TP:
             - [2.6.5.6 Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
                 - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.5.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
-
         - [2.6.6 Bounded Context: Reputations](#261-bounded-context-projects)
             - [2.6.6.1 Domain Layer](#2611-domain-layer)
             - [2.6.6.2 Interface Layer](#2612-interface-layer)
@@ -149,6 +144,47 @@ Insights TP:
                 - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
                 - [2.6.6.6.2. Bounded Context Database Design Diagram](#26161-bounded-context-database-design-diagram)
 
+- [Capítulo III: Solution UI/UX Design](#cap3)
+    - [3.1. Product design](#31-product-design)
+        - [3.1.1. Style Guidelines](#311-style-guidelines)
+            - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
+        - [3.1.2. Information Architecture](#312-information-architecture)
+            - [3.1.2.1. Organization Systems](#3121-organization-systems)
+            - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
+            - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+            - [3.1.2.4. Searching Systems](#3124-searching-systems)
+            - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+        - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+            - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+            - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
+        - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-ux/ui-design)
+            - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-application-wireframes)
+            - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-application-wireflow-diagrams)
+            - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-application-mock-ups)
+            - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-application-user-flow-diagrams)
+            - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-application-prototyping)
+
+
+- [Capítulo IV: Product Implementation & Validation](#cap4)
+    - [4.1. Software Configuration Management](#41-software-configuration-management)
+        - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
+        - [4.1.2. Source Code Management](#412-source-code-management)
+        - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide-&-conventions)
+        - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
+    - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page-&-mobile-application-implementation)
+        - [4.2.1. Sprint n](#421-sprint-n)
+            - [4.2.1.1. Sprint Planning n](#4211-sprint-planning-n)  
+            - [4.2.1.2. Sprint Backlog n](#4212-sprint-backlog-n)
+            - [4.2.1.3. Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
+            - [4.2.1.4. Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
+            - [4.2.1.5. Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
+            - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
+            - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
+            - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+    - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+        - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 ## Student Outcome
 
@@ -931,7 +967,6 @@ Para destacar sobre nuestros competidores, identificaremos las ventajas de nuest
     <td><strong>URL</strong></td>
     <td>
   `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/EaLWEriiCW5KpQ7FnRzwSywBVmqHWbKJ6lyDq10uR2sY0w?e=GWjtkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`
-
   </td>
   </tr>
   <tr>
@@ -5996,7 +6031,7 @@ Define las operaciones necesarias para acceder al almacenamiento de reputaciones
 
 La Interface Layer (también llamada capa de presentación) del bounded context Reputations actúa como punto de entrada al sistema para usuarios externos y consumidores de la API. Esta capa contiene componentes del tipo Controller, encargados de exponer los endpoints HTTP que permiten a aplicaciones cliente (por ejemplo, el frontend en Vue o Angular) interactuar con los servicios de reputación.
 
-En esta capa se definen las rutas RESTful asociadas al módulo de reputaciones, siguiendo el patrón típico de arquitectura en aplicaciones web: el controller recibe una solicitud, delega la lógica a los servicios de aplicación, y retorna una respuesta HTTP.
+En esta capa se definen las rutas RESTful asociadas al módulo de reputaciones, siguiendo el patrón típico de arquitectura en aplicaciones: el controller recibe una solicitud, delega la lógica a los servicios de aplicación, y retorna una respuesta HTTP.
 
 <br>
 
