@@ -210,7 +210,8 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       </td>
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard del frontend, documentación del sprint1</ul>
-           Renzo Loli  <ul>Desarrollo y organización del event storming y el Software Architecture</ul>
+           Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
+                  <ul>TP: Reorganizacion del c4 y desarrollo de los style guidelines</ul>
            Alessandra Becerra <ul>Desarrollo de la documentación de los bounded context users y students</ul>
            Javier Gonzales <ul>Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
       </td>
@@ -224,7 +225,8 @@ TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servi
       </td>
       <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
-           Renzo Loli  <ul>Planificación del event storming y rediseño de la arquitectura base</ul>
+           Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
+                  <ul>TP: Planificacion de pestañas y guidelines</ul>
         Alessandra Becerra <ul>Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         Javier Gonzales <ul>Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
       </td>
@@ -6453,23 +6455,14 @@ La Arquitectura de la Información establece la estructura lógica y organizativ
 
 Los Sistemas de Organización definen cómo se estructuran y agrupan los contenidos dentro del producto. Una arquitectura clara y lógica reduce la carga cognitiva del usuario y facilita la navegación intuitiva.
 
-- Principios Fundamentales
-
-La organización de contenidos debe seguir un modelo jerárquico coherente que refleje tanto la lógica del negocio como la mental del usuario. Segun la naturaleza de nuestro producto estos son los niveles:
-
-**Organización Jerárquica**: Estructura de árbol donde los elementos se organizan de lo general a lo específico. Este modelo es ideal para productos con múltiples categorías y subcategorías. Permite una navegación clara y predecible. Ejemplo: Menú principal > Categorías > Subcategorías > Elementos específicos.
-
-**Organización por Tópicos**: Agrupa contenidos por temas independientemente de su nivel jerárquico. Útil cuando usuarios buscan por áreas de interés específicas. Funciona bien para portales informativos o plataformas de conocimiento.
-
-**Organización Basada en Tareas**: Estructura el contenido alrededor de acciones u objetivos del usuario. Ideal para productos enfocados en facilitar la realización de tareas específicas. Mejora la experiencia de usuarios orientados a resultados.
-
-**Organización Cronológica**: Ordena el contenido por fecha o secuencia temporal. Apropiada para productos noticiosos, redes sociales, o cualquier contenido con relevancia temporal. Permite a usuarios entender la evolución de información.
+Nivel	Elemento	Descripción
+Nivel 1	Bottom Tab Bar	Categorías principales: Dashboard, Projects, Profile, Menu, Portfolios
+Nivel 2	Subcategorías	Secciones dentro de cada tab: Filtered lists, detail views, forms
+Nivel 3	Contenido Específico	Detalles de elementos: Project detail, Company Detail, Reviews
 
 ##### 3.1.2.2. Labelling Systems
 
 El Sistema de Etiquetado define cómo se nombran y denominan los elementos, opciones, secciones y categorías dentro del producto. Las etiquetas son la base de la comunicación entre el sistema y el usuario, por lo que deben ser claras, consistentes y significativas.
-
-- Principios de Etiquetado Efectivo
 
 **Claridad y Precisión**: Las etiquetas deben ser específicas y evitar ambigüedad. Usar lenguaje directo que el usuario entienda inmediatamente. Evitar jerga técnica o términos que requieran explicación adicional. Ejemplo: "Guardar Documento" es más claro que "Persistir Cambios".
 
@@ -6477,35 +6470,39 @@ El Sistema de Etiquetado define cómo se nombran y denominan los elementos, opci
 
 **Brevedad**: Las etiquetas deben ser concisas sin sacrificar claridad. Limitar a 2-3 palabras cuando sea posible. Etiquetas largas se truncan en dispositivos pequeños y generan desorden visual.
 
-**Perspectiva del Usuario**: Usar vocabulario familiar para el público objetivo. Las etiquetas deben resonar con la forma en que el usuario piensa y habla sobre estos temas. Realizar investigación con usuarios para validar terminología.
+**Perspectiva del Usuario**: Usar vocabulario familiar para el público objetivo. Las etiquetas deben resonar con la forma en que el usuario piensa y habla sobre estos temas.
 
-**Formateo Consistente**: Aplicar reglas uniformes para capitalización y puntuación. Recomendación: usar Title Case para títulos, Sentence case para descripciones, y evitar puntuación al final de etiquetas cortas.
+**Formateo Consistente**: Aplicar reglas uniformes para capitalización y puntuación.  Title Case para títulos, Sentence case para descripciones, y evitar puntuación al final de etiquetas cortas.
 
 ##### 3.1.2.3. SEO Tags and Meta Tags
 
-Los tags SEO y meta tags son elementos HTML fundamentales que comunican información sobre el contenido a los motores de búsqueda y a los navegadores web. Estos elementos mejoran la visibilidad del producto en resultados de búsqueda y optimizan cómo se comparte en redes sociales.
+UniMatch es una aplicación mobile nativa (Flutter), por lo que los SEO tags aplican principalmente para la landing page web de marketing. Los meta tags en la app aplican para compartir contenido en redes sociales.
 
-**Title Tag**: Define el título de la página que aparece en pestañas del navegador y resultados de búsqueda. Longitud : 50-60 caracteres. Incluira la palabra clave principal y sera descriptivo. Ejemplo: "Plataforma de Gestión de Proyectos".
+- Meta Tags Landing Page
 
-**Meta Description**: Resumen breve del contenido de la página. Longitud: 150-160 caracteres. Aparece bajo el título en resultados de búsqueda. Sera convincente y contendra la palabra clave principal sin spam.
+| Meta Tag    | Valor Estándar                                                                                     | Longitud         |
+|-------------|-----------------------------------------------------------------------------------------------------|------------------|
+| `<title>`   | UniMatch - Connect Students with Project Opportunities                                              | 58 caracteres    |
+| description | Find the best project opportunities for students or discover talented students for your company on UniMatch. | 142 caracteres   |
+| keywords    | student projects, company recruitment, internships, portfolio projects                             | -                |
+| charset     | UTF-8                                                                                               | -                |
+| viewport    | width=device-width, initial-scale=1.0                                                               | -                |
 
-**Meta Keyword**s: Aunque su impacto ha disminuido, aún es útil incluir 5-7 palabras clave relevantes separadas por comas. Palabras que los usuarios utilizarían para encontrar la página.
-
-**Viewport Meta Tag**: Código: \<meta name="viewport" content="width=device-width, initial-scale=1.0"\>. Asegura que la página se muestre correctamente en dispositivos móviles.
-
-**Charset Meta Tag**: Define la codificación de caracteres de la página. Código: \<meta charset="UTF-8"\>.
 
 ##### 3.1.2.4. Searching Systems
 
 Los Sistemas de Búsqueda permiten a los usuarios localizar información específica de manera rápida y eficiente. Un sistema de búsqueda bien diseñado reduce la carga cognitiva y mejora significativamente la experiencia del usuario, especialmente en productos con gran volumen de contenido.
 
-**Campo de Búsqueda**: Visible y accesible. Mínimo 250px de ancho en desktop. Placeholder descriptivo que indique qué se puede buscar. Ejemplo: "Buscar documentos, usuarios o proyectos...". 
-
-**Indicador de Búsqueda**: Ícono de lupa o indicador visual que señale el campo de búsqueda. Posicionado al inicio o al final del campo. Mejora la legibilidad y usabilidad del componente.
-
-**Búsqueda en Tiempo Real**: Mostrar resultados mientras el usuario digita (debounce: 300-500ms). Ofrecer sugerencias autocomplete basadas en términos comunes o historial del usuario.
-
-**Sin Resultados**: Mensaje claro y amigable cuando no hay coincidencias.
+| Componente           | Especificación                                                                                       |
+|----------------------|-------------------------------------------------------------------------------------------------------|
+| Campo de Búsqueda    | Ancho completo. Alto: 44px. Placeholder: "Search projects...". Icono: Lupa a la izquierda             |
+| Debounce             | 300ms antes de ejecutar búsqueda                                                                      |
+| Resultados Previstos | Máximo 10 en previsualización. Mostrar mientras se digita                                             |
+| Historial            | Últimas 5 búsquedas recientes (solo usuarios autenticados)                                            |
+| Tolerancia de Errores| Fuzzy search habilitado. Sugerir correcciones si no hay resultados                                    |
+| Items por Pantalla   | Máximo 20 resultados. Usar paginación o lazy loading                                                  |
+| Filtros              | Disponibles: Category, Salary Range, Skills Required, Location, Status                                |
+| Sin Resultados       | Mensaje: "No projects found. Try adjusting your filters or search terms"                              |
 
 ##### 3.1.2.5. Navigation Systems
 
