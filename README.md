@@ -6705,6 +6705,7 @@ Para el despliegue de la landing page se utilizó GitHub Pages:
 
 Para la documentación en Swagger del backend se utilizó Azure App Service:
 
+<img src="assets/sprint1/azure.jpg" alt="UPC logo" width="400">
 
 
 ##### 4.2.1.8 Team Collaboration Insights during Sprint
