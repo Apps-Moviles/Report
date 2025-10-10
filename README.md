@@ -6491,9 +6491,9 @@ Los tags SEO y meta tags son elementos HTML fundamentales que comunican informac
 
 **Meta Keyword**s: Aunque su impacto ha disminuido, aún es útil incluir 5-7 palabras clave relevantes separadas por comas. Palabras que los usuarios utilizarían para encontrar la página.
 
-**Viewport Meta Tag**: Código: <meta name="viewport" content="width=device-width, initial-scale=1.0">. Asegura que la página se muestre correctamente en dispositivos móviles.
+**Viewport Meta Tag**: Código: \<meta name="viewport" content="width=device-width, initial-scale=1.0"\>. Asegura que la página se muestre correctamente en dispositivos móviles.
 
-**Charset Meta Tag**: Define la codificación de caracteres de la página. Código: <meta charset="UTF-8">.
+**Charset Meta Tag**: Define la codificación de caracteres de la página. Código: \<meta charset="UTF-8"\>.
 
 ##### 3.1.2.4. Searching Systems
 
