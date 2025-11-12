@@ -7622,6 +7622,19 @@ El objetivo del segundo sprint fue completar la sincronizacion de los servicios 
 | US23           | Actualizar tecnologías en el perfil de la empresa | T08                | Implementar actualización de tecnologías | Como gerente, quiero actualizar las tecnologías que se utilizan en mi empresa, para que se muestren en el perfil de la compañía.<br><br>**Escenario 1:** Gerente añade una tecnología a su perfil.<br>**Escenario 2:** Gerente elimina una tecnología de su perfil.                                                                                                                                                                                                                                                                                                                                                                                  | 2                   | Josue Paiva        | To Do      |
 
 
+#### 4.2.2.3 Development Evidence for Sprint Review
+
+#### 4.2.1.4 Testing Suite Evidence for Sprint Review.
+
+#### 4.2.1.5 Execution Evidence for Sprint Review.
+
+#### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+
+#### 4.2.1.7 Software Deployment Evidence for Sprint Review.
+
+#### 4.2.1.8 Team Collaboration Insights during Sprint
+
+
 
 
 ### 4.3. Validation Interviews
