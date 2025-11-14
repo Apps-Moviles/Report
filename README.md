@@ -7656,9 +7656,9 @@ Repositorio App Estudiantes:
 
 App estudiantes corriendo en Android con todos los servicios corriendo:
 
-<img src="assets/sprint2/app1.png" alt="UPC logo" width="400">
+<img src="assets/sprint2/app1.jpg" alt="UPC logo" width="400">
 
-<img src="assets/sprint2/app2.png" alt="UPC logo" width="400">
+<img src="assets/sprint2/app2.jpg" alt="UPC logo" width="400">
 
 
 App empresas corriendo en Android Studio(solo front):
@@ -7674,72 +7674,29 @@ Landing page actualizada, con el apk para descargar:
 
 #### 4.2.1.6 Services Documentation Evidence for Sprint Review.
 
-Todos los servicios de estudiantes se encuentran desplegados y funcionando correctamente en la aplicacion movil
-| Tag                   | Operación | Endpoint                          | Summary                 | Description                                              | OperationId           |
-|----------------------|-----------|------------------------------------|--------------------------|----------------------------------------------------------|------------------------|
+| Tag                     | Operación | Endpoint                      | Summary               | Description                                   | OperationId        |
+|-------------------------|-----------|-------------------------------|-----------------------|-----------------------------------------------|--------------------|
+| **Students**            | GET       | /api/Students                 | Get all students      | Retrieve all registered students              | getAllStudents     |
+| **Students**            | POST      | /api/Students                 | Create new student    | Register a new student                        | createStudent      |
+| **Students**            | GET       | /api/Students/{id}            | Get student by ID     | Retrieve a specific student by ID             | getStudentById     |
+| **Students**            | PUT       | /api/Students/{id}            | Update student        | Modify the information of an existing student | updateStudent      |
+| **Students**            | DELETE    | /api/Students/{id}            | Delete student        | Remove a student from the system              | deleteStudent      |
+| **Projects**            | GET       | /api/Projects                 | Get all projects      | Retrieve all projects                         | getAllProjects     |
+| **Projects**            | POST      | /api/Projects                 | Create project        | Register a new project                        | createProject      |
+| **Projects**            | GET       | /api/Projects/{id}            | Get project by ID     | Retrieve a project by its ID                  | getProjectById     |
+| **Projects**            | PUT       | /api/Projects/{id}            | Update project        | Modify an existing project                    | updateProject      |
+| **Projects**            | DELETE    | /api/Projects/{id}            | Delete project        | Remove a project                              | deleteProject      |
+| **StudentPostulations** | GET       | /api/StudentPostulations      | Get all postulations  | Retrieve all student postulations             | getAllPostulations |
+| **StudentPostulations** | POST      | /api/StudentPostulations      | Create postulation    | Create a new student postulation              | createPostulation  |
+| **StudentPostulations** | GET       | /api/StudentPostulations/{id} | Get postulation by ID | Retrieve a specific postulation               | getPostulationById |
+| **StudentPostulations** | PUT       | /api/StudentPostulations/{id} | Update postulation    | Update an existing student postulation        | updatePostulation  |
+| **StudentPostulations** | DELETE    | /api/StudentPostulations/{id} | Delete postulation    | Remove a student postulation                  | deletePostulation  |
+| **Users**               | GET       | /api/Users                    | Get all users         | Retrieve the list of all users                | getAllUsers        |
+| **Users**               | POST      | /api/Users                    | Create new user       | Register a new user                           | createUser         |
+| **Users**               | GET       | /api/Users/{id}               | Get user by ID        | Retrieve user information by ID               | getUserById        |
+| **Users**               | PUT       | /api/Users/{id}               | Update user           | Modify an existing user's information         | updateUser         |
+| **Users**               | DELETE    | /api/Users/{id}               | Delete user           | Remove a user                                 | deleteUser         |
 
-| **Students**         | GET       | /api/Students                      | Get all students        | Retrieve all registered students                         | getAllStudents        |
-| Parameters           | none      |                                    | Request body            | no                                                       |                        |
-
-| **Students**         | POST      | /api/Students                      | Create new student      | Register a new student                                   | createStudent         |
-| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
-
-| **Students**         | GET       | /api/Students/{id}                 | Get student by ID       | Retrieve a specific student by ID                        | getStudentById        |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-| **Students**         | PUT       | /api/Students/{id}                 | Update student          | Modify the information of an existing student            | updateStudent         |
-| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
-
-| **Students**         | DELETE    | /api/Students/{id}                 | Delete student          | Remove a student from the system                         | deleteStudent         |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-
-| **Projects**         | GET       | /api/Projects                      | Get all projects        | Retrieve all projects                                    | getAllProjects        |
-| Parameters           | none      |                                    | Request body            | no                                                       |                        |
-
-| **Projects**         | POST      | /api/Projects                      | Create project          | Register a new project                                   | createProject         |
-| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
-
-| **Projects**         | GET       | /api/Projects/{id}                 | Get project by ID       | Retrieve a project by its ID                             | getProjectById        |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-| **Projects**         | PUT       | /api/Projects/{id}                 | Update project          | Modify an existing project                               | updateProject         |
-| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
-
-| **Projects**         | DELETE    | /api/Projects/{id}                 | Delete project          | Remove a project                                         | deleteProject         |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-
-| **StudentPostulations** | GET    | /api/StudentPostulations           | Get all postulations    | Retrieve all student postulations                        | getAllPostulations    |
-| Parameters              | none   |                                    | Request body            | no                                                       |                        |
-
-| **StudentPostulations** | POST   | /api/StudentPostulations           | Create postulation      | Create a new student postulation                         | createPostulation     |
-| Parameters              | none   |                                    | Request body            | yes                                                      |                        |
-
-| **StudentPostulations** | GET    | /api/StudentPostulations/{id}      | Get postulation by ID   | Retrieve a specific postulation                          | getPostulationById    |
-| Parameters              | id     |                                    | Request body            | no                                                       |                        |
-
-| **StudentPostulations** | PUT    | /api/StudentPostulations/{id}      | Update postulation      | Update an existing student postulation                   | updatePostulation     |
-| Parameters              | id     |                                    | Request body            | yes                                                      |                        |
-
-| **StudentPostulations** | DELETE | /api/StudentPostulations/{id}      | Delete postulation      | Remove a student postulation                             | deletePostulation     |
-| Parameters              | id     |                                    | Request body            | no                                                       |                        |
-
-
-| **Users**            | GET       | /api/Users                         | Get all users           | Retrieve the list of all users                           | getAllUsers           |
-| Parameters           | none      |                                    | Request body            | no                                                       |                        |
-
-| **Users**            | POST      | /api/Users                         | Create new user         | Register a new user                                      | createUser            |
-| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
-
-| **Users**            | GET       | /api/Users/{id}                    | Get user by ID          | Retrieve user information by ID                          | getUserById           |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-| **Users**            | PUT       | /api/Users/{id}                    | Update user             | Modify an existing user's information                    | updateUser            |
-| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
-
-| **Users**            | DELETE    | /api/Users/{id}                    | Delete user             | Remove a user                                            | deleteUser            |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
 
 
 #### 4.2.1.7 Software Deployment Evidence for Sprint Review.
