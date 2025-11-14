@@ -210,13 +210,16 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       </td>
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard de la app de estudiantes, documentación del sprint 1</ul>
-<ul>TP: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
+<ul>TB2: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganización del c4 y desarrollo de los style guidelines</ul>
+                  <ul>TB2: Desarrollo UI/UX para el la vista de projectos y mejora continua.</ul>
            Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
                   <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
+                  <ul>TB2: Desarrollo de la vista sobre el flujo de Convocatorias de la app de empresas. </ul>
            Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
            <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
+           <ul>TB2: Aplicó nuevos conceptos de desarrollo móvil nativo con Kotlin y Jetpack Compose para implementar la app UniMatch orientada al segmento de estudiantes.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
 TP: El entregable parcial nos exigió más, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
@@ -232,10 +235,13 @@ TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes
 <ul>TP:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
                   <ul>TP: Planificación de pestañas y guidelines</ul>
+                  <ul>TB2: Fue necesario implementar diseño y estructura de carpetas para un mejor orden.</ul>
         Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
+        <ul>TB2: Adaptó enfoques de diseño centrado en segmento objetivo de empresas, aplicando buenas prácticas del código.</ul>
         Javier Gonzales <ul>TB1: Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
         <ul>TP1: Realizó entrevistas de validación a usuarios reales e integró su retroalimentación en el prototipo, reconociendo oportunidades de mejora continua.</ul>
+        <ul>TB2: Investigó y aprendió de forma autónoma técnicas de UI, arquitectura móvil y edición audiovisual para producir la aplicación y los videos del landing page.</ul>
       </td>
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
 TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos; sin embargo, la participación de todos los integrantes fue constante y satisfactoria.
@@ -7650,9 +7656,9 @@ Repositorio App Estudiantes:
 
 App estudiantes corriendo en Android con todos los servicios corriendo:
 
-<img src="assets/sprint2/app1.png" alt="UPC logo" width="400">
+<img src="assets/sprint2/app1.jpg" alt="UPC logo" width="400">
 
-<img src="assets/sprint2/app2.png" alt="UPC logo" width="400">
+<img src="assets/sprint2/app2.jpg" alt="UPC logo" width="400">
 
 
 App empresas corriendo en Android Studio(solo front):
@@ -7668,72 +7674,29 @@ Landing page actualizada, con el apk para descargar:
 
 #### 4.2.1.6 Services Documentation Evidence for Sprint Review.
 
-Todos los servicios de estudiantes se encuentran desplegados y funcionando correctamente en la aplicacion movil
-| Tag                   | Operación | Endpoint                          | Summary                 | Description                                              | OperationId           |
-|----------------------|-----------|------------------------------------|--------------------------|----------------------------------------------------------|------------------------|
+| Tag                     | Operación | Endpoint                      | Summary               | Description                                   | OperationId        |
+|-------------------------|-----------|-------------------------------|-----------------------|-----------------------------------------------|--------------------|
+| **Students**            | GET       | /api/Students                 | Get all students      | Retrieve all registered students              | getAllStudents     |
+| **Students**            | POST      | /api/Students                 | Create new student    | Register a new student                        | createStudent      |
+| **Students**            | GET       | /api/Students/{id}            | Get student by ID     | Retrieve a specific student by ID             | getStudentById     |
+| **Students**            | PUT       | /api/Students/{id}            | Update student        | Modify the information of an existing student | updateStudent      |
+| **Students**            | DELETE    | /api/Students/{id}            | Delete student        | Remove a student from the system              | deleteStudent      |
+| **Projects**            | GET       | /api/Projects                 | Get all projects      | Retrieve all projects                         | getAllProjects     |
+| **Projects**            | POST      | /api/Projects                 | Create project        | Register a new project                        | createProject      |
+| **Projects**            | GET       | /api/Projects/{id}            | Get project by ID     | Retrieve a project by its ID                  | getProjectById     |
+| **Projects**            | PUT       | /api/Projects/{id}            | Update project        | Modify an existing project                    | updateProject      |
+| **Projects**            | DELETE    | /api/Projects/{id}            | Delete project        | Remove a project                              | deleteProject      |
+| **StudentPostulations** | GET       | /api/StudentPostulations      | Get all postulations  | Retrieve all student postulations             | getAllPostulations |
+| **StudentPostulations** | POST      | /api/StudentPostulations      | Create postulation    | Create a new student postulation              | createPostulation  |
+| **StudentPostulations** | GET       | /api/StudentPostulations/{id} | Get postulation by ID | Retrieve a specific postulation               | getPostulationById |
+| **StudentPostulations** | PUT       | /api/StudentPostulations/{id} | Update postulation    | Update an existing student postulation        | updatePostulation  |
+| **StudentPostulations** | DELETE    | /api/StudentPostulations/{id} | Delete postulation    | Remove a student postulation                  | deletePostulation  |
+| **Users**               | GET       | /api/Users                    | Get all users         | Retrieve the list of all users                | getAllUsers        |
+| **Users**               | POST      | /api/Users                    | Create new user       | Register a new user                           | createUser         |
+| **Users**               | GET       | /api/Users/{id}               | Get user by ID        | Retrieve user information by ID               | getUserById        |
+| **Users**               | PUT       | /api/Users/{id}               | Update user           | Modify an existing user's information         | updateUser         |
+| **Users**               | DELETE    | /api/Users/{id}               | Delete user           | Remove a user                                 | deleteUser         |
 
-| **Students**         | GET       | /api/Students                      | Get all students        | Retrieve all registered students                         | getAllStudents        |
-| Parameters           | none      |                                    | Request body            | no                                                       |                        |
-
-| **Students**         | POST      | /api/Students                      | Create new student      | Register a new student                                   | createStudent         |
-| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
-
-| **Students**         | GET       | /api/Students/{id}                 | Get student by ID       | Retrieve a specific student by ID                        | getStudentById        |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-| **Students**         | PUT       | /api/Students/{id}                 | Update student          | Modify the information of an existing student            | updateStudent         |
-| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
-
-| **Students**         | DELETE    | /api/Students/{id}                 | Delete student          | Remove a student from the system                         | deleteStudent         |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-
-| **Projects**         | GET       | /api/Projects                      | Get all projects        | Retrieve all projects                                    | getAllProjects        |
-| Parameters           | none      |                                    | Request body            | no                                                       |                        |
-
-| **Projects**         | POST      | /api/Projects                      | Create project          | Register a new project                                   | createProject         |
-| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
-
-| **Projects**         | GET       | /api/Projects/{id}                 | Get project by ID       | Retrieve a project by its ID                             | getProjectById        |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-| **Projects**         | PUT       | /api/Projects/{id}                 | Update project          | Modify an existing project                               | updateProject         |
-| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
-
-| **Projects**         | DELETE    | /api/Projects/{id}                 | Delete project          | Remove a project                                         | deleteProject         |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-
-| **StudentPostulations** | GET    | /api/StudentPostulations           | Get all postulations    | Retrieve all student postulations                        | getAllPostulations    |
-| Parameters              | none   |                                    | Request body            | no                                                       |                        |
-
-| **StudentPostulations** | POST   | /api/StudentPostulations           | Create postulation      | Create a new student postulation                         | createPostulation     |
-| Parameters              | none   |                                    | Request body            | yes                                                      |                        |
-
-| **StudentPostulations** | GET    | /api/StudentPostulations/{id}      | Get postulation by ID   | Retrieve a specific postulation                          | getPostulationById    |
-| Parameters              | id     |                                    | Request body            | no                                                       |                        |
-
-| **StudentPostulations** | PUT    | /api/StudentPostulations/{id}      | Update postulation      | Update an existing student postulation                   | updatePostulation     |
-| Parameters              | id     |                                    | Request body            | yes                                                      |                        |
-
-| **StudentPostulations** | DELETE | /api/StudentPostulations/{id}      | Delete postulation      | Remove a student postulation                             | deletePostulation     |
-| Parameters              | id     |                                    | Request body            | no                                                       |                        |
-
-
-| **Users**            | GET       | /api/Users                         | Get all users           | Retrieve the list of all users                           | getAllUsers           |
-| Parameters           | none      |                                    | Request body            | no                                                       |                        |
-
-| **Users**            | POST      | /api/Users                         | Create new user         | Register a new user                                      | createUser            |
-| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
-
-| **Users**            | GET       | /api/Users/{id}                    | Get user by ID          | Retrieve user information by ID                          | getUserById           |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
-
-| **Users**            | PUT       | /api/Users/{id}                    | Update user             | Modify an existing user's information                    | updateUser            |
-| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
-
-| **Users**            | DELETE    | /api/Users/{id}                    | Delete user             | Remove a user                                            | deleteUser            |
-| Parameters           | id        |                                    | Request body            | no                                                       |                        |
 
 
 #### 4.2.1.7 Software Deployment Evidence for Sprint Review.
@@ -8107,10 +8070,20 @@ Con los servicios desplegados, podemos empezar a trabajar en la app móvil, que 
 -**TB2:**
 Para el penúltimo entregable logramos culminar el desarrollo de la app de estudiantes, ademas de incluirla como descargable en la landing page. La app de empresas esta en desarrollo y esperamos culminarla para la entrega final.
 
+## Videos
+
+-**Video About The Product:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQCWSzY41JPXTZq4AMraiMz7AQTPs3MzPFLopbPWl0qH-1Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=oIgik3' <br>
+
+-**Video About The Team:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQCu3JllsxZWT47zyP3irxPEASEGKEiLtn2GtqFko2Kdayk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OF5k76' <br>
+
+-**Video App Validation:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQBENV6f49_1QJyDYlRAFFSnAWCcSVj2w78OOTFwYMmHP7U?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Gd2GUT' <br>
+
+
+
 ## Anexos
 
--**Link del repositorio GitHub:** https://github.com/Apps-Moviles
--**Link del reporte en github:** https://github.com/Apps-Moviles/Report
--**Link de la app de estudiantes en github:** https://github.com/Apps-Moviles/UnimatchFrontEnd-Estudiantes
--**Link de la app de empresas en github:** https://github.com/Apps-Moviles/UniMatch-Frontend-Empresas
--**Link de la landing page en github:** https://github.com/Apps-Moviles/UniMatch-LandingPage
+-**Link del repositorio GitHub:** 'https://github.com/Apps-Moviles' <br>
+-**Link del reporte en github:** 'https://github.com/Apps-Moviles/Report'<br>
+-**Link de la app de estudiantes en github:** 'https://github.com/Apps-Moviles/UnimatchFrontEnd-Estudiantes'<br>
+-**Link de la app de empresas en github:** 'https://github.com/Apps-Moviles/UniMatch-Frontend-Empresas'<br>
+-**Link de la landing page en github:** 'https://github.com/Apps-Moviles/UniMatch-LandingPage'<br>
