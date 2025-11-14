@@ -209,16 +209,18 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
         1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
-<ul>TP: Desarrollo de las vistas inicio de sesión y dashboard del frontend, documentación del sprint1</ul>
+<ul>TP: Desarrollo de las vistas inicio de sesión y dashboard de la app de estudiantes, documentación del sprint 1</ul>
+<ul>TP: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
-                  <ul>TP: Reorganizacion del c4 y desarrollo de los style guidelines</ul>
+                  <ul>TP: Reorganización del c4 y desarrollo de los style guidelines</ul>
            Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
                   <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
            Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
            <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
-TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
+TP: El entregable parcial nos exigió más, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
+TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes, como de completar el desarrollo de vistas sin funcionalidad de la segunda app de empresas
       </td>
     </tr>
     <tr>
@@ -227,15 +229,17 @@ TP: El entregable parcial nos exigió mas, al necesitar levantar todos los servi
       </td>
       <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
+<ul>TP:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
-                  <ul>TP: Planificacion de pestañas y guidelines</ul>
+                  <ul>TP: Planificación de pestañas y guidelines</ul>
         Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
         Javier Gonzales <ul>TB1: Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
         <ul>TP1: Realizó entrevistas de validación a usuarios reales e integró su retroalimentación en el prototipo, reconociendo oportunidades de mejora continua.</ul>
       </td>
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
-TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos, sin embargo la participación de todos los integrantes fue constante y satisfactoria.
+TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos; sin embargo, la participación de todos los integrantes fue constante y satisfactoria.
+TB2: Se mantuvo la buena comunicación y el compromiso de todos los integrantes para culminar el desarrollo de la primera app y avanzar en la segunda.
       </td>
     </tr>
   </tbody>
@@ -7602,8 +7606,8 @@ El objetivo del segundo sprint fue completar la sincronizacion de los servicios 
 | **Sprint n - 1 Review Summary**        | -                                   |
 | **Sprint n - 1 Retrospective Summary** | -                                   |
 | **Sprint 1 Goal**                      | Designar la construccion de vistas. |
-| **Sprint 1 Velocity**                  | 21 story points                     |
-| **Sum of Story Points**                | 21 story points                     |
+| **Sprint 1 Velocity**                  | 16 story points                     |
+| **Sum of Story Points**                | 16 story points                     |
 
 
 ##### 4.2.2.2 Sprint Backlog 2
@@ -7624,17 +7628,134 @@ El objetivo del segundo sprint fue completar la sincronizacion de los servicios 
 
 #### 4.2.2.3 Development Evidence for Sprint Review
 
+A continuación se evidencian los commits realizados en cada repositorio:
+
+Repositorio Report:
+
+<img src="assets/sprint2/commitsReport.png" alt="UPC logo" width="400">
+Documentacion del Sprint 2
+
+Repositorio App Empresas:
+
+<img src="assets/sprint2/commitsEmpresas.png" alt="UPC logo" width="400">
+
+Repositorio App Estudiantes:
+
+<img src="assets/sprint2/commitsEstudiantes.png" alt="UPC logo" width="400">
+
+
 #### 4.2.1.4 Testing Suite Evidence for Sprint Review.
 
 #### 4.2.1.5 Execution Evidence for Sprint Review.
 
+App estudiantes corriendo en Android con todos los servicios corriendo:
+
+<img src="assets/sprint2/app1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint2/app2.png" alt="UPC logo" width="400">
+
+
+App empresas corriendo en Android Studio(solo front):
+
+<img src="assets/sprint2/empresas.png" alt="UPC logo" width="400">
+
+
+Landing page actualizada, con el apk para descargar:
+
+<img src="assets/sprint2/landing.png" alt="UPC logo" width="400">
+
+
+
 #### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+
+Todos los servicios de estudiantes se encuentran desplegados y funcionando correctamente en la aplicacion movil
+| Tag                   | Operación | Endpoint                          | Summary                 | Description                                              | OperationId           |
+|----------------------|-----------|------------------------------------|--------------------------|----------------------------------------------------------|------------------------|
+
+| **Students**         | GET       | /api/Students                      | Get all students        | Retrieve all registered students                         | getAllStudents        |
+| Parameters           | none      |                                    | Request body            | no                                                       |                        |
+
+| **Students**         | POST      | /api/Students                      | Create new student      | Register a new student                                   | createStudent         |
+| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
+
+| **Students**         | GET       | /api/Students/{id}                 | Get student by ID       | Retrieve a specific student by ID                        | getStudentById        |
+| Parameters           | id        |                                    | Request body            | no                                                       |                        |
+
+| **Students**         | PUT       | /api/Students/{id}                 | Update student          | Modify the information of an existing student            | updateStudent         |
+| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
+
+| **Students**         | DELETE    | /api/Students/{id}                 | Delete student          | Remove a student from the system                         | deleteStudent         |
+| Parameters           | id        |                                    | Request body            | no                                                       |                        |
+
+
+| **Projects**         | GET       | /api/Projects                      | Get all projects        | Retrieve all projects                                    | getAllProjects        |
+| Parameters           | none      |                                    | Request body            | no                                                       |                        |
+
+| **Projects**         | POST      | /api/Projects                      | Create project          | Register a new project                                   | createProject         |
+| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
+
+| **Projects**         | GET       | /api/Projects/{id}                 | Get project by ID       | Retrieve a project by its ID                             | getProjectById        |
+| Parameters           | id        |                                    | Request body            | no                                                       |                        |
+
+| **Projects**         | PUT       | /api/Projects/{id}                 | Update project          | Modify an existing project                               | updateProject         |
+| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
+
+| **Projects**         | DELETE    | /api/Projects/{id}                 | Delete project          | Remove a project                                         | deleteProject         |
+| Parameters           | id        |                                    | Request body            | no                                                       |                        |
+
+
+| **StudentPostulations** | GET    | /api/StudentPostulations           | Get all postulations    | Retrieve all student postulations                        | getAllPostulations    |
+| Parameters              | none   |                                    | Request body            | no                                                       |                        |
+
+| **StudentPostulations** | POST   | /api/StudentPostulations           | Create postulation      | Create a new student postulation                         | createPostulation     |
+| Parameters              | none   |                                    | Request body            | yes                                                      |                        |
+
+| **StudentPostulations** | GET    | /api/StudentPostulations/{id}      | Get postulation by ID   | Retrieve a specific postulation                          | getPostulationById    |
+| Parameters              | id     |                                    | Request body            | no                                                       |                        |
+
+| **StudentPostulations** | PUT    | /api/StudentPostulations/{id}      | Update postulation      | Update an existing student postulation                   | updatePostulation     |
+| Parameters              | id     |                                    | Request body            | yes                                                      |                        |
+
+| **StudentPostulations** | DELETE | /api/StudentPostulations/{id}      | Delete postulation      | Remove a student postulation                             | deletePostulation     |
+| Parameters              | id     |                                    | Request body            | no                                                       |                        |
+
+
+| **Users**            | GET       | /api/Users                         | Get all users           | Retrieve the list of all users                           | getAllUsers           |
+| Parameters           | none      |                                    | Request body            | no                                                       |                        |
+
+| **Users**            | POST      | /api/Users                         | Create new user         | Register a new user                                      | createUser            |
+| Parameters           | none      |                                    | Request body            | yes                                                      |                        |
+
+| **Users**            | GET       | /api/Users/{id}                    | Get user by ID          | Retrieve user information by ID                          | getUserById           |
+| Parameters           | id        |                                    | Request body            | no                                                       |                        |
+
+| **Users**            | PUT       | /api/Users/{id}                    | Update user             | Modify an existing user's information                    | updateUser            |
+| Parameters           | id        |                                    | Request body            | yes                                                      |                        |
+
+| **Users**            | DELETE    | /api/Users/{id}                    | Delete user             | Remove a user                                            | deleteUser            |
+| Parameters           | id        |                                    | Request body            | no                                                       |                        |
+
 
 #### 4.2.1.7 Software Deployment Evidence for Sprint Review.
 
+La app movil de estudiantes core nativamente en android:
+
+<img src="assets/sprint2/app1.jpg" alt="UPC logo" width="400">
+
+
 #### 4.2.1.8 Team Collaboration Insights during Sprint
 
+Insights del repositorio de estudiantes:
 
+<img src="assets/sprint2/insights1.png" alt="UPC logo" width="400">
+
+Insights del repositorio de empresas:
+
+<img src="assets/sprint2/insights3.png" alt="UPC logo" width="400">
+
+Insights del repositorio de report:
+
+<img src="assets/sprint2/insights2.png" alt="UPC logo" width="400">
 
 
 ### 4.3. Validation Interviews
@@ -7893,23 +8014,23 @@ Se asignó una escala de severidad del 1 al 4, donde 1 representa un problema le
 
 ### Escala de Severidad
 
-| Nivel | Descripción |
-|-------|--------------|
-| **1** | Problema leve o cosmético: no afecta la funcionalidad principal. |
+| Nivel | Descripción                                                               |
+|-------|---------------------------------------------------------------------------|
+| **1** | Problema leve o cosmético: no afecta la funcionalidad principal.          |
 | **2** | Problema menor: afecta ligeramente la experiencia pero no bloquea tareas. |
-| **3** | Problema mayor: genera confusión o errores frecuentes en los usuarios. |
-| **4** | Problema crítico: impide completar tareas esenciales. |
+| **3** | Problema mayor: genera confusión o errores frecuentes en los usuarios.    |
+| **4** | Problema crítico: impide completar tareas esenciales.                     |
 
 ---
 
 ### Resultados de la Evaluación
 
-| # | Problema identificado | Severidad | Heurística violada |
-|---|------------------------|------------|---------------------|
-| **1** | Dificultad para encontrar proyectos activos | 3 | Control y libertad del usuario / Reconocimiento antes que recuerdo |
-| **2** | Falta de confirmación al eliminar un proyecto o postulación | 4 | Prevención de errores |
-| **3** | Información limitada en las tarjetas de postulantes | 3 | Flexibilidad y eficiencia de uso |
-| **4** | Falta de contraste en textos sobre fondos claros | 1 | Estética y diseño minimalista |
+| #     | Problema identificado                                       | Severidad | Heurística violada                                                 |
+|-------|-------------------------------------------------------------|-----------|--------------------------------------------------------------------|
+| **1** | Dificultad para encontrar proyectos activos                 | 3         | Control y libertad del usuario / Reconocimiento antes que recuerdo |
+| **2** | Falta de confirmación al eliminar un proyecto o postulación | 4         | Prevención de errores                                              |
+| **3** | Información limitada en las tarjetas de postulantes         | 3         | Flexibilidad y eficiencia de uso                                   |
+| **4** | Falta de contraste en textos sobre fondos claros            | 1         | Estética y diseño minimalista                                      |
 
 ---
 
@@ -7970,8 +8091,8 @@ Los problemas más críticos (severidad 3 y 4) están relacionados con la **prev
 
 **Acciones prioritarias:**
 1. Implementar retroalimentación visual inmediata para acciones clave.  
-3. Añadir ayudas contextuales y confirmaciones para prevenir errores.  
-4. Ajustar el contraste de color y textos para mejorar la accesibilidad.
+2. Añadir ayudas contextuales y confirmaciones para prevenir errores.  
+3. Ajustar el contraste de color y textos para mejorar la accesibilidad.
 
 <br>
 
@@ -7983,10 +8104,13 @@ La primera entrega fue clave para establecer correctamente la propuesta y docume
 -**TP:**
 Con los servicios desplegados, podemos empezar a trabajar en la app móvil, que es el objetivo principal del proyecto. El backend ya tiene los servicios principales para el registro, autenticación, creación de proyectos y postulación, lo cual nos beneficia de cara al resto de entregables donde podremos concentrarnos en el frotnend.
 
+-**TB2:**
+Para el penúltimo entregable logramos culminar el desarrollo de la app de estudiantes, ademas de incluirla como descargable en la landing page. La app de empresas esta en desarrollo y esperamos culminarla para la entrega final.
+
 ## Anexos
 
 -**Link del repositorio GitHub:** https://github.com/Apps-Moviles
 -**Link del reporte en github:** https://github.com/Apps-Moviles/Report
--**Link del backend en github:** https://github.com/Apps-Moviles/UniMatch-BackEnd
--**Link del frontend en github:** https://github.com/Apps-Moviles/UniMatch-Frontend
+-**Link de la app de estudiantes en github:** https://github.com/Apps-Moviles/UnimatchFrontEnd-Estudiantes
+-**Link de la app de empresas en github:** https://github.com/Apps-Moviles/UniMatch-Frontend-Empresas
 -**Link de la landing page en github:** https://github.com/Apps-Moviles/UniMatch-LandingPage
