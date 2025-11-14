@@ -210,11 +210,12 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       </td>
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard de la app de estudiantes, documentación del sprint 1</ul>
-<ul>TP: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
+<ul>TB2: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganización del c4 y desarrollo de los style guidelines</ul>
            Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
                   <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
+                  <ul>TB2: Desarrollo de la vista sobre el flujo de Convocatorias de la app de empresas. </ul>
            Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
            <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
            <ul>TB2: Aplicó nuevos conceptos de desarrollo móvil nativo con Kotlin y Jetpack Compose para implementar la app UniMatch orientada al segmento de estudiantes.</ul>
@@ -235,6 +236,7 @@ TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes
                   <ul>TP: Planificación de pestañas y guidelines</ul>
         Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
+        <ul>TB2: Adaptó enfoques de diseño centrado en segmento objetivo de empresas, aplicando buenas prácticas del código.</ul>
         Javier Gonzales <ul>TB1: Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
         <ul>TP1: Realizó entrevistas de validación a usuarios reales e integró su retroalimentación en el prototipo, reconociendo oportunidades de mejora continua.</ul>
         <ul>TB2: Investigó y aprendió de forma autónoma técnicas de UI, arquitectura móvil y edición audiovisual para producir la aplicación y los videos del landing page.</ul>
