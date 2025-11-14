@@ -8111,10 +8111,20 @@ Con los servicios desplegados, podemos empezar a trabajar en la app móvil, que 
 -**TB2:**
 Para el penúltimo entregable logramos culminar el desarrollo de la app de estudiantes, ademas de incluirla como descargable en la landing page. La app de empresas esta en desarrollo y esperamos culminarla para la entrega final.
 
+## Videos
+
+-**Video About The Product:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQCWSzY41JPXTZq4AMraiMz7AQTPs3MzPFLopbPWl0qH-1Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=oIgik3' <br>
+
+-**Video About The Team:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQCu3JllsxZWT47zyP3irxPEASEGKEiLtn2GtqFko2Kdayk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OF5k76' <br>
+
+-**Video App Validation:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQBENV6f49_1QJyDYlRAFFSnAWCcSVj2w78OOTFwYMmHP7U?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Gd2GUT' <br>
+
+
+
 ## Anexos
 
--**Link del repositorio GitHub:** https://github.com/Apps-Moviles
--**Link del reporte en github:** https://github.com/Apps-Moviles/Report
--**Link de la app de estudiantes en github:** https://github.com/Apps-Moviles/UnimatchFrontEnd-Estudiantes
--**Link de la app de empresas en github:** https://github.com/Apps-Moviles/UniMatch-Frontend-Empresas
--**Link de la landing page en github:** https://github.com/Apps-Moviles/UniMatch-LandingPage
+-**Link del repositorio GitHub:** 'https://github.com/Apps-Moviles' <br>
+-**Link del reporte en github:** 'https://github.com/Apps-Moviles/Report'<br>
+-**Link de la app de estudiantes en github:** 'https://github.com/Apps-Moviles/UnimatchFrontEnd-Estudiantes'<br>
+-**Link de la app de empresas en github:** 'https://github.com/Apps-Moviles/UniMatch-Frontend-Empresas'<br>
+-**Link de la landing page en github:** 'https://github.com/Apps-Moviles/UniMatch-LandingPage'<br>
