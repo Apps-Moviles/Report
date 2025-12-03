@@ -8078,7 +8078,22 @@ Para el penúltimo entregable logramos culminar el desarrollo de la app de estud
 
 -**Video App Validation:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQBENV6f49_1QJyDYlRAFFSnAWCcSVj2w78OOTFwYMmHP7U?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Gd2GUT' <br>
 
+## Bibliografía:
 
+<p style="text-indent:-2em; margin-left:2em;">
+The Key Impacts of Student Satisfaction with Job Opportunity in Technical and Vocational Education and Training (TVET), Cambodia. (2023). <i>European Journal of Business and Management, 15</i>(17). https://doi.org/10.7176/ejbm/15-17-04
+</p>
+
+<p style="text-indent:-2em; margin-left:2em;">
+Thi Thuy Dung, V., & Minh Chien, L. (2023). Job opportunities for students in their major after graduation - A case study at Da Lat University. <i>VNU Journal of Science: Policy and Management Studies, 39</i>(4). https://doi.org/10.25073/2588-
+
+<p style="text-indent:-2em; margin-left:2em;">
+Novaliendry, D., Pratama, M. F. P., Budayawan, K., Huda, Y., & Rahiman, W. M. Y. (2023). Design and development of sign language learning application for special needs students based on Android using Flutter. <i>International Journal of Online and Biomedical Engineering, 19</i>(16), 76–92. https://doi.org/10.3991/ijoe.v19i16.44669
+</p>
+
+<p style="text-indent:-2em; margin-left:2em;">
+Dimitrijević, N., Zdravković, N., & Milićević, V. (2023). An automated grading framework for the mobile development programming language Kotlin. <i>International Journal for Quality Research, 17</i>(2), 313–324. https://doi.org/10.24874/IJQR17.02-01
+</p>
 
 ## Anexos
 
