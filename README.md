@@ -7650,9 +7650,9 @@ Repositorio App Estudiantes:
 <img src="assets/sprint2/commitsEstudiantes.png" alt="UPC logo" width="400">
 
 
-#### 4.2.1.4 Testing Suite Evidence for Sprint Review.
+#### 4.2.2.4 Testing Suite Evidence for Sprint Review.
 
-#### 4.2.1.5 Execution Evidence for Sprint Review.
+#### 4.2.2.5 Execution Evidence for Sprint Review.
 
 App estudiantes corriendo en Android con todos los servicios corriendo:
 
@@ -7672,7 +7672,7 @@ Landing page actualizada, con el apk para descargar:
 
 
 
-#### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+#### 4.2.2.6 Services Documentation Evidence for Sprint Review.
 
 | Tag                     | Operación | Endpoint                      | Summary               | Description                                   | OperationId        |
 |-------------------------|-----------|-------------------------------|-----------------------|-----------------------------------------------|--------------------|
@@ -7756,6 +7756,54 @@ Insights del repositorio de report:
 | TS02           | Endpoint para creación de proyectos               | T10                | Crear endpoint de creación de proyectos  | Como developer, quiero crear un endpoint para que los gerentes publiquen nuevos proyectos.                                                                                                                                                                                                                                                                                                                                                        | 2                   | Javier Gonzales        | To Do      |
 | TS03           | Endpoint para postulación a proyectos             | T11                | Crear endpoint de postulación            | Como developer, quiero desarrollar un endpoint para que los estudiantes puedan postular a proyectos.                                                                                                                                                                                                                                                                                                                                               | 2                   | Javier Gonzales       | To Do      |
 | TS04           | Endpoint para calificación de desempeño           | T12                | Crear endpoint de calificación de desempeño | Como developer, quiero crear un endpoint que permita calificar el desempeño de un estudiante tras un proyecto.                                                                                                                                                                                                                                                                                                                                    | 2                   | Javier Gonzales       | To Do      |
+
+#### 4.2.3.3 Development Evidence for Sprint Review
+
+
+#### 4.2.3.4 Testing Suite Evidence for Sprint Review.
+
+#### 4.2.3.5 Execution Evidence for Sprint Review.
+
+#### 4.2.3.6 Services Documentation Evidence for Sprint Review.
+
+| Tag                     | Operación | Endpoint                                           | Summary                            | Description                                           | OperationId             |
+|-------------------------|-----------|----------------------------------------------------|------------------------------------|-------------------------------------------------------|--------------------------|
+| **Students**            | GET       | /api/Students                                      | Get all students                   | Retrieve all registered students                      | getAllStudents          |
+| **Students**            | POST      | /api/Students                                      | Create new student                 | Register a new student                                | createStudent           |
+| **Students**            | GET       | /api/Students/{id}                                 | Get student by ID                  | Retrieve a specific student by ID                     | getStudentById          |
+| **Students**            | PUT       | /api/Students/{id}                                 | Update student                     | Modify the information of an existing student         | updateStudent           |
+| **Students**            | DELETE    | /api/Students/{id}                                 | Delete student                     | Remove a student from the system                      | deleteStudent           |
+| **Students**            | GET       | /api/Students/user/{userId}                        | Get student by user ID             | Retrieve student associated with a specific user       | getStudentByUserId      |
+| **Projects**            | GET       | /api/Projects                                      | Get all projects                   | Retrieve all projects                                 | getAllProjects          |
+| **Projects**            | POST      | /api/Projects                                      | Create project                     | Register a new project                                | createProject           |
+| **Projects**            | GET       | /api/Projects/{id}                                 | Get project by ID                  | Retrieve a project by its ID                          | getProjectById          |
+| **Projects**            | PUT       | /api/Projects/{id}                                 | Update project                     | Modify an existing project                            | updateProject           |
+| **Projects**            | DELETE    | /api/Projects/{id}                                 | Delete project                     | Remove a project                                      | deleteProject           |
+| **Projects**            | PUT       | /api/Projects/{id}/assign-student/{studentId}      | Assign student                     | Assign a student to an existing project                | assignStudentToProject  |
+| **Projects**            | PUT       | /api/Projects/{id}/status/{status}                 | Update project status              | Change the status of a project                         | updateProjectStatus     |
+| **StudentPostulations** | GET       | /api/StudentPostulations                           | Get all postulations               | Retrieve all student postulations                     | getAllPostulations      |
+| **StudentPostulations** | POST      | /api/StudentPostulations                           | Create postulation                 | Create a new student postulation                      | createPostulation       |
+| **StudentPostulations** | GET       | /api/StudentPostulations/{id}                      | Get postulation by ID              | Retrieve a specific postulation                       | getPostulationById      |
+| **StudentPostulations** | PUT       | /api/StudentPostulations/{id}                      | Update postulation                 | Update an existing student postulation                | updatePostulation       |
+| **StudentPostulations** | DELETE    | /api/StudentPostulations/{id}                      | Delete postulation                 | Remove a student postulation                          | deletePostulation       |
+| **StudentPostulations** | PUT       | /api/StudentPostulations/{postulationId}/accept    | Accept postulation                 | Accept a student's postulation                         | acceptPostulation       |
+| **Users**               | GET       | /api/Users                                         | Get all users                      | Retrieve the list of all users                        | getAllUsers             |
+| **Users**               | POST      | /api/Users                                         | Create new user                    | Register a new user                                   | createUser              |
+| **Users**               | GET       | /api/Users/{id}                                    | Get user by ID                     | Retrieve user information by ID                       | getUserById             |
+| **Users**               | PUT       | /api/Users/{id}                                    | Update user                        | Modify an existing user's information                 | updateUser              |
+| **Users**               | DELETE    | /api/Users/{id}                                    | Delete user                        | Remove a user                                         | deleteUser              |
+| **Users**               | POST      | /api/Users/register                                | Register new user                  | Endpoint for new user registration                    | registerUser            |
+| **Users**               | POST      | /api/Users/login                                   | User login                         | Authenticate a user and return access credentials      | loginUser               |
+| **Companies**           | GET       | /api/Companies                                     | Get all companies                  | Retrieve all companies                                | getAllCompanies         |
+| **Companies**           | POST      | /api/Companies                                     | Create company                     | Register a new company                                | createCompany           |
+| **Companies**           | GET       | /api/Companies/{id}                                | Get company by ID                  | Retrieve a specific company                           | getCompanyById          |
+| **Companies**           | PUT       | /api/Companies/{id}                                | Update company                     | Modify an existing company                            | updateCompany           |
+| **Companies**           | DELETE    | /api/Companies/{id}                                | Delete company                     | Remove a company                                      | deleteCompany           |
+| **Companies**           | GET       | /api/Companies/by-user/{userId}                    | Get companies by user              | Retrieve companies associated with a user             | getCompaniesByUserId    |
+| **CompanyRatings**      | POST      | /api/CompanyRatings                                | Create rating                      | Create a new rating for a company                     | createCompanyRating     |
+| **CompanyRatings**      | GET       | /api/CompanyRatings/exists                         | Check if rating exists             | Verify if a user has already rated a company          | ratingExists            |
+| **Reputations**         | POST      | /api/Reputations                                   | Create reputation                  | Create a reputation entry                              | createReputation        |
+| **Reputations**         | GET       | /api/Reputations                                   | Get all reputations                | Retrieve all reputations                              | getAllReputations       |
 
 
 ### 4.3. Validation Interviews
