@@ -7721,6 +7721,26 @@ Insights del repositorio de report:
 <img src="assets/sprint2/insights2.png" alt="UPC logo" width="400">
 
 
+#### 4.2.3 Sprint 3
+##### 4.2.3.1 Sprint Planning 3
+
+| Sprint #                               | Sprint 3                                                         |
+|----------------------------------------|------------------------------------------------------------------|
+| **Date**                               |                                                        |
+| **Time**                               |                                                          |
+| **Location**                           | Discord                                                          |
+| **Prepared By**                        | Josue Paiva                                                      |
+| **Attendees (to planning meeting)**    | Todos los integrantes                                            |
+| **Sprint n - 1 Review Summary**        | -                                                                |
+| **Sprint n - 1 Retrospective Summary** | -                                                                |
+| **Sprint 3 Goal**                      | |
+| **Sprint 3 Velocity**                  |                                                  |
+| **Sum of Story Points**                |                                                  |
+
+
+##### 4.2.3.2 Sprint Backlog 3
+
+
 ### 4.3. Validation Interviews
 
 #### 4.3.1. Diseño de Entrevistas
