@@ -7733,7 +7733,7 @@ Insights del repositorio de report:
 | **Attendees (to planning meeting)**    | Todos los integrantes                                            |
 | **Sprint n - 1 Review Summary**        | -                                                                |
 | **Sprint n - 1 Retrospective Summary** | -                                                                |
-| **Sprint 3 Goal**                      | Juntar vistas de ambos segmentos.                                |
+| **Sprint 3 Goal**                      | Finalizar proyecto, unir vistas de ambos segmentos               |
 | **Sprint 3 Velocity**                  | 25                                                               |
 | **Sum of Story Points**                | 25                                                               |
 
