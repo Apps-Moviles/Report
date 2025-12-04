@@ -7726,16 +7726,16 @@ Insights del repositorio de report:
 
 | Sprint #                               | Sprint 3                                                         |
 |----------------------------------------|------------------------------------------------------------------|
-| **Date**                               |                                                        |
-| **Time**                               |                                                          |
+| **Date**                               | 2025-11-20                                                       |
+| **Time**                               | 10:00 PM                                                         |
 | **Location**                           | Discord                                                          |
 | **Prepared By**                        | Josue Paiva                                                      |
 | **Attendees (to planning meeting)**    | Todos los integrantes                                            |
 | **Sprint n - 1 Review Summary**        | -                                                                |
 | **Sprint n - 1 Retrospective Summary** | -                                                                |
-| **Sprint 3 Goal**                      | |
-| **Sprint 3 Velocity**                  |                                                  |
-| **Sum of Story Points**                |                                                  |
+| **Sprint 3 Goal**                      | Juntar vistas de ambos segmentos.                                |
+| **Sprint 3 Velocity**                  | 25                                                               |
+| **Sum of Story Points**                | 25                                                               |
 
 
 ##### 4.2.3.2 Sprint Backlog 3
