@@ -1,30 +1,32 @@
 <div align = "center">
-  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
-  <br>
   <p align="center">
   <img src="assets/logo/upclogo.png" alt="UPC logo" width="150">
   </p>
+  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
+  <br>
   <br>
   <h2 >Carrera: de Ingeniería de Software</h2>
-  <h2 >Ciclo: 2025-02</h2>
+  <h2 >Periodo: 2025-02</h2>
   <br>
-  <h2 >Curso: Desarrollo de Aplicaciones Móviles </h2>
-  <h2 >Sección: 1813</h2>
+  <h2 >Curso: Desarrollo de Aplicaciones Móviles - 1ACC0238</h2>
+  <h2 >NRC: 1813</h2>
+  <h2 >Docente: Eduardo Martin Reyes Rodríguez</h2>
+
   <br>
-  <h2 >Informe del TB1</h2>
+  <h2>"Informe del Trabajo Final"</h2>
   <h2 >Startup: UniMatch </h2>
   <h2 >Producto:  </h2>
   <br>
   <h2 >Integrantes:</h2>
   <ul style="list-style: none; padding: 0;">
-      <li><h3>Josue Gonzalo Paiva Quispe</h3></li>
-      <li><h3>Javier Sebastian Gonzales Alvarado</h3></li>
-      <li><h3>Alessandra Nicole Becerra Tejeda</h3></li>
-      <li><h3>Loli Ruiz Renzo Javier</h3></li>
+      <li><h3>U202318947-Alessandra Nicole Becerra Tejeda</h3></li>
+      <li><h3>U202312966-Javier Sebastian Gonzales Alvarado</h3></li>
+      <li><h3>U20161c993-Loli Ruiz Renzo Javier</h3></li>
+      <li><h3>U20211905-Josue Gonzalo Paiva Quispe</h3></li>
 
   </ul>
   <br>
-  <h4>Setiembre del 2025</h4>
+  <h4>Diciembre del 2025</h4>
 </div>
 
 | Versión | Fecha | Autor                      | Descripción de modificación       |
