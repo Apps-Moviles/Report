@@ -1078,6 +1078,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
     </td>
   </tr>
 </table>
+
 *Entrevistas a Segmento 2*
 ---
 
@@ -7997,6 +7998,47 @@ Insights de los 3 repositorios:
 
 <br>
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Diego Soriano</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>10:37</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/IQA7mhySLx53SavXkaUM_AzAAY1q1FTvdBXpkxgmyptzqSc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FBaEQL`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Diego es estudiante de Ingenieria de Software. Actualmente esta en busqueda de practicas pre profesionales. Nos cuenta que le parece buena e intuitiva la aplicacion. Le parece eficiente la navegacion entre las 3 secciones 'oportunidades', 'portafolio' y 'postulaciones'. Le gusta en general la navegacion pero le gustaria que muchas secciones esten en un mejor alcance ya que estan escondidos entre pestañas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int-diego-soriano.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
 
 *Entrevistas a Segmento 2*
 ---
@@ -8085,6 +8127,47 @@ Insights de los 3 repositorios:
 </table>
 
 <br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Diego Ramos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Ate</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>06:39</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>      
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/IQC_hft5WG_gT661LHIJJZgMAYdfmIey8K0U8Ck2Fb1k6SE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xVzVVM`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Diego es jefe de Piamonte Consulting. Se le mostro la aplicacion y le parecio interesante. Le gusta la navegacion y las pestañas incluidas. PIensa que la aplicacion es intuitiva y siente interes. No encontro problemas intermedios entre el flujo de navegacion y le gusto las diferentes secciones como descripciones, perfiles, reseñas y demas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int-diego-ramos.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
 
 #### 4.3.3. Evaluaciones según heurísticas
 
