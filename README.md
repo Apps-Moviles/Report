@@ -220,7 +220,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
            Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
            <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
            <ul>TB2: Aplicó nuevos conceptos de desarrollo móvil nativo con Kotlin y Jetpack Compose para implementar la app UniMatch orientada al segmento de estudiantes.</ul>
-           <ul>TP1: Actualizó sus conocimientos técnicos al corregir los errores de la aplicación de gerentes en Flutter y de la aplicación de estudiantes en Kotlin, aplicando conceptos recientes para mejorar la funcionalidad y estabilidad del sistema.</ul>
+           <ul>TF: Actualizó sus conocimientos técnicos al corregir los errores de la aplicación de gerentes en Flutter y de la aplicación de estudiantes en Kotlin, aplicando conceptos recientes para mejorar la funcionalidad y estabilidad del sistema.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
 TP: El entregable parcial nos exigió más, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
