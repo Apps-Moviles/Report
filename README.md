@@ -210,6 +210,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard de la app de estudiantes, documentación del sprint 1</ul>
 <ul>TB2: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
+<ul>TF: Deploy e integracion del SDK de Firebase, documentacion del sprint 3</ul>
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganización del c4 y desarrollo de los style guidelines</ul>
                   <ul>TB2: Desarrollo UI/UX para el la vista de projectos y mejora continua.</ul>
@@ -225,6 +226,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
 TP: El entregable parcial nos exigió más, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
 TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes, como de completar el desarrollo de vistas sin funcionalidad de la segunda app de empresas
+TF: Se concluyo con la produccion de las apps y su comunicacion total con el backend, haciendolas completamente funcionales.
       </td>
     </tr>
     <tr>
@@ -233,7 +235,8 @@ TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes
       </td>
       <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
-<ul>TP:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
+<ul>TB2:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
+<ul>Planificacion y distribucion de responsabilidades para el ultimo sprint</ul>
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
                   <ul>TP: Planificación de pestañas y guidelines</ul>
                   <ul>TB2: Fue necesario implementar diseño y estructura de carpetas para un mejor orden.</ul>
@@ -249,6 +252,7 @@ TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
 TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos; sin embargo, la participación de todos los integrantes fue constante y satisfactoria.
 TB2: Se mantuvo la buena comunicación y el compromiso de todos los integrantes para culminar el desarrollo de la primera app y avanzar en la segunda.
+TF: Se logró concluir la produccion de manera satisfactoria con una participacion activa y constante de todos los miembros.
       </td>
     </tr>
   </tbody>
