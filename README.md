@@ -216,6 +216,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
            Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
                   <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
                   <ul>TB2: Desarrollo de la vista sobre el flujo de Convocatorias de la app de empresas. </ul>
+                  <ul>TF: Desarrollo de product backlog y Services Documentation Evidence del sprint 3. </ul>
            Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
            <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
            <ul>TB2: Aplicó nuevos conceptos de desarrollo móvil nativo con Kotlin y Jetpack Compose para implementar la app UniMatch orientada al segmento de estudiantes.</ul>
@@ -239,10 +240,11 @@ TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes
         Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
         <ul>TB2: Adaptó enfoques de diseño centrado en segmento objetivo de empresas, aplicando buenas prácticas del código.</ul>
+        <ul>TF: Adaptó aprendizaje permanente al investigar y mejorar continuamente tanto la preparación del video about the product como tareas del Sprint 3</ul>
         Javier Gonzales <ul>TB1: Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
         <ul>TP1: Realizó entrevistas de validación a usuarios reales e integró su retroalimentación en el prototipo, reconociendo oportunidades de mejora continua.</ul>
         <ul>TB2: Investigó y aprendió de forma autónoma técnicas de UI, arquitectura móvil y edición audiovisual para producir la aplicación y los videos del landing page.</ul>
-        <ul>TP1: Reconoció la necesidad del aprendizaje continuo al integrar ambas aplicaciones con un backend unificado, incorporando nuevas prácticas y herramientas para asegurar la correcta comunicación entre los sistemas.</ul>
+        <ul>TF: Reconoció la necesidad del aprendizaje continuo al integrar ambas aplicaciones con un backend unificado, incorporando nuevas prácticas y herramientas para asegurar la correcta comunicación entre los sistemas.</ul>
       </td>
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
 TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos; sin embargo, la participación de todos los integrantes fue constante y satisfactoria.
