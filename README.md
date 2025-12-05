@@ -214,6 +214,7 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganización del c4 y desarrollo de los style guidelines</ul>
                   <ul>TB2: Desarrollo UI/UX para el la vista de projectos y mejora continua.</ul>
+                  <ul>TF: Prueba de errores y subida a firebase app distribution. </ul>
            Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
                   <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
                   <ul>TB2: Desarrollo de la vista sobre el flujo de Convocatorias de la app de empresas. </ul>
@@ -236,10 +237,11 @@ TF: Se concluyo con la produccion de las apps y su comunicacion total con el bac
       <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
 <ul>TB2:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
-<ul>Planificacion y distribucion de responsabilidades para el ultimo sprint</ul>
+<ul>TF:Planificacion y distribucion de responsabilidades para el ultimo sprint</ul>
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
                   <ul>TP: Planificación de pestañas y guidelines</ul>
                   <ul>TB2: Fue necesario implementar diseño y estructura de carpetas para un mejor orden.</ul>
+                  <ul>TF: Aprendió herramientas de despliegue y testeo para generar software de calidad</ul>
         Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
         <ul>TB2: Adaptó enfoques de diseño centrado en segmento objetivo de empresas, aplicando buenas prácticas del código.</ul>
