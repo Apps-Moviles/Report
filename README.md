@@ -1,36 +1,40 @@
 <div align = "center">
-  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
-  <br>
   <p align="center">
   <img src="assets/logo/upclogo.png" alt="UPC logo" width="150">
   </p>
+  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
+  <br>
   <br>
   <h2 >Carrera: de Ingeniería de Software</h2>
-  <h2 >Ciclo: 2025-02</h2>
+  <h2 >Periodo: 2025-02</h2>
   <br>
-  <h2 >Curso: Desarrollo de Aplicaciones Móviles </h2>
-  <h2 >Sección: 1813</h2>
+  <h2 >Curso: Desarrollo de Aplicaciones Móviles - 1ACC0238</h2>
+  <h2 >NRC: 1813</h2>
+  <h2 >Docente: Eduardo Martin Reyes Rodríguez</h2>
+
   <br>
-  <h2 >Informe del TB1</h2>
+  <h2>"Informe del Trabajo Final"</h2>
   <h2 >Startup: UniMatch </h2>
   <h2 >Producto:  </h2>
   <br>
   <h2 >Integrantes:</h2>
   <ul style="list-style: none; padding: 0;">
-      <li><h3>Josue Gonzalo Paiva Quispe</h3></li>
-      <li><h3>Javier Sebastian Gonzales Alvarado</h3></li>
-      <li><h3>Alessandra Nicole Becerra Tejeda</h3></li>
-      <li><h3>Loli Ruiz Renzo Javier</h3></li>
+      <li><h3>U202318947-Alessandra Nicole Becerra Tejeda</h3></li>
+      <li><h3>U202312966-Javier Sebastian Gonzales Alvarado</h3></li>
+      <li><h3>U20161c993-Loli Ruiz Renzo Javier</h3></li>
+      <li><h3>U20211905-Josue Gonzalo Paiva Quispe</h3></li>
 
   </ul>
   <br>
-  <h4>Setiembre del 2025</h4>
+  <h4>Diciembre del 2025</h4>
 </div>
 
 | Versión | Fecha | Autor                      | Descripción de modificación       |
 |---------|-------|----------------------------|-----------------------------------|
 | 0.1     | 6/9   | Todos los integrantes      | Primera entrega del informe (TB1) |
 | 1.0     | 9/10  | Todos los integrantes      | Entrega de Trabajo Parcial        |
+| 1.5     | 20/11 | Todos los integrantes      | Entrega de TB2                    |
+| 2.0     | 4/12  | Todos los integrantes      | Entrega de Trabajo Final          |
 
 
 
@@ -39,11 +43,6 @@
 | URL de la organización del proyecto |    URL del repositorio del reporte     |
 |:-----------------------------------:|:--------------------------------------:|
 |   https://github.com/Apps-Moviles   | https://github.com/Apps-Moviles/Report |
-
-Insights TP:
-
-<img src="assets/sprint1/insights.png" alt="UPC logo" width="400">
-
 
 
 - [Student Outcome](#student-outcome)
@@ -211,19 +210,24 @@ necesario, utilizando estrategias de aprendizaje apropiadas.*
       <td> Josue Paiva <ul>TB1: Desarrollo de la documentación de los bounded context companies y students postulations</ul>
 <ul>TP: Desarrollo de las vistas inicio de sesión y dashboard de la app de estudiantes, documentación del sprint 1</ul>
 <ul>TB2: Desarrollo de las vistas login y perfil de la app de empresas, documentación del sprint 2</ul>
+<ul>TF: Deploy e integracion del SDK de Firebase, documentacion del sprint 3</ul>
            Renzo Loli  <ul>TB1: Desarrollo y organización del event storming y el Software Architecture</ul>
                   <ul>TP: Reorganización del c4 y desarrollo de los style guidelines</ul>
                   <ul>TB2: Desarrollo UI/UX para el la vista de projectos y mejora continua.</ul>
+                  <ul>TF: Prueba de errores y subida a firebase app distribution. </ul>
            Alessandra Becerra <ul>TB1: Desarrollo de la documentación de los bounded context users y students</ul>
                   <ul>TP: Desarrollo de Software Development Environment Configuration y entrevistas de validación</ul>
                   <ul>TB2: Desarrollo de la vista sobre el flujo de Convocatorias de la app de empresas. </ul>
+                  <ul>TF: Desarrollo de product backlog y Services Documentation Evidence del sprint 3. </ul>
            Javier Gonzales <ul>TB1: Aplicó conceptos de Bounded Context y Lean UX en la documentación del dominio, elaboración del canvas y entrevistas a usuarios.</ul>
            <ul>TP1: Aplicó conocimientos de UX y diseño móvil para elaborar wireframes, mockups y wireflows funcionales para la app UniMatch.</ul>
            <ul>TB2: Aplicó nuevos conceptos de desarrollo móvil nativo con Kotlin y Jetpack Compose para implementar la app UniMatch orientada al segmento de estudiantes.</ul>
+           <ul>TF: Actualizó sus conocimientos técnicos al corregir los errores de la aplicación de gerentes en Flutter y de la aplicación de estudiantes en Kotlin, aplicando conceptos recientes para mejorar la funcionalidad y estabilidad del sistema.</ul>
       </td>
       <td> TB1: Para este primer entregable repasamos conocimientos previos adquiridos en IHC y patrones de diseño, con el fin de crear una propuesta robusta y bien estructurada, con la cual trabajar el resto del curso.
 TP: El entregable parcial nos exigió más, al necesitar levantar todos los servicios y empezar de lleno con el desarrollo frontend aplicando el conocimiento adquirido en clase.
 TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes, como de completar el desarrollo de vistas sin funcionalidad de la segunda app de empresas
+TF: Se concluyo con la produccion de las apps y su comunicacion total con el backend, haciendolas completamente funcionales.
       </td>
     </tr>
     <tr>
@@ -232,20 +236,25 @@ TB2: Nos concentramos en concluir el desarrollo de la primera app de estudiantes
       </td>
       <td> Josue Paiva <ul>TB1: Planificación de reuniones grupales, asignación de las tareas al resto del equipo</ul>
 <ul>TP:Planificación y asignación de tareas, con plazos fijos, coordinación de reuniones grupales</ul>
-<ul>TP:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
+<ul>TB2:Asignación de tareas tanto para levantar observaciones pasadas, culminar la primera app como para avanzar en el desarrollo de la segudna</ul>
+<ul>TF:Planificacion y distribucion de responsabilidades para el ultimo sprint</ul>
            Renzo Loli  <ul>TB1: Planificación del event storming y rediseño de la arquitectura base</ul>
                   <ul>TP: Planificación de pestañas y guidelines</ul>
                   <ul>TB2: Fue necesario implementar diseño y estructura de carpetas para un mejor orden.</ul>
+                  <ul>TF: Aprendió herramientas de despliegue y testeo para generar software de calidad</ul>
         Alessandra Becerra <ul>TB1: Disposición para una buena comunicación entre los miembros del equipo para mantener un flujo de trabajo ordenado</ul>
         <ul>TP: Disposición y cumplimiento de tareas dentro de los plazos establecidos coordinados en las reuniones grupales.</ul>
         <ul>TB2: Adaptó enfoques de diseño centrado en segmento objetivo de empresas, aplicando buenas prácticas del código.</ul>
+        <ul>TF: Adaptó aprendizaje permanente al investigar y mejorar continuamente tanto la preparación del video about the product como tareas del Sprint 3</ul>
         Javier Gonzales <ul>TB1: Investigó y adaptó enfoques de diseño centrado en el usuario, aplicando buenas prácticas para mejorar el desarrollo del proyecto.</ul>
         <ul>TP1: Realizó entrevistas de validación a usuarios reales e integró su retroalimentación en el prototipo, reconociendo oportunidades de mejora continua.</ul>
         <ul>TB2: Investigó y aprendió de forma autónoma técnicas de UI, arquitectura móvil y edición audiovisual para producir la aplicación y los videos del landing page.</ul>
+        <ul>TF: Reconoció la necesidad del aprendizaje continuo al integrar ambas aplicaciones con un backend unificado, incorporando nuevas prácticas y herramientas para asegurar la correcta comunicación entre los sistemas.</ul>
       </td>
       <td> TB1: La participación de todos los integrantes del equipo fue activa y continua, con buena comunicación y con apoyo continuo de todos los integrantes antes las necesidades y dificultades que se presentaron
 TP: Este entregable demandó más tiempo y compromiso, ya que se tuvo que empezar a desarrollar el proyecto y cumplir con los plazos establecidos; sin embargo, la participación de todos los integrantes fue constante y satisfactoria.
 TB2: Se mantuvo la buena comunicación y el compromiso de todos los integrantes para culminar el desarrollo de la primera app y avanzar en la segunda.
+TF: Se logró concluir la produccion de manera satisfactoria con una participacion activa y constante de todos los miembros.
       </td>
     </tr>
   </tbody>
@@ -1077,6 +1086,7 @@ Xavier es un estudiante de Audiovisuales, si bien se encuentra trabajando de man
     </td>
   </tr>
 </table>
+
 *Entrevistas a Segmento 2*
 ---
 
@@ -7650,9 +7660,9 @@ Repositorio App Estudiantes:
 <img src="assets/sprint2/commitsEstudiantes.png" alt="UPC logo" width="400">
 
 
-#### 4.2.1.4 Testing Suite Evidence for Sprint Review.
+#### 4.2.2.4 Testing Suite Evidence for Sprint Review.
 
-#### 4.2.1.5 Execution Evidence for Sprint Review.
+#### 4.2.2.5 Execution Evidence for Sprint Review.
 
 App estudiantes corriendo en Android con todos los servicios corriendo:
 
@@ -7672,7 +7682,7 @@ Landing page actualizada, con el apk para descargar:
 
 
 
-#### 4.2.1.6 Services Documentation Evidence for Sprint Review.
+#### 4.2.2.6 Services Documentation Evidence for Sprint Review.
 
 | Tag                     | Operación | Endpoint                      | Summary               | Description                                   | OperationId        |
 |-------------------------|-----------|-------------------------------|-----------------------|-----------------------------------------------|--------------------|
@@ -7719,6 +7729,141 @@ Insights del repositorio de empresas:
 Insights del repositorio de report:
 
 <img src="assets/sprint2/insights2.png" alt="UPC logo" width="400">
+
+
+#### 4.2.3 Sprint 3
+Para finalizar el último sprint nos concentramos en comunicar el backend con la app de empresas y de ese modo crear comunicación mediante las postulaciones entre ambos segmentos
+
+##### 4.2.3.1 Sprint Planning 3
+
+| Sprint #                               | Sprint 3                                                         |
+|----------------------------------------|------------------------------------------------------------------|
+| **Date**                               | 2025-11-20                                                       |
+| **Time**                               | 10:00 PM                                                         |
+| **Location**                           | Discord                                                          |
+| **Prepared By**                        | Josue Paiva                                                      |
+| **Attendees (to planning meeting)**    | Todos los integrantes                                            |
+| **Sprint n - 1 Review Summary**        | -                                                                |
+| **Sprint n - 1 Retrospective Summary** | -                                                                |
+| **Sprint 3 Goal**                      | Finalizar proyecto, unir vistas de ambos segmentos               |
+| **Sprint 3 Velocity**                  | 25                                                               |
+| **Sum of Story Points**                | 25                                                               |
+
+
+##### 4.2.3.2 Sprint Backlog 3
+
+| **Sprint #**   | **Sprint 3**                                       |                    |                                                         |                                                                                                                                                                                      |                     |                    |            |
+|----------------|----------------------------------------------------|--------------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------|------------|
+| **User Story** |                                                    | **Work-Item/task** |                                                         |                                                                                                                                                                                      | **Estimation(Hrs)** | **Assigned To**    | **Status** |
+| **ID**         | **Title**                                          | **Id**             | **Title**                                               | **Description**                                                                                                                                                                      |                     |                    |            |
+| US05           | Subir proyecto a mi portafolio                     | T01                | Implementar carga de proyectos al portafolio            | Como estudiante, quiero poder subir una URL que dirija a un proyecto de mi portafolio, para que los gerentes o empresas puedan visualizar mi trabajo y evaluar mejor mi experiencia. | 2                   | Josue Paiva        | To Do      |
+| US07           | Ver estado de mis postulaciones                    | T02                | Implementar visualización de postulaciones              | Como estudiante, quiero consultar el estado de mis postulaciones, para saber si fui considerado.                                                                                     | 2                   | Renzo Loli         | To Do      |
+| US09           | Recuperar contraseña                               | T03                | Implementar recuperación de contraseña                  | Como usuario, quiero poder recuperar mi contraseña, para acceder a mi cuenta si la olvido.                                                                                           | 2                   | Renzo Loli         | To Do      |
+| US10           | Modificación de perfil de usuario                  | T04                | Implementar edición de perfil                           | Como usuario, quiero modificar la información de mi perfil para mantener mis datos actualizados en la aplicación.                                                                    | 2                   | Renzo Loli         | To Do      |
+| US12           | Actualizar URL del portafolio                      | T05                | Implementar actualización de URL de portafolio          | Como estudiante, quiero modificar la URL de mi portafolio para mantener actualizado el enlace que visualizan los gerentes o empresas.                                                | 2                   | Alessandra Becerra | To Do      |
+| US13           | Calificación del contratador                       | T06                | Implementar calificación al contratador                 | Como estudiante, quiero calificar al empresario luego del proyecto para compartir mi experiencia con futuros postulantes.                                                            | 2                   | Alessandra Becerra | To Do      |
+| US21           | Actualizar tecnologías en el perfil del estudiante | T07                | Implementar actualización de tecnologías del estudiante | Como estudiante, quiero actualizar las tecnologías que domino, para que se muestren en mi perfil.                                                                                    | 2                   | Alessandra Becerra | To Do      |
+| US22           | Visualizar información de empresa                  | T08                | Implementar visualización de información de empresa     | Como estudiante, quiero ver la información de la empresa a la que estoy postulando, para mantenerme más informado.                                                                   | 2                   | Josue Paiva        | To Do      |
+| TS01           | Endpoint para registro de usuarios                 | T09                | Crear endpoint de registro                              | Como developer, quiero crear un endpoint para registrar nuevos usuarios diferenciando su rol (estudiante o gerente).                                                                 | 2                   | Josue Paiva        | To Do      |
+| TS02           | Endpoint para creación de proyectos                | T10                | Crear endpoint de creación de proyectos                 | Como developer, quiero crear un endpoint para que los gerentes publiquen nuevos proyectos.                                                                                           | 2                   | Javier Gonzales    | To Do      |
+| TS03           | Endpoint para postulación a proyectos              | T11                | Crear endpoint de postulación                           | Como developer, quiero desarrollar un endpoint para que los estudiantes puedan postular a proyectos.                                                                                 | 2                   | Javier Gonzales    | To Do      |
+| TS04           | Endpoint para calificación de desempeño            | T12                | Crear endpoint de calificación de desempeño             | Como developer, quiero crear un endpoint que permita calificar el desempeño de un estudiante tras un proyecto.                                                                       | 2                   | Javier Gonzales    | To Do      |
+
+#### 4.2.3.3 Development Evidence for Sprint Review
+
+Repositorio Report:
+
+<img src="assets/sprint3/devReport.png" alt="UPC logo" width="400">
+
+Repositorio App Empresas:
+
+<img src="assets/sprint3/devEmpresas.png" alt="UPC logo" width="400">
+
+Repositorio App Estudiantes:
+
+<img src="assets/sprint3/devEstudiantes.png" alt="UPC logo" width="400">
+
+#### 4.2.3.4 Testing Suite Evidence for Sprint Review.
+
+
+#### 4.2.3.5 Execution Evidence for Sprint Review.
+
+App Estudiantes corriendo en Android comunicándose con empresas:
+
+<img src="assets/sprint3/s1.jpg" alt="UPC logo" width="400">
+
+<img src="assets/sprint3/s2.jpg" alt="UPC logo" width="400">
+
+App Empresas corriendo en Android comunicándose con estudiantes:
+
+<img src="assets/sprint3/e1.jpg" alt="UPC logo" width="400">
+
+<img src="assets/sprint3/e2.jpg" alt="UPC logo" width="400">
+
+
+#### 4.2.3.6 Services Documentation Evidence for Sprint Review.
+
+| Tag                     | Operación | Endpoint                                        | Summary                | Description                                       | OperationId            |
+|-------------------------|-----------|-------------------------------------------------|------------------------|---------------------------------------------------|------------------------|
+| **Students**            | GET       | /api/Students                                   | Get all students       | Retrieve all registered students                  | getAllStudents         |
+| **Students**            | POST      | /api/Students                                   | Create new student     | Register a new student                            | createStudent          |
+| **Students**            | GET       | /api/Students/{id}                              | Get student by ID      | Retrieve a specific student by ID                 | getStudentById         |
+| **Students**            | PUT       | /api/Students/{id}                              | Update student         | Modify the information of an existing student     | updateStudent          |
+| **Students**            | DELETE    | /api/Students/{id}                              | Delete student         | Remove a student from the system                  | deleteStudent          |
+| **Students**            | GET       | /api/Students/user/{userId}                     | Get student by user ID | Retrieve student associated with a specific user  | getStudentByUserId     |
+| **Projects**            | GET       | /api/Projects                                   | Get all projects       | Retrieve all projects                             | getAllProjects         |
+| **Projects**            | POST      | /api/Projects                                   | Create project         | Register a new project                            | createProject          |
+| **Projects**            | GET       | /api/Projects/{id}                              | Get project by ID      | Retrieve a project by its ID                      | getProjectById         |
+| **Projects**            | PUT       | /api/Projects/{id}                              | Update project         | Modify an existing project                        | updateProject          |
+| **Projects**            | DELETE    | /api/Projects/{id}                              | Delete project         | Remove a project                                  | deleteProject          |
+| **Projects**            | PUT       | /api/Projects/{id}/assign-student/{studentId}   | Assign student         | Assign a student to an existing project           | assignStudentToProject |
+| **Projects**            | PUT       | /api/Projects/{id}/status/{status}              | Update project status  | Change the status of a project                    | updateProjectStatus    |
+| **StudentPostulations** | GET       | /api/StudentPostulations                        | Get all postulations   | Retrieve all student postulations                 | getAllPostulations     |
+| **StudentPostulations** | POST      | /api/StudentPostulations                        | Create postulation     | Create a new student postulation                  | createPostulation      |
+| **StudentPostulations** | GET       | /api/StudentPostulations/{id}                   | Get postulation by ID  | Retrieve a specific postulation                   | getPostulationById     |
+| **StudentPostulations** | PUT       | /api/StudentPostulations/{id}                   | Update postulation     | Update an existing student postulation            | updatePostulation      |
+| **StudentPostulations** | DELETE    | /api/StudentPostulations/{id}                   | Delete postulation     | Remove a student postulation                      | deletePostulation      |
+| **StudentPostulations** | PUT       | /api/StudentPostulations/{postulationId}/accept | Accept postulation     | Accept a student's postulation                    | acceptPostulation      |
+| **Users**               | GET       | /api/Users                                      | Get all users          | Retrieve the list of all users                    | getAllUsers            |
+| **Users**               | POST      | /api/Users                                      | Create new user        | Register a new user                               | createUser             |
+| **Users**               | GET       | /api/Users/{id}                                 | Get user by ID         | Retrieve user information by ID                   | getUserById            |
+| **Users**               | PUT       | /api/Users/{id}                                 | Update user            | Modify an existing user's information             | updateUser             |
+| **Users**               | DELETE    | /api/Users/{id}                                 | Delete user            | Remove a user                                     | deleteUser             |
+| **Users**               | POST      | /api/Users/register                             | Register new user      | Endpoint for new user registration                | registerUser           |
+| **Users**               | POST      | /api/Users/login                                | User login             | Authenticate a user and return access credentials | loginUser              |
+| **Companies**           | GET       | /api/Companies                                  | Get all companies      | Retrieve all companies                            | getAllCompanies        |
+| **Companies**           | POST      | /api/Companies                                  | Create company         | Register a new company                            | createCompany          |
+| **Companies**           | GET       | /api/Companies/{id}                             | Get company by ID      | Retrieve a specific company                       | getCompanyById         |
+| **Companies**           | PUT       | /api/Companies/{id}                             | Update company         | Modify an existing company                        | updateCompany          |
+| **Companies**           | DELETE    | /api/Companies/{id}                             | Delete company         | Remove a company                                  | deleteCompany          |
+| **Companies**           | GET       | /api/Companies/by-user/{userId}                 | Get companies by user  | Retrieve companies associated with a user         | getCompaniesByUserId   |
+| **CompanyRatings**      | POST      | /api/CompanyRatings                             | Create rating          | Create a new rating for a company                 | createCompanyRating    |
+| **CompanyRatings**      | GET       | /api/CompanyRatings/exists                      | Check if rating exists | Verify if a user has already rated a company      | ratingExists           |
+| **Reputations**         | POST      | /api/Reputations                                | Create reputation      | Create a reputation entry                         | createReputation       |
+| **Reputations**         | GET       | /api/Reputations                                | Get all reputations    | Retrieve all reputations                          | getAllReputations      |
+
+
+#### 4.2.3.7 Software Deployment Evidence for Sprint Review.
+
+
+Para desplegar la app y recibir feedback de testers se utilizó el App Distribution de Firebase:
+
+<img src="assets/sprint3/firebase1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint3/firebase2.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint3/firebase3.png" alt="UPC logo" width="400">
+
+
+#### 4.2.3.8 Team Collaboration Insights during Sprint
+
+Insights de los 3 repositorios:
+
+<img src="assets/sprint3/insights1.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint3/insights2.png" alt="UPC logo" width="400">
+
+<img src="assets/sprint3/insights3.png" alt="UPC logo" width="400">
 
 
 ### 4.3. Validation Interviews
@@ -7861,6 +8006,47 @@ Insights del repositorio de report:
 
 <br>
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Diego Soriano</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>10:37</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/IQA7mhySLx53SavXkaUM_AzAAY1q1FTvdBXpkxgmyptzqSc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FBaEQL`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Diego es estudiante de Ingenieria de Software. Actualmente esta en busqueda de practicas pre profesionales. Nos cuenta que le parece buena e intuitiva la aplicacion. Le parece eficiente la navegacion entre las 3 secciones 'oportunidades', 'portafolio' y 'postulaciones'. Le gusta en general la navegacion pero le gustaria que muchas secciones esten en un mejor alcance ya que estan escondidos entre pestañas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int-diego-soriano.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
+
 
 *Entrevistas a Segmento 2*
 ---
@@ -7949,6 +8135,47 @@ Insights del repositorio de report:
 </table>
 
 <br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Diego Ramos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Ate</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>06:39</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>      
+  `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20161c993_upc_edu_pe/IQC_hft5WG_gT661LHIJJZgMAYdfmIey8K0U8Ck2Fb1k6SE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xVzVVM`
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Diego es jefe de Piamonte Consulting. Se le mostro la aplicacion y le parecio interesante. Le gusta la navegacion y las pestañas incluidas. PIensa que la aplicacion es intuitiva y siente interes. No encontro problemas intermedios entre el flujo de navegacion y le gusto las diferentes secciones como descripciones, perfiles, reseñas y demas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <p align="center">
+        <img src="assets/entrevistas/val-int-diego-ramos.png" alt="interviewImage" width="700">
+      </p>
+    </td>
+  </tr>
+</table>
 
 #### 4.3.3. Evaluaciones según heurísticas
 
@@ -8068,8 +8295,10 @@ La primera entrega fue clave para establecer correctamente la propuesta y docume
 Con los servicios desplegados, podemos empezar a trabajar en la app móvil, que es el objetivo principal del proyecto. El backend ya tiene los servicios principales para el registro, autenticación, creación de proyectos y postulación, lo cual nos beneficia de cara al resto de entregables donde podremos concentrarnos en el frotnend.
 
 -**TB2:**
-Para el penúltimo entregable logramos culminar el desarrollo de la app de estudiantes, ademas de incluirla como descargable en la landing page. La app de empresas esta en desarrollo y esperamos culminarla para la entrega final.
+Para el penúltimo entregable logramos culminar el desarrollo de la app de estudiantes, además de incluirla como descargable en la landing page. La app de empresas esta en desarrollo y esperamos culminarla para la entrega final.
 
+-**TF:**
+Con el ultimo entregable concluimos la producción de versiones de demos funcionales de ambos productos, consiguiendo una comunicación entre ambos y siguiendo con los flujos establecidos, como observaciones finales se podrían mejorar las interfaces, el rendimiento de la app estudiantes y los formularios de registro.
 ## Videos
 
 -**Video About The Product:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQCWSzY41JPXTZq4AMraiMz7AQTPs3MzPFLopbPWl0qH-1Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=oIgik3' <br>
@@ -8078,7 +8307,22 @@ Para el penúltimo entregable logramos culminar el desarrollo de la app de estud
 
 -**Video App Validation:** 'https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312966_upc_edu_pe/IQBENV6f49_1QJyDYlRAFFSnAWCcSVj2w78OOTFwYMmHP7U?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Gd2GUT' <br>
 
+## Bibliografía:
 
+<p style="text-indent:-2em; margin-left:2em;">
+The Key Impacts of Student Satisfaction with Job Opportunity in Technical and Vocational Education and Training (TVET), Cambodia. (2023). <i>European Journal of Business and Management, 15</i>(17). https://doi.org/10.7176/ejbm/15-17-04
+</p>
+
+<p style="text-indent:-2em; margin-left:2em;">
+Thi Thuy Dung, V., & Minh Chien, L. (2023). Job opportunities for students in their major after graduation - A case study at Da Lat University. <i>VNU Journal of Science: Policy and Management Studies, 39</i>(4). https://doi.org/10.25073/2588-
+
+<p style="text-indent:-2em; margin-left:2em;">
+Novaliendry, D., Pratama, M. F. P., Budayawan, K., Huda, Y., & Rahiman, W. M. Y. (2023). Design and development of sign language learning application for special needs students based on Android using Flutter. <i>International Journal of Online and Biomedical Engineering, 19</i>(16), 76–92. https://doi.org/10.3991/ijoe.v19i16.44669
+</p>
+
+<p style="text-indent:-2em; margin-left:2em;">
+Dimitrijević, N., Zdravković, N., & Milićević, V. (2023). An automated grading framework for the mobile development programming language Kotlin. <i>International Journal for Quality Research, 17</i>(2), 313–324. https://doi.org/10.24874/IJQR17.02-01
+</p>
 
 ## Anexos
 
